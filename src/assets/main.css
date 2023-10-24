@@ -1,35 +1,20 @@
-@import './base.css';
+/* add font for website */
+@import './font.css';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* use taildwind libary */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  font-weight: normal;
+/* style guide  */
+.btn {
+  @apply text-white bg-primary text-lg py-1.5 whitespace-nowrap px-10 uppercase;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+.btn-shadow {
+  box-shadow: -5px 5px 0px 0px #F1DEB5;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.hero-gradiant {
+  background: linear-gradient(85deg, #F4F4F4 76.46%, rgba(244, 244, 244, 0.00) 94.52%);
 }
