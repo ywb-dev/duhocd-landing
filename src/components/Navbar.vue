@@ -1,9 +1,9 @@
 <template>
    <nav class="block flex flex-wrap items-center justify-center">
-        <a class="text-lg font-bold leading-normal no-underline uppercase px-6 hover:text-grey lg:py-7 active [&.active]:text-grey" href="#">Home</a>
-        <a class="text-lg font-bold leading-normal no-underline uppercase px-6 hover:text-grey lg:py-7 [&.active]:text-grey" href="#project">Project</a>
-        <a class="text-lg font-bold leading-normal no-underline uppercase px-6 hover:text-grey lg:py-7 [&.active]:text-grey" href="#service">Services</a>
-        <a class="text-lg font-bold leading-normal no-underline uppercase px-6 hover:text-grey lg:py-7 [&.active]:text-grey" href="#about">About</a>
-        <a class="text-lg font-bold leading-normal no-underline uppercase px-6 hover:text-grey lg:py-7 [&.active]:text-grey" href="#blog">Blog</a>
+        <a class="text-base font-bold leading-normal no-underline uppercase px-4 hover:text-dark lg:py-7 active text-grey" href="#">ƯU ĐIỂM DU HỌC</a>
+        <a class="text-base font-bold leading-normal no-underline uppercase px-4 hover:text-dark lg:py-7 text-grey" href="#project">TRƯỜNG ĐẠI HỌC</a>
+        <a class="text-base font-bold leading-normal no-underline uppercase px-4 hover:text-dark lg:py-7 text-grey" href="#service">QUY TRÌNH DU HỌC</a>
+        <a class="text-base font-bold leading-normal no-underline uppercase px-4 hover:text-dark lg:py-7 text-grey" href="#about">ĐÁNH GIÁ</a>
+        <a class="text-base font-bold leading-normal no-underline uppercase px-4 hover:text-dark lg:py-7 text-grey" href="#blog">ĐĂNG KÍ TƯ VẤN</a>
     </nav>
 </template>

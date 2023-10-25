@@ -1,7 +1,10 @@
 <template>
     <div>
         <header>
-            <slot name="header"></slot>
+            <div>
+                <slot name="header"></slot>
+                <slot name="herobanner"></slot>
+            </div>
         </header>
         <main>
             <slot></slot>

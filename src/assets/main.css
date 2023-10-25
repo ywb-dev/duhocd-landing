@@ -8,13 +8,50 @@
 
 /* style guide  */
 .btn {
-  @apply text-white bg-primary text-lg py-1.5 whitespace-nowrap px-10 uppercase;
+  @apply text-white bg-primaryText text-lg py-1.5 whitespace-nowrap px-10 uppercase;
 }
 
 .btn-shadow {
   box-shadow: -5px 5px 0px 0px #F1DEB5;
 }
 
+.btn-shadow-grey {
+  box-shadow: -5px 5px 0px 0px #B8B8B8;
+}
+
 .hero-gradiant {
   background: linear-gradient(85deg, #F4F4F4 76.46%, rgba(244, 244, 244, 0.00) 94.52%);
+}
+
+/* swiper style */
+.mySwiper.swiper {
+  width: 100%;
+  overflow: visible !important;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+    top: -80px;
+    right: 0;
+}
+
+.swiper .swiper-button-prev {
+  right: 60px;
+  left: unset;
+}
+
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+  font-size: 18px;
+  padding: 12px 16px;
+  border-radius: 99px;
+  border: 1px solid #979797;
+  color: #979797;
+}
+
+.swiper .swiper-button-prev:hover:after,
+.swiper .swiper-button-next:hover:after {
+  border-color: black;
+  color: white;
+  background-color: #56ABE9;
 }

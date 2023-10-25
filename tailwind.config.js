@@ -9,16 +9,23 @@ module.exports = {
         primaryText: '#56ABE9',
         dark: '#212121',
         grey: '#646464',
-        bee: [
-          200: '#F1DEB5',
-          300: '#F0DCB1'
-        ]
+        bee: '#F1DEB5',
+        beebright: '#F0DCB1'
       },
       maxWidth: {
         '960': '960px',
       },
+      fontSize: {
+        68: '68px'
+      },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif']
+      },
+      zIndex: {
+        '9999': '9999',
+      },
+      borderRadius: {
+        lg: '60px'
       }
     },
     container: {

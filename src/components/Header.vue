@@ -1,4 +1,3 @@
-
 <script>
     import Logo from './icons/Logo.vue';
     import NavBar from './Navbar.vue'
@@ -15,7 +14,6 @@
     },
     methods: {
         handleScroll() {
-            console.log(window.scrollY);
             if (window.scrollY > 400) {
                 this.isSticky = true
             } else {
@@ -40,7 +38,7 @@
 <template>
    <div :class="{ 'headroom--unpinned': scrolled }"
       v-show="handleScroll" class="-top-full left-0 w-full duration-300 delay-200 flex justify-between px-4 md:px-8 transition-all"
-      v-bind:class="[isSticky ? 'fixed !top-0 sticky-header bg-[#f4f4f4]' : 'relative ']">
+      v-bind:class="[isSticky ? 'fixed z-9999 !top-0 sticky-header bg-[#f4f4f4]' : 'relative hero-gradiant']">
         <div class="logo-wrap py-7 flex justify-center items-center">
            <a href="#" class="block">
             <Logo class="w-20 logo h-auto"/>
@@ -48,7 +46,7 @@
         </div>
         <NavBar/>
         <div class="flex items-center justify-center">
-            <a href="#" class="btn block rounded-tl-2xl transition-all font-extrabold leading-normal hover:">
+            <a href="#" class="btn block rounded-tl-2xl transition-all font-extrabold leading-normal">
                 TƯ VẤN
             </a>
         </div>
