@@ -16,6 +16,10 @@ module.exports = {
         '960': '960px',
       },
       fontSize: {
+        15: '15px',
+        23: '23px',
+        25: '25px',
+        32: '32px',
         68: '68px'
       },
       fontFamily: {

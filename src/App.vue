@@ -6,17 +6,21 @@
     import HeroBanner from './components/sections/HeroBanner.vue';
     import ProjectCarousel from './components/sections/ProjectCarousel.vue';
     import Advise from './components/sections/Advise.vue';
+    import University from './components/sections/University.vue';
+    import FlowAbroad from './components/sections/FlowAbroad.vue';
 </script>
 <template>
     <BaseLayout>
         <template v-slot:header>
-            <Header />
+            <Header/>
         </template>
         <HeroBanner/>
         <ProjectCarousel/>
         <Advise/>
+        <University/>
+        <FlowAbroad/>
         <template v-slot:footer>
-            <Footer />
+            <Footer/>
         </template>
 
    </BaseLayout>

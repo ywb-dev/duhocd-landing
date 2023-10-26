@@ -7,7 +7,7 @@
                 <a href="#" class="block w-48 text-center text-[27px] px-10 py-2 leading-normal font-extrabold bg-primary text-white rounded-tl-[20px] rounded-br-[20px] btn-shadow-grey mt-9 md:mt-11 ml-auto">Tư vấn</a>
             </div>
             <div class="flex justify-end md:justify-start w-full md:w-1/2 md:pl-12 mt-14 md:mt-0" >
-                <img class="object-contain" src="/images/illustration_Smart_phone_data.png" alt="Smart_phone_data">
+                <img class="object-contain" loading="lazy" src="/images/illustration_Smart_phone_data.png" alt="Smart_phone_data">
             </div>
         </div>
     </section>

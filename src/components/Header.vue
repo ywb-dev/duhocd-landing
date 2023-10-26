@@ -46,7 +46,7 @@
         </div>
         <NavBar/>
         <div class="flex items-center justify-center">
-            <a href="#" class="btn block rounded-tl-2xl transition-all font-extrabold leading-normal">
+            <a href="#" title="tư vấn" class="btn hidden lg:block rounded-tl-2xl transition-all font-extrabold leading-normal">
                 TƯ VẤN
             </a>
         </div>

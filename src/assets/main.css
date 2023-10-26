@@ -6,6 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
+::selection {
+  background-color: #56ABE9;
+}
+
 /* style guide  */
 .btn {
   @apply text-white bg-primaryText text-lg py-1.5 whitespace-nowrap px-10 uppercase;
@@ -32,11 +36,11 @@
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next {
     top: -80px;
-    right: 0;
+    right: 10px;
 }
 
 .swiper .swiper-button-prev {
-  right: 60px;
+  right: 80px;
   left: unset;
 }
 
@@ -47,6 +51,7 @@
   border-radius: 99px;
   border: 1px solid #979797;
   color: #979797;
+  background-color: white;
 }
 
 .swiper .swiper-button-prev:hover:after,
@@ -54,4 +59,18 @@
   border-color: black;
   color: white;
   background-color: #56ABE9;
+}
+
+@media (max-width: 767px) {
+  .swiper .swiper-button-prev,
+  .swiper .swiper-button-next {
+      top: unset;
+      bottom: 70px;
+      right: 35%;
+  }
+
+  .swiper .swiper-button-prev {
+    right: 80px;
+    left: 35%;
+  }
 }

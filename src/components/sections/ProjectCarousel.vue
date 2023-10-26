@@ -1,18 +1,31 @@
 <template>
-    <section id="project">
-       <div class="relative contaner max-w-[1036px] mx-auto mt-24">
-            <div class="w-full text-center mb-12"> 
-                <h2 class="text-dark font-bold text-[56px] w-[600px] leading-[62.5px] mx-auto">Tại sao nên <br> du học Hàn Quốc</h2>
+    <section id="whychoose">
+       <div class="relative contaner max-w-[1036px] mx-8 lg:mx-auto mt-24 overflow-hidden">
+            <div class="w-full flex justify-center text-center mb-12"> 
+                <h2 class="text-dark font-bold text-center text-[32px] leading-10 lg:text-[56px] w-[600px] lg:leading-[62.5px] mx-auto">Tại sao nên <br> du học Hàn Quốc</h2>
             </div>
             <div class="flex">
                 <swiper
-                    :slidesPerView="3.2"
-                    :spaceBetween="20"
+                    :spaceBetween="40"
                     :initialSlide="1"
                     :navigation="true"
                     :loop="loop"
                     :centeredSlides=false
                     :autoplay="autoplay"
+                    :breakpoints="{
+                        '640': {
+                            slidesPerView: 1,
+                            spaceBetween: 40,
+                        },
+                        '768': {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        '1024': {
+                            slidesPerView: 3.3,
+                            spaceBetween: 20,
+                        },
+                    }"
                     :modules="modules"
                     class="mySwiper"
                 >
@@ -92,8 +105,10 @@
     .swiper-wrapper {
         @apply px-10;
     }
-
     .swiper {
-        @apply pb-24;
+        @apply pb-44 px-5 md:px-0 lg:pb-24;
+    }
+    .swiper .swiper-slide {
+        @apply min-h-[337px] md:min-h-0;
     }
 </style>
