@@ -55,9 +55,8 @@
 <style scoped>
     .sticky-header .logo-wrap  {
        @apply py-4; 
-
-       .logo {
-         @apply w-16;
-       }
+    }
+    .logo-wrap .logo {
+        @apply w-16;
     }
 </style>
