@@ -1,0 +1,111 @@
+<template>
+    <section id="review">
+        <div class="relative px-10 py-20 md:py-36 bg-white review overflow-hidden">
+            <div class="container max-w-960 mx-auto">
+                <div class="max-w-[900px] mb-12 md:mb-20">
+                    <img class="w-14 mx-auto md:w-20 object-contain mb-5 md:mb-0" src="/images/university/illustration_Achie_ement.png" loading="lazy" alt="chứng nhận">
+                    <h2 class="text-dark text-center font-bold text-3xl -tracking-[0.4px] md:text-68 md:leading-[78px]">Các học viên đánh giá như nào về DUHOCD.com</h2>
+                </div>
+                <div class="flex flex-col">
+                    <swiper v-if="mobile.matches"
+                    :spaceBetween="40"
+                    :navigation="true"
+                    :loop="loop"
+                    :centeredSlides=false
+                    :autoplay="autoplay"
+                    :breakpoints="{
+                        '640': {
+                            slidesPerView: 1,
+                            spaceBetween: 0,
+                        },
+                        '768': {
+                            slidesPerView: 9,
+                            spaceBetween: 0,
+                        }
+                    }"
+                    :modules="modules"
+                    class="mySwiper"
+                >
+                    <swiper-slide v-for="(review, index) in reviews" :key="review">
+                        <div class="flex flex-col md:flex-row justìy-center items-center sm:mb-12">
+                            <div class="p-8 bg-beebright shadow-sm rounded-[39px]">
+                                <p>{{ review?.comment }}</p>
+                                <p class="text-right font-bold text-base text-black tracking-tight mt-2.5">- {{  review?.author }}</p>
+                            </div>
+                            <div class="w-40 h-40 min-w-[10rem] mt-6">
+                                <img class="w-full h-full block object-cover" :src="review?.image" loading="lazy" alt="du học sinh">
+                            </div> 
+                        </div>
+                    </swiper-slide>
+                </swiper>
+                <div v-else v-for="(review, index) in reviews" :key="review" :class="index%2===0 ? 'md:flex-row' : 'md:flex-row-reverse'" class="flex flex-col md:flex-row sm:mb-12">
+                            <div :class="index%2===0 ? 'mr-5' : 'ml-5'" class="p-8 bg-beebright shadow-sm rounded-[39px]">
+                                <p>{{ review?.comment }}</p>
+                                <p class="text-right font-bold text-base text-black tracking-tight mt-2.5">- {{  review?.author }}</p>
+                            </div>
+                            <div class="w-40 h-40 min-w-[10rem]">
+                                <img class="w-full h-full block object-cover" :src="review?.image" loading="lazy" alt="du học sinh">
+                            </div> 
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+<style>
+    .review .swiper-slide {
+        @apply !w-full;
+    }
+
+    .review .swiper-wrapper {
+        @apply md:flex-col;
+    } 
+
+    .review .swiper .swiper-button-next,
+    .review .swiper .swiper-button-prev {
+        @apply -bottom-8;
+    }
+</style>
+<script>
+    // Import Swiper Vue.js components
+    import { Swiper, SwiperSlide } from 'swiper/vue';
+  
+    // Import Swiper styles
+    import 'swiper/css';
+    import 'swiper/css/navigation';
+  
+    // import required modules
+    import { Navigation, Autoplay } from 'swiper/modules';
+  
+    export default {
+      components: {
+        Swiper,
+        SwiperSlide,
+      },
+      setup() {
+        return {
+          modules: [Navigation, Autoplay ],
+        };
+      },
+      data() {
+        return {
+            reviews: [
+                { image: 'images/reviews/boy-left.png', author: 'Lê Trung Hiếu', comment: 'Nhờ sự quan tâm chu đáo của trung tâm từ lúc tư vấn chọn trường, chi phí du học cho đến khi xuất cảnh nên mình đã có thể yên tâm đi du học.' },
+                { image: 'images/reviews/girl-right.png', author: 'Hoàng Mai Anh', comment: 'Em muốn đi du học nhưng đang mơ hồ không biết phải bắt đầu tìm hiểu từ đâu. Cảm ơn trung tâm du học đã nhiệt tình tư vấn cho em ạ.' },
+                { image: 'images/reviews/girl-left.png', author: 'Nguyễn Thu Thảo', comment: 'Mình không quen ai ở Hàn cả, hồi sang Hàn du học sống một mình có rất nhiều vấn đề phát sinh nhưng rất may trung tâm du học này đã nhiệt tình giúp đỡ, hỗ trợ mình.' },
+                { image: 'images/reviews/girl-right.png', author: 'Trần Thị Diệp Lê', comment: 'Tìm kiếm một số thứ về thông tin du học Hàn Quốc trên mạng không có. May mình đã được giải quyết những thắc mắc qua tư vấn 1:1 ở trung tâm này.' },
+                { image: 'images/reviews/girl-left.png', author: 'Nguyễn Thu Thảo', comment: 'Thông tin về du học được tư vấn từ trung tâm mình thấy rất chính xác và đáng tin cậy vì giám đốc trung tâm là người Hàn.)' },
+                { image: 'images/reviews/girl-left.png', author: 'Lương Nguyễn Việt Sơn', comment: 'Ban đầu mình không biết đi du học nước nào, khá là mông lung. Nhưng sau khi được tư vấn nhiệt tình và cân nhắc kĩ, mình đã quyết định đi du học Hàn Quốc. Hiện tại thì mình thấy quyết định này là vô cùng đúng đắn.' }
+            ],
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false
+            },
+            loop: true,
+            centeredSlides: false,
+            slidesPerView: 'auto',
+            mobile: window.matchMedia('(min-width: 0px) and (max-width: 767px)')
+        }
+      }
+    };
+</script>
