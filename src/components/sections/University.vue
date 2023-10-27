@@ -61,49 +61,71 @@
                     WURI năm 2022 (Đứng hạng 17 trên thế giới về trao đổi sinh viên; Hạng 28 trên thế giới về
                     ứng dụng công nghiệp)`
                 } 
-            ] 
+            ],
+            active: false
+        }
+    },
+    methods: {
+        mouseover: function(e) {
+            console.log('el:', e.target.offsetHeight );
+            this.active = true
+        },    
+        mouseleave: function(e) {
+            this.active = false
         }
     }
   }
 </script>
 <template>
     <section id="university">
-        <div class="relative w-full bg-[url('/images/university/bg-university.jpg')] bg-no-repeat bg-cover bg-center">
+        <div class="relative w-full bg-fixed bg-[url('/images/university/bg-university.jpg')] bg-no-repeat bg-cover bg-center">
             <div class="container max-w-960 px-9 pt-20 pb-24">
                 <div class="flex flex-col justify-center items-center text-center">
                     <img class="w-16 object-contain" src="/images/university/illustration_Achie_ement.png" loading="lazy" alt="thành tích">
-                    <h2 class="text-32 text-dark text-center font-bold -tracking-[0.48px] leading-normal md:text-68 md:leading-[78px]">Các trường đại học</h2>
-                    <p class="text-base max-w-2xl text-dark font-normal leading-6 mt-3 mb-9">Hãy tham khảo danh sách các trường đại học do DUHOCD.com giới thiệu để bạn có thể tìm hiểu về ưu nhược điểm của mỗi trường. Từ đó xây dựng cho mình một kế hoạch du học phù hợp và hiệu quả nhất.</p>
+                    <h2 class="text-shadow-white text-32 text-dark text-center font-bold -tracking-[0.48px] leading-normal md:text-68 md:leading-[78px]">Các trường đại học</h2>
+                    <p class="text-shadow-white text-base max-w-2xl text-dark font-normal leading-6 mt-3 mb-9">Hãy tham khảo danh sách các trường đại học do DUHOCD.com giới thiệu để bạn có thể tìm hiểu về ưu nhược điểm của mỗi trường. Từ đó xây dựng cho mình một kế hoạch du học phù hợp và hiệu quả nhất.</p>
                 </div>
-                <div class="flex flex-col w-full">
-                     <div v-for="(inv, index) in unvs" :key="inv" :class="index===0 ? '!border-[3px]' : fasle" class="p-5 mb-2.5 md:mb-6 rounded-[25px] border hover:border-[3px] border-black transition-all bg-white">
-                        <div :class="index===0 ? '!max-h-full' : fasle" class="flex box-item flex-col md:flex-row h-full max-h-44 hover:max-h-[800px] [&>div>.thumb-image]:hover:hidden [&>div>.base-image]:hover:block hover:md:max-h-[500px] [&>.unv-content>p]:hover:block [&>.unv-content>p]:hover:opacity-100 duration-700 delay-150 transition-all overflow-hidden">
-                            <div class="flex w-full md:w-1/2 rounded-[25px] overflow-hidden">
-                                <img class="base-image hidden" :src="inv?.img" loading="lazy" alt="Đại học Hàn Quốc"/>
-                                <img class="thumb-image object-cover " :src="inv?.thumb" loading="lazy" alt="Đại học hàn quốc">
-                            </div>
-                            <div class="unv-content mt-9 md:mt-0 flex flex-col justify-center w-full md:pl-8 md:w-1/2">
-                                <h2 :class="index===0 ? '!text-dark' : fasle" class="text-white md:text-dark text-[27px] font-bold leading-normal mb-2">{{ inv?.title  }}</h2>
-                                <h3 :class="index===0 ? '!text-dark' : fasle" class="text-white md:text-dark text-[19px] font-bold leading-normal mb-2 tracking-tight">{{ inv?.subtitle }}</h3>
-                                <p :class="index===0 ? '!block !text-dark !opacity-100' : fasle" class="hidden opacity-0 text-white md:text-grey whitespace-pre-line text-15 font-normal leading-5 mt-5">{{ inv?.content }}</p>
+                <Transition>
+                    <div class="flex flex-col w-full">
+                        <div v-for="(inv, index) in unvs" :key="inv" :class="index===0 ? '!border-[3px]' : fasle" class="p-5 mb-2.5 md:mb-6 rounded-[25px] border hover:border-[3px] border-black transition-all bg-white">
+                            <div  v-on:mouseover="mouseover"
+                                    v-on:mouseleave="mouseleave" :ref="'infoBox-' + index" :class="index===0 ? '!max-h-full' : fasle" class="flex box-item flex-col md:flex-row h-full [&>div>.thumb-image]:hover:hidden [&>div>.base-image]:hover:block [&>.unv-content>p]:hover:block [&>.unv-content>p]:hover:opacity-100 duration-700 delay-150 transition-all overflow-hidden">
+                                <div class="flex w-full md:w-1/2 rounded-[25px] overflow-hidden">
+                                    <img class="base-image" :src="inv?.img" loading="lazy" alt="Đại học Hàn Quốc"/>
+                                    <img class="thumb-image object-cover hidden" :src="inv?.thumb" loading="lazy" alt="Đại học hàn quốc">
+                                </div>
+                                <div class="unv-content mt-9 md:mt-0 flex flex-col w-full md:pl-8 md:w-1/2">
+                                    <h2 :class="index===0 ? '!text-dark' : fasle" class="text-white md:text-dark text-[27px] font-bold leading-normal mb-2 md:mt-12">{{ inv?.title  }}</h2>
+                                    <h3 :class="index===0 ? '!text-dark' : fasle" class="text-white md:text-dark text-[19px] font-bold leading-normal mb-2 tracking-tight">{{ inv?.subtitle }}</h3>
+                                    <p class="text-white md:text-grey whitespace-pre-line text-15 font-normal leading-5 mt-5">{{ inv?.content }}</p>
+                                </div>
                             </div>
                         </div>
-                     </div>
-                </div>
+                    </div>
+                </Transition>
             </div>
         </div>
     </section>
 </template>
-<style scoped>
+<style>
     .box-item:hover p,
     .box-item:hover h3,
     .box-item:hover h2 {
         color: black;
     }
-/* 
-    .box-item:first-child p,
-    .box-item:first-child h3,
-    .box-item:first-child h2 {
-        color: black;
+
+    .v-enter-active,
+    .v-leave-active {
+    transition: opacity 0.5s ease;
+    }
+
+    .v-enter-from,
+    .v-leave-to {
+    opacity: 0;
+    }
+
+    /* .text-shadow-white {
+        text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
     } */
 </style>

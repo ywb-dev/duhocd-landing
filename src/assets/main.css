@@ -10,6 +10,9 @@
   background-color: #56ABE9;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 /* style guide  */
 .btn {
   @apply text-white bg-primaryText text-lg py-1.5 whitespace-nowrap px-10 uppercase;
@@ -73,4 +76,29 @@
     right: 80px;
     left: 35%;
   }
+}
+
+/* field */
+
+label {
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: -0.24px;
+  margin-bottom: 8px;
+}
+
+input {
+  border-radius: 50px;
+  background-color: #fff;
+  height: 60px;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  padding: 6px 24px;
+}
+
+.group-field {
+  display: flex;
+  flex-direction: column;
 }

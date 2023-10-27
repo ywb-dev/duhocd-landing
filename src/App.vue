@@ -9,6 +9,7 @@
     import University from './components/sections/University.vue';
     import FlowAbroad from './components/sections/FlowAbroad.vue';
     import StudentReview from './components/sections/StudentReview.vue';
+    import Register from './components/sections/Register.vue';
 </script>
 <template>
     <BaseLayout>
@@ -21,6 +22,7 @@
         <University/>
         <FlowAbroad/>
         <StudentReview/>
+        <Register/>
         <template v-slot:footer>
             <Footer/>
         </template>
