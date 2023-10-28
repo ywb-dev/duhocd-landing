@@ -1,9 +1,8 @@
 <script>
-    import Logo from './icons/Logo.vue';
-    import NavBar from './Navbar.vue'
+    import LogoIcon from './icons/LogoIcon.vue';
+    import Navbar from './Navbar.vue';
 
     export default {
-    name: "Home",
     data() {
         return {
             limitPosition: 500,
@@ -29,8 +28,8 @@
         window.removeEventListener("scroll", this.handleScroll);
     },
     components: { 
-        Logo, 
-        NavBar 
+        LogoIcon, 
+        Navbar 
     }
 };
 
@@ -40,11 +39,11 @@
       v-show="handleScroll" class="-top-full left-0 w-full duration-300 delay-200 flex justify-between px-4 md:px-8 transition-all"
       v-bind:class="[isSticky ? 'fixed z-9999 !top-0 sticky-header bg-[#f4f4f4]' : 'relative hero-gradiant']">
         <div class="logo-wrap py-7 flex justify-center items-center">
-           <a href="#" class="block">
-            <Logo class="w-20 logo h-auto"/>
+           <a href="#" title="Du học đi" class="block">
+            <LogoIcon class="w-20 logo h-auto"/>
            </a>
         </div>
-        <NavBar/>
+        <Navbar/>
         <div class="flex items-center justify-center hidden xl:flex">
             <a href="#" title="tư vấn" class="btn block rounded-tl-2xl transition-all font-extrabold leading-normal">
                 TƯ VẤN

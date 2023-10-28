@@ -15,7 +15,7 @@ html {
 }
 /* style guide  */
 .btn {
-  @apply text-white bg-primaryText text-lg py-1.5 whitespace-nowrap px-10 uppercase;
+  @apply text-white bg-primaryText text-lg py-1.5 whitespace-nowrap px-10 uppercase hover:opacity-80 hover:-translate-x-2 hover:-translate-y-2;
 }
 
 .btn-shadow {
@@ -28,6 +28,10 @@ html {
 
 .hero-gradiant {
   background: linear-gradient(85deg, #F4F4F4 76.46%, rgba(244, 244, 244, 0.00) 94.52%);
+}
+
+.review-shadow {
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* swiper style */
@@ -79,7 +83,9 @@ html {
 }
 
 /* field */
-
+:placeholder {
+  color: #a0a0a0;
+}
 label {
   font-size: 16px;
   color: #000;

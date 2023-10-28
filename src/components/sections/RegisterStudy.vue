@@ -11,7 +11,13 @@
                     <label for="">Đăng ký đi</label>
                     <input type="text" placeholder="đăng ký"/>
                 </div>
+                <div class="group-field">
+                    <label for="">Đăng ký đi</label>
+                    <input type="date" placeholder="đăng ký"/>
+                </div>
             </div>
         </div>
     </section>
 </template>
+<script setup>
+</script>

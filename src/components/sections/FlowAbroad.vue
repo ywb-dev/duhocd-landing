@@ -122,7 +122,8 @@
         </div>
     </section>
 </template>
-
+<script setup>
+</script>
 <style scoped>
  .step:first-child .step-text,
  .step-text:hover {

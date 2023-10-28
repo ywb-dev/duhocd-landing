@@ -7,6 +7,7 @@ module.exports = {
       colors: {
         primary: '#71B7EA',
         primaryText: '#56ABE9',
+        hoverLink: '#0a8ded',
         dark: '#212121',
         grey: '#646464',
         bee: '#F1DEB5',

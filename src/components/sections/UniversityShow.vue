@@ -70,7 +70,7 @@
             console.log('el:', e.target.offsetHeight );
             this.active = true
         },    
-        mouseleave: function(e) {
+        mouseleave: function() {
             this.active = false
         }
     }
@@ -87,16 +87,18 @@
                 </div>
                 <Transition>
                     <div class="flex flex-col w-full">
-                        <div v-for="(inv, index) in unvs" :key="inv" :class="index===0 ? '!border-[3px]' : fasle" class="p-5 mb-2.5 md:mb-6 rounded-[25px] border hover:border-[3px] border-black transition-all bg-white">
+                        <div v-for="(inv, index) in unvs" :key="inv" :class="index===0 ? '!border-[3px]' : ''" 
+                            :title="inv?.subtitle"
+                            class="p-5 mb-2.5 md:mb-6 rounded-[25px] border hover:border-[3px] border-black transition-all bg-white">
                             <div  v-on:mouseover="mouseover"
-                                    v-on:mouseleave="mouseleave" :ref="'infoBox-' + index" :class="index===0 ? '!max-h-full' : fasle" class="flex box-item flex-col md:flex-row h-full [&>div>.thumb-image]:hover:hidden [&>div>.base-image]:hover:block [&>.unv-content>p]:hover:block [&>.unv-content>p]:hover:opacity-100 duration-700 delay-150 transition-all overflow-hidden">
+                                    v-on:mouseleave="mouseleave" :ref="'infoBox-' + index" :class="index===0 ? '!max-h-full' : ''" class="flex box-item flex-col md:flex-row h-full [&>div>.thumb-image]:hover:hidden [&>div>.base-image]:hover:block [&>.unv-content>p]:hover:block [&>.unv-content>p]:hover:opacity-100 duration-700 delay-150 transition-all overflow-hidden">
                                 <div class="flex w-full md:w-1/2 rounded-[25px] overflow-hidden">
                                     <img class="base-image" :src="inv?.img" loading="lazy" alt="Đại học Hàn Quốc"/>
                                     <img class="thumb-image object-cover hidden" :src="inv?.thumb" loading="lazy" alt="Đại học hàn quốc">
                                 </div>
                                 <div class="unv-content mt-9 md:mt-0 flex flex-col w-full md:pl-8 md:w-1/2">
-                                    <h2 :class="index===0 ? '!text-dark' : fasle" class="text-white md:text-dark text-[27px] font-bold leading-normal mb-2 md:mt-12">{{ inv?.title  }}</h2>
-                                    <h3 :class="index===0 ? '!text-dark' : fasle" class="text-white md:text-dark text-[19px] font-bold leading-normal mb-2 tracking-tight">{{ inv?.subtitle }}</h3>
+                                    <h2 :class="index===0 ? '!text-dark' : ''" class="text-white md:text-dark text-[27px] font-bold leading-normal mb-2 md:mt-12">{{ inv?.title  }}</h2>
+                                    <h3 :class="index===0 ? '!text-dark' : ''" class="text-white md:text-dark text-[19px] font-bold leading-normal mb-2 tracking-tight">{{ inv?.subtitle }}</h3>
                                     <p class="text-white md:text-grey whitespace-pre-line text-15 font-normal leading-5 mt-5">{{ inv?.content }}</p>
                                 </div>
                             </div>
