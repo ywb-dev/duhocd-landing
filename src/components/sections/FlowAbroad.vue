@@ -59,14 +59,14 @@
                         <img class="object-contain" src="/images/flows/person1.png" loading="lazy" alt="đăng ký bước 1">
                         <div class="flex">
                             <img class="object-contain -mt-6 absolute md:static md:-ml-8" src="/images/flows/number1.png" loading="lazy" alt="đăng ký bước 1">
-                            <h3 class="step-text ml-auto mt-6 w-64 md:w-96 z-10 text-32 text-back font-semibold tracking-wide md:-ml-4">Đăng ký tư vấn từ trung tâm</h3>
+                            <h3 class="step-text ml-auto mt-6 w-64 md:w-96 z-10 text-2xl xs:text-32 text-back font-semibold tracking-wide md:-ml-4">Đăng ký tư vấn từ trung tâm</h3>
                         </div>
                         <img class=" arrow ml-auto mt-4 md:mr-auto md:mt-0" src="/images/flows/arrow1.png" loading="lazy" alt="đăng ký bước 1">
                     </div>
                     <div class="-mt-20 step relative md:mt-0  md:flex md:items-end md:flex-row-reverse">
                         <img src="/images/flows/person2.png" loading="lazy" alt="đăng ký bước 1">
                         <div class="flex">
-                            <h3 class="step-text mt-6 w-64 md:w-96 z-10 text-32 text-back font-semibold tracking-wide text-right">Chọn ngành và trường du học</h3>
+                            <h3 class="step-text mt-6 w-64 md:w-96 z-10 text-2xl xs:text-32 text-back font-semibold tracking-wide text-right">Chọn ngành và trường du học</h3>
                             <img class="absolute -mt-6 -right-8 md:static md:-mr-10" src="/images/flows/number2.png" loading="lazy" alt="đăng ký bước 1">
                         </div>
                         <img class="arrow mr-auto" src="/images/flows/arrow2.png" loading="lazy" alt="đăng ký bước 1">
@@ -75,14 +75,14 @@
                         <img class="relative z-10" src="/images/flows/person3.png" loading="lazy" alt="đăng ký bước 1">
                         <div class="flex md:items-center">
                             <img class="absolute -mt-6 -left-8 md:static md:-ml-8" src="/images/flows/number3.png" loading="lazy" alt="đăng ký bước 1">
-                            <h3 class="step-text mt-8 ml-auto w-64 md:w-96 z-10 text-32 text-back font-semibold tracking-wide text-left">Học tiếng Hàn</h3>
+                            <h3 class="step-text mt-8 ml-auto w-64 md:w-96 z-10 text-2xl xs:text-32 text-back font-semibold tracking-wide text-left">Học tiếng Hàn</h3>
                         </div>
                         <img class="arrow -mt-28 ml-auto md:-mb-44" src="/images/flows/arrow3.png" loading="lazy" alt="đăng ký bước 1">
                     </div>
                     <div class="-mt-20 step relative md:mt-0  md:flex md:items-end md:justify-end md:flex-row-reverse">
                         <img src="/images/flows/person4.png" loading="lazy" alt="đăng ký bước 1">
                         <div class="flex">
-                            <h3 class="step-text mt-6 w-64 md:w-96  md:w-96 z-10 text-32 text-back font-semibold tracking-wide text-right">Chuẩn bị hồ sơ gửi cho trường du học</h3>
+                            <h3 class="step-text mt-6 w-64 md:w-96  md:w-96 z-10 text-2xl xs:text-32 text-back font-semibold tracking-wide text-right">Chuẩn bị hồ sơ gửi cho trường du học</h3>
                             <img class="absolute -mt-6 -right-8 md:static object-contain" src="/images/flows/number4.png" loading="lazy" alt="đăng ký bước 1">
                         </div>
                         <img class="arrow mr-auto md:mr-0 md:absolute md:-bottom-40" src="/images/flows/arrow4.png" loading="lazy" alt="đăng ký bước 1">
@@ -91,13 +91,13 @@
                         <img class="relative z-10 ml-auto md:ml-0" src="/images/flows/person5.png" loading="lazy" alt="đăng ký bước 1">
                         <div class="flex md:items-center">
                             <img class="absolute -mt-6 -left-8 md:mt-0 md:ml-0 md:static" src="/images/flows/number5.png" loading="lazy" alt="đăng ký bước 1">
-                            <h3 class="step-text mt-8 ml-auto w-64 md:w-96 z-10 text-32 text-back font-semibold tracking-wide text-left">Nhận kết quả hồ sơ</h3>
+                            <h3 class="step-text mt-8 ml-auto w-64 md:w-96 z-10 text-2xl xs:text-32 text-back font-semibold tracking-wide text-left">Nhận kết quả hồ sơ</h3>
                         </div>
                         <img class="arrow ml-auto -mt-6 -mr-8 md:ml-0 md:absolute -right-8 -bottom-20" src="/images/flows/arrow5.png" loading="lazy" alt="đăng ký bước 1">
                     </div>
                     <div class="-mt-20 step relative md:mt-10  md:flex md:items-end md:justify-end md:flex-row-reverse">
                         <div class="flex">
-                            <h3 class="step-text mt-6 w-64 md:w-fit md:px-8 z-10 text-32 text-back font-semibold tracking-wide text-right">Xin visa</h3>
+                            <h3 class="step-text mt-6 w-64 md:w-fit md:px-8 z-10 text-2xl xs:text-32 text-back font-semibold tracking-wide text-right">Xin visa</h3>
                             <img class="absolute -mt-6 -right-8 md:static" src="/images/flows/number6.png" loading="lazy" alt="đăng ký bước 1">
                         </div>
                         <img class="arrow mr-auto md:ml-auto md:mr-0" src="/images/flows/arrow6.png" loading="lazy" alt="đăng ký bước 1">
@@ -106,14 +106,14 @@
                         <img class="relative z-10 md:absolute md:ml-auto md:left-0 top-10" src="/images/flows/person6.png" loading="lazy" alt="đăng ký bước 1">
                         <div class="flex w-full md:justify-center md:items-center">
                             <img class="absolute -mt-6 -left-8 md:static" src="/images/flows/number7.png" loading="lazy" alt="đăng ký bước 1">
-                            <h3 class="step-text mt-8 ml-auto w-64 md:w-fit z-10 text-32 text-back font-semibold tracking-wide text-left md:ml-0">Xuất cảnh</h3>
+                            <h3 class="step-text mt-8 ml-auto w-64 md:w-fit z-10 text-2xl xs:text-32 text-back font-semibold tracking-wide text-left md:ml-0">Xuất cảnh</h3>
                         </div>
                         <img class="arrow ml-auto md:mr-auto md:-ml-52" src="/images/flows/arrow7.png" loading="lazy" alt="đăng ký bước 1">
                     </div>
                     <div class="-mt-20 step relative md:mttt-0 md:flex md:items-end md:justify-end md:flex-col-reverse">
                         <img class="md:-mt-12" src="/images/flows/person7.png" loading="lazy" alt="đăng ký bước 1">
                         <div class="flex md:justify-center md:items-center">
-                            <h3 class="step-text mt-6 w-64 md:w-fit z-10 text-32 text-back font-semibold tracking-wide text-right">Nhập học</h3>
+                            <h3 class="step-text mt-6 w-64 md:w-fit z-10 text-2xl xs:text-32 text-back font-semibold tracking-wide text-right">Nhập học</h3>
                             <img class="absolute -mt-6 -right-8 md:static md:mt-8" src="/images/flows/number8.png" loading="lazy" alt="đăng ký bước 1">
                         </div>
                     </div>

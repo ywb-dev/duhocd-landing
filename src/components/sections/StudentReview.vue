@@ -16,11 +16,11 @@
                     :breakpoints="{
                         '640': {
                             slidesPerView: 1,
-                            spaceBetween: 0,
+                            spaceBetween: 40,
                         },
                         '768': {
                             slidesPerView: 9,
-                            spaceBetween: 0,
+                            spaceBetween: 40,
                         }
                     }"
                     :modules="modules"

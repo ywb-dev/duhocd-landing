@@ -14,7 +14,8 @@
                             -Theo Top Universities 2019, Sungkyunkwan lọt TOP 5 Đại học tốt nhất Hàn Quốc, TOP 15
                             châu Á. Và hơn thế nữa trường cũng lọt TOP 100 Đại học tốt nhất Thế giới.
                             -Trường hiện có 23 ngành nằm trong top 100 thế giới theo xếp hạng các ngành học. Trong
-                            đó có 3 ngành nằm trong top 50: Ngôn ngữ hiện đại, Dược học, Kỹ thuật hóa học.`
+                            đó có 3 ngành nằm trong top 50: Ngôn ngữ hiện đại, Dược học, Kỹ thuật hóa học.`,
+                  open: true
                 },
                 {
                   img: '/images/university/unv2.png',
@@ -26,7 +27,8 @@
                     hàng đầu tại Hàn Quốc. 
                     -Trường cung cấp các chương trình đào tạo đa dạng ở cấp cử nhân, thạc sĩ và tiến sĩ trong
                     nhiều ngành khác nhau, bao gồm cả nghệ thuật, khoa học xã hội, khoa học tự nhiên, kỹ
-                    thuật, kinh doanh, luật, y học và nhiều lĩnh vực khác.`
+                    thuật, kinh doanh, luật, y học và nhiều lĩnh vực khác.`,
+                  open: false
                 } ,
                 {
                   img: '/images/university/unv3.png',
@@ -38,7 +40,8 @@
                     và quan hệ quốc tế tại Hàn Quốc. 
                     -Đại học Hankuk University of Foreign Studies được thành lập vào năm 1954 và đã phát
                     triển thành một trường đại học quan trọng với tầm ảnh hưởng quốc tế về ngoại ngữ và quan
-                    hệ quốc tế.`
+                    hệ quốc tế.`,
+                  open: false
                 } ,
                 {
                   img: '/images/university/unv4.png',
@@ -48,7 +51,8 @@
                   content: `-Cao đẳng khoa học Andong là một trong những trường đào tạo nghề tốt nhất Hàn Quốc
                     được nhiều du học sinh lựa chọn để học tập. 
                     -Cao đẳng khoa học Andong là một trong những trường đào tạo nghề tốt nhất Hàn Quốc
-                    được nhiều du học sinh lựa chọn để học tập.`
+                    được nhiều du học sinh lựa chọn để học tập.`,
+                  open: false
                 } ,
                 {
                   img: '/images/university/unv5.png',
@@ -59,19 +63,19 @@
                     -Top 3 đại học Hàn Quốc có khoa Việt Nam học 
                     -Trường được chọn là một trong 100 trường đại học hàng đầu thế giới trong bảng xếp hạng
                     WURI năm 2022 (Đứng hạng 17 trên thế giới về trao đổi sinh viên; Hạng 28 trên thế giới về
-                    ứng dụng công nghiệp)`
+                    ứng dụng công nghiệp)`,
+                  open: false,
                 } 
             ],
-            active: false
         }
     },
     methods: {
-        mouseover: function(e) {
-            console.log('el:', e.target.offsetHeight );
-            this.active = true
+        mouseover: function(inv) {
+          if (inv.open === false)
+            inv.open = true
         },    
-        mouseleave: function() {
-            this.active = false
+        mouseleave: function(inv) {
+            inv.open = false
         }
     }
   }
@@ -87,19 +91,22 @@
                 </div>
                 <Transition>
                     <div class="flex flex-col w-full">
-                        <div v-for="(inv, index) in unvs" :key="inv" :class="index===0 ? '!border-[3px]' : ''" 
+                        <div v-for="(inv, index) in unvs" :key="inv" :class="index===0 ? '!border-[3px] active-first' : ''" 
                             :title="inv?.subtitle"
-                            class="p-5 mb-2.5 md:mb-6 rounded-[25px] border hover:border-[3px] border-black transition-all bg-white">
-                            <div  v-on:mouseover="mouseover"
-                                    v-on:mouseleave="mouseleave" :ref="'infoBox-' + index" :class="index===0 ? '!max-h-full' : ''" class="flex box-item flex-col md:flex-row h-full [&>div>.thumb-image]:hover:hidden [&>div>.base-image]:hover:block [&>.unv-content>p]:hover:block [&>.unv-content>p]:hover:opacity-100 duration-700 delay-150 transition-all overflow-hidden">
+                            class="items p-5 mb-2.5 md:mb-6 bg-white rounded-[25px] border overflow-hidden hover:border-[3px] border-black ">
+                            <div  v-on:mouseover="mouseover(inv)"
+                                    v-on:mouseleave="mouseleave(inv)" :class="index===0 ? '!max-h-full' : ''" 
+                                    v-bind:class="inv.open ? 'onmousover' : ''"
+                                    class="box-wrap-content relative flex box-item max-h-[160px] transition-all duration-700 delay-150 transition-all h-full flex-col md:flex-row overflow-hidden">
+                                   
                                 <div class="flex w-full md:w-1/2 rounded-[25px] overflow-hidden">
-                                    <img class="base-image" :src="inv?.img" loading="lazy" alt="Đại học Hàn Quốc"/>
-                                    <img class="thumb-image object-cover hidden" :src="inv?.thumb" loading="lazy" alt="Đại học hàn quốc">
+                                    <img :class="inv.open ? 'block' : 'block'" class="base-image max-h-[376px] md:max-h-full w-full object-cover" :src="inv?.img" loading="lazy" alt="Đại học Hàn Quốc"/>
+                                    <!-- <img :class="inv.open ? 'hidden  min-h-[400px]' : 'block'" class="block thumb-image object-cover" :src="inv?.thumb" loading="lazy" alt="Đại học hàn quốc"> -->
                                 </div>
-                                <div class="unv-content mt-9 md:mt-0 flex flex-col w-full md:pl-8 md:w-1/2">
-                                    <h2 :class="index===0 ? '!text-dark' : ''" class="text-white md:text-dark text-[27px] font-bold leading-normal mb-2 md:mt-12">{{ inv?.title  }}</h2>
-                                    <h3 :class="index===0 ? '!text-dark' : ''" class="text-white md:text-dark text-[19px] font-bold leading-normal mb-2 tracking-tight">{{ inv?.subtitle }}</h3>
-                                    <p class="text-white md:text-grey whitespace-pre-line text-15 font-normal leading-5 mt-5">{{ inv?.content }}</p>
+                                <div class="unv-content mt-9 md:mt-0 flex flex-col w-full md:pl-8 md:w-1/2  overflow-y-auto no-scrollbar">
+                                    <h2 :class="{ active: index === 0}" class="heading content-white transition-all text-dark text-[27px] font-bold leading-normal mb-2 md:mt-12">{{ inv?.title  }}</h2>
+                                    <h3 class="content-white text-dark text-[19px] font-bold leading-normal mb-2 tracking-tight">{{ inv?.subtitle }}</h3>
+                                    <p :class="index === 0 ? '!opacity-100 !visible' : ''" class="box-text-content pb-8 opacity-0 invisible transition-all duration-300 text-grey whitespace-pre-line text-15 font-normal leading-5 mt-5">{{ inv?.content }}</p>
                                 </div>
                             </div>
                         </div>
@@ -109,25 +116,25 @@
         </div>
     </section>
 </template>
-<style>
-    .box-item:hover p,
-    .box-item:hover h3,
-    .box-item:hover h2 {
-        color: black;
+<style scoped>
+    .no-scrollbar::-webkit-scrollbar {
+          display: none;
     }
-
-    .v-enter-active,
-    .v-leave-active {
-    transition: opacity 0.5s ease;
+    .no-scrollbar {
+          -ms-overflow-style: none; 
+          scrollbar-width: none; 
     }
-
-    .v-enter-from,
-    .v-leave-to {
-    opacity: 0;
+    .onmousover {
+      @apply hover:max-h-[800px] md:hover:max-h-[500px];
     }
-
-    /* .text-shadow-white {
-        text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
-               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
-    } */
+    .onmousover .box-text-content  {
+      @apply visible opacity-100;
+    }
+    .items:not(.active-first) .box-wrap-content:not(.onmousover) .unv-content {
+      @apply absolute h-full overflow-hidden bg-[#00000080] rounded-[16px] md:bg-white 
+      px-8 py-6 mt-0 md:py-0 md:static top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 md:translate-x-0 md:translate-y-0;
+      .content-white {
+        @apply text-white md:text-black;
+      }
+    }
 </style>
