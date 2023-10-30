@@ -7,10 +7,11 @@
                 <p class="text-base px-4 mt-3 font-normal max-w-[400px] md:w-[800px] mx-auto">Bạn muốn đi du học nhưng chưa biết phải chuẩn bị như thế nào? Bạn cần tư vấn 1:1 từ chọn trường cho đến khi quá trình du học kết thúc? Vậy, hãy liên lạc ngay với chúng tôi!</p>
             </div>
             <div class="px-10 xs:px-16 max-w-[564px] mx-auto">
-                <form  @submit="handleSubmit">
+                <Form  novalidate :validation-schema="schema" @submit.prevent="handleSubmit">
                     <div class="group-field">
                         <label class="flex" for="#name"><StarIcon class="mr-1"/> Họ & tên</label>
-                        <input v-model="formData.name" id="name" name="name" type="text"/>
+                        <Field v-model="formData.name" id="name" name="name" type="text"/>
+                        <ErrorMessage name="name" />
                     </div>
                     <div class="group-field">
                         <label class="flex" for="#dob"><StarIcon class="mr-1"/> Ngày sinh</label>
@@ -43,19 +44,19 @@
                             <div class="">
                                 <select id="residence-city" v-model="selectedResidenceCity" @change="updateResidenceDistricts">
                                     <option value="" class="text-grey">Tỉnh/Thành phố</option>
-                                    <option v-for="city in sortedResidenceCities" :value="city">{{ city.Name }}</option>
+                                    <option v-for="city in sortedResidenceCities" :key="city" :value="city">{{ city.Name }}</option>
                                 </select>
                             </div>
                             <div class="">
                                 <select id="residence-district" v-model="selectedResidenceDistrict" @change="updateResidenceWards">
                                     <option value="" class="text-grey">Quận/Huyện</option>
-                                    <option v-for="district in sortedResidenceDistricts" :value="district">{{ district.Name }}</option>
+                                    <option v-for="district in sortedResidenceDistricts" :key="district" :value="district">{{ district.Name }}</option>
                                 </select>
                             </div>
                             <div class="">
                                 <select id="residence-ward" v-model="selectedResidenceWard">
                                     <option value="" class="text-grey">Xã/Phường</option>
-                                    <option v-for="ward in sortedResidenceWards" :value="ward">{{ ward.Name }}</option>
+                                    <option v-for="ward in sortedResidenceWards" :key="ward" :value="ward">{{ ward.Name }}</option>
                                 </select>
                             </div>
                         </div>
@@ -66,37 +67,37 @@
                             <div class="">
                                 <select id="hometown-city" v-model="selectedHometownCity" @change="updateHometownDistricts">
                                     <option value="" class="text-grey">Tỉnh/Thành phố</option>
-                                    <option v-for="city in sortedHometownCities" :value="city">{{ city.Name }}</option>
+                                    <option v-for="city in sortedHometownCities" :key="city" :value="city">{{ city.Name }}</option>
                                 </select>
                             </div>
                             <div class="">
                                 <select id="hometown-district" v-model="selectedHometownDistrict" @change="updateHometownWards">
                                     <option value="" class="text-grey">Quận/Huyện</option>
-                                    <option v-for="district in sortedHometownDistricts" :value="district">{{ district.Name }}</option>
+                                    <option v-for="district in sortedHometownDistricts" :key="district" :value="district">{{ district.Name }}</option>
                                 </select>
                             </div>
                             <div class="">
                                 <select id="hometown-ward" v-model="selectedHometownWard">
                                     <option value="" class="text-grey">Xã/Phường</option>
-                                    <option v-for="ward in sortedHometownWards" :value="ward">{{ ward.Name }}</option>
+                                    <option v-for="ward in sortedHometownWards" :key="ward" :value="ward">{{ ward.Name }}</option>
                                 </select>
                             </div>
                         </div>
                    </div>
                     <div class="group-field">
                         <label for="dropdown">Bằng cấp hiện tại</label>
-                        <select v-model="selectedDegree" id="dropdown">
+                        <select v-model="formData.selectedDegree" id="dropdown">
                             <option v-for="degree in degreeOptions" :key="degree" :value="degree">{{ degree }}</option>>
                         </select>        
                     </div>
-                    <div  v-if="selectedDegree === 'Tốt nghiệp THPT'" class="group-field">
+                    <div  v-if="formData.selectedDegree === 'Tốt nghiệp THPT'" class="group-field">
                         <label class="flex" for="#">Điểm TB 3 năm</label>
                         <div class="flex items-center relative">
                              <input v-model="formData.averageScoreC3" id="degree" type="text" name="averageScore" class="w-full" />
                              <InfoPopup heading="Thông tin" content="- Hãy lựa chọn trường 'bằng cấp hiện tại' trước khi nhập trường này" />
                         </div>
                     </div>
-                    <div v-if="selectedDegree === 'Tốt nghiệp Đại học' || selectedDegree === 'Tốt nghiệp Trung cấp/ Cao đẳng'" class="group-field">
+                    <div v-if="formData.selectedDegree === 'Tốt nghiệp Đại học' || formData.selectedDegree === 'Tốt nghiệp Trung cấp/ Cao đẳng'" class="group-field">
                         <label class="flex" for="#GPA">GPA</label>
                         <div class="flex items-center relative">
                              <input v-model="formData.scoreGPA" id="GPA" type="text" name="GPA" class="w-full" />
@@ -119,16 +120,12 @@
                             Đăng kí
                         </button>
                     </div>
-                </form>
+                </Form>
             </div>
         </div>
     </section>
 </template>
 <style scoped>
-    .dropdown:hover>.dropdown-content {
-        display: block;
-    }
-
     textarea {
         overflow: auto; /* Cho phép thanh cuộn khi cần thiết */
     }
@@ -149,6 +146,7 @@
     import StarIcon from '@/components/icons/StarIcon.vue';
     import DropdownIcon from '@/components/icons/DropdownIcon.vue';
     import InfoPopup from '@/components/InfoPopup.vue';
+
 </script>
 <script>    
     import Cookies from 'universal-cookie';
@@ -172,12 +170,11 @@
                         name: "",
                         dob: "",
                         sex: "",
-                        sex: "",
                         phone: "",
                         email: "",
                         Residence: "",
                         Hometown: "",
-                        degree: "",
+                        selectedDegree: "Tốt nghiệp Đại học",
                         averageScoreC3: "",
                         scoreGPA: "",
                         timeStudyAbort: "",
@@ -207,6 +204,7 @@
                 sortedResidenceCities: function() {
                     return this.cities.slice().sort((a, b) => a.Name.localeCompare(b.Name));
                 },
+                // eslint-disable-next-line vue/return-in-computed-property
                 sortedResidenceDistricts: function() {
                     if (this.selectedResidenceCity) {
                         const selectedCity = this.cities.find(city => city.Id === this.selectedResidenceCity.Id);
@@ -216,6 +214,7 @@
                         return [];
                     }
                 },
+                // eslint-disable-next-line vue/return-in-computed-property
                 sortedResidenceWards: function() {
                     if (this.selectedResidenceDistrict) {
                         const selectedCity = this.cities.find(city => city.Id === this.selectedResidenceCity.Id);
@@ -231,6 +230,7 @@
                 sortedHometownCities: function() {
                     return this.cities.slice().sort((a, b) => a.Name.localeCompare(b.Name));
                 },
+                // eslint-disable-next-line vue/return-in-computed-property                
                 sortedHometownDistricts: function() {
                     if (this.selectedHometownCity) {
                         const selectedCity = this.cities.find(city => city.Id === this.selectedHometownCity.Id);
@@ -240,6 +240,7 @@
                         return [];
                     }
                 },
+                // eslint-disable-next-line vue/return-in-computed-property
                 sortedHometownWards: function() {
                     if (this.selectedHometownDistrict) {
                         const selectedCity = this.cities.find(city => city.Id === this.selectedHometownCity.Id);
@@ -267,7 +268,7 @@
                     this.selectedHometownWard = ''; 
                 },
                 
-                handleSubmit(e) {
+                handleSubmit() {
                     // this.formData.Residence = { 
                     //     Ids: [this.selectedResidenceWard.Id, this.selectedResidenceDistrict.Id, this.selectedResidenceCity.Id ], 
                     //     Names: [this.selectedResidenceWard.Name, this.selectedResidenceDistrict.Name, this.selectedResidenceCity.Name] 
@@ -276,7 +277,8 @@
                     //     Ids: [this.selectedHometownWard.Id, this.selectedHometownDistrict.Id, this.selectedHometownCity.Id ], 
                     //     Names: [this.selectedHometownWard.Name, this.selectedHometownDistrict.Name, this.selectedHometownCity.Name] 
                     // }
-                    e
+                    console.log(this.formData)
+                    
                     if (this.formData) {
                         cookies.set('temporaryFormData', this.formData);
                     }

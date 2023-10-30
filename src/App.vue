@@ -4,12 +4,23 @@
     import Footer from './components/FooterLand.vue';
 
     import HeroBanner from './components/sections/HeroBanner.vue';
-    import ProjectCarousel from './components/sections/ProjectCarousel.vue';
     import Advise from './components/sections/AdviseStudy.vue';
     import University from './components/sections/UniversityShow.vue';
     import FlowAbroad from './components/sections/FlowAbroad.vue';
     import StudentReview from './components/sections/StudentReview.vue';
     import Register from './components/sections/RegisterStudy.vue';
+
+    import { defineAsyncComponent } from 'vue'
+
+    const AsyncProjectCarousel = defineAsyncComponent({
+        loader: () => import('./components/sections/ProjectCarousel.vue'),
+
+        // loadingComponent: LoadingComponent,
+        delay: 200,
+        // errorComponent: ErrorComponent,
+        timeout: 3000
+    })
+
 </script>
 <template>
     <BaseLayout>
@@ -18,7 +29,7 @@
         </template>
 
         <HeroBanner/>
-        <ProjectCarousel/>
+        <AsyncProjectCarousel/>
         <Advise/>
         <University/>
         <FlowAbroad/>

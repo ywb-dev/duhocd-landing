@@ -13,7 +13,7 @@
     },
     methods: {
         handleScroll() {
-            if (window.scrollY > 400) {
+            if (window.scrollY > 40) {
                 this.isSticky = true
             } else {
                 this.isSticky = false
@@ -35,21 +35,23 @@
 
 </script>
 <template>
-   <div :class="{ 'headroom--unpinned': scrolled }"
-      v-show="handleScroll" class="-top-full left-0 w-full duration-300 delay-200 flex justify-between px-4 md:px-8 transition-all"
-      v-bind:class="[isSticky ? 'fixed z-9999 !top-0 sticky-header bg-[#f4f4f4]' : 'relative hero-gradiant']">
-        <div class="logo-wrap py-7 flex justify-center items-center">
-           <a href="#" title="Du học đi" class="block">
-            <LogoIcon class="w-20 logo h-auto"/>
-           </a>
-        </div>
-        <Navbar/>
-        <div class="flex items-center justify-center hidden xl:flex">
-            <a href="#" title="tư vấn" class="btn block rounded-tl-2xl transition-all font-extrabold leading-normal">
-                TƯ VẤN
-            </a>
-        </div>
-   </div>
+   <Transition name="fade">
+    <div :class="{ 'headroom--unpinned': scrolled }"
+          v-show="handleScroll" class="-top-full left-0 w-full duration-1000 delay-200 flex justify-between px-4 md:px-8 transition-all"
+          v-bind:class="[isSticky ? 'fixed z-9999 !top-0 h-[88px] sticky-header header--transparent' : 'relative hero-gradiant']">
+            <div class="logo-wrap py-7 flex justify-center items-center">
+               <a href="#" title="Du học đi" class="block">
+                <LogoIcon class="w-20 logo h-auto"/>
+               </a>
+            </div>
+            <Navbar/>
+            <div class="flex items-center justify-center hidden xl:flex">
+                <a href="#" title="tư vấn" class="btn block rounded-tl-2xl transition-all font-extrabold leading-normal">
+                    TƯ VẤN
+                </a>
+            </div>
+       </div>
+   </Transition>
 </template>
 <style scoped>
     .sticky-header .logo-wrap  {
@@ -57,5 +59,16 @@
     }
     .logo-wrap .logo {
         @apply w-16;
+    }
+
+    .fade-enter-active,
+    .fade-leave-active {
+        transition: opacity 0.5s ease;
+    }
+
+    .fade-enter-from,
+    .fade-leave-to {
+        opacity: 0;
+        height: auto;
     }
 </style>

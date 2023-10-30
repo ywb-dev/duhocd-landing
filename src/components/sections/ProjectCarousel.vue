@@ -1,6 +1,6 @@
 <template>
     <section id="whychoose">
-       <div class="relative contaner max-w-[1036px] mx-8 lg:mx-auto mt-24 overflow-hidden">
+       <div class="relative contaner mx-8 lg:ml-24 lg:mr-0 mt-24 overflow-hidden">
             <div class="w-full flex justify-center text-center mb-12"> 
                 <h2 class="text-dark font-bold text-center text-[32px] leading-10 lg:text-[56px] w-[600px] lg:leading-[62.5px] mx-auto">Tại sao nên <br> du học Hàn Quốc</h2>
             </div>
@@ -25,11 +25,15 @@
                             slidesPerView: 3.3,
                             spaceBetween: 20,
                         },
+                        '1440': {
+                            slidesPerView: 3.3,
+                            spaceBetween: 40,
+                        },
                     }"
                     :modules="modules"
                     class="mySwiper"
                 >
-                    <swiper-slide v-for="(project, index) in projects" :key="project" class="swiper-item">
+                    <swiper-slide v-for="project in projects" :key="project" class="swiper-item">
                         <div class="relative">
                             <div class="absolute top-0 w-full">
                                 <img class="object-contain" :src="project.image" :alt="project.alt" />
@@ -97,7 +101,7 @@
         @apply text-white;
     }
     .swiper-item {
-        @apply h-full bg-white max-h-[335px] border-[3px] border-beebright rounded-tl-lg rounded-br-lg p-7;
+        @apply h-full bg-white max-h-[335px] border-[3px] border-beebright rounded-tl-lg rounded-br-lg p-7 2xl:py-12;
     }
     .swiper-item {
         box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.14);

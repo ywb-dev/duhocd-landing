@@ -12,7 +12,7 @@
                 v-for="item in items" 
                 :key="item?.id" 
                 class="text-base text-center whitespace-nowrap font-bold leading-normal no-underline uppercase 
-                    px-4 py-3 lg:py-7 text-grey hover:text-primary hover:underline" 
+                    px-4 py-3 lg:py-7 text-dark hover:text-primary hover:underline" 
                 :href="'#' + item.id"
                 @click="handleActive(item.index)"
                 :class="itemActive == item.index ? 'text-primary !underline' : ''"
