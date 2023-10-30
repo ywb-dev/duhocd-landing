@@ -94,6 +94,7 @@ label {
   margin-bottom: 8px;
 }
 
+textarea,
 select,
 input {
   border-radius: 50px;
@@ -106,6 +107,10 @@ input {
   -webkit-appearance: none;
 }
 
+select option[value=""] {
+  color: #A0A0A0;
+}
+
 select {
   position: relative;
   width: 100%;
@@ -116,4 +121,23 @@ select {
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
+}
+
+.group-field button {
+  @apply text-base lg:text-[20px];
+}
+
+.group-field button {
+  height: 58px;
+  box-shadow: -5px 5px 0px 0px #F1DEB5;
+  border-radius: 20px 0px;
+  font-weight: 800;
+  background-color: #4EA9EB;
+  color: white;
+  transition: 0.3s ease;
+  will-change: opacity;
+}
+
+.group-field button:hover {
+  opacity: 0.8;
 }

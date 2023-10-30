@@ -6,7 +6,7 @@
                     <img class="w-14 mx-auto md:w-20 object-contain mb-5 md:mb-0" src="/images/university/illustration_Achie_ement.png" loading="lazy" alt="chứng nhận">
                     <h2 class="text-dark text-center font-bold text-3xl -tracking-[0.4px] md:text-68 md:leading-[78px]">Các học viên đánh giá như nào về DUHOCD.com</h2>
                 </div>
-                <div class="flex flex-col">
+                 <div class="flex flex-col">
                     <swiper v-if="mobile"
                     :spaceBetween="40"
                     :navigation="true"
@@ -88,17 +88,17 @@
       data() {
         return {
             reviews: [
-                { image: 'images/reviews/review1.png', author: 'Lê Trung Hiếu', comment: 'Nhờ sự quan tâm chu đáo của trung tâm từ lúc tư vấn chọn trường, chi phí du học cho đến khi xuất cảnh nên mình đã có thể yên tâm đi du học.' },
+                { image: 'images/reviews/review1.png', author: 'Lê Trung Hiếu', comment: 'Nhờ sự quan tâm chu đáo của trung tâm từ lúc tư vấn chọn trường, chi phí du học cho đến khi xuất cảnh nên mình đã có thể yên tâm đi du học.', bgbox: '@/images/review/box-message-1.png'},
                 { image: 'images/reviews/review2.png', author: 'Hoàng Mai Anh', comment: 'Em muốn đi du học nhưng đang mơ hồ không biết phải bắt đầu tìm hiểu từ đâu. Cảm ơn trung tâm du học đã nhiệt tình tư vấn cho em ạ.' },
-                { image: 'images/reviews/review3.png', author: 'Nguyễn Thu Thảo', comment: 'Mình không quen ai ở Hàn cả, hồi sang Hàn du học sống một mình có rất nhiều vấn đề phát sinh nhưng rất may trung tâm du học này đã nhiệt tình giúp đỡ, hỗ trợ mình.' },
-                { image: 'images/reviews/review4.png', author: 'Trần Thị Diệp Lê', comment: 'Tìm kiếm một số thứ về thông tin du học Hàn Quốc trên mạng không có. May mình đã được giải quyết những thắc mắc qua tư vấn 1:1 ở trung tâm này.' },
-                { image: 'images/reviews/review5.png', author: 'Nguyễn Thu Thảo', comment: 'Thông tin về du học được tư vấn từ trung tâm mình thấy rất chính xác và đáng tin cậy vì giám đốc trung tâm là người Hàn.)' },
-                { image: 'images/reviews/review6.png', author: 'Lương Nguyễn Việt Sơn', comment: 'Ban đầu mình không biết đi du học nước nào, khá là mông lung. Nhưng sau khi được tư vấn nhiệt tình và cân nhắc kĩ, mình đã quyết định đi du học Hàn Quốc. Hiện tại thì mình thấy quyết định này là vô cùng đúng đắn.' }
+                { image: 'images/reviews/review3.png', author: 'Nguyễn Thu Thảo', comment: 'Mình không quen ai ở Hàn cả, hồi sang Hàn du học sống một mình có rất nhiều vấn đề phát sinh nhưng rất may trung tâm du học này đã nhiệt tình giúp đỡ, hỗ trợ mình.', bgbox: '@/images/review/box-message-2.png'},
+                { image: 'images/reviews/review4.png', author: 'Trần Thị Diệp Lê', comment: 'Tìm kiếm một số thứ về thông tin du học Hàn Quốc trên mạng không có. May mình đã được giải quyết những thắc mắc qua tư vấn 1:1 ở trung tâm này.', bgbox: '@/images/review/box-message-1.png' },
+                { image: 'images/reviews/review5.png', author: 'Nguyễn Thu Thảo', comment: 'Thông tin về du học được tư vấn từ trung tâm mình thấy rất chính xác và đáng tin cậy vì giám đốc trung tâm là người Hàn.)', bgbox: '@/images/review/box-message-2.png'  },
+                { image: 'images/reviews/review6.png', author: 'Lương Nguyễn Việt Sơn', comment: 'Ban đầu mình không biết đi du học nước nào, khá là mông lung. Nhưng sau khi được tư vấn nhiệt tình và cân nhắc kĩ, mình đã quyết định đi du học Hàn Quốc. Hiện tại thì mình thấy quyết định này là vô cùng đúng đắn.', bgbox: '@/images/review/box-message-1.png'}
             ],
             autoplay: {
                 delay: 8000,
                 disableOnInteraction: false
-            },
+            }, 
             loop: true,
             centeredSlides: false,
             slidesPerView: 'auto',

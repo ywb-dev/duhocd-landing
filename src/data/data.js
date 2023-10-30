@@ -1,11 +1,11 @@
 const dataProvince = [
   {
     Id: '01',
-    Name: 'Thành phố Hà Nội',
+    Name: 'Hà Nội',
     Districts: [
       {
         Id: '001',
-        Name: 'Quận Ba Đình',
+        Name: 'Ba Đình',
         Wards: [
           { Id: '00001', Name: 'Phường Phúc Xá', Level: 'Phường' },
           { Id: '00004', Name: 'Phường Trúc Bạch', Level: 'Phường' },
@@ -25,7 +25,7 @@ const dataProvince = [
       },
       {
         Id: '002',
-        Name: 'Quận Hoàn Kiếm',
+        Name: 'Hoàn Kiếm',
         Wards: [
           { Id: '00037', Name: 'Phường Phúc Tân', Level: 'Phường' },
           { Id: '00040', Name: 'Phường Đồng Xuân', Level: 'Phường' },
@@ -49,7 +49,7 @@ const dataProvince = [
       },
       {
         Id: '003',
-        Name: 'Quận Tây Hồ',
+        Name: 'Tây Hồ',
         Wards: [
           { Id: '00091', Name: 'Phường Phú Thượng', Level: 'Phường' },
           { Id: '00094', Name: 'Phường Nhật Tân', Level: 'Phường' },
@@ -63,7 +63,7 @@ const dataProvince = [
       },
       {
         Id: '004',
-        Name: 'Quận Long Biên',
+        Name: 'Long Biên',
         Wards: [
           { Id: '00115', Name: 'Phường Thượng Thanh', Level: 'Phường' },
           { Id: '00118', Name: 'Phường Ngọc Thụy', Level: 'Phường' },
@@ -83,7 +83,7 @@ const dataProvince = [
       },
       {
         Id: '005',
-        Name: 'Quận Cầu Giấy',
+        Name: 'Cầu Giấy',
         Wards: [
           { Id: '00157', Name: 'Phường Nghĩa Đô', Level: 'Phường' },
           { Id: '00160', Name: 'Phường Nghĩa Tân', Level: 'Phường' },
@@ -97,7 +97,7 @@ const dataProvince = [
       },
       {
         Id: '006',
-        Name: 'Quận Đống Đa',
+        Name: 'Đống Đa',
         Wards: [
           { Id: '00178', Name: 'Phường Cát Linh', Level: 'Phường' },
           { Id: '00181', Name: 'Phường Văn Miếu', Level: 'Phường' },
@@ -124,7 +124,7 @@ const dataProvince = [
       },
       {
         Id: '007',
-        Name: 'Quận Hai Bà Trưng',
+        Name: 'Hai Bà Trưng',
         Wards: [
           { Id: '00241', Name: 'Phường Nguyễn Du', Level: 'Phường' },
           { Id: '00244', Name: 'Phường Bạch Đằng', Level: 'Phường' },
@@ -148,7 +148,7 @@ const dataProvince = [
       },
       {
         Id: '008',
-        Name: 'Quận Hoàng Mai',
+        Name: 'Hoàng Mai',
         Wards: [
           { Id: '00301', Name: 'Phường Thanh Trì', Level: 'Phường' },
           { Id: '00304', Name: 'Phường Vĩnh Hưng', Level: 'Phường' },
@@ -168,7 +168,7 @@ const dataProvince = [
       },
       {
         Id: '009',
-        Name: 'Quận Thanh Xuân',
+        Name: 'Thanh Xuân',
         Wards: [
           { Id: '00343', Name: 'Phường Nhân Chính', Level: 'Phường' },
           { Id: '00346', Name: 'Phường Thượng Đình', Level: 'Phường' },
@@ -185,7 +185,7 @@ const dataProvince = [
       },
       {
         Id: '016',
-        Name: 'Huyện Sóc Sơn',
+        Name: 'Sóc Sơn',
         Wards: [
           { Id: '00376', Name: 'Thị trấn Sóc Sơn', Level: 'Thị trấn' },
           { Id: '00379', Name: 'Xã Bắc Sơn', Level: 'Xã' },
@@ -217,7 +217,7 @@ const dataProvince = [
       },
       {
         Id: '017',
-        Name: 'Huyện Đông Anh',
+        Name: 'Đông Anh',
         Wards: [
           { Id: '00454', Name: 'Thị trấn Đông Anh', Level: 'Thị trấn' },
           { Id: '00457', Name: 'Xã Xuân Nộn', Level: 'Xã' },
@@ -247,7 +247,7 @@ const dataProvince = [
       },
       {
         Id: '018',
-        Name: 'Huyện Gia Lâm',
+        Name: 'Gia Lâm',
         Wards: [
           { Id: '00526', Name: 'Thị trấn Yên Viên', Level: 'Thị trấn' },
           { Id: '00529', Name: 'Xã Yên Thường', Level: 'Xã' },
@@ -275,7 +275,7 @@ const dataProvince = [
       },
       {
         Id: '019',
-        Name: 'Quận Nam Từ Liêm',
+        Name: 'Nam Từ Liêm',
         Wards: [
           { Id: '00592', Name: 'Phường Cầu Diễn', Level: 'Phường' },
           { Id: '00622', Name: 'Phường Xuân Phương', Level: 'Phường' },
@@ -291,7 +291,7 @@ const dataProvince = [
       },
       {
         Id: '020',
-        Name: 'Huyện Thanh Trì',
+        Name: 'Thanh Trì',
         Wards: [
           { Id: '00640', Name: 'Thị trấn Văn Điển', Level: 'Thị trấn' },
           { Id: '00643', Name: 'Xã Tân Triều', Level: 'Xã' },
@@ -313,7 +313,7 @@ const dataProvince = [
       },
       {
         Id: '021',
-        Name: 'Quận Bắc Từ Liêm',
+        Name: 'Bắc Từ Liêm',
         Wards: [
           { Id: '00595', Name: 'Phường Thượng Cát', Level: 'Phường' },
           { Id: '00598', Name: 'Phường Liên Mạc', Level: 'Phường' },
@@ -332,7 +332,7 @@ const dataProvince = [
       },
       {
         Id: '250',
-        Name: 'Huyện Mê Linh',
+        Name: 'Mê Linh',
         Wards: [
           { Id: '08973', Name: 'Thị trấn Chi Đông', Level: 'Thị trấn' },
           { Id: '08974', Name: 'Xã Đại Thịnh', Level: 'Xã' },
@@ -356,7 +356,7 @@ const dataProvince = [
       },
       {
         Id: '268',
-        Name: 'Quận Hà Đông',
+        Name: 'Hà Đông',
         Wards: [
           { Id: '09538', Name: 'Phường Nguyễn Trãi', Level: 'Phường' },
           { Id: '09541', Name: 'Phường Mộ Lao', Level: 'Phường' },
@@ -400,7 +400,7 @@ const dataProvince = [
       },
       {
         Id: '271',
-        Name: 'Huyện Ba Vì',
+        Name: 'Ba Vì',
         Wards: [
           { Id: '09619', Name: 'Thị trấn Tây Đằng', Level: 'Thị trấn' },
           { Id: '09625', Name: 'Xã Phú Cường', Level: 'Xã' },
@@ -437,7 +437,7 @@ const dataProvince = [
       },
       {
         Id: '272',
-        Name: 'Huyện Phúc Thọ',
+        Name: 'Phúc Thọ',
         Wards: [
           { Id: '09715', Name: 'Thị trấn Phúc Thọ', Level: 'Thị trấn' },
           { Id: '09718', Name: 'Xã Vân Hà', Level: 'Xã' },
@@ -464,7 +464,7 @@ const dataProvince = [
       },
       {
         Id: '273',
-        Name: 'Huyện Đan Phượng',
+        Name: 'Đan Phượng',
         Wards: [
           { Id: '09784', Name: 'Thị trấn Phùng', Level: 'Thị trấn' },
           { Id: '09787', Name: 'Xã Trung Châu', Level: 'Xã' },
@@ -486,7 +486,7 @@ const dataProvince = [
       },
       {
         Id: '274',
-        Name: 'Huyện Hoài Đức',
+        Name: 'Hoài Đức',
         Wards: [
           { Id: '09832', Name: 'Thị trấn Trạm Trôi', Level: 'Thị trấn' },
           { Id: '09835', Name: 'Xã Đức Thượng', Level: 'Xã' },
@@ -512,7 +512,7 @@ const dataProvince = [
       },
       {
         Id: '275',
-        Name: 'Huyện Quốc Oai',
+        Name: 'Quốc Oai',
         Wards: [
           { Id: '04939', Name: 'Xã Đông Xuân', Level: 'Xã' },
           { Id: '09895', Name: 'Thị trấn Quốc Oai', Level: 'Thị trấn' },
@@ -539,7 +539,7 @@ const dataProvince = [
       },
       {
         Id: '276',
-        Name: 'Huyện Thạch Thất',
+        Name: 'Thạch Thất',
         Wards: [
           { Id: '04927', Name: 'Xã Yên Trung', Level: 'Xã' },
           { Id: '04930', Name: 'Xã Yên Bình', Level: 'Xã' },
@@ -568,7 +568,7 @@ const dataProvince = [
       },
       {
         Id: '277',
-        Name: 'Huyện Chương Mỹ',
+        Name: 'Chương Mỹ',
         Wards: [
           { Id: '10015', Name: 'Thị trấn Chúc Sơn', Level: 'Thị trấn' },
           { Id: '10018', Name: 'Thị trấn Xuân Mai', Level: 'Thị trấn' },
@@ -606,7 +606,7 @@ const dataProvince = [
       },
       {
         Id: '278',
-        Name: 'Huyện Thanh Oai',
+        Name: 'Thanh Oai',
         Wards: [
           { Id: '10114', Name: 'Thị trấn Kim Bài', Level: 'Thị trấn' },
           { Id: '10120', Name: 'Xã Cự Khê', Level: 'Xã' },
@@ -633,7 +633,7 @@ const dataProvince = [
       },
       {
         Id: '279',
-        Name: 'Huyện Thường Tín',
+        Name: 'Thường Tín',
         Wards: [
           { Id: '10183', Name: 'Thị trấn Thường Tín', Level: 'Thị trấn' },
           { Id: '10186', Name: 'Xã Ninh Sở', Level: 'Xã' },
@@ -668,7 +668,7 @@ const dataProvince = [
       },
       {
         Id: '280',
-        Name: 'Huyện Phú Xuyên',
+        Name: 'Phú Xuyên',
         Wards: [
           { Id: '10270', Name: 'Thị trấn Phú Minh', Level: 'Thị trấn' },
           { Id: '10273', Name: 'Thị trấn Phú Xuyên', Level: 'Thị trấn' },
@@ -701,7 +701,7 @@ const dataProvince = [
       },
       {
         Id: '281',
-        Name: 'Huyện Ứng Hòa',
+        Name: 'Ứng Hòa',
         Wards: [
           { Id: '10354', Name: 'Thị trấn Vân Đình', Level: 'Thị trấn' },
           { Id: '10357', Name: 'Xã Viên An', Level: 'Xã' },
@@ -736,7 +736,7 @@ const dataProvince = [
       },
       {
         Id: '282',
-        Name: 'Huyện Mỹ Đức',
+        Name: 'Mỹ Đức',
         Wards: [
           { Id: '10441', Name: 'Thị trấn Đại Nghĩa', Level: 'Thị trấn' },
           { Id: '10444', Name: 'Xã Đồng Tâm', Level: 'Xã' },
@@ -766,11 +766,11 @@ const dataProvince = [
   },
   {
     Id: '02',
-    Name: 'Tỉnh Hà Giang',
+    Name: 'Hà Giang',
     Districts: [
       {
         Id: '024',
-        Name: 'Thành phố Hà Giang',
+        Name: 'zHà Giang',
         Wards: [
           { Id: '00688', Name: 'Phường Quang Trung', Level: 'Phường' },
           { Id: '00691', Name: 'Phường Trần Phú', Level: 'Phường' },
@@ -784,7 +784,7 @@ const dataProvince = [
       },
       {
         Id: '026',
-        Name: 'Huyện Đồng Văn',
+        Name: 'Đồng Văn',
         Wards: [
           { Id: '00712', Name: 'Thị trấn Phó Bảng', Level: 'Thị trấn' },
           { Id: '00715', Name: 'Xã Lũng Cú', Level: 'Xã' },
@@ -809,7 +809,7 @@ const dataProvince = [
       },
       {
         Id: '027',
-        Name: 'Huyện Mèo Vạc',
+        Name: 'Mèo Vạc',
         Wards: [
           { Id: '00769', Name: 'Thị trấn Mèo Vạc', Level: 'Thị trấn' },
           { Id: '00772', Name: 'Xã Thượng Phùng', Level: 'Xã' },
@@ -833,7 +833,7 @@ const dataProvince = [
       },
       {
         Id: '028',
-        Name: 'Huyện Yên Minh',
+        Name: 'Yên Minh',
         Wards: [
           { Id: '00820', Name: 'Thị trấn Yên Minh', Level: 'Thị trấn' },
           { Id: '00823', Name: 'Xã Thắng Mố', Level: 'Xã' },
@@ -857,7 +857,7 @@ const dataProvince = [
       },
       {
         Id: '029',
-        Name: 'Huyện Quản Bạ',
+        Name: 'Quản Bạ',
         Wards: [
           { Id: '00874', Name: 'Thị trấn Tam Sơn', Level: 'Thị trấn' },
           { Id: '00877', Name: 'Xã Bát Đại Sơn', Level: 'Xã' },
@@ -876,7 +876,7 @@ const dataProvince = [
       },
       {
         Id: '030',
-        Name: 'Huyện Vị Xuyên',
+        Name: 'Vị Xuyên',
         Wards: [
           { Id: '00703', Name: 'Xã Kim Thạch', Level: 'Xã' },
           { Id: '00706', Name: 'Xã Phú Linh', Level: 'Xã' },
@@ -906,7 +906,7 @@ const dataProvince = [
       },
       {
         Id: '031',
-        Name: 'Huyện Bắc Mê',
+        Name: 'Bắc Mê',
         Wards: [
           { Id: '00982', Name: 'Xã Minh Sơn', Level: 'Xã' },
           { Id: '00985', Name: 'Xã Giáp Trung', Level: 'Xã' },
@@ -925,7 +925,7 @@ const dataProvince = [
       },
       {
         Id: '032',
-        Name: 'Huyện Hoàng Su Phì',
+        Name: 'Hoàng Su Phì',
         Wards: [
           { Id: '01021', Name: 'Thị trấn Vinh Quang', Level: 'Thị trấn' },
           { Id: '01024', Name: 'Xã Bản Máy', Level: 'Xã' },
@@ -955,7 +955,7 @@ const dataProvince = [
       },
       {
         Id: '033',
-        Name: 'Huyện Xín Mần',
+        Name: 'Xín Mần',
         Wards: [
           { Id: '01096', Name: 'Thị trấn Cốc Pài', Level: 'Thị trấn' },
           { Id: '01099', Name: 'Xã Nàn Xỉn', Level: 'Xã' },
@@ -979,7 +979,7 @@ const dataProvince = [
       },
       {
         Id: '034',
-        Name: 'Huyện Bắc Quang',
+        Name: 'Bắc Quang',
         Wards: [
           { Id: '01153', Name: 'Thị trấn Việt Quang', Level: 'Thị trấn' },
           { Id: '01156', Name: 'Thị trấn Vĩnh Tuy', Level: 'Thị trấn' },
@@ -1008,7 +1008,7 @@ const dataProvince = [
       },
       {
         Id: '035',
-        Name: 'Huyện Quang Bình',
+        Name: 'Quang Bình',
         Wards: [
           { Id: '01222', Name: 'Xã Xuân Minh', Level: 'Xã' },
           { Id: '01225', Name: 'Xã Tiên Nguyên', Level: 'Xã' },
@@ -1031,11 +1031,11 @@ const dataProvince = [
   },
   {
     Id: '04',
-    Name: 'Tỉnh Cao Bằng',
+    Name: 'Cao Bằng',
     Districts: [
       {
         Id: '040',
-        Name: 'Thành phố Cao Bằng',
+        Name: 'Cao Bằng',
         Wards: [
           { Id: '01267', Name: 'Phường Sông Hiến', Level: 'Phường' },
           { Id: '01270', Name: 'Phường Sông Bằng', Level: 'Phường' },
@@ -1052,7 +1052,7 @@ const dataProvince = [
       },
       {
         Id: '042',
-        Name: 'Huyện Bảo Lâm',
+        Name: 'Bảo Lâm',
         Wards: [
           { Id: '01290', Name: 'Thị trấn Pác Miầu', Level: 'Thị trấn' },
           { Id: '01291', Name: 'Xã Đức Hạnh', Level: 'Xã' },
@@ -1071,7 +1071,7 @@ const dataProvince = [
       },
       {
         Id: '043',
-        Name: 'Huyện Bảo Lạc',
+        Name: 'Bảo Lạc',
         Wards: [
           { Id: '01321', Name: 'Thị trấn Bảo Lạc', Level: 'Thị trấn' },
           { Id: '01324', Name: 'Xã Cốc Pàng', Level: 'Xã' },
@@ -1094,7 +1094,7 @@ const dataProvince = [
       },
       {
         Id: '045',
-        Name: 'Huyện Hà Quảng',
+        Name: 'Hà Quảng',
         Wards: [
           { Id: '01363', Name: 'Thị trấn Thông Nông', Level: 'Thị trấn' },
           { Id: '01366', Name: 'Xã Cần Yên', Level: 'Xã' },
@@ -1121,7 +1121,7 @@ const dataProvince = [
       },
       {
         Id: '047',
-        Name: 'Huyện Trùng Khánh',
+        Name: 'Trùng Khánh',
         Wards: [
           { Id: '01447', Name: 'Thị trấn Trà Lĩnh', Level: 'Thị trấn' },
           { Id: '01453', Name: 'Xã Tri Phương', Level: 'Xã' },
@@ -1148,7 +1148,7 @@ const dataProvince = [
       },
       {
         Id: '048',
-        Name: 'Huyện Hạ Lang',
+        Name: 'Hạ Lang',
         Wards: [
           { Id: '01534', Name: 'Xã Minh Long', Level: 'Xã' },
           { Id: '01537', Name: 'Xã Lý Quốc', Level: 'Xã' },
@@ -1167,7 +1167,7 @@ const dataProvince = [
       },
       {
         Id: '049',
-        Name: 'Huyện Quảng Hòa',
+        Name: 'Quảng Hòa',
         Wards: [
           { Id: '01474', Name: 'Xã Quốc Toản', Level: 'Xã' },
           { Id: '01576', Name: 'Thị trấn Quảng Uyên', Level: 'Thị trấn' },
@@ -1192,7 +1192,7 @@ const dataProvince = [
       },
       {
         Id: '051',
-        Name: 'Huyện Hoà An',
+        Name: 'Hoà An',
         Wards: [
           { Id: '01654', Name: 'Thị trấn Nước Hai', Level: 'Thị trấn' },
           { Id: '01657', Name: 'Xã Dân Chủ', Level: 'Xã' },
@@ -1213,7 +1213,7 @@ const dataProvince = [
       },
       {
         Id: '052',
-        Name: 'Huyện Nguyên Bình',
+        Name: 'Nguyên Bình',
         Wards: [
           { Id: '01726', Name: 'Thị trấn Nguyên Bình', Level: 'Thị trấn' },
           { Id: '01729', Name: 'Thị trấn Tĩnh Túc', Level: 'Thị trấn' },
@@ -1236,7 +1236,7 @@ const dataProvince = [
       },
       {
         Id: '053',
-        Name: 'Huyện Thạch An',
+        Name: 'Thạch An',
         Wards: [
           { Id: '01786', Name: 'Thị trấn Đông Khê', Level: 'Thị trấn' },
           { Id: '01789', Name: 'Xã Canh Tân', Level: 'Xã' },
@@ -1258,11 +1258,11 @@ const dataProvince = [
   },
   {
     Id: '06',
-    Name: 'Tỉnh Bắc Kạn',
+    Name: 'Bắc Kạn',
     Districts: [
       {
         Id: '058',
-        Name: 'Thành Phố Bắc Kạn',
+        Name: 'Bắc Kạn',
         Wards: [
           { Id: '01834', Name: 'Phường Nguyễn Thị Minh Khai', Level: 'Phường' },
           { Id: '01837', Name: 'Phường Sông Cầu', Level: 'Phường' },
@@ -1276,7 +1276,7 @@ const dataProvince = [
       },
       {
         Id: '060',
-        Name: 'Huyện Pác Nặm',
+        Name: 'Pác Nặm',
         Wards: [
           { Id: '01858', Name: 'Xã Bằng Thành', Level: 'Xã' },
           { Id: '01861', Name: 'Xã Nhạn Môn', Level: 'Xã' },
@@ -1292,7 +1292,7 @@ const dataProvince = [
       },
       {
         Id: '061',
-        Name: 'Huyện Ba Bể',
+        Name: 'Ba Bể',
         Wards: [
           { Id: '01888', Name: 'Thị trấn Chợ Rã', Level: 'Thị trấn' },
           { Id: '01891', Name: 'Xã Bành Trạch', Level: 'Xã' },
@@ -1313,7 +1313,7 @@ const dataProvince = [
       },
       {
         Id: '062',
-        Name: 'Huyện Ngân Sơn',
+        Name: 'Ngân Sơn',
         Wards: [
           { Id: '01936', Name: 'Thị trấn Nà Phặc', Level: 'Thị trấn' },
           { Id: '01939', Name: 'Xã Thượng Ân', Level: 'Xã' },
@@ -1329,7 +1329,7 @@ const dataProvince = [
       },
       {
         Id: '063',
-        Name: 'Huyện Bạch Thông',
+        Name: 'Bạch Thông',
         Wards: [
           { Id: '01969', Name: 'Thị trấn Phủ Thông', Level: 'Thị trấn' },
           { Id: '01975', Name: 'Xã Vi Hương', Level: 'Xã' },
@@ -1349,7 +1349,7 @@ const dataProvince = [
       },
       {
         Id: '064',
-        Name: 'Huyện Chợ Đồn',
+        Name: 'Chợ Đồn',
         Wards: [
           { Id: '02020', Name: 'Thị trấn Bằng Lũng', Level: 'Thị trấn' },
           { Id: '02023', Name: 'Xã Xuân Lạc', Level: 'Xã' },
@@ -1375,7 +1375,7 @@ const dataProvince = [
       },
       {
         Id: '065',
-        Name: 'Huyện Chợ Mới',
+        Name: 'Chợ Mới',
         Wards: [
           { Id: '02086', Name: 'Thị trấn Đồng Tâm', Level: 'Thị trấn' },
           { Id: '02089', Name: 'Xã Tân Sơn', Level: 'Xã' },
@@ -1395,7 +1395,7 @@ const dataProvince = [
       },
       {
         Id: '066',
-        Name: 'Huyện Na Rì',
+        Name: 'Na Rì',
         Wards: [
           { Id: '02137', Name: 'Xã Văn Vũ', Level: 'Xã' },
           { Id: '02140', Name: 'Xã Văn Lang', Level: 'Xã' },
@@ -1420,11 +1420,11 @@ const dataProvince = [
   },
   {
     Id: '08',
-    Name: 'Tỉnh Tuyên Quang',
+    Name: 'Tuyên Quang',
     Districts: [
       {
         Id: '070',
-        Name: 'Thành phố Tuyên Quang',
+        Name: 'Tuyên Quang',
         Wards: [
           { Id: '02200', Name: 'Phường Phan Thiết', Level: 'Phường' },
           { Id: '02203', Name: 'Phường Minh Xuân', Level: 'Phường' },
@@ -1445,7 +1445,7 @@ const dataProvince = [
       },
       {
         Id: '071',
-        Name: 'Huyện Lâm Bình',
+        Name: 'Lâm Bình',
         Wards: [
           { Id: '02233', Name: 'Xã Phúc Yên', Level: 'Xã' },
           { Id: '02242', Name: 'Xã Xuân Lập', Level: 'Xã' },
@@ -1459,7 +1459,7 @@ const dataProvince = [
       },
       {
         Id: '072',
-        Name: 'Huyện Na Hang',
+        Name: 'Na Hang',
         Wards: [
           { Id: '02221', Name: 'Thị trấn Na Hang', Level: 'Thị trấn' },
           { Id: '02227', Name: 'Xã Sinh Long', Level: 'Xã' },
@@ -1477,7 +1477,7 @@ const dataProvince = [
       },
       {
         Id: '073',
-        Name: 'Huyện Chiêm Hóa',
+        Name: 'Chiêm Hóa',
         Wards: [
           { Id: '02287', Name: 'Thị trấn Vĩnh Lộc', Level: 'Thị trấn' },
           { Id: '02299', Name: 'Xã Phúc Sơn', Level: 'Xã' },
@@ -1509,7 +1509,7 @@ const dataProvince = [
       },
       {
         Id: '074',
-        Name: 'Huyện Hàm Yên',
+        Name: 'Hàm Yên',
         Wards: [
           { Id: '02374', Name: 'Thị trấn Tân Yên', Level: 'Thị trấn' },
           { Id: '02377', Name: 'Xã Yên Thuận', Level: 'Xã' },
@@ -1533,7 +1533,7 @@ const dataProvince = [
       },
       {
         Id: '075',
-        Name: 'Huyện Yên Sơn',
+        Name: 'Yên Sơn',
         Wards: [
           { Id: '02431', Name: 'Xã Quí Quân', Level: 'Xã' },
           { Id: '02434', Name: 'Xã Lực Hành', Level: 'Xã' },
@@ -1567,7 +1567,7 @@ const dataProvince = [
       },
       {
         Id: '076',
-        Name: 'Huyện Sơn Dương',
+        Name: 'Sơn Dương',
         Wards: [
           { Id: '02536', Name: 'Thị trấn Sơn Dương', Level: 'Thị trấn' },
           { Id: '02539', Name: 'Xã Trung Yên', Level: 'Xã' },
@@ -1606,11 +1606,11 @@ const dataProvince = [
   },
   {
     Id: '10',
-    Name: 'Tỉnh Lào Cai',
+    Name: 'Lào Cai',
     Districts: [
       {
         Id: '080',
-        Name: 'Thành phố Lào Cai',
+        Name: 'Lào Cai',
         Wards: [
           { Id: '02635', Name: 'Phường Duyên Hải', Level: 'Phường' },
           { Id: '02641', Name: 'Phường Lào Cai', Level: 'Phường' },
@@ -1633,7 +1633,7 @@ const dataProvince = [
       },
       {
         Id: '082',
-        Name: 'Huyện Bát Xát',
+        Name: 'Bát Xát',
         Wards: [
           { Id: '02683', Name: 'Thị trấn Bát Xát', Level: 'Thị trấn' },
           { Id: '02686', Name: 'Xã A Mú Sung', Level: 'Xã' },
@@ -1660,7 +1660,7 @@ const dataProvince = [
       },
       {
         Id: '083',
-        Name: 'Huyện Mường Khương',
+        Name: 'Mường Khương',
         Wards: [
           { Id: '02752', Name: 'Xã Pha Long', Level: 'Xã' },
           { Id: '02755', Name: 'Xã Tả Ngải Chồ', Level: 'Xã' },
@@ -1682,7 +1682,7 @@ const dataProvince = [
       },
       {
         Id: '084',
-        Name: 'Huyện Si Ma Cai',
+        Name: 'Si Ma Cai',
         Wards: [
           { Id: '02800', Name: 'Xã Nàn Sán', Level: 'Xã' },
           { Id: '02803', Name: 'Xã Thào Chư Phìn', Level: 'Xã' },
@@ -1698,7 +1698,7 @@ const dataProvince = [
       },
       {
         Id: '085',
-        Name: 'Huyện Bắc Hà',
+        Name: 'Bắc Hà',
         Wards: [
           { Id: '02839', Name: 'Thị trấn Bắc Hà', Level: 'Thị trấn' },
           { Id: '02842', Name: 'Xã Lùng Cải', Level: 'Xã' },
@@ -1723,7 +1723,7 @@ const dataProvince = [
       },
       {
         Id: '086',
-        Name: 'Huyện Bảo Thắng',
+        Name: 'Bảo Thắng',
         Wards: [
           { Id: '02902', Name: 'Thị trấn N.T Phong Hải', Level: 'Thị trấn' },
           { Id: '02905', Name: 'Thị trấn Phố Lu', Level: 'Thị trấn' },
@@ -1743,7 +1743,7 @@ const dataProvince = [
       },
       {
         Id: '087',
-        Name: 'Huyện Bảo Yên',
+        Name: 'Bảo Yên',
         Wards: [
           { Id: '02947', Name: 'Thị trấn Phố Ràng', Level: 'Thị trấn' },
           { Id: '02950', Name: 'Xã Tân Tiến', Level: 'Xã' },
@@ -1788,7 +1788,7 @@ const dataProvince = [
       },
       {
         Id: '089',
-        Name: 'Huyện Văn Bàn',
+        Name: 'Văn Bàn',
         Wards: [
           { Id: '03055', Name: 'Thị trấn Khánh Yên', Level: 'Thị trấn' },
           { Id: '03061', Name: 'Xã Võ Lao', Level: 'Xã' },
@@ -1818,11 +1818,11 @@ const dataProvince = [
   },
   {
     Id: '11',
-    Name: 'Tỉnh Điện Biên',
+    Name: 'Điện Biên',
     Districts: [
       {
         Id: '094',
-        Name: 'Thành phố Điện Biên Phủ',
+        Name: 'Điện Biên Phủ',
         Wards: [
           { Id: '03124', Name: 'Phường Noong Bua', Level: 'Phường' },
           { Id: '03127', Name: 'Phường Him Lam', Level: 'Phường' },
@@ -1849,7 +1849,7 @@ const dataProvince = [
       },
       {
         Id: '096',
-        Name: 'Huyện Mường Nhé',
+        Name: 'Mường Nhé',
         Wards: [
           { Id: '03154', Name: 'Xã Sín Thầu', Level: 'Xã' },
           { Id: '03155', Name: 'Xã Sen Thượng', Level: 'Xã' },
@@ -1866,7 +1866,7 @@ const dataProvince = [
       },
       {
         Id: '097',
-        Name: 'Huyện Mường Chà',
+        Name: 'Mường Chà',
         Wards: [
           { Id: '03172', Name: 'Thị Trấn Mường Chà', Level: 'Thị trấn' },
           { Id: '03178', Name: 'Xã Xá Tổng', Level: 'Xã' },
@@ -1884,7 +1884,7 @@ const dataProvince = [
       },
       {
         Id: '098',
-        Name: 'Huyện Tủa Chùa',
+        Name: 'Tủa Chùa',
         Wards: [
           { Id: '03217', Name: 'Thị trấn Tủa Chùa', Level: 'Thị trấn' },
           { Id: '03220', Name: 'Xã Huổi Só', Level: 'Xã' },
@@ -1902,7 +1902,7 @@ const dataProvince = [
       },
       {
         Id: '099',
-        Name: 'Huyện Tuần Giáo',
+        Name: 'Tuần Giáo',
         Wards: [
           { Id: '03253', Name: 'Thị trấn Tuần Giáo', Level: 'Thị trấn' },
           { Id: '03259', Name: 'Xã Phình Sáng', Level: 'Xã' },
@@ -1927,7 +1927,7 @@ const dataProvince = [
       },
       {
         Id: '100',
-        Name: 'Huyện Điện Biên',
+        Name: 'Điện Biên',
         Wards: [
           { Id: '03319', Name: 'Xã Mường Pồn', Level: 'Xã' },
           { Id: '03322', Name: 'Xã Thanh Nưa', Level: 'Xã' },
@@ -1954,7 +1954,7 @@ const dataProvince = [
       },
       {
         Id: '101',
-        Name: 'Huyện Điện Biên Đông',
+        Name: 'Điện Biên Đông',
         Wards: [
           { Id: '03203', Name: 'Thị trấn Điện Biên Đông', Level: 'Thị trấn' },
           { Id: '03205', Name: 'Xã Na Son', Level: 'Xã' },
@@ -1974,7 +1974,7 @@ const dataProvince = [
       },
       {
         Id: '102',
-        Name: 'Huyện Mường Ảng',
+        Name: 'Mường Ảng',
         Wards: [
           { Id: '03256', Name: 'Thị trấn Mường Ảng', Level: 'Thị trấn' },
           { Id: '03286', Name: 'Xã Mường Đăng', Level: 'Xã' },
@@ -1990,7 +1990,7 @@ const dataProvince = [
       },
       {
         Id: '103',
-        Name: 'Huyện Nậm Pồ',
+        Name: 'Nậm Pồ',
         Wards: [
           { Id: '03156', Name: 'Xã Nậm Tin', Level: 'Xã' },
           { Id: '03165', Name: 'Xã Pa Tần', Level: 'Xã' },
@@ -2013,11 +2013,11 @@ const dataProvince = [
   },
   {
     Id: '12',
-    Name: 'Tỉnh Lai Châu',
+    Name: 'Lai Châu',
     Districts: [
       {
         Id: '105',
-        Name: 'Thành phố Lai Châu',
+        Name: 'Lai Châu',
         Wards: [
           { Id: '03386', Name: 'Phường Quyết Thắng', Level: 'Phường' },
           { Id: '03387', Name: 'Phường Tân Phong', Level: 'Phường' },
@@ -2030,7 +2030,7 @@ const dataProvince = [
       },
       {
         Id: '106',
-        Name: 'Huyện Tam Đường',
+        Name: 'Tam Đường',
         Wards: [
           { Id: '03390', Name: 'Thị trấn Tam Đường', Level: 'Thị trấn' },
           { Id: '03394', Name: 'Xã Thèn Sin', Level: 'Xã' },
@@ -2049,7 +2049,7 @@ const dataProvince = [
       },
       {
         Id: '107',
-        Name: 'Huyện Mường Tè',
+        Name: 'Mường Tè',
         Wards: [
           { Id: '03433', Name: 'Thị trấn Mường Tè', Level: 'Thị trấn' },
           { Id: '03436', Name: 'Xã Thu Lũm', Level: 'Xã' },
@@ -2069,7 +2069,7 @@ const dataProvince = [
       },
       {
         Id: '108',
-        Name: 'Huyện Sìn Hồ',
+        Name: 'Sìn Hồ',
         Wards: [
           { Id: '03478', Name: 'Thị trấn Sìn Hồ', Level: 'Thị trấn' },
           { Id: '03487', Name: 'Xã Chăn Nưa', Level: 'Xã' },
@@ -2097,7 +2097,7 @@ const dataProvince = [
       },
       {
         Id: '109',
-        Name: 'Huyện Phong Thổ',
+        Name: 'Phong Thổ',
         Wards: [
           { Id: '03391', Name: 'Xã Lả Nhì Thàng', Level: 'Xã' },
           { Id: '03490', Name: 'Xã Huổi Luông', Level: 'Xã' },
@@ -2120,7 +2120,7 @@ const dataProvince = [
       },
       {
         Id: '110',
-        Name: 'Huyện Than Uyên',
+        Name: 'Than Uyên',
         Wards: [
           { Id: '03595', Name: 'Thị trấn Than Uyên', Level: 'Thị trấn' },
           { Id: '03618', Name: 'Xã Phúc Than', Level: 'Xã' },
@@ -2138,7 +2138,7 @@ const dataProvince = [
       },
       {
         Id: '111',
-        Name: 'Huyện Tân Uyên',
+        Name: 'Tân Uyên',
         Wards: [
           { Id: '03598', Name: 'Thị trấn Tân Uyên', Level: 'Thị trấn' },
           { Id: '03601', Name: 'Xã Mường Khoa', Level: 'Xã' },
@@ -2154,7 +2154,7 @@ const dataProvince = [
       },
       {
         Id: '112',
-        Name: 'Huyện Nậm Nhùn',
+        Name: 'Nậm Nhùn',
         Wards: [
           { Id: '03434', Name: 'Thị trấn Nậm Nhùn', Level: 'Thị trấn' },
           { Id: '03460', Name: 'Xã Hua Bun', Level: 'Xã' },
@@ -2173,11 +2173,11 @@ const dataProvince = [
   },
   {
     Id: '14',
-    Name: 'Tỉnh Sơn La',
+    Name: 'Sơn La',
     Districts: [
       {
         Id: '116',
-        Name: 'Thành phố Sơn La',
+        Name: 'Sơn La',
         Wards: [
           { Id: '03646', Name: 'Phường Chiềng Lề', Level: 'Phường' },
           { Id: '03649', Name: 'Phường Tô Hiệu', Level: 'Phường' },
@@ -2195,7 +2195,7 @@ const dataProvince = [
       },
       {
         Id: '118',
-        Name: 'Huyện Quỳnh Nhai',
+        Name: 'Quỳnh Nhai',
         Wards: [
           { Id: '03682', Name: 'Xã Mường Chiên', Level: 'Xã' },
           { Id: '03685', Name: 'Xã Cà Nàng', Level: 'Xã' },
@@ -2212,7 +2212,7 @@ const dataProvince = [
       },
       {
         Id: '119',
-        Name: 'Huyện Thuận Châu',
+        Name: 'Thuận Châu',
         Wards: [
           { Id: '03721', Name: 'Thị trấn Thuận Châu', Level: 'Thị trấn' },
           { Id: '03724', Name: 'Xã Phổng Lái', Level: 'Xã' },
@@ -2247,7 +2247,7 @@ const dataProvince = [
       },
       {
         Id: '120',
-        Name: 'Huyện Mường La',
+        Name: 'Mường La',
         Wards: [
           { Id: '03808', Name: 'Thị trấn Ít Ong', Level: 'Thị trấn' },
           { Id: '03811', Name: 'Xã Nậm Giôn', Level: 'Xã' },
@@ -2269,7 +2269,7 @@ const dataProvince = [
       },
       {
         Id: '121',
-        Name: 'Huyện Bắc Yên',
+        Name: 'Bắc Yên',
         Wards: [
           { Id: '03856', Name: 'Thị trấn Bắc Yên', Level: 'Thị trấn' },
           { Id: '03859', Name: 'Xã Phiêng Ban', Level: 'Xã' },
@@ -2291,7 +2291,7 @@ const dataProvince = [
       },
       {
         Id: '122',
-        Name: 'Huyện Phù Yên',
+        Name: 'Phù Yên',
         Wards: [
           { Id: '03898', Name: 'Thị trấn Phù Yên', Level: 'Thị trấn' },
           { Id: '03901', Name: 'Xã Suối Tọ', Level: 'Xã' },
@@ -2324,7 +2324,7 @@ const dataProvince = [
       },
       {
         Id: '123',
-        Name: 'Huyện Mộc Châu',
+        Name: 'Mộc Châu',
         Wards: [
           { Id: '03979', Name: 'Thị trấn Mộc Châu', Level: 'Thị trấn' },
           { Id: '03982', Name: 'Thị trấn NT Mộc Châu', Level: 'Thị trấn' },
@@ -2345,7 +2345,7 @@ const dataProvince = [
       },
       {
         Id: '124',
-        Name: 'Huyện Yên Châu',
+        Name: 'Yên Châu',
         Wards: [
           { Id: '04060', Name: 'Thị trấn Yên Châu', Level: 'Thị trấn' },
           { Id: '04063', Name: 'Xã Chiềng Đông', Level: 'Xã' },
@@ -2366,7 +2366,7 @@ const dataProvince = [
       },
       {
         Id: '125',
-        Name: 'Huyện Mai Sơn',
+        Name: 'Mai Sơn',
         Wards: [
           { Id: '04105', Name: 'Thị trấn Hát Lót', Level: 'Thị trấn' },
           { Id: '04108', Name: 'Xã Chiềng Sung', Level: 'Xã' },
@@ -2394,7 +2394,7 @@ const dataProvince = [
       },
       {
         Id: '126',
-        Name: 'Huyện Sông Mã',
+        Name: 'Sông Mã',
         Wards: [
           { Id: '04168', Name: 'Thị trấn Sông Mã', Level: 'Thị trấn' },
           { Id: '04171', Name: 'Xã Bó Sinh', Level: 'Xã' },
@@ -2419,7 +2419,7 @@ const dataProvince = [
       },
       {
         Id: '127',
-        Name: 'Huyện Sốp Cộp',
+        Name: 'Sốp Cộp',
         Wards: [
           { Id: '04225', Name: 'Xã Sam Kha', Level: 'Xã' },
           { Id: '04228', Name: 'Xã Púng Bánh', Level: 'Xã' },
@@ -2433,7 +2433,7 @@ const dataProvince = [
       },
       {
         Id: '128',
-        Name: 'Huyện Vân Hồ',
+        Name: 'Vân Hồ',
         Wards: [
           { Id: '03994', Name: 'Xã Suối Bàng', Level: 'Xã' },
           { Id: '04006', Name: 'Xã Song Khủa', Level: 'Xã' },
@@ -2455,11 +2455,11 @@ const dataProvince = [
   },
   {
     Id: '15',
-    Name: 'Tỉnh Yên Bái',
+    Name: 'Yên Bái',
     Districts: [
       {
         Id: '132',
-        Name: 'Thành phố Yên Bái',
+        Name: 'Yên Bái',
         Wards: [
           { Id: '04249', Name: 'Phường Yên Thịnh', Level: 'Phường' },
           { Id: '04252', Name: 'Phường Yên Ninh', Level: 'Phường' },
@@ -2500,7 +2500,7 @@ const dataProvince = [
       },
       {
         Id: '135',
-        Name: 'Huyện Lục Yên',
+        Name: 'Lục Yên',
         Wards: [
           { Id: '04303', Name: 'Thị trấn Yên Thế', Level: 'Thị trấn' },
           { Id: '04306', Name: 'Xã Tân Phượng', Level: 'Xã' },
@@ -2530,7 +2530,7 @@ const dataProvince = [
       },
       {
         Id: '136',
-        Name: 'Huyện Văn Yên',
+        Name: 'Văn Yên',
         Wards: [
           { Id: '04375', Name: 'Thị trấn Mậu A', Level: 'Thị trấn' },
           { Id: '04378', Name: 'Xã Lang Thíp', Level: 'Xã' },
@@ -2561,7 +2561,7 @@ const dataProvince = [
       },
       {
         Id: '137',
-        Name: 'Huyện Mù Căng Chải',
+        Name: 'Mù Căng Chải',
         Wards: [
           { Id: '04456', Name: 'Thị trấn Mù Căng Chải', Level: 'Thị trấn' },
           { Id: '04459', Name: 'Xã Hồ Bốn', Level: 'Xã' },
@@ -2581,7 +2581,7 @@ const dataProvince = [
       },
       {
         Id: '138',
-        Name: 'Huyện Trấn Yên',
+        Name: 'Trấn Yên',
         Wards: [
           { Id: '04498', Name: 'Thị trấn Cổ Phúc', Level: 'Thị trấn' },
           { Id: '04501', Name: 'Xã Tân Đồng', Level: 'Xã' },
@@ -2608,7 +2608,7 @@ const dataProvince = [
       },
       {
         Id: '139',
-        Name: 'Huyện Trạm Tấu',
+        Name: 'Trạm Tấu',
         Wards: [
           { Id: '04585', Name: 'Thị trấn Trạm Tấu', Level: 'Thị trấn' },
           { Id: '04588', Name: 'Xã Túc Đán', Level: 'Xã' },
@@ -2626,7 +2626,7 @@ const dataProvince = [
       },
       {
         Id: '140',
-        Name: 'Huyện Văn Chấn',
+        Name: 'Văn Chấn',
         Wards: [
           { Id: '04621', Name: 'Thị trấn NT Liên Sơn', Level: 'Thị trấn' },
           { Id: '04627', Name: 'Thị trấn NT Trần Phú', Level: 'Thị trấn' },
@@ -2656,7 +2656,7 @@ const dataProvince = [
       },
       {
         Id: '141',
-        Name: 'Huyện Yên Bình',
+        Name: 'Yên Bình',
         Wards: [
           { Id: '04714', Name: 'Thị trấn Yên Bình', Level: 'Thị trấn' },
           { Id: '04717', Name: 'Thị trấn Thác Bà', Level: 'Thị trấn' },
@@ -2688,11 +2688,11 @@ const dataProvince = [
   },
   {
     Id: '17',
-    Name: 'Tỉnh Hoà Bình',
+    Name: 'Hoà Bình',
     Districts: [
       {
         Id: '148',
-        Name: 'Thành phố Hòa Bình',
+        Name: 'Hòa Bình',
         Wards: [
           { Id: '04789', Name: 'Phường Thái Bình', Level: 'Phường' },
           { Id: '04792', Name: 'Phường Tân Hòa', Level: 'Phường' },
@@ -2717,7 +2717,7 @@ const dataProvince = [
       },
       {
         Id: '150',
-        Name: 'Huyện Đà Bắc',
+        Name: 'Đà Bắc',
         Wards: [
           { Id: '04831', Name: 'Thị trấn Đà Bắc', Level: 'Thị trấn' },
           { Id: '04834', Name: 'Xã Nánh Nghê', Level: 'Xã' },
@@ -2740,7 +2740,7 @@ const dataProvince = [
       },
       {
         Id: '152',
-        Name: 'Huyện Lương Sơn',
+        Name: 'Lương Sơn',
         Wards: [
           { Id: '04924', Name: 'Thị trấn Lương Sơn', Level: 'Thị trấn' },
           { Id: '04942', Name: 'Xã Lâm Sơn', Level: 'Xã' },
@@ -2757,7 +2757,7 @@ const dataProvince = [
       },
       {
         Id: '153',
-        Name: 'Huyện Kim Bôi',
+        Name: 'Kim Bôi',
         Wards: [
           { Id: '04978', Name: 'Thị trấn Bo', Level: 'Thị trấn' },
           { Id: '04984', Name: 'Xã Đú Sáng', Level: 'Xã' },
@@ -2780,7 +2780,7 @@ const dataProvince = [
       },
       {
         Id: '154',
-        Name: 'Huyện Cao Phong',
+        Name: 'Cao Phong',
         Wards: [
           { Id: '05089', Name: 'Thị trấn Cao Phong', Level: 'Thị trấn' },
           { Id: '05092', Name: 'Xã Bình Thanh', Level: 'Xã' },
@@ -2796,7 +2796,7 @@ const dataProvince = [
       },
       {
         Id: '155',
-        Name: 'Huyện Tân Lạc',
+        Name: 'Tân Lạc',
         Wards: [
           { Id: '05128', Name: 'Thị trấn Mãn Đức', Level: 'Thị trấn' },
           { Id: '05134', Name: 'Xã Suối Hoa', Level: 'Xã' },
@@ -2818,7 +2818,7 @@ const dataProvince = [
       },
       {
         Id: '156',
-        Name: 'Huyện Mai Châu',
+        Name: 'Mai Châu',
         Wards: [
           { Id: '04882', Name: 'Xã Tân Thành', Level: 'Xã' },
           { Id: '05200', Name: 'Thị trấn Mai Châu', Level: 'Thị trấn' },
@@ -2840,7 +2840,7 @@ const dataProvince = [
       },
       {
         Id: '157',
-        Name: 'Huyện Lạc Sơn',
+        Name: 'Lạc Sơn',
         Wards: [
           { Id: '05266', Name: 'Thị trấn Vụ Bản', Level: 'Thị trấn' },
           { Id: '05269', Name: 'Xã Quý Hòa', Level: 'Xã' },
@@ -2870,7 +2870,7 @@ const dataProvince = [
       },
       {
         Id: '158',
-        Name: 'Huyện Yên Thủy',
+        Name: 'Yên Thủy',
         Wards: [
           { Id: '05353', Name: 'Thị trấn Hàng Trạm', Level: 'Thị trấn' },
           { Id: '05356', Name: 'Xã Lạc Sỹ', Level: 'Xã' },
@@ -2887,7 +2887,7 @@ const dataProvince = [
       },
       {
         Id: '159',
-        Name: 'Huyện Lạc Thủy',
+        Name: 'Lạc Thủy',
         Wards: [
           { Id: '04981', Name: 'Thị trấn Ba Hàng Đồi', Level: 'Thị trấn' },
           { Id: '05392', Name: 'Thị trấn Chi Nê', Level: 'Thị trấn' },
@@ -2905,11 +2905,11 @@ const dataProvince = [
   },
   {
     Id: '19',
-    Name: 'Tỉnh Thái Nguyên',
+    Name: 'Thái Nguyên',
     Districts: [
       {
         Id: '164',
-        Name: 'Thành phố Thái Nguyên',
+        Name: 'Thái Nguyên',
         Wards: [
           { Id: '05431', Name: 'Phường Quán Triều', Level: 'Phường' },
           { Id: '05434', Name: 'Phường Quang Vinh', Level: 'Phường' },
@@ -2947,7 +2947,7 @@ const dataProvince = [
       },
       {
         Id: '165',
-        Name: 'Thành phố Sông Công',
+        Name: 'Sông Công',
         Wards: [
           { Id: '05506', Name: 'Phường Lương Sơn', Level: 'Phường' },
           { Id: '05509', Name: 'Phường Châu Sơn', Level: 'Phường' },
@@ -2963,7 +2963,7 @@ const dataProvince = [
       },
       {
         Id: '167',
-        Name: 'Huyện Định Hóa',
+        Name: 'Định Hóa',
         Wards: [
           { Id: '05536', Name: 'Thị trấn Chợ Chu', Level: 'Thị trấn' },
           { Id: '05539', Name: 'Xã Linh Thông', Level: 'Xã' },
@@ -2992,7 +2992,7 @@ const dataProvince = [
       },
       {
         Id: '168',
-        Name: 'Huyện Phú Lương',
+        Name: 'Phú Lương',
         Wards: [
           { Id: '05608', Name: 'Thị trấn Giang Tiên', Level: 'Thị trấn' },
           { Id: '05611', Name: 'Thị trấn Đu', Level: 'Thị trấn' },
@@ -3013,7 +3013,7 @@ const dataProvince = [
       },
       {
         Id: '169',
-        Name: 'Huyện Đồng Hỷ',
+        Name: 'Đồng Hỷ',
         Wards: [
           { Id: '05656', Name: 'Thị trấn Sông Cầu', Level: 'Thị trấn' },
           { Id: '05662', Name: 'Thị trấn Trại Cau', Level: 'Thị trấn' },
@@ -3034,7 +3034,7 @@ const dataProvince = [
       },
       {
         Id: '170',
-        Name: 'Huyện Võ Nhai',
+        Name: 'Võ Nhai',
         Wards: [
           { Id: '05716', Name: 'Thị trấn Đình Cả', Level: 'Thị trấn' },
           { Id: '05719', Name: 'Xã Sảng Mộc', Level: 'Xã' },
@@ -3055,7 +3055,7 @@ const dataProvince = [
       },
       {
         Id: '171',
-        Name: 'Huyện Đại Từ',
+        Name: 'Đại Từ',
         Wards: [
           { Id: '05761', Name: 'Thị trấn Hùng Sơn', Level: 'Thị trấn' },
           { Id: '05764', Name: 'Thị trấn Quân Chu', Level: 'Thị trấn' },
@@ -3115,7 +3115,7 @@ const dataProvince = [
       },
       {
         Id: '173',
-        Name: 'Huyện Phú Bình',
+        Name: 'Phú Bình',
         Wards: [
           { Id: '05908', Name: 'Thị trấn Hương Sơn', Level: 'Thị trấn' },
           { Id: '05911', Name: 'Xã Bàn Đạt', Level: 'Xã' },
@@ -3143,11 +3143,11 @@ const dataProvince = [
   },
   {
     Id: '20',
-    Name: 'Tỉnh Lạng Sơn',
+    Name: 'Lạng Sơn',
     Districts: [
       {
         Id: '178',
-        Name: 'Thành phố Lạng Sơn',
+        Name: 'Lạng Sơn',
         Wards: [
           { Id: '05971', Name: 'Phường Hoàng Văn Thụ', Level: 'Phường' },
           { Id: '05974', Name: 'Phường Tam Thanh', Level: 'Phường' },
@@ -3161,7 +3161,7 @@ const dataProvince = [
       },
       {
         Id: '180',
-        Name: 'Huyện Tràng Định',
+        Name: 'Tràng Định',
         Wards: [
           { Id: '05995', Name: 'Thị trấn Thất Khê', Level: 'Thị trấn' },
           { Id: '05998', Name: 'Xã Khánh Long', Level: 'Xã' },
@@ -3189,7 +3189,7 @@ const dataProvince = [
       },
       {
         Id: '181',
-        Name: 'Huyện Bình Gia',
+        Name: 'Bình Gia',
         Wards: [
           { Id: '06067', Name: 'Xã Hưng Đạo', Level: 'Xã' },
           { Id: '06070', Name: 'Xã Vĩnh Yên', Level: 'Xã' },
@@ -3214,7 +3214,7 @@ const dataProvince = [
       },
       {
         Id: '182',
-        Name: 'Huyện Văn Lãng',
+        Name: 'Văn Lãng',
         Wards: [
           { Id: '06124', Name: 'Thị trấn Na Sầm', Level: 'Thị trấn' },
           { Id: '06127', Name: 'Xã Trùng Khánh', Level: 'Xã' },
@@ -3237,7 +3237,7 @@ const dataProvince = [
       },
       {
         Id: '183',
-        Name: 'Huyện Cao Lộc',
+        Name: 'Cao Lộc',
         Wards: [
           { Id: '06184', Name: 'Thị trấn Đồng Đăng', Level: 'Thị trấn' },
           { Id: '06187', Name: 'Thị trấn Cao Lộc', Level: 'Thị trấn' },
@@ -3265,7 +3265,7 @@ const dataProvince = [
       },
       {
         Id: '184',
-        Name: 'Huyện Văn Quan',
+        Name: 'Văn Quan',
         Wards: [
           { Id: '06253', Name: 'Thị trấn Văn Quan', Level: 'Thị trấn' },
           { Id: '06256', Name: 'Xã Trấn Ninh', Level: 'Xã' },
@@ -3288,7 +3288,7 @@ const dataProvince = [
       },
       {
         Id: '185',
-        Name: 'Huyện Bắc Sơn',
+        Name: 'Bắc Sơn',
         Wards: [
           { Id: '06325', Name: 'Thị trấn Bắc Sơn', Level: 'Thị trấn' },
           { Id: '06328', Name: 'Xã Long Đống', Level: 'Xã' },
@@ -3312,7 +3312,7 @@ const dataProvince = [
       },
       {
         Id: '186',
-        Name: 'Huyện Hữu Lũng',
+        Name: 'Hữu Lũng',
         Wards: [
           { Id: '06385', Name: 'Thị trấn Hữu Lũng', Level: 'Thị trấn' },
           { Id: '06388', Name: 'Xã Hữu Liên', Level: 'Xã' },
@@ -3342,7 +3342,7 @@ const dataProvince = [
       },
       {
         Id: '187',
-        Name: 'Huyện Chi Lăng',
+        Name: 'Chi Lăng',
         Wards: [
           { Id: '06463', Name: 'Thị trấn Đồng Mỏ', Level: 'Thị trấn' },
           { Id: '06466', Name: 'Thị trấn Chi Lăng', Level: 'Thị trấn' },
@@ -3368,7 +3368,7 @@ const dataProvince = [
       },
       {
         Id: '188',
-        Name: 'Huyện Lộc Bình',
+        Name: 'Lộc Bình',
         Wards: [
           { Id: '06526', Name: 'Thị trấn Na Dương', Level: 'Thị trấn' },
           { Id: '06529', Name: 'Thị trấn Lộc Bình', Level: 'Thị trấn' },
@@ -3395,7 +3395,7 @@ const dataProvince = [
       },
       {
         Id: '189',
-        Name: 'Huyện Đình Lập',
+        Name: 'Đình Lập',
         Wards: [
           { Id: '06613', Name: 'Thị trấn Đình Lập', Level: 'Thị trấn' },
           { Id: '06616', Name: 'Thị trấn NT Thái Bình', Level: 'Thị trấn' },
@@ -3415,11 +3415,11 @@ const dataProvince = [
   },
   {
     Id: '22',
-    Name: 'Tỉnh Quảng Ninh',
+    Name: 'Quảng Ninh',
     Districts: [
       {
         Id: '193',
-        Name: 'Thành phố Hạ Long',
+        Name: 'Hạ Long',
         Wards: [
           { Id: '06649', Name: 'Phường Hà Khánh', Level: 'Phường' },
           { Id: '06652', Name: 'Phường Hà Phong', Level: 'Phường' },
@@ -3458,7 +3458,7 @@ const dataProvince = [
       },
       {
         Id: '194',
-        Name: 'Thành phố Móng Cái',
+        Name: 'Móng Cái',
         Wards: [
           { Id: '06709', Name: 'Phường Ka Long', Level: 'Phường' },
           { Id: '06712', Name: 'Phường Trần Phú', Level: 'Phường' },
@@ -3481,7 +3481,7 @@ const dataProvince = [
       },
       {
         Id: '195',
-        Name: 'Thành phố Cẩm Phả',
+        Name: 'Cẩm Phả',
         Wards: [
           { Id: '06760', Name: 'Phường Mông Dương', Level: 'Phường' },
           { Id: '06763', Name: 'Phường Cửa Ông', Level: 'Phường' },
@@ -3503,7 +3503,7 @@ const dataProvince = [
       },
       {
         Id: '196',
-        Name: 'Thành phố Uông Bí',
+        Name: 'Uông Bí',
         Wards: [
           { Id: '06808', Name: 'Phường Vàng Danh', Level: 'Phường' },
           { Id: '06811', Name: 'Phường Thanh Sơn', Level: 'Phường' },
@@ -3519,7 +3519,7 @@ const dataProvince = [
       },
       {
         Id: '198',
-        Name: 'Huyện Bình Liêu',
+        Name: 'Bình Liêu',
         Wards: [
           { Id: '06838', Name: 'Thị trấn Bình Liêu', Level: 'Thị trấn' },
           { Id: '06841', Name: 'Xã Hoành Mô', Level: 'Xã' },
@@ -3532,7 +3532,7 @@ const dataProvince = [
       },
       {
         Id: '199',
-        Name: 'Huyện Tiên Yên',
+        Name: 'Tiên Yên',
         Wards: [
           { Id: '06862', Name: 'Thị trấn Tiên Yên', Level: 'Thị trấn' },
           { Id: '06865', Name: 'Xã Hà Lâu', Level: 'Xã' },
@@ -3549,7 +3549,7 @@ const dataProvince = [
       },
       {
         Id: '200',
-        Name: 'Huyện Đầm Hà',
+        Name: 'Đầm Hà',
         Wards: [
           { Id: '06895', Name: 'Thị trấn Đầm Hà', Level: 'Thị trấn' },
           { Id: '06898', Name: 'Xã Quảng Lâm', Level: 'Xã' },
@@ -3564,7 +3564,7 @@ const dataProvince = [
       },
       {
         Id: '201',
-        Name: 'Huyện Hải Hà',
+        Name: 'Hải Hà',
         Wards: [
           { Id: '06922', Name: 'Thị trấn Quảng Hà', Level: 'Thị trấn' },
           { Id: '06925', Name: 'Xã Quảng Đức', Level: 'Xã' },
@@ -3581,7 +3581,7 @@ const dataProvince = [
       },
       {
         Id: '202',
-        Name: 'Huyện Ba Chẽ',
+        Name: 'Ba Chẽ',
         Wards: [
           { Id: '06970', Name: 'Thị trấn Ba Chẽ', Level: 'Thị trấn' },
           { Id: '06973', Name: 'Xã Thanh Sơn', Level: 'Xã' },
@@ -3595,7 +3595,7 @@ const dataProvince = [
       },
       {
         Id: '203',
-        Name: 'Huyện Vân Đồn',
+        Name: 'Vân Đồn',
         Wards: [
           { Id: '06994', Name: 'Thị trấn Cái Rồng', Level: 'Thị trấn' },
           { Id: '06997', Name: 'Xã Đài Xuyên', Level: 'Xã' },
@@ -3665,7 +3665,7 @@ const dataProvince = [
       },
       {
         Id: '207',
-        Name: 'Huyện Cô Tô',
+        Name: 'Cô Tô',
         Wards: [
           { Id: '07192', Name: 'Thị trấn Cô Tô', Level: 'Thị trấn' },
           { Id: '07195', Name: 'Xã Đồng Tiến', Level: 'Xã' },
@@ -3676,11 +3676,11 @@ const dataProvince = [
   },
   {
     Id: '24',
-    Name: 'Tỉnh Bắc Giang',
+    Name: 'Bắc Giang',
     Districts: [
       {
         Id: '213',
-        Name: 'Thành phố Bắc Giang',
+        Name: 'Bắc Giang',
         Wards: [
           { Id: '07201', Name: 'Phường Thọ Xương', Level: 'Phường' },
           { Id: '07204', Name: 'Phường Trần Nguyên Hãn', Level: 'Phường' },
@@ -3702,7 +3702,7 @@ const dataProvince = [
       },
       {
         Id: '215',
-        Name: 'Huyện Yên Thế',
+        Name: 'Yên Thế',
         Wards: [
           { Id: '07243', Name: 'Xã Đồng Tiến', Level: 'Xã' },
           { Id: '07246', Name: 'Xã Canh Nậu', Level: 'Xã' },
@@ -3727,7 +3727,7 @@ const dataProvince = [
       },
       {
         Id: '216',
-        Name: 'Huyện Tân Yên',
+        Name: 'Tân Yên',
         Wards: [
           { Id: '07303', Name: 'Xã Lan Giới', Level: 'Xã' },
           { Id: '07306', Name: 'Thị trấn Nhã Nam', Level: 'Thị trấn' },
@@ -3755,7 +3755,7 @@ const dataProvince = [
       },
       {
         Id: '217',
-        Name: 'Huyện Lạng Giang',
+        Name: 'Lạng Giang',
         Wards: [
           { Id: '07375', Name: 'Thị trấn Vôi', Level: 'Thị trấn' },
           { Id: '07378', Name: 'Xã Nghĩa Hòa', Level: 'Xã' },
@@ -3782,7 +3782,7 @@ const dataProvince = [
       },
       {
         Id: '218',
-        Name: 'Huyện Lục Nam',
+        Name: 'Lục Nam',
         Wards: [
           { Id: '07444', Name: 'Thị trấn Đồi Ngô', Level: 'Thị trấn' },
           { Id: '07450', Name: 'Xã Đông Hưng', Level: 'Xã' },
@@ -3813,7 +3813,7 @@ const dataProvince = [
       },
       {
         Id: '219',
-        Name: 'Huyện Lục Ngạn',
+        Name: 'Lục Ngạn',
         Wards: [
           { Id: '07525', Name: 'Thị trấn Chũ', Level: 'Thị trấn' },
           { Id: '07528', Name: 'Xã Cấm Sơn', Level: 'Xã' },
@@ -3848,7 +3848,7 @@ const dataProvince = [
       },
       {
         Id: '220',
-        Name: 'Huyện Sơn Động',
+        Name: 'Sơn Động',
         Wards: [
           { Id: '07615', Name: 'Thị trấn An Châu', Level: 'Thị trấn' },
           { Id: '07616', Name: 'Thị trấn Tây Yên Tử', Level: 'Thị trấn' },
@@ -3871,7 +3871,7 @@ const dataProvince = [
       },
       {
         Id: '221',
-        Name: 'Huyện Yên Dũng',
+        Name: 'Yên Dũng',
         Wards: [
           { Id: '07681', Name: 'Thị trấn Nham Biền', Level: 'Thị trấn' },
           { Id: '07682', Name: 'Thị trấn Tân An', Level: 'Thị trấn' },
@@ -3895,7 +3895,7 @@ const dataProvince = [
       },
       {
         Id: '222',
-        Name: 'Huyện Việt Yên',
+        Name: 'Việt Yên',
         Wards: [
           { Id: '07759', Name: 'Xã Thượng Lan', Level: 'Xã' },
           { Id: '07762', Name: 'Xã Việt Tiến', Level: 'Xã' },
@@ -3918,7 +3918,7 @@ const dataProvince = [
       },
       {
         Id: '223',
-        Name: 'Huyện Hiệp Hòa',
+        Name: 'Hiệp Hòa',
         Wards: [
           { Id: '07813', Name: 'Xã Đồng Tân', Level: 'Xã' },
           { Id: '07816', Name: 'Xã Thanh Vân', Level: 'Xã' },
@@ -3951,11 +3951,11 @@ const dataProvince = [
   },
   {
     Id: '25',
-    Name: 'Tỉnh Phú Thọ',
+    Name: 'Phú Thọ',
     Districts: [
       {
         Id: '227',
-        Name: 'Thành phố Việt Trì',
+        Name: 'Việt Trì',
         Wards: [
           { Id: '07888', Name: 'Phường Dữu Lâu', Level: 'Phường' },
           { Id: '07891', Name: 'Phường Vân Cơ', Level: 'Phường' },
@@ -3998,7 +3998,7 @@ const dataProvince = [
       },
       {
         Id: '230',
-        Name: 'Huyện Đoan Hùng',
+        Name: 'Đoan Hùng',
         Wards: [
           { Id: '07969', Name: 'Thị trấn Đoan Hùng', Level: 'Thị trấn' },
           { Id: '07975', Name: 'Xã Hùng Xuyên', Level: 'Xã' },
@@ -4026,7 +4026,7 @@ const dataProvince = [
       },
       {
         Id: '231',
-        Name: 'Huyện Hạ Hoà',
+        Name: 'Hạ Hoà',
         Wards: [
           { Id: '08053', Name: 'Thị trấn Hạ Hoà', Level: 'Thị trấn' },
           { Id: '08056', Name: 'Xã Đại Phạm', Level: 'Xã' },
@@ -4052,7 +4052,7 @@ const dataProvince = [
       },
       {
         Id: '232',
-        Name: 'Huyện Thanh Ba',
+        Name: 'Thanh Ba',
         Wards: [
           { Id: '08152', Name: 'Thị trấn Thanh Ba', Level: 'Thị trấn' },
           { Id: '08156', Name: 'Xã Vân Lĩnh', Level: 'Xã' },
@@ -4077,7 +4077,7 @@ const dataProvince = [
       },
       {
         Id: '233',
-        Name: 'Huyện Phù Ninh',
+        Name: 'Phù Ninh',
         Wards: [
           { Id: '08230', Name: 'Thị trấn Phong Châu', Level: 'Thị trấn' },
           { Id: '08233', Name: 'Xã Phú Mỹ', Level: 'Xã' },
@@ -4100,7 +4100,7 @@ const dataProvince = [
       },
       {
         Id: '234',
-        Name: 'Huyện Yên Lập',
+        Name: 'Yên Lập',
         Wards: [
           { Id: '08290', Name: 'Thị trấn Yên Lập', Level: 'Thị trấn' },
           { Id: '08293', Name: 'Xã Mỹ Lung', Level: 'Xã' },
@@ -4123,7 +4123,7 @@ const dataProvince = [
       },
       {
         Id: '235',
-        Name: 'Huyện Cẩm Khê',
+        Name: 'Cẩm Khê',
         Wards: [
           { Id: '08341', Name: 'Thị trấn Cẩm Khê', Level: 'Thị trấn' },
           { Id: '08344', Name: 'Xã Tiên Lương', Level: 'Xã' },
@@ -4153,7 +4153,7 @@ const dataProvince = [
       },
       {
         Id: '236',
-        Name: 'Huyện Tam Nông',
+        Name: 'Tam Nông',
         Wards: [
           { Id: '08434', Name: 'Thị trấn Hưng Hoá', Level: 'Thị trấn' },
           { Id: '08440', Name: 'Xã Hiền Quan', Level: 'Xã' },
@@ -4171,7 +4171,7 @@ const dataProvince = [
       },
       {
         Id: '237',
-        Name: 'Huyện Lâm Thao',
+        Name: 'Lâm Thao',
         Wards: [
           { Id: '08494', Name: 'Thị trấn Lâm Thao', Level: 'Thị trấn' },
           { Id: '08497', Name: 'Xã Tiên Kiên', Level: 'Xã' },
@@ -4189,7 +4189,7 @@ const dataProvince = [
       },
       {
         Id: '238',
-        Name: 'Huyện Thanh Sơn',
+        Name: 'Thanh Sơn',
         Wards: [
           { Id: '08542', Name: 'Thị trấn Thanh Sơn', Level: 'Thị trấn' },
           { Id: '08563', Name: 'Xã Sơn Hùng', Level: 'Xã' },
@@ -4218,7 +4218,7 @@ const dataProvince = [
       },
       {
         Id: '239',
-        Name: 'Huyện Thanh Thuỷ',
+        Name: 'Thanh Thuỷ',
         Wards: [
           { Id: '08662', Name: 'Xã Đào Xá', Level: 'Xã' },
           { Id: '08665', Name: 'Xã Thạch Đồng', Level: 'Xã' },
@@ -4235,7 +4235,7 @@ const dataProvince = [
       },
       {
         Id: '240',
-        Name: 'Huyện Tân Sơn',
+        Name: 'Tân Sơn',
         Wards: [
           { Id: '08545', Name: 'Xã Thu Cúc', Level: 'Xã' },
           { Id: '08548', Name: 'Xã Thạch Kiệt', Level: 'Xã' },
@@ -4260,11 +4260,11 @@ const dataProvince = [
   },
   {
     Id: '26',
-    Name: 'Tỉnh Vĩnh Phúc',
+    Name: 'Vĩnh Phúc',
     Districts: [
       {
         Id: '243',
-        Name: 'Thành phố Vĩnh Yên',
+        Name: 'Vĩnh Yên',
         Wards: [
           { Id: '08707', Name: 'Phường Tích Sơn', Level: 'Phường' },
           { Id: '08710', Name: 'Phường Liên Bảo', Level: 'Phường' },
@@ -4279,7 +4279,7 @@ const dataProvince = [
       },
       {
         Id: '244',
-        Name: 'Thành phố Phúc Yên',
+        Name: 'Phúc Yên',
         Wards: [
           { Id: '08734', Name: 'Phường Trưng Trắc', Level: 'Phường' },
           { Id: '08737', Name: 'Phường Hùng Vương', Level: 'Phường' },
@@ -4295,7 +4295,7 @@ const dataProvince = [
       },
       {
         Id: '246',
-        Name: 'Huyện Lập Thạch',
+        Name: 'Lập Thạch',
         Wards: [
           { Id: '08761', Name: 'Thị trấn Lập Thạch', Level: 'Thị trấn' },
           { Id: '08764', Name: 'Xã Quang Sơn', Level: 'Xã' },
@@ -4321,7 +4321,7 @@ const dataProvince = [
       },
       {
         Id: '247',
-        Name: 'Huyện Tam Dương',
+        Name: 'Tam Dương',
         Wards: [
           { Id: '08869', Name: 'Thị trấn Hợp Hòa', Level: 'Thị trấn' },
           { Id: '08872', Name: 'Xã Hoàng Hoa', Level: 'Xã' },
@@ -4340,7 +4340,7 @@ const dataProvince = [
       },
       {
         Id: '248',
-        Name: 'Huyện Tam Đảo',
+        Name: 'Tam Đảo',
         Wards: [
           { Id: '08908', Name: 'Thị trấn Tam Đảo', Level: 'Thị trấn' },
           { Id: '08911', Name: 'Thị trấn Hợp Châu', Level: 'Thị trấn' },
@@ -4355,7 +4355,7 @@ const dataProvince = [
       },
       {
         Id: '249',
-        Name: 'Huyện Bình Xuyên',
+        Name: 'Bình Xuyên',
         Wards: [
           { Id: '08935', Name: 'Thị trấn Hương Canh', Level: 'Thị trấn' },
           { Id: '08936', Name: 'Thị trấn Gia Khánh', Level: 'Thị trấn' },
@@ -4374,7 +4374,7 @@ const dataProvince = [
       },
       {
         Id: '251',
-        Name: 'Huyện Yên Lạc',
+        Name: 'Yên Lạc',
         Wards: [
           { Id: '09025', Name: 'Thị trấn Yên Lạc', Level: 'Thị trấn' },
           { Id: '09028', Name: 'Xã Đồng Cương', Level: 'Xã' },
@@ -4397,7 +4397,7 @@ const dataProvince = [
       },
       {
         Id: '252',
-        Name: 'Huyện Vĩnh Tường',
+        Name: 'Vĩnh Tường',
         Wards: [
           { Id: '09076', Name: 'Thị trấn Vĩnh Tường', Level: 'Thị trấn' },
           { Id: '09079', Name: 'Xã Kim Xá', Level: 'Xã' },
@@ -4431,7 +4431,7 @@ const dataProvince = [
       },
       {
         Id: '253',
-        Name: 'Huyện Sông Lô',
+        Name: 'Sông Lô',
         Wards: [
           { Id: '08773', Name: 'Xã Lãng Công', Level: 'Xã' },
           { Id: '08776', Name: 'Xã Quang Yên', Level: 'Xã' },
@@ -4456,11 +4456,11 @@ const dataProvince = [
   },
   {
     Id: '27',
-    Name: 'Tỉnh Bắc Ninh',
+    Name: 'Bắc Ninh',
     Districts: [
       {
         Id: '256',
-        Name: 'Thành phố Bắc Ninh',
+        Name: 'Bắc Ninh',
         Wards: [
           { Id: '09163', Name: 'Phường Vũ Ninh', Level: 'Phường' },
           { Id: '09166', Name: 'Phường Đáp Cầu', Level: 'Phường' },
@@ -4485,7 +4485,7 @@ const dataProvince = [
       },
       {
         Id: '258',
-        Name: 'Huyện Yên Phong',
+        Name: 'Yên Phong',
         Wards: [
           { Id: '09193', Name: 'Thị trấn Chờ', Level: 'Thị trấn' },
           { Id: '09196', Name: 'Xã Dũng Liệt', Level: 'Xã' },
@@ -4505,7 +4505,7 @@ const dataProvince = [
       },
       {
         Id: '259',
-        Name: 'Huyện Quế Võ',
+        Name: 'Quế Võ',
         Wards: [
           { Id: '09247', Name: 'Thị trấn Phố Mới', Level: 'Thị trấn' },
           { Id: '09250', Name: 'Xã Việt Thống', Level: 'Xã' },
@@ -4532,7 +4532,7 @@ const dataProvince = [
       },
       {
         Id: '260',
-        Name: 'Huyện Tiên Du',
+        Name: 'Tiên Du',
         Wards: [
           { Id: '09319', Name: 'Thị trấn Lim', Level: 'Thị trấn' },
           { Id: '09322', Name: 'Xã Phú Lâm', Level: 'Xã' },
@@ -4570,7 +4570,7 @@ const dataProvince = [
       },
       {
         Id: '262',
-        Name: 'Huyện Thuận Thành',
+        Name: 'Thuận Thành',
         Wards: [
           { Id: '09400', Name: 'Thị trấn Hồ', Level: 'Thị trấn' },
           { Id: '09403', Name: 'Xã Hoài Thượng', Level: 'Xã' },
@@ -4594,7 +4594,7 @@ const dataProvince = [
       },
       {
         Id: '263',
-        Name: 'Huyện Gia Bình',
+        Name: 'Gia Bình',
         Wards: [
           { Id: '09454', Name: 'Thị trấn Gia Bình', Level: 'Thị trấn' },
           { Id: '09457', Name: 'Xã Vạn Ninh', Level: 'Xã' },
@@ -4614,7 +4614,7 @@ const dataProvince = [
       },
       {
         Id: '264',
-        Name: 'Huyện Lương Tài',
+        Name: 'Lương Tài',
         Wards: [
           { Id: '09496', Name: 'Thị trấn Thứa', Level: 'Thị trấn' },
           { Id: '09499', Name: 'Xã An Thịnh', Level: 'Xã' },
@@ -4636,11 +4636,11 @@ const dataProvince = [
   },
   {
     Id: '30',
-    Name: 'Tỉnh Hải Dương',
+    Name: 'Hải Dương',
     Districts: [
       {
         Id: '288',
-        Name: 'Thành phố Hải Dương',
+        Name: 'Hải Dương',
         Wards: [
           { Id: '10507', Name: 'Phường Cẩm Thượng', Level: 'Phường' },
           { Id: '10510', Name: 'Phường Bình Hàn', Level: 'Phường' },
@@ -4671,7 +4671,7 @@ const dataProvince = [
       },
       {
         Id: '290',
-        Name: 'Thành phố Chí Linh',
+        Name: 'Chí Linh',
         Wards: [
           { Id: '10546', Name: 'Phường Phả Lại', Level: 'Phường' },
           { Id: '10549', Name: 'Phường Sao Đỏ', Level: 'Phường' },
@@ -4696,7 +4696,7 @@ const dataProvince = [
       },
       {
         Id: '291',
-        Name: 'Huyện Nam Sách',
+        Name: 'Nam Sách',
         Wards: [
           { Id: '10606', Name: 'Thị trấn Nam Sách', Level: 'Thị trấn' },
           { Id: '10609', Name: 'Xã Nam Hưng', Level: 'Xã' },
@@ -4750,7 +4750,7 @@ const dataProvince = [
       },
       {
         Id: '293',
-        Name: 'Huyện Kim Thành',
+        Name: 'Kim Thành',
         Wards: [
           { Id: '10750', Name: 'Thị trấn Phú Thái', Level: 'Thị trấn' },
           { Id: '10753', Name: 'Xã Lai Vu', Level: 'Xã' },
@@ -4774,7 +4774,7 @@ const dataProvince = [
       },
       {
         Id: '294',
-        Name: 'Huyện Thanh Hà',
+        Name: 'Thanh Hà',
         Wards: [
           { Id: '10813', Name: 'Thị trấn Thanh Hà', Level: 'Thị trấn' },
           { Id: '10816', Name: 'Xã Hồng Lạc', Level: 'Xã' },
@@ -4800,7 +4800,7 @@ const dataProvince = [
       },
       {
         Id: '295',
-        Name: 'Huyện Cẩm Giàng',
+        Name: 'Cẩm Giàng',
         Wards: [
           { Id: '10888', Name: 'Thị trấn Cẩm Giang', Level: 'Thị trấn' },
           { Id: '10891', Name: 'Thị trấn Lai Cách', Level: 'Thị trấn' },
@@ -4823,7 +4823,7 @@ const dataProvince = [
       },
       {
         Id: '296',
-        Name: 'Huyện Bình Giang',
+        Name: 'Bình Giang',
         Wards: [
           { Id: '10945', Name: 'Thị trấn Kẻ Sặt', Level: 'Thị trấn' },
           { Id: '10951', Name: 'Xã Vĩnh Hưng', Level: 'Xã' },
@@ -4845,7 +4845,7 @@ const dataProvince = [
       },
       {
         Id: '297',
-        Name: 'Huyện Gia Lộc',
+        Name: 'Gia Lộc',
         Wards: [
           { Id: '10999', Name: 'Thị trấn Gia Lộc', Level: 'Thị trấn' },
           { Id: '11008', Name: 'Xã Thống Nhất', Level: 'Xã' },
@@ -4869,7 +4869,7 @@ const dataProvince = [
       },
       {
         Id: '298',
-        Name: 'Huyện Tứ Kỳ',
+        Name: 'Tứ Kỳ',
         Wards: [
           { Id: '11074', Name: 'Thị trấn Tứ Kỳ', Level: 'Thị trấn' },
           { Id: '11083', Name: 'Xã Đại Sơn', Level: 'Xã' },
@@ -4898,7 +4898,7 @@ const dataProvince = [
       },
       {
         Id: '299',
-        Name: 'Huyện Ninh Giang',
+        Name: 'Ninh Giang',
         Wards: [
           { Id: '11155', Name: 'Thị trấn Ninh Giang', Level: 'Thị trấn' },
           { Id: '11161', Name: 'Xã Ứng Hoè', Level: 'Xã' },
@@ -4924,7 +4924,7 @@ const dataProvince = [
       },
       {
         Id: '300',
-        Name: 'Huyện Thanh Miện',
+        Name: 'Thanh Miện',
         Wards: [
           { Id: '11239', Name: 'Thị trấn Thanh Miện', Level: 'Thị trấn' },
           { Id: '11242', Name: 'Xã Thanh Tùng', Level: 'Xã' },
@@ -4949,11 +4949,11 @@ const dataProvince = [
   },
   {
     Id: '31',
-    Name: 'Thành phố Hải Phòng',
+    Name: 'Hải Phòng',
     Districts: [
       {
         Id: '303',
-        Name: 'Quận Hồng Bàng',
+        Name: 'Hồng Bàng',
         Wards: [
           { Id: '11296', Name: 'Phường Quán Toan', Level: 'Phường' },
           { Id: '11299', Name: 'Phường Hùng Vương', Level: 'Phường' },
@@ -4968,7 +4968,7 @@ const dataProvince = [
       },
       {
         Id: '304',
-        Name: 'Quận Ngô Quyền',
+        Name: 'Ngô Quyền',
         Wards: [
           { Id: '11329', Name: 'Phường Máy Chai', Level: 'Phường' },
           { Id: '11332', Name: 'Phường Máy Tơ', Level: 'Phường' },
@@ -4986,7 +4986,7 @@ const dataProvince = [
       },
       {
         Id: '305',
-        Name: 'Quận Lê Chân',
+        Name: 'Lê Chân',
         Wards: [
           { Id: '11368', Name: 'Phường Cát Dài', Level: 'Phường' },
           { Id: '11371', Name: 'Phường An Biên', Level: 'Phường' },
@@ -5007,7 +5007,7 @@ const dataProvince = [
       },
       {
         Id: '306',
-        Name: 'Quận Hải An',
+        Name: 'Hải An',
         Wards: [
           { Id: '11410', Name: 'Phường Đông Hải 1', Level: 'Phường' },
           { Id: '11411', Name: 'Phường Đông Hải 2', Level: 'Phường' },
@@ -5021,7 +5021,7 @@ const dataProvince = [
       },
       {
         Id: '307',
-        Name: 'Quận Kiến An',
+        Name: 'Kiến An',
         Wards: [
           { Id: '11428', Name: 'Phường Quán Trữ', Level: 'Phường' },
           { Id: '11429', Name: 'Phường Lãm Hà', Level: 'Phường' },
@@ -5037,7 +5037,7 @@ const dataProvince = [
       },
       {
         Id: '308',
-        Name: 'Quận Đồ Sơn',
+        Name: 'Đồ Sơn',
         Wards: [
           { Id: '11455', Name: 'Phường Ngọc Xuyên', Level: 'Phường' },
           { Id: '11458', Name: 'Phường Hải Sơn', Level: 'Phường' },
@@ -5049,7 +5049,7 @@ const dataProvince = [
       },
       {
         Id: '309',
-        Name: 'Quận Dương Kinh',
+        Name: 'Dương Kinh',
         Wards: [
           { Id: '11683', Name: 'Phường Đa Phúc', Level: 'Phường' },
           { Id: '11686', Name: 'Phường Hưng Đạo', Level: 'Phường' },
@@ -5061,7 +5061,7 @@ const dataProvince = [
       },
       {
         Id: '311',
-        Name: 'Huyện Thuỷ Nguyên',
+        Name: 'Thuỷ Nguyên',
         Wards: [
           { Id: '11470', Name: 'Thị trấn Núi Đèo', Level: 'Thị trấn' },
           { Id: '11473', Name: 'Thị trấn Minh Đức', Level: 'Thị trấn' },
@@ -5104,7 +5104,7 @@ const dataProvince = [
       },
       {
         Id: '312',
-        Name: 'Huyện An Dương',
+        Name: 'An Dương',
         Wards: [
           { Id: '11581', Name: 'Thị trấn An Dương', Level: 'Thị trấn' },
           { Id: '11584', Name: 'Xã Lê Thiện', Level: 'Xã' },
@@ -5126,7 +5126,7 @@ const dataProvince = [
       },
       {
         Id: '313',
-        Name: 'Huyện An Lão',
+        Name: 'An Lão',
         Wards: [
           { Id: '11629', Name: 'Thị trấn An Lão', Level: 'Thị trấn' },
           { Id: '11632', Name: 'Xã Bát Trang', Level: 'Xã' },
@@ -5149,7 +5149,7 @@ const dataProvince = [
       },
       {
         Id: '314',
-        Name: 'Huyện Kiến Thuỵ',
+        Name: 'Kiến Thuỵ',
         Wards: [
           { Id: '11680', Name: 'Thị trấn Núi Đối', Level: 'Thị trấn' },
           { Id: '11695', Name: 'Xã Đông Phương', Level: 'Xã' },
@@ -5173,7 +5173,7 @@ const dataProvince = [
       },
       {
         Id: '315',
-        Name: 'Huyện Tiên Lãng',
+        Name: 'Tiên Lãng',
         Wards: [
           { Id: '11755', Name: 'Thị trấn Tiên Lãng', Level: 'Thị trấn' },
           { Id: '11758', Name: 'Xã Đại Thắng', Level: 'Xã' },
@@ -5200,7 +5200,7 @@ const dataProvince = [
       },
       {
         Id: '316',
-        Name: 'Huyện Vĩnh Bảo',
+        Name: 'Vĩnh Bảo',
         Wards: [
           { Id: '11824', Name: 'Thị trấn Vĩnh Bảo', Level: 'Thị trấn' },
           { Id: '11827', Name: 'Xã Dũng Tiến', Level: 'Xã' },
@@ -5236,7 +5236,7 @@ const dataProvince = [
       },
       {
         Id: '317',
-        Name: 'Huyện Cát Hải',
+        Name: 'Cát Hải',
         Wards: [
           { Id: '11914', Name: 'Thị trấn Cát Bà', Level: 'Thị trấn' },
           { Id: '11917', Name: 'Thị trấn Cát Hải', Level: 'Thị trấn' },
@@ -5252,16 +5252,16 @@ const dataProvince = [
           { Id: '11947', Name: 'Xã Xuân Đám', Level: 'Xã' }
         ]
       },
-      { Id: '318', Name: 'Huyện Bạch Long Vĩ', Wards: [{ Level: 'Huyện' }] }
+      { Id: '318', Name: 'Bạch Long Vĩ', Wards: [{ Level: 'Huyện' }] }
     ]
   },
   {
     Id: '33',
-    Name: 'Tỉnh Hưng Yên',
+    Name: 'Hưng Yên',
     Districts: [
       {
         Id: '323',
-        Name: 'Thành phố Hưng Yên',
+        Name: 'Hưng Yên',
         Wards: [
           { Id: '11950', Name: 'Phường Lam Sơn', Level: 'Phường' },
           { Id: '11953', Name: 'Phường Hiến Nam', Level: 'Phường' },
@@ -5284,7 +5284,7 @@ const dataProvince = [
       },
       {
         Id: '325',
-        Name: 'Huyện Văn Lâm',
+        Name: 'Văn Lâm',
         Wards: [
           { Id: '11986', Name: 'Thị trấn Như Quỳnh', Level: 'Thị trấn' },
           { Id: '11989', Name: 'Xã Lạc Đạo', Level: 'Xã' },
@@ -5301,7 +5301,7 @@ const dataProvince = [
       },
       {
         Id: '326',
-        Name: 'Huyện Văn Giang',
+        Name: 'Văn Giang',
         Wards: [
           { Id: '12019', Name: 'Thị trấn Văn Giang', Level: 'Thị trấn' },
           { Id: '12022', Name: 'Xã Xuân Quan', Level: 'Xã' },
@@ -5318,7 +5318,7 @@ const dataProvince = [
       },
       {
         Id: '327',
-        Name: 'Huyện Yên Mỹ',
+        Name: 'Yên Mỹ',
         Wards: [
           { Id: '12052', Name: 'Thị trấn Yên Mỹ', Level: 'Thị trấn' },
           { Id: '12055', Name: 'Xã Giai Phạm', Level: 'Xã' },
@@ -5360,7 +5360,7 @@ const dataProvince = [
       },
       {
         Id: '329',
-        Name: 'Huyện Ân Thi',
+        Name: 'Ân Thi',
         Wards: [
           { Id: '12142', Name: 'Thị trấn Ân Thi', Level: 'Thị trấn' },
           { Id: '12145', Name: 'Xã Phù Ủng', Level: 'Xã' },
@@ -5387,7 +5387,7 @@ const dataProvince = [
       },
       {
         Id: '330',
-        Name: 'Huyện Khoái Châu',
+        Name: 'Khoái Châu',
         Wards: [
           { Id: '12205', Name: 'Thị trấn Khoái Châu', Level: 'Thị trấn' },
           { Id: '12208', Name: 'Xã Đông Tảo', Level: 'Xã' },
@@ -5418,7 +5418,7 @@ const dataProvince = [
       },
       {
         Id: '331',
-        Name: 'Huyện Kim Động',
+        Name: 'Kim Động',
         Wards: [
           { Id: '12280', Name: 'Thị trấn Lương Bằng', Level: 'Thị trấn' },
           { Id: '12283', Name: 'Xã Nghĩa Dân', Level: 'Xã' },
@@ -5441,7 +5441,7 @@ const dataProvince = [
       },
       {
         Id: '332',
-        Name: 'Huyện Tiên Lữ',
+        Name: 'Tiên Lữ',
         Wards: [
           { Id: '12337', Name: 'Thị trấn Vương', Level: 'Thị trấn' },
           { Id: '12340', Name: 'Xã Hưng Đạo', Level: 'Xã' },
@@ -5462,7 +5462,7 @@ const dataProvince = [
       },
       {
         Id: '333',
-        Name: 'Huyện Phù Cừ',
+        Name: 'Phù Cừ',
         Wards: [
           { Id: '12391', Name: 'Thị trấn Trần Cao', Level: 'Thị trấn' },
           { Id: '12394', Name: 'Xã Minh Tân', Level: 'Xã' },
@@ -5484,11 +5484,11 @@ const dataProvince = [
   },
   {
     Id: '34',
-    Name: 'Tỉnh Thái Bình',
+    Name: 'Thái Bình',
     Districts: [
       {
         Id: '336',
-        Name: 'Thành phố Thái Bình',
+        Name: 'Thái Bình',
         Wards: [
           { Id: '12433', Name: 'Phường Lê Hồng Phong', Level: 'Phường' },
           { Id: '12436', Name: 'Phường Bồ Xuyên', Level: 'Phường' },
@@ -5513,7 +5513,7 @@ const dataProvince = [
       },
       {
         Id: '338',
-        Name: 'Huyện Quỳnh Phụ',
+        Name: 'Quỳnh Phụ',
         Wards: [
           { Id: '12472', Name: 'Thị trấn Quỳnh Côi', Level: 'Thị trấn' },
           { Id: '12475', Name: 'Xã An Khê', Level: 'Xã' },
@@ -5556,7 +5556,7 @@ const dataProvince = [
       },
       {
         Id: '339',
-        Name: 'Huyện Hưng Hà',
+        Name: 'Hưng Hà',
         Wards: [
           { Id: '12586', Name: 'Thị trấn Hưng Hà', Level: 'Thị trấn' },
           { Id: '12589', Name: 'Xã Điệp Nông', Level: 'Xã' },
@@ -5597,7 +5597,7 @@ const dataProvince = [
       },
       {
         Id: '340',
-        Name: 'Huyện Đông Hưng',
+        Name: 'Đông Hưng',
         Wards: [
           { Id: '12688', Name: 'Thị trấn Đông Hưng', Level: 'Thị trấn' },
           { Id: '12691', Name: 'Xã Đô Lương', Level: 'Xã' },
@@ -5641,7 +5641,7 @@ const dataProvince = [
       },
       {
         Id: '341',
-        Name: 'Huyện Thái Thụy',
+        Name: 'Thái Thụy',
         Wards: [
           { Id: '12826', Name: 'Thị trấn Diêm Điền', Level: 'Thị trấn' },
           { Id: '12832', Name: 'Xã Thụy Trường', Level: 'Xã' },
@@ -5683,7 +5683,7 @@ const dataProvince = [
       },
       {
         Id: '342',
-        Name: 'Huyện Tiền Hải',
+        Name: 'Tiền Hải',
         Wards: [
           { Id: '12970', Name: 'Thị trấn Tiền Hải', Level: 'Thị trấn' },
           { Id: '12976', Name: 'Xã Đông Trà', Level: 'Xã' },
@@ -5721,7 +5721,7 @@ const dataProvince = [
       },
       {
         Id: '343',
-        Name: 'Huyện Kiến Xương',
+        Name: 'Kiến Xương',
         Wards: [
           { Id: '13075', Name: 'Thị trấn Kiến Xương', Level: 'Thị trấn' },
           { Id: '13078', Name: 'Xã Trà Giang', Level: 'Xã' },
@@ -5760,7 +5760,7 @@ const dataProvince = [
       },
       {
         Id: '344',
-        Name: 'Huyện Vũ Thư',
+        Name: 'Vũ Thư',
         Wards: [
           { Id: '13192', Name: 'Thị trấn Vũ Thư', Level: 'Thị trấn' },
           { Id: '13195', Name: 'Xã Hồng Lý', Level: 'Xã' },
@@ -5798,11 +5798,11 @@ const dataProvince = [
   },
   {
     Id: '35',
-    Name: 'Tỉnh Hà Nam',
+    Name: 'Hà Nam',
     Districts: [
       {
         Id: '347',
-        Name: 'Thành phố Phủ Lý',
+        Name: 'Phủ Lý',
         Wards: [
           { Id: '13285', Name: 'Phường Quang Trung', Level: 'Phường' },
           { Id: '13288', Name: 'Phường Lương Khánh Thiện', Level: 'Phường' },
@@ -5851,7 +5851,7 @@ const dataProvince = [
       },
       {
         Id: '350',
-        Name: 'Huyện Kim Bảng',
+        Name: 'Kim Bảng',
         Wards: [
           { Id: '13384', Name: 'Thị trấn Quế', Level: 'Thị trấn' },
           { Id: '13387', Name: 'Xã Nguyễn Úy', Level: 'Xã' },
@@ -5875,7 +5875,7 @@ const dataProvince = [
       },
       {
         Id: '351',
-        Name: 'Huyện Thanh Liêm',
+        Name: 'Thanh Liêm',
         Wards: [
           { Id: '13441', Name: 'Thị trấn Kiện Khê', Level: 'Thị trấn' },
           { Id: '13450', Name: 'Xã Liêm Phong', Level: 'Xã' },
@@ -5897,7 +5897,7 @@ const dataProvince = [
       },
       {
         Id: '352',
-        Name: 'Huyện Bình Lục',
+        Name: 'Bình Lục',
         Wards: [
           { Id: '13501', Name: 'Thị trấn Bình Mỹ', Level: 'Thị trấn' },
           { Id: '13504', Name: 'Xã Bình Nghĩa', Level: 'Xã' },
@@ -5920,7 +5920,7 @@ const dataProvince = [
       },
       {
         Id: '353',
-        Name: 'Huyện Lý Nhân',
+        Name: 'Lý Nhân',
         Wards: [
           { Id: '13567', Name: 'Xã Hợp Lý', Level: 'Xã' },
           { Id: '13570', Name: 'Xã Nguyên Lý', Level: 'Xã' },
@@ -5949,11 +5949,11 @@ const dataProvince = [
   },
   {
     Id: '36',
-    Name: 'Tỉnh Nam Định',
+    Name: 'Nam Định',
     Districts: [
       {
         Id: '356',
-        Name: 'Thành phố Nam Định',
+        Name: 'Nam Định',
         Wards: [
           { Id: '13633', Name: 'Phường Hạ Long', Level: 'Phường' },
           { Id: '13636', Name: 'Phường Trần Tế Xương', Level: 'Phường' },
@@ -5984,7 +5984,7 @@ const dataProvince = [
       },
       {
         Id: '358',
-        Name: 'Huyện Mỹ Lộc',
+        Name: 'Mỹ Lộc',
         Wards: [
           { Id: '13708', Name: 'Thị trấn Mỹ Lộc', Level: 'Thị trấn' },
           { Id: '13711', Name: 'Xã Mỹ Hà', Level: 'Xã' },
@@ -6001,7 +6001,7 @@ const dataProvince = [
       },
       {
         Id: '359',
-        Name: 'Huyện Vụ Bản',
+        Name: 'Vụ Bản',
         Wards: [
           { Id: '13741', Name: 'Thị trấn Gôi', Level: 'Thị trấn' },
           { Id: '13744', Name: 'Xã Minh Thuận', Level: 'Xã' },
@@ -6025,7 +6025,7 @@ const dataProvince = [
       },
       {
         Id: '360',
-        Name: 'Huyện Ý Yên',
+        Name: 'Ý Yên',
         Wards: [
           { Id: '13795', Name: 'Thị trấn Lâm', Level: 'Thị trấn' },
           { Id: '13798', Name: 'Xã Yên Trung', Level: 'Xã' },
@@ -6062,7 +6062,7 @@ const dataProvince = [
       },
       {
         Id: '361',
-        Name: 'Huyện Nghĩa Hưng',
+        Name: 'Nghĩa Hưng',
         Wards: [
           { Id: '13891', Name: 'Thị trấn Liễu Đề', Level: 'Thị trấn' },
           { Id: '13894', Name: 'Thị trấn Rạng Đông', Level: 'Thị trấn' },
@@ -6092,7 +6092,7 @@ const dataProvince = [
       },
       {
         Id: '362',
-        Name: 'Huyện Nam Trực',
+        Name: 'Nam Trực',
         Wards: [
           { Id: '13966', Name: 'Thị trấn Nam Giang', Level: 'Thị trấn' },
           { Id: '13969', Name: 'Xã Nam Mỹ', Level: 'Xã' },
@@ -6118,7 +6118,7 @@ const dataProvince = [
       },
       {
         Id: '363',
-        Name: 'Huyện Trực Ninh',
+        Name: 'Trực Ninh',
         Wards: [
           { Id: '14026', Name: 'Thị trấn Cổ Lễ', Level: 'Thị trấn' },
           { Id: '14029', Name: 'Xã Phương Định', Level: 'Xã' },
@@ -6145,7 +6145,7 @@ const dataProvince = [
       },
       {
         Id: '364',
-        Name: 'Huyện Xuân Trường',
+        Name: 'Xuân Trường',
         Wards: [
           { Id: '14089', Name: 'Thị trấn Xuân Trường', Level: 'Thị trấn' },
           { Id: '14092', Name: 'Xã Xuân Châu', Level: 'Xã' },
@@ -6171,7 +6171,7 @@ const dataProvince = [
       },
       {
         Id: '365',
-        Name: 'Huyện Giao Thủy',
+        Name: 'Giao Thủy',
         Wards: [
           { Id: '14149', Name: 'Thị trấn Ngô Đồng', Level: 'Thị trấn' },
           { Id: '14152', Name: 'Thị trấn Quất Lâm', Level: 'Thị trấn' },
@@ -6199,7 +6199,7 @@ const dataProvince = [
       },
       {
         Id: '366',
-        Name: 'Huyện Hải Hậu',
+        Name: 'Hải Hậu',
         Wards: [
           { Id: '14215', Name: 'Thị trấn Yên Định', Level: 'Thị trấn' },
           { Id: '14218', Name: 'Thị trấn Cồn', Level: 'Thị trấn' },
@@ -6241,11 +6241,11 @@ const dataProvince = [
   },
   {
     Id: '37',
-    Name: 'Tỉnh Ninh Bình',
+    Name: 'Ninh Bình',
     Districts: [
       {
         Id: '369',
-        Name: 'Thành phố Ninh Bình',
+        Name: 'Ninh Bình',
         Wards: [
           { Id: '14320', Name: 'Phường Đông Thành', Level: 'Phường' },
           { Id: '14323', Name: 'Phường Tân Thành', Level: 'Phường' },
@@ -6265,7 +6265,7 @@ const dataProvince = [
       },
       {
         Id: '370',
-        Name: 'Thành phố Tam Điệp',
+        Name: 'Tam Điệp',
         Wards: [
           { Id: '14362', Name: 'Phường Bắc Sơn', Level: 'Phường' },
           { Id: '14365', Name: 'Phường Trung Sơn', Level: 'Phường' },
@@ -6280,7 +6280,7 @@ const dataProvince = [
       },
       {
         Id: '372',
-        Name: 'Huyện Nho Quan',
+        Name: 'Nho Quan',
         Wards: [
           { Id: '14383', Name: 'Thị trấn Nho Quan', Level: 'Thị trấn' },
           { Id: '14386', Name: 'Xã Xích Thổ', Level: 'Xã' },
@@ -6313,7 +6313,7 @@ const dataProvince = [
       },
       {
         Id: '373',
-        Name: 'Huyện Gia Viễn',
+        Name: 'Gia Viễn',
         Wards: [
           { Id: '14464', Name: 'Thị trấn Me', Level: 'Thị trấn' },
           { Id: '14467', Name: 'Xã Gia Hòa', Level: 'Xã' },
@@ -6340,7 +6340,7 @@ const dataProvince = [
       },
       {
         Id: '374',
-        Name: 'Huyện Hoa Lư',
+        Name: 'Hoa Lư',
         Wards: [
           { Id: '14527', Name: 'Thị trấn Thiên Tôn', Level: 'Thị trấn' },
           { Id: '14530', Name: 'Xã Ninh Giang', Level: 'Xã' },
@@ -6357,7 +6357,7 @@ const dataProvince = [
       },
       {
         Id: '375',
-        Name: 'Huyện Yên Khánh',
+        Name: 'Yên Khánh',
         Wards: [
           { Id: '14560', Name: 'Thị trấn Yên Ninh', Level: 'Thị trấn' },
           { Id: '14563', Name: 'Xã Khánh Tiên', Level: 'Xã' },
@@ -6382,7 +6382,7 @@ const dataProvince = [
       },
       {
         Id: '376',
-        Name: 'Huyện Kim Sơn',
+        Name: 'Kim Sơn',
         Wards: [
           { Id: '14620', Name: 'Thị trấn Phát Diệm', Level: 'Thị trấn' },
           { Id: '14623', Name: 'Thị trấn Bình Minh', Level: 'Thị trấn' },
@@ -6413,7 +6413,7 @@ const dataProvince = [
       },
       {
         Id: '377',
-        Name: 'Huyện Yên Mô',
+        Name: 'Yên Mô',
         Wards: [
           { Id: '14701', Name: 'Thị trấn Yên Thịnh', Level: 'Thị trấn' },
           { Id: '14704', Name: 'Xã Khánh Thượng', Level: 'Xã' },
@@ -6438,11 +6438,11 @@ const dataProvince = [
   },
   {
     Id: '38',
-    Name: 'Tỉnh Thanh Hóa',
+    Name: 'Thanh Hóa',
     Districts: [
       {
         Id: '380',
-        Name: 'Thành phố Thanh Hóa',
+        Name: 'Thanh Hóa',
         Wards: [
           { Id: '14755', Name: 'Phường Hàm Rồng', Level: 'Phường' },
           { Id: '14758', Name: 'Phường Đông Thọ', Level: 'Phường' },
@@ -6495,7 +6495,7 @@ const dataProvince = [
       },
       {
         Id: '382',
-        Name: 'Thành phố Sầm Sơn',
+        Name: 'Sầm Sơn',
         Wards: [
           { Id: '14830', Name: 'Phường Trung Sơn', Level: 'Phường' },
           { Id: '14833', Name: 'Phường Bắc Sơn', Level: 'Phường' },
@@ -6512,7 +6512,7 @@ const dataProvince = [
       },
       {
         Id: '384',
-        Name: 'Huyện Mường Lát',
+        Name: 'Mường Lát',
         Wards: [
           { Id: '14845', Name: 'Thị trấn Mường Lát', Level: 'Thị trấn' },
           { Id: '14848', Name: 'Xã Tam Chung', Level: 'Xã' },
@@ -6526,7 +6526,7 @@ const dataProvince = [
       },
       {
         Id: '385',
-        Name: 'Huyện Quan Hóa',
+        Name: 'Quan Hóa',
         Wards: [
           { Id: '14869', Name: 'Thị trấn Hồi Xuân', Level: 'Thị trấn' },
           { Id: '14872', Name: 'Xã Thành Sơn', Level: 'Xã' },
@@ -6547,7 +6547,7 @@ const dataProvince = [
       },
       {
         Id: '386',
-        Name: 'Huyện Bá Thước',
+        Name: 'Bá Thước',
         Wards: [
           { Id: '14923', Name: 'Thị trấn Cành Nàng', Level: 'Thị trấn' },
           { Id: '14926', Name: 'Xã Điền Thượng', Level: 'Xã' },
@@ -6574,7 +6574,7 @@ const dataProvince = [
       },
       {
         Id: '387',
-        Name: 'Huyện Quan Sơn',
+        Name: 'Quan Sơn',
         Wards: [
           { Id: '14995', Name: 'Xã Trung Xuân', Level: 'Xã' },
           { Id: '14998', Name: 'Xã Trung Thượng', Level: 'Xã' },
@@ -6592,7 +6592,7 @@ const dataProvince = [
       },
       {
         Id: '388',
-        Name: 'Huyện Lang Chánh',
+        Name: 'Lang Chánh',
         Wards: [
           { Id: '15031', Name: 'Xã Yên Khương', Level: 'Xã' },
           { Id: '15034', Name: 'Xã Yên Thắng', Level: 'Xã' },
@@ -6608,7 +6608,7 @@ const dataProvince = [
       },
       {
         Id: '389',
-        Name: 'Huyện Ngọc Lặc',
+        Name: 'Ngọc Lặc',
         Wards: [
           { Id: '15061', Name: 'Thị Trấn Ngọc Lặc', Level: 'Thị trấn' },
           { Id: '15064', Name: 'Xã Lam Sơn', Level: 'Xã' },
@@ -6635,7 +6635,7 @@ const dataProvince = [
       },
       {
         Id: '390',
-        Name: 'Huyện Cẩm Thủy',
+        Name: 'Cẩm Thủy',
         Wards: [
           { Id: '15127', Name: 'Thị trấn Phong Sơn', Level: 'Thị trấn' },
           { Id: '15133', Name: 'Xã Cẩm Thành', Level: 'Xã' },
@@ -6658,7 +6658,7 @@ const dataProvince = [
       },
       {
         Id: '391',
-        Name: 'Huyện Thạch Thành',
+        Name: 'Thạch Thành',
         Wards: [
           { Id: '15187', Name: 'Thị trấn Kim Tân', Level: 'Thị trấn' },
           { Id: '15190', Name: 'Thị trấn Vân Du', Level: 'Thị trấn' },
@@ -6689,7 +6689,7 @@ const dataProvince = [
       },
       {
         Id: '392',
-        Name: 'Huyện Hà Trung',
+        Name: 'Hà Trung',
         Wards: [
           { Id: '15271', Name: 'Thị trấn Hà Trung', Level: 'Thị trấn' },
           { Id: '15274', Name: 'Xã Hà Long', Level: 'Xã' },
@@ -6715,7 +6715,7 @@ const dataProvince = [
       },
       {
         Id: '393',
-        Name: 'Huyện Vĩnh Lộc',
+        Name: 'Vĩnh Lộc',
         Wards: [
           { Id: '15349', Name: 'Thị trấn Vĩnh Lộc', Level: 'Thị trấn' },
           { Id: '15352', Name: 'Xã Vĩnh Quang', Level: 'Xã' },
@@ -6734,7 +6734,7 @@ const dataProvince = [
       },
       {
         Id: '394',
-        Name: 'Huyện Yên Định',
+        Name: 'Yên Định',
         Wards: [
           { Id: '15397', Name: 'Thị trấn Thống Nhất', Level: 'Thị trấn' },
           { Id: '15403', Name: 'Xã Yên Lâm', Level: 'Xã' },
@@ -6766,7 +6766,7 @@ const dataProvince = [
       },
       {
         Id: '395',
-        Name: 'Huyện Thọ Xuân',
+        Name: 'Thọ Xuân',
         Wards: [
           { Id: '15493', Name: 'Xã Xuân Hồng', Level: 'Xã' },
           { Id: '15499', Name: 'Thị trấn Thọ Xuân', Level: 'Thị trấn' },
@@ -6802,7 +6802,7 @@ const dataProvince = [
       },
       {
         Id: '396',
-        Name: 'Huyện Thường Xuân',
+        Name: 'Thường Xuân',
         Wards: [
           { Id: '15607', Name: 'Xã Bát Mọt', Level: 'Xã' },
           { Id: '15610', Name: 'Xã Yên Nhân', Level: 'Xã' },
@@ -6824,7 +6824,7 @@ const dataProvince = [
       },
       {
         Id: '397',
-        Name: 'Huyện Triệu Sơn',
+        Name: 'Triệu Sơn',
         Wards: [
           { Id: '15664', Name: 'Thị trấn Triệu Sơn', Level: 'Thị trấn' },
           { Id: '15667', Name: 'Xã Thọ Sơn', Level: 'Xã' },
@@ -6864,7 +6864,7 @@ const dataProvince = [
       },
       {
         Id: '398',
-        Name: 'Huyện Thiệu Hóa',
+        Name: 'Thiệu Hóa',
         Wards: [
           { Id: '15772', Name: 'Thị trấn Thiệu Hóa', Level: 'Thị trấn' },
           { Id: '15775', Name: 'Xã Thiệu Ngọc', Level: 'Xã' },
@@ -6895,7 +6895,7 @@ const dataProvince = [
       },
       {
         Id: '399',
-        Name: 'Huyện Hoằng Hóa',
+        Name: 'Hoằng Hóa',
         Wards: [
           { Id: '15865', Name: 'Thị trấn Bút Sơn', Level: 'Thị trấn' },
           { Id: '15871', Name: 'Xã Hoằng Giang', Level: 'Xã' },
@@ -6938,7 +6938,7 @@ const dataProvince = [
       },
       {
         Id: '400',
-        Name: 'Huyện Hậu Lộc',
+        Name: 'Hậu Lộc',
         Wards: [
           { Id: '16012', Name: 'Thị trấn Hậu Lộc', Level: 'Thị trấn' },
           { Id: '16015', Name: 'Xã Đồng Lộc', Level: 'Xã' },
@@ -6967,7 +6967,7 @@ const dataProvince = [
       },
       {
         Id: '401',
-        Name: 'Huyện Nga Sơn',
+        Name: 'Nga Sơn',
         Wards: [
           { Id: '16093', Name: 'Thị trấn Nga Sơn', Level: 'Thị trấn' },
           { Id: '16096', Name: 'Xã Ba Đình', Level: 'Xã' },
@@ -6997,7 +6997,7 @@ const dataProvince = [
       },
       {
         Id: '402',
-        Name: 'Huyện Như Xuân',
+        Name: 'Như Xuân',
         Wards: [
           { Id: '16174', Name: 'Thị trấn Yên Cát', Level: 'Thị trấn' },
           { Id: '16177', Name: 'Xã Bãi Trành', Level: 'Xã' },
@@ -7019,7 +7019,7 @@ const dataProvince = [
       },
       {
         Id: '403',
-        Name: 'Huyện Như Thanh',
+        Name: 'Như Thanh',
         Wards: [
           { Id: '16228', Name: 'Thị trấn Bến Sung', Level: 'Thị trấn' },
           { Id: '16231', Name: 'Xã Cán Khê', Level: 'Xã' },
@@ -7039,7 +7039,7 @@ const dataProvince = [
       },
       {
         Id: '404',
-        Name: 'Huyện Nông Cống',
+        Name: 'Nông Cống',
         Wards: [
           { Id: '16279', Name: 'Thị trấn Nông Cống', Level: 'Thị trấn' },
           { Id: '16282', Name: 'Xã Tân Phúc', Level: 'Xã' },
@@ -7074,7 +7074,7 @@ const dataProvince = [
       },
       {
         Id: '405',
-        Name: 'Huyện Đông Sơn',
+        Name: 'Đông Sơn',
         Wards: [
           { Id: '16378', Name: 'Thị trấn Rừng Thông', Level: 'Thị trấn' },
           { Id: '16381', Name: 'Xã Đông Hoàng', Level: 'Xã' },
@@ -7094,7 +7094,7 @@ const dataProvince = [
       },
       {
         Id: '406',
-        Name: 'Huyện Quảng Xương',
+        Name: 'Quảng Xương',
         Wards: [
           { Id: '16438', Name: 'Thị trấn Tân Phong', Level: 'Thị trấn' },
           { Id: '16447', Name: 'Xã Quảng Trạch', Level: 'Xã' },
@@ -7165,11 +7165,11 @@ const dataProvince = [
   },
   {
     Id: '40',
-    Name: 'Tỉnh Nghệ An',
+    Name: 'Nghệ An',
     Districts: [
       {
         Id: '412',
-        Name: 'Thành phố Vinh',
+        Name: 'Vinh',
         Wards: [
           { Id: '16663', Name: 'Phường Đông Vĩnh', Level: 'Phường' },
           { Id: '16666', Name: 'Phường Hà Huy Tập', Level: 'Phường' },
@@ -7228,7 +7228,7 @@ const dataProvince = [
       },
       {
         Id: '415',
-        Name: 'Huyện Quế Phong',
+        Name: 'Quế Phong',
         Wards: [
           { Id: '16738', Name: 'Thị trấn Kim Sơn', Level: 'Thị trấn' },
           { Id: '16741', Name: 'Xã Thông Thụ', Level: 'Xã' },
@@ -7247,7 +7247,7 @@ const dataProvince = [
       },
       {
         Id: '416',
-        Name: 'Huyện Quỳ Châu',
+        Name: 'Quỳ Châu',
         Wards: [
           { Id: '16777', Name: 'Thị trấn Tân Lạc', Level: 'Thị trấn' },
           { Id: '16780', Name: 'Xã Châu Bính', Level: 'Xã' },
@@ -7265,7 +7265,7 @@ const dataProvince = [
       },
       {
         Id: '417',
-        Name: 'Huyện Kỳ Sơn',
+        Name: 'Kỳ Sơn',
         Wards: [
           { Id: '16813', Name: 'Thị trấn Mường Xén', Level: 'Thị trấn' },
           { Id: '16816', Name: 'Xã Mỹ Lý', Level: 'Xã' },
@@ -7292,7 +7292,7 @@ const dataProvince = [
       },
       {
         Id: '418',
-        Name: 'Huyện Tương Dương',
+        Name: 'Tương Dương',
         Wards: [
           { Id: '16876', Name: 'Thị trấn Thạch Giám', Level: 'Thị trấn' },
           { Id: '16879', Name: 'Xã Mai Sơn', Level: 'Xã' },
@@ -7315,7 +7315,7 @@ const dataProvince = [
       },
       {
         Id: '419',
-        Name: 'Huyện Nghĩa Đàn',
+        Name: 'Nghĩa Đàn',
         Wards: [
           { Id: '16941', Name: 'Thị trấn Nghĩa Đàn', Level: 'Thị trấn' },
           { Id: '16942', Name: 'Xã Nghĩa Mai', Level: 'Xã' },
@@ -7344,7 +7344,7 @@ const dataProvince = [
       },
       {
         Id: '420',
-        Name: 'Huyện Quỳ Hợp',
+        Name: 'Quỳ Hợp',
         Wards: [
           { Id: '17035', Name: 'Thị trấn Quỳ Hợp', Level: 'Thị trấn' },
           { Id: '17038', Name: 'Xã Yên Hợp', Level: 'Xã' },
@@ -7371,7 +7371,7 @@ const dataProvince = [
       },
       {
         Id: '421',
-        Name: 'Huyện Quỳnh Lưu',
+        Name: 'Quỳnh Lưu',
         Wards: [
           { Id: '17098', Name: 'Thị trấn Cầu Giát', Level: 'Thị trấn' },
           { Id: '17101', Name: 'Xã Quỳnh Thắng', Level: 'Xã' },
@@ -7410,7 +7410,7 @@ const dataProvince = [
       },
       {
         Id: '422',
-        Name: 'Huyện Con Cuông',
+        Name: 'Con Cuông',
         Wards: [
           { Id: '17227', Name: 'Thị trấn Con Cuông', Level: 'Thị trấn' },
           { Id: '17230', Name: 'Xã Bình Chuẩn', Level: 'Xã' },
@@ -7429,7 +7429,7 @@ const dataProvince = [
       },
       {
         Id: '423',
-        Name: 'Huyện Tân Kỳ',
+        Name: 'Tân Kỳ',
         Wards: [
           { Id: '17266', Name: 'Thị trấn Tân Kỳ', Level: 'Thị trấn' },
           { Id: '17269', Name: 'Xã Tân Hợp', Level: 'Xã' },
@@ -7457,7 +7457,7 @@ const dataProvince = [
       },
       {
         Id: '424',
-        Name: 'Huyện Anh Sơn',
+        Name: 'Anh Sơn',
         Wards: [
           { Id: '17329', Name: 'Thị trấn Anh Sơn', Level: 'Thị trấn' },
           { Id: '17332', Name: 'Xã Thọ Sơn', Level: 'Xã' },
@@ -7484,7 +7484,7 @@ const dataProvince = [
       },
       {
         Id: '425',
-        Name: 'Huyện Diễn Châu',
+        Name: 'Diễn Châu',
         Wards: [
           { Id: '17389', Name: 'Thị trấn Diễn Châu', Level: 'Thị trấn' },
           { Id: '17392', Name: 'Xã Diễn Lâm', Level: 'Xã' },
@@ -7527,7 +7527,7 @@ const dataProvince = [
       },
       {
         Id: '426',
-        Name: 'Huyện Yên Thành',
+        Name: 'Yên Thành',
         Wards: [
           { Id: '17506', Name: 'Thị trấn Yên Thành', Level: 'Thị trấn' },
           { Id: '17509', Name: 'Xã Mã Thành', Level: 'Xã' },
@@ -7572,7 +7572,7 @@ const dataProvince = [
       },
       {
         Id: '427',
-        Name: 'Huyện Đô Lương',
+        Name: 'Đô Lương',
         Wards: [
           { Id: '17617', Name: 'Thị trấn Đô Lương', Level: 'Thị trấn' },
           { Id: '17619', Name: 'Xã Giang Sơn Đông', Level: 'Xã' },
@@ -7611,7 +7611,7 @@ const dataProvince = [
       },
       {
         Id: '428',
-        Name: 'Huyện Thanh Chương',
+        Name: 'Thanh Chương',
         Wards: [
           { Id: '17713', Name: 'Thị trấn Thanh Chương', Level: 'Thị trấn' },
           { Id: '17716', Name: 'Xã Cát Văn', Level: 'Xã' },
@@ -7655,7 +7655,7 @@ const dataProvince = [
       },
       {
         Id: '429',
-        Name: 'Huyện Nghi Lộc',
+        Name: 'Nghi Lộc',
         Wards: [
           { Id: '17827', Name: 'Thị trấn Quán Hành', Level: 'Thị trấn' },
           { Id: '17830', Name: 'Xã Nghi Văn', Level: 'Xã' },
@@ -7690,7 +7690,7 @@ const dataProvince = [
       },
       {
         Id: '430',
-        Name: 'Huyện Nam Đàn',
+        Name: 'Nam Đàn',
         Wards: [
           { Id: '17932', Name: 'Xã Nam Hưng', Level: 'Xã' },
           { Id: '17935', Name: 'Xã Nam Nghĩa', Level: 'Xã' },
@@ -7715,7 +7715,7 @@ const dataProvince = [
       },
       {
         Id: '431',
-        Name: 'Huyện Hưng Nguyên',
+        Name: 'Hưng Nguyên',
         Wards: [
           { Id: '18001', Name: 'Thị trấn Hưng Nguyên', Level: 'Thị trấn' },
           { Id: '18004', Name: 'Xã Hưng Trung', Level: 'Xã' },
@@ -7757,11 +7757,11 @@ const dataProvince = [
   },
   {
     Id: '42',
-    Name: 'Tỉnh Hà Tĩnh',
+    Name: 'Hà Tĩnh',
     Districts: [
       {
         Id: '436',
-        Name: 'Thành phố Hà Tĩnh',
+        Name: 'Hà Tĩnh',
         Wards: [
           { Id: '18070', Name: 'Phường Trần Phú', Level: 'Phường' },
           { Id: '18073', Name: 'Phường Nam Hà', Level: 'Phường' },
@@ -7794,7 +7794,7 @@ const dataProvince = [
       },
       {
         Id: '439',
-        Name: 'Huyện Hương Sơn',
+        Name: 'Hương Sơn',
         Wards: [
           { Id: '18133', Name: 'Thị trấn Phố Châu', Level: 'Thị trấn' },
           { Id: '18136', Name: 'Thị trấn  Tây Sơn', Level: 'Thị trấn' },
@@ -7825,7 +7825,7 @@ const dataProvince = [
       },
       {
         Id: '440',
-        Name: 'Huyện Đức Thọ',
+        Name: 'Đức Thọ',
         Wards: [
           { Id: '18229', Name: 'Thị trấn Đức Thọ', Level: 'Thị trấn' },
           { Id: '18235', Name: 'Xã Quang Vĩnh', Level: 'Xã' },
@@ -7847,7 +7847,7 @@ const dataProvince = [
       },
       {
         Id: '441',
-        Name: 'Huyện Vũ Quang',
+        Name: 'Vũ Quang',
         Wards: [
           { Id: '18313', Name: 'Thị trấn Vũ Quang', Level: 'Thị trấn' },
           { Id: '18316', Name: 'Xã Ân Phú', Level: 'Xã' },
@@ -7863,7 +7863,7 @@ const dataProvince = [
       },
       {
         Id: '442',
-        Name: 'Huyện Nghi Xuân',
+        Name: 'Nghi Xuân',
         Wards: [
           { Id: '18352', Name: 'Thị trấn Xuân An', Level: 'Thị trấn' },
           { Id: '18355', Name: 'Xã Xuân Hội', Level: 'Xã' },
@@ -7886,7 +7886,7 @@ const dataProvince = [
       },
       {
         Id: '443',
-        Name: 'Huyện Can Lộc',
+        Name: 'Can Lộc',
         Wards: [
           { Id: '18406', Name: 'Thị trấn Nghèn', Level: 'Thị trấn' },
           { Id: '18415', Name: 'Xã Thiên Lộc', Level: 'Xã' },
@@ -7910,7 +7910,7 @@ const dataProvince = [
       },
       {
         Id: '444',
-        Name: 'Huyện Hương Khê',
+        Name: 'Hương Khê',
         Wards: [
           { Id: '18496', Name: 'Thị trấn Hương Khê', Level: 'Thị trấn' },
           { Id: '18499', Name: 'Xã Điền Mỹ', Level: 'Xã' },
@@ -7937,7 +7937,7 @@ const dataProvince = [
       },
       {
         Id: '445',
-        Name: 'Huyện Thạch Hà',
+        Name: 'Thạch Hà',
         Wards: [
           { Id: '18562', Name: 'Thị trấn Thạch Hà', Level: 'Thị trấn' },
           { Id: '18565', Name: 'Xã Ngọc Sơn', Level: 'Xã' },
@@ -7965,7 +7965,7 @@ const dataProvince = [
       },
       {
         Id: '446',
-        Name: 'Huyện Cẩm Xuyên',
+        Name: 'Cẩm Xuyên',
         Wards: [
           { Id: '18673', Name: 'Thị trấn Cẩm Xuyên', Level: 'Thị trấn' },
           { Id: '18676', Name: 'Thị trấn Thiên Cầm', Level: 'Thị trấn' },
@@ -7994,7 +7994,7 @@ const dataProvince = [
       },
       {
         Id: '447',
-        Name: 'Huyện Kỳ Anh',
+        Name: 'Kỳ Anh',
         Wards: [
           { Id: '18757', Name: 'Xã Kỳ Xuân', Level: 'Xã' },
           { Id: '18760', Name: 'Xã Kỳ Bắc', Level: 'Xã' },
@@ -8020,7 +8020,7 @@ const dataProvince = [
       },
       {
         Id: '448',
-        Name: 'Huyện Lộc Hà',
+        Name: 'Lộc Hà',
         Wards: [
           { Id: '18409', Name: 'Xã Tân Lộc', Level: 'Xã' },
           { Id: '18412', Name: 'Xã Hồng Lộc', Level: 'Xã' },
@@ -8057,11 +8057,11 @@ const dataProvince = [
   },
   {
     Id: '44',
-    Name: 'Tỉnh Quảng Bình',
+    Name: 'Quảng Bình',
     Districts: [
       {
         Id: '450',
-        Name: 'Thành Phố Đồng Hới',
+        Name: 'Đồng Hới',
         Wards: [
           { Id: '18853', Name: 'Phường Hải Thành', Level: 'Phường' },
           { Id: '18856', Name: 'Phường Đồng Phú', Level: 'Phường' },
@@ -8082,7 +8082,7 @@ const dataProvince = [
       },
       {
         Id: '452',
-        Name: 'Huyện Minh Hóa',
+        Name: 'Minh Hóa',
         Wards: [
           { Id: '18901', Name: 'Thị trấn Quy Đạt', Level: 'Thị trấn' },
           { Id: '18904', Name: 'Xã Dân Hóa', Level: 'Xã' },
@@ -8103,7 +8103,7 @@ const dataProvince = [
       },
       {
         Id: '453',
-        Name: 'Huyện Tuyên Hóa',
+        Name: 'Tuyên Hóa',
         Wards: [
           { Id: '18949', Name: 'Thị trấn Đồng Lê', Level: 'Thị trấn' },
           { Id: '18952', Name: 'Xã Hương Hóa', Level: 'Xã' },
@@ -8128,7 +8128,7 @@ const dataProvince = [
       },
       {
         Id: '454',
-        Name: 'Huyện Quảng Trạch',
+        Name: 'Quảng Trạch',
         Wards: [
           { Id: '19012', Name: 'Xã Quảng Hợp', Level: 'Xã' },
           { Id: '19015', Name: 'Xã Quảng Kim', Level: 'Xã' },
@@ -8151,7 +8151,7 @@ const dataProvince = [
       },
       {
         Id: '455',
-        Name: 'Huyện Bố Trạch',
+        Name: 'Bố Trạch',
         Wards: [
           { Id: '19111', Name: 'Thị trấn Hoàn Lão', Level: 'Thị trấn' },
           { Id: '19114', Name: 'Thị trấn NT Việt Trung', Level: 'Thị trấn' },
@@ -8185,7 +8185,7 @@ const dataProvince = [
       },
       {
         Id: '456',
-        Name: 'Huyện Quảng Ninh',
+        Name: 'Quảng Ninh',
         Wards: [
           { Id: '19201', Name: 'Thị trấn Quán Hàu', Level: 'Thị trấn' },
           { Id: '19204', Name: 'Xã Trường Sơn', Level: 'Xã' },
@@ -8206,7 +8206,7 @@ const dataProvince = [
       },
       {
         Id: '457',
-        Name: 'Huyện Lệ Thủy',
+        Name: 'Lệ Thủy',
         Wards: [
           { Id: '19246', Name: 'Thị trấn NT Lệ Ninh', Level: 'Thị trấn' },
           { Id: '19249', Name: 'Thị trấn Kiến Giang', Level: 'Thị trấn' },
@@ -8262,11 +8262,11 @@ const dataProvince = [
   },
   {
     Id: '45',
-    Name: 'Tỉnh Quảng Trị',
+    Name: 'Quảng Trị',
     Districts: [
       {
         Id: '461',
-        Name: 'Thành phố Đông Hà',
+        Name: 'Đông Hà',
         Wards: [
           { Id: '19330', Name: 'Phường Đông Giang', Level: 'Phường' },
           { Id: '19333', Name: 'Phường 1', Level: 'Phường' },
@@ -8292,7 +8292,7 @@ const dataProvince = [
       },
       {
         Id: '464',
-        Name: 'Huyện Vĩnh Linh',
+        Name: 'Vĩnh Linh',
         Wards: [
           { Id: '19363', Name: 'Thị trấn Hồ Xá', Level: 'Thị trấn' },
           { Id: '19366', Name: 'Thị trấn Bến Quan', Level: 'Thị trấn' },
@@ -8316,7 +8316,7 @@ const dataProvince = [
       },
       {
         Id: '465',
-        Name: 'Huyện Hướng Hóa',
+        Name: 'Hướng Hóa',
         Wards: [
           { Id: '19429', Name: 'Thị trấn Khe Sanh', Level: 'Thị trấn' },
           { Id: '19432', Name: 'Thị trấn Lao Bảo', Level: 'Thị trấn' },
@@ -8343,7 +8343,7 @@ const dataProvince = [
       },
       {
         Id: '466',
-        Name: 'Huyện Gio Linh',
+        Name: 'Gio Linh',
         Wards: [
           { Id: '19495', Name: 'Thị trấn Gio Linh', Level: 'Thị trấn' },
           { Id: '19496', Name: 'Thị trấn Cửa Việt', Level: 'Thị trấn' },
@@ -8366,7 +8366,7 @@ const dataProvince = [
       },
       {
         Id: '467',
-        Name: 'Huyện Đa Krông',
+        Name: 'Đa Krông',
         Wards: [
           { Id: '19555', Name: 'Thị trấn Krông Klang', Level: 'Thị trấn' },
           { Id: '19558', Name: 'Xã Mò Ó', Level: 'Xã' },
@@ -8385,7 +8385,7 @@ const dataProvince = [
       },
       {
         Id: '468',
-        Name: 'Huyện Cam Lộ',
+        Name: 'Cam Lộ',
         Wards: [
           { Id: '19597', Name: 'Thị trấn Cam Lộ', Level: 'Thị trấn' },
           { Id: '19600', Name: 'Xã Cam Tuyền', Level: 'Xã' },
@@ -8399,7 +8399,7 @@ const dataProvince = [
       },
       {
         Id: '469',
-        Name: 'Huyện Triệu Phong',
+        Name: 'Triệu Phong',
         Wards: [
           { Id: '19624', Name: 'Thị Trấn Ái Tử', Level: 'Thị trấn' },
           { Id: '19627', Name: 'Xã Triệu An', Level: 'Xã' },
@@ -8423,7 +8423,7 @@ const dataProvince = [
       },
       {
         Id: '470',
-        Name: 'Huyện Hải Lăng',
+        Name: 'Hải Lăng',
         Wards: [
           { Id: '19681', Name: 'Thị trấn Diên Sanh', Level: 'Thị trấn' },
           { Id: '19684', Name: 'Xã Hải An', Level: 'Xã' },
@@ -8443,16 +8443,16 @@ const dataProvince = [
           { Id: '19741', Name: 'Xã Hải Khê', Level: 'Xã' }
         ]
       },
-      { Id: '471', Name: 'Huyện Cồn Cỏ', Wards: [{ Level: 'Huyện' }] }
+      { Id: '471', Name: 'Cồn Cỏ', Wards: [{ Level: 'Huyện' }] }
     ]
   },
   {
     Id: '46',
-    Name: 'Tỉnh Thừa Thiên Huế',
+    Name: 'Thừa Thiên Huế',
     Districts: [
       {
         Id: '474',
-        Name: 'Thành phố Huế',
+        Name: 'Huế',
         Wards: [
           { Id: '19744', Name: 'Phường Phú Thuận', Level: 'Phường' },
           { Id: '19747', Name: 'Phường Phú Bình', Level: 'Phường' },
@@ -8485,7 +8485,7 @@ const dataProvince = [
       },
       {
         Id: '476',
-        Name: 'Huyện Phong Điền',
+        Name: 'Phong Điền',
         Wards: [
           { Id: '19819', Name: 'Thị trấn Phong Điền', Level: 'Thị trấn' },
           { Id: '19822', Name: 'Xã Điền Hương', Level: 'Xã' },
@@ -8507,7 +8507,7 @@ const dataProvince = [
       },
       {
         Id: '477',
-        Name: 'Huyện Quảng Điền',
+        Name: 'Quảng Điền',
         Wards: [
           { Id: '19867', Name: 'Thị trấn Sịa', Level: 'Thị trấn' },
           { Id: '19870', Name: 'Xã Quảng Thái', Level: 'Xã' },
@@ -8524,7 +8524,7 @@ const dataProvince = [
       },
       {
         Id: '478',
-        Name: 'Huyện Phú Vang',
+        Name: 'Phú Vang',
         Wards: [
           { Id: '19900', Name: 'Thị trấn Thuận An', Level: 'Thị trấn' },
           { Id: '19903', Name: 'Xã Phú Thuận', Level: 'Xã' },
@@ -8588,7 +8588,7 @@ const dataProvince = [
       },
       {
         Id: '481',
-        Name: 'Huyện A Lưới',
+        Name: 'A Lưới',
         Wards: [
           { Id: '20044', Name: 'Thị trấn A Lưới', Level: 'Thị trấn' },
           { Id: '20047', Name: 'Xã Hồng Vân', Level: 'Xã' },
@@ -8612,7 +8612,7 @@ const dataProvince = [
       },
       {
         Id: '482',
-        Name: 'Huyện Phú Lộc',
+        Name: 'Phú Lộc',
         Wards: [
           { Id: '20107', Name: 'Thị trấn Phú Lộc', Level: 'Thị trấn' },
           { Id: '20110', Name: 'Thị trấn Lăng Cô', Level: 'Thị trấn' },
@@ -8635,7 +8635,7 @@ const dataProvince = [
       },
       {
         Id: '483',
-        Name: 'Huyện Nam Đông',
+        Name: 'Nam Đông',
         Wards: [
           { Id: '20161', Name: 'Thị trấn Khe Tre', Level: 'Thị trấn' },
           { Id: '20164', Name: 'Xã Hương Phú', Level: 'Xã' },
@@ -8653,11 +8653,11 @@ const dataProvince = [
   },
   {
     Id: '48',
-    Name: 'Thành phố Đà Nẵng',
+    Name: 'Đà Nẵng',
     Districts: [
       {
         Id: '490',
-        Name: 'Quận Liên Chiểu',
+        Name: 'Liên Chiểu',
         Wards: [
           { Id: '20194', Name: 'Phường Hòa Hiệp Bắc', Level: 'Phường' },
           { Id: '20195', Name: 'Phường Hòa Hiệp Nam', Level: 'Phường' },
@@ -8668,7 +8668,7 @@ const dataProvince = [
       },
       {
         Id: '491',
-        Name: 'Quận Thanh Khê',
+        Name: 'Thanh Khê',
         Wards: [
           { Id: '20203', Name: 'Phường Tam Thuận', Level: 'Phường' },
           { Id: '20206', Name: 'Phường Thanh Khê Tây', Level: 'Phường' },
@@ -8684,12 +8684,12 @@ const dataProvince = [
       },
       {
         Id: '492',
-        Name: 'Quận Hải Châu',
+        Name: 'Hải Châu',
         Wards: [
           { Id: '20227', Name: 'Phường Thanh Bình', Level: 'Phường' },
           { Id: '20230', Name: 'Phường Thuận Phước', Level: 'Phường' },
           { Id: '20233', Name: 'Phường Thạch Thang', Level: 'Phường' },
-          { Id: '20236', Name: 'Phường Hải Châu  I', Level: 'Phường' },
+          { Id: '20236', Name: 'Phường Hải Châu I', Level: 'Phường' },
           { Id: '20239', Name: 'Phường Hải Châu II', Level: 'Phường' },
           { Id: '20242', Name: 'Phường Phước Ninh', Level: 'Phường' },
           { Id: '20245', Name: 'Phường Hòa Thuận Tây', Level: 'Phường' },
@@ -8703,7 +8703,7 @@ const dataProvince = [
       },
       {
         Id: '493',
-        Name: 'Quận Sơn Trà',
+        Name: 'Sơn Trà',
         Wards: [
           { Id: '20263', Name: 'Phường Thọ Quang', Level: 'Phường' },
           { Id: '20266', Name: 'Phường Nại Hiên Đông', Level: 'Phường' },
@@ -8716,7 +8716,7 @@ const dataProvince = [
       },
       {
         Id: '494',
-        Name: 'Quận Ngũ Hành Sơn',
+        Name: 'Ngũ Hành Sơn',
         Wards: [
           { Id: '20284', Name: 'Phường Mỹ An', Level: 'Phường' },
           { Id: '20285', Name: 'Phường Khuê Mỹ', Level: 'Phường' },
@@ -8726,7 +8726,7 @@ const dataProvince = [
       },
       {
         Id: '495',
-        Name: 'Quận Cẩm Lệ',
+        Name: 'Cẩm Lệ',
         Wards: [
           { Id: '20260', Name: 'Phường Khuê Trung', Level: 'Phường' },
           { Id: '20305', Name: 'Phường Hòa Phát', Level: 'Phường' },
@@ -8738,7 +8738,7 @@ const dataProvince = [
       },
       {
         Id: '497',
-        Name: 'Huyện Hòa Vang',
+        Name: 'Hòa Vang',
         Wards: [
           { Id: '20293', Name: 'Xã Hòa Bắc', Level: 'Xã' },
           { Id: '20296', Name: 'Xã Hòa Liên', Level: 'Xã' },
@@ -8753,16 +8753,16 @@ const dataProvince = [
           { Id: '20332', Name: 'Xã Hòa Khương', Level: 'Xã' }
         ]
       },
-      { Id: '498', Name: 'Huyện Hoàng Sa', Wards: [{ Level: 'Huyện' }] }
+      { Id: '498', Name: 'Hoàng Sa', Wards: [{ Level: 'Huyện' }] }
     ]
   },
   {
     Id: '49',
-    Name: 'Tỉnh Quảng Nam',
+    Name: 'Quảng Nam',
     Districts: [
       {
         Id: '502',
-        Name: 'Thành phố Tam Kỳ',
+        Name: 'Tam Kỳ',
         Wards: [
           { Id: '20335', Name: 'Phường Tân Thạnh', Level: 'Phường' },
           { Id: '20338', Name: 'Phường Phước Hòa', Level: 'Phường' },
@@ -8781,7 +8781,7 @@ const dataProvince = [
       },
       {
         Id: '503',
-        Name: 'Thành phố Hội An',
+        Name: 'Hội An',
         Wards: [
           { Id: '20398', Name: 'Phường Minh An', Level: 'Phường' },
           { Id: '20401', Name: 'Phường Tân An', Level: 'Phường' },
@@ -8800,7 +8800,7 @@ const dataProvince = [
       },
       {
         Id: '504',
-        Name: 'Huyện Tây Giang',
+        Name: 'Tây Giang',
         Wards: [
           { Id: '20437', Name: "Xã Ch'ơm", Level: 'Xã' },
           { Id: '20440', Name: 'Xã Ga Ri', Level: 'Xã' },
@@ -8816,7 +8816,7 @@ const dataProvince = [
       },
       {
         Id: '505',
-        Name: 'Huyện Đông Giang',
+        Name: 'Đông Giang',
         Wards: [
           { Id: '20467', Name: 'Thị trấn P Rao', Level: 'Thị trấn' },
           { Id: '20470', Name: 'Xã Tà Lu', Level: 'Xã' },
@@ -8833,7 +8833,7 @@ const dataProvince = [
       },
       {
         Id: '506',
-        Name: 'Huyện Đại Lộc',
+        Name: 'Đại Lộc',
         Wards: [
           { Id: '20500', Name: 'Thị Trấn Ái Nghĩa', Level: 'Thị trấn' },
           { Id: '20503', Name: 'Xã Đại Sơn', Level: 'Xã' },
@@ -8883,7 +8883,7 @@ const dataProvince = [
       },
       {
         Id: '508',
-        Name: 'Huyện Duy Xuyên',
+        Name: 'Duy Xuyên',
         Wards: [
           { Id: '20599', Name: 'Thị trấn Nam Phước', Level: 'Thị trấn' },
           { Id: '20602', Name: 'Xã Duy Thu', Level: 'Xã' },
@@ -8903,7 +8903,7 @@ const dataProvince = [
       },
       {
         Id: '509',
-        Name: 'Huyện Quế Sơn',
+        Name: 'Quế Sơn',
         Wards: [
           { Id: '20641', Name: 'Thị trấn Đông Phú', Level: 'Thị trấn' },
           { Id: '20644', Name: 'Xã Quế Xuân 1', Level: 'Xã' },
@@ -8922,7 +8922,7 @@ const dataProvince = [
       },
       {
         Id: '510',
-        Name: 'Huyện Nam Giang',
+        Name: 'Nam Giang',
         Wards: [
           { Id: '20695', Name: 'Thị trấn Thạnh Mỹ', Level: 'Thị trấn' },
           { Id: '20698', Name: 'Xã Laêê', Level: 'Xã' },
@@ -8940,7 +8940,7 @@ const dataProvince = [
       },
       {
         Id: '511',
-        Name: 'Huyện Phước Sơn',
+        Name: 'Phước Sơn',
         Wards: [
           { Id: '20722', Name: 'Thị trấn Khâm Đức', Level: 'Thị trấn' },
           { Id: '20725', Name: 'Xã Phước Xuân', Level: 'Xã' },
@@ -8958,7 +8958,7 @@ const dataProvince = [
       },
       {
         Id: '512',
-        Name: 'Huyện Hiệp Đức',
+        Name: 'Hiệp Đức',
         Wards: [
           { Id: '20758', Name: 'Xã Hiệp Hòa', Level: 'Xã' },
           { Id: '20761', Name: 'Xã Hiệp Thuận', Level: 'Xã' },
@@ -8975,7 +8975,7 @@ const dataProvince = [
       },
       {
         Id: '513',
-        Name: 'Huyện Thăng Bình',
+        Name: 'Thăng Bình',
         Wards: [
           { Id: '20791', Name: 'Thị trấn Hà Lam', Level: 'Thị trấn' },
           { Id: '20794', Name: 'Xã Bình Dương', Level: 'Xã' },
@@ -9003,7 +9003,7 @@ const dataProvince = [
       },
       {
         Id: '514',
-        Name: 'Huyện Tiên Phước',
+        Name: 'Tiên Phước',
         Wards: [
           { Id: '20854', Name: 'Thị trấn Tiên Kỳ', Level: 'Thị trấn' },
           { Id: '20857', Name: 'Xã Tiên Sơn', Level: 'Xã' },
@@ -9024,7 +9024,7 @@ const dataProvince = [
       },
       {
         Id: '515',
-        Name: 'Huyện Bắc Trà My',
+        Name: 'Bắc Trà My',
         Wards: [
           { Id: '20899', Name: 'Thị trấn Trà My', Level: 'Thị trấn' },
           { Id: '20900', Name: 'Xã Trà Sơn', Level: 'Xã' },
@@ -9043,7 +9043,7 @@ const dataProvince = [
       },
       {
         Id: '516',
-        Name: 'Huyện Nam Trà My',
+        Name: 'Nam Trà My',
         Wards: [
           { Id: '20935', Name: 'Xã Trà Leng', Level: 'Xã' },
           { Id: '20938', Name: 'Xã Trà Dơn', Level: 'Xã' },
@@ -9059,7 +9059,7 @@ const dataProvince = [
       },
       {
         Id: '517',
-        Name: 'Huyện Núi Thành',
+        Name: 'Núi Thành',
         Wards: [
           { Id: '20965', Name: 'Thị trấn Núi Thành', Level: 'Thị trấn' },
           { Id: '20968', Name: 'Xã Tam Xuân I', Level: 'Xã' },
@@ -9082,7 +9082,7 @@ const dataProvince = [
       },
       {
         Id: '518',
-        Name: 'Huyện Phú Ninh',
+        Name: 'Phú Ninh',
         Wards: [
           { Id: '20364', Name: 'Thị trấn Phú Thịnh', Level: 'Thị trấn' },
           { Id: '20365', Name: 'Xã Tam Thành', Level: 'Xã' },
@@ -9099,7 +9099,7 @@ const dataProvince = [
       },
       {
         Id: '519',
-        Name: 'Huyện Nông Sơn',
+        Name: 'Nông Sơn',
         Wards: [
           { Id: '20656', Name: 'Xã Quế Trung', Level: 'Xã' },
           { Id: '20668', Name: 'Xã Ninh Phước', Level: 'Xã' },
@@ -9113,11 +9113,11 @@ const dataProvince = [
   },
   {
     Id: '51',
-    Name: 'Tỉnh Quảng Ngãi',
+    Name: 'Quảng Ngãi',
     Districts: [
       {
         Id: '522',
-        Name: 'Thành phố Quảng Ngãi',
+        Name: 'Quảng Ngãi',
         Wards: [
           { Id: '21010', Name: 'Phường Lê Hồng Phong', Level: 'Phường' },
           { Id: '21013', Name: 'Phường Trần Phú', Level: 'Phường' },
@@ -9146,7 +9146,7 @@ const dataProvince = [
       },
       {
         Id: '524',
-        Name: 'Huyện Bình Sơn',
+        Name: 'Bình Sơn',
         Wards: [
           { Id: '21040', Name: 'Thị Trấn Châu Ổ', Level: 'Thị trấn' },
           { Id: '21043', Name: 'Xã Bình Thuận', Level: 'Xã' },
@@ -9174,7 +9174,7 @@ const dataProvince = [
       },
       {
         Id: '525',
-        Name: 'Huyện Trà Bồng',
+        Name: 'Trà Bồng',
         Wards: [
           { Id: '21115', Name: 'Thị trấn Trà Xuân', Level: 'Thị trấn' },
           { Id: '21118', Name: 'Xã Trà Giang', Level: 'Xã' },
@@ -9196,7 +9196,7 @@ const dataProvince = [
       },
       {
         Id: '527',
-        Name: 'Huyện Sơn Tịnh',
+        Name: 'Sơn Tịnh',
         Wards: [
           { Id: '21175', Name: 'Xã Tịnh Thọ', Level: 'Xã' },
           { Id: '21178', Name: 'Xã Tịnh Trà', Level: 'Xã' },
@@ -9213,7 +9213,7 @@ const dataProvince = [
       },
       {
         Id: '528',
-        Name: 'Huyện Tư Nghĩa',
+        Name: 'Tư Nghĩa',
         Wards: [
           { Id: '21235', Name: 'Thị trấn La Hà', Level: 'Thị trấn' },
           { Id: '21238', Name: 'Thị trấn Sông Vệ', Level: 'Thị trấn' },
@@ -9233,7 +9233,7 @@ const dataProvince = [
       },
       {
         Id: '529',
-        Name: 'Huyện Sơn Hà',
+        Name: 'Sơn Hà',
         Wards: [
           { Id: '21289', Name: 'Thị trấn Di Lăng', Level: 'Thị trấn' },
           { Id: '21292', Name: 'Xã Sơn Hạ', Level: 'Xã' },
@@ -9253,7 +9253,7 @@ const dataProvince = [
       },
       {
         Id: '530',
-        Name: 'Huyện Sơn Tây',
+        Name: 'Sơn Tây',
         Wards: [
           { Id: '21331', Name: 'Xã Sơn Bua', Level: 'Xã' },
           { Id: '21334', Name: 'Xã Sơn Mùa', Level: 'Xã' },
@@ -9268,7 +9268,7 @@ const dataProvince = [
       },
       {
         Id: '531',
-        Name: 'Huyện Minh Long',
+        Name: 'Minh Long',
         Wards: [
           { Id: '21349', Name: 'Xã Long Sơn', Level: 'Xã' },
           { Id: '21352', Name: 'Xã Long Mai', Level: 'Xã' },
@@ -9279,7 +9279,7 @@ const dataProvince = [
       },
       {
         Id: '532',
-        Name: 'Huyện Nghĩa Hành',
+        Name: 'Nghĩa Hành',
         Wards: [
           { Id: '21364', Name: 'Thị trấn Chợ Chùa', Level: 'Thị trấn' },
           { Id: '21367', Name: 'Xã Hành Thuận', Level: 'Xã' },
@@ -9297,7 +9297,7 @@ const dataProvince = [
       },
       {
         Id: '533',
-        Name: 'Huyện Mộ Đức',
+        Name: 'Mộ Đức',
         Wards: [
           { Id: '21400', Name: 'Thị trấn Mộ Đức', Level: 'Thị trấn' },
           { Id: '21403', Name: 'Xã Đức Lợi', Level: 'Xã' },
@@ -9337,7 +9337,7 @@ const dataProvince = [
       },
       {
         Id: '535',
-        Name: 'Huyện Ba Tơ',
+        Name: 'Ba Tơ',
         Wards: [
           { Id: '21484', Name: 'Thị trấn Ba Tơ', Level: 'Thị trấn' },
           { Id: '21487', Name: 'Xã Ba Điền', Level: 'Xã' },
@@ -9360,16 +9360,16 @@ const dataProvince = [
           { Id: '21538', Name: 'Xã Ba Xa', Level: 'Xã' }
         ]
       },
-      { Id: '536', Name: 'Huyện Lý Sơn', Wards: [{ Level: 'Huyện' }] }
+      { Id: '536', Name: 'Lý Sơn', Wards: [{ Level: 'Huyện' }] }
     ]
   },
   {
     Id: '52',
-    Name: 'Tỉnh Bình Định',
+    Name: 'Bình Định',
     Districts: [
       {
         Id: '540',
-        Name: 'Thành phố Quy Nhơn',
+        Name: 'Quy Nhơn',
         Wards: [
           { Id: '21550', Name: 'Phường Nhơn Bình', Level: 'Phường' },
           { Id: '21553', Name: 'Phường Nhơn Phú', Level: 'Phường' },
@@ -9396,7 +9396,7 @@ const dataProvince = [
       },
       {
         Id: '542',
-        Name: 'Huyện An Lão',
+        Name: 'An Lão',
         Wards: [
           { Id: '21609', Name: 'Thị trấn An Lão', Level: 'Thị trấn' },
           { Id: '21610', Name: 'Xã An Hưng', Level: 'Xã' },
@@ -9435,7 +9435,7 @@ const dataProvince = [
       },
       {
         Id: '544',
-        Name: 'Huyện Hoài Ân',
+        Name: 'Hoài Ân',
         Wards: [
           { Id: '21688', Name: 'Thị trấn Tăng Bạt Hổ', Level: 'Thị trấn' },
           { Id: '21690', Name: 'Xã Ân Hảo Tây', Level: 'Xã' },
@@ -9456,7 +9456,7 @@ const dataProvince = [
       },
       {
         Id: '545',
-        Name: 'Huyện Phù Mỹ',
+        Name: 'Phù Mỹ',
         Wards: [
           { Id: '21730', Name: 'Thị trấn Phù Mỹ', Level: 'Thị trấn' },
           { Id: '21733', Name: 'Thị trấn Bình Dương', Level: 'Thị trấn' },
@@ -9481,7 +9481,7 @@ const dataProvince = [
       },
       {
         Id: '546',
-        Name: 'Huyện Vĩnh Thạnh',
+        Name: 'Vĩnh Thạnh',
         Wards: [
           { Id: '21786', Name: 'Thị trấn Vĩnh Thạnh', Level: 'Thị trấn' },
           { Id: '21787', Name: 'Xã Vĩnh Sơn', Level: 'Xã' },
@@ -9496,7 +9496,7 @@ const dataProvince = [
       },
       {
         Id: '547',
-        Name: 'Huyện Tây Sơn',
+        Name: 'Tây Sơn',
         Wards: [
           { Id: '21808', Name: 'Thị trấn Phú Phong', Level: 'Thị trấn' },
           { Id: '21811', Name: 'Xã Bình Tân', Level: 'Xã' },
@@ -9517,7 +9517,7 @@ const dataProvince = [
       },
       {
         Id: '548',
-        Name: 'Huyện Phù Cát',
+        Name: 'Phù Cát',
         Wards: [
           { Id: '21853', Name: 'Thị trấn Ngô Mây', Level: 'Thị trấn' },
           { Id: '21856', Name: 'Xã Cát Sơn', Level: 'Xã' },
@@ -9562,7 +9562,7 @@ const dataProvince = [
       },
       {
         Id: '550',
-        Name: 'Huyện Tuy Phước',
+        Name: 'Tuy Phước',
         Wards: [
           { Id: '21952', Name: 'Thị trấn Tuy Phước', Level: 'Thị trấn' },
           { Id: '21955', Name: 'Thị trấn Diêu Trì', Level: 'Thị trấn' },
@@ -9581,7 +9581,7 @@ const dataProvince = [
       },
       {
         Id: '551',
-        Name: 'Huyện Vân Canh',
+        Name: 'Vân Canh',
         Wards: [
           { Id: '21994', Name: 'Thị trấn Vân Canh', Level: 'Thị trấn' },
           { Id: '21997', Name: 'Xã Canh Liên', Level: 'Xã' },
@@ -9596,11 +9596,11 @@ const dataProvince = [
   },
   {
     Id: '54',
-    Name: 'Tỉnh Phú Yên',
+    Name: 'Phú Yên',
     Districts: [
       {
         Id: '555',
-        Name: 'Thành phố Tuy Hoà',
+        Name: 'Tuy Hoà',
         Wards: [
           { Id: '22015', Name: 'Phường 1', Level: 'Phường' },
           { Id: '22018', Name: 'Phường 8', Level: 'Phường' },
@@ -9641,7 +9641,7 @@ const dataProvince = [
       },
       {
         Id: '558',
-        Name: 'Huyện Đồng Xuân',
+        Name: 'Đồng Xuân',
         Wards: [
           { Id: '22081', Name: 'Thị trấn La Hai', Level: 'Thị trấn' },
           { Id: '22084', Name: 'Xã Đa Lộc', Level: 'Xã' },
@@ -9658,7 +9658,7 @@ const dataProvince = [
       },
       {
         Id: '559',
-        Name: 'Huyện Tuy An',
+        Name: 'Tuy An',
         Wards: [
           { Id: '22114', Name: 'Thị trấn Chí Thạnh', Level: 'Thị trấn' },
           { Id: '22117', Name: 'Xã An Dân', Level: 'Xã' },
@@ -9679,7 +9679,7 @@ const dataProvince = [
       },
       {
         Id: '560',
-        Name: 'Huyện Sơn Hòa',
+        Name: 'Sơn Hòa',
         Wards: [
           { Id: '22165', Name: 'Thị trấn Củng Sơn', Level: 'Thị trấn' },
           { Id: '22168', Name: 'Xã Phước Tân', Level: 'Xã' },
@@ -9699,7 +9699,7 @@ const dataProvince = [
       },
       {
         Id: '561',
-        Name: 'Huyện Sông Hinh',
+        Name: 'Sông Hinh',
         Wards: [
           { Id: '22207', Name: 'Thị trấn Hai Riêng', Level: 'Thị trấn' },
           { Id: '22210', Name: 'Xã Ea Lâm', Level: 'Xã' },
@@ -9716,7 +9716,7 @@ const dataProvince = [
       },
       {
         Id: '562',
-        Name: 'Huyện Tây Hoà',
+        Name: 'Tây Hoà',
         Wards: [
           { Id: '22249', Name: 'Xã Sơn Thành Tây', Level: 'Xã' },
           { Id: '22250', Name: 'Xã Sơn Thành Đông', Level: 'Xã' },
@@ -9733,7 +9733,7 @@ const dataProvince = [
       },
       {
         Id: '563',
-        Name: 'Huyện Phú Hoà',
+        Name: 'Phú Hoà',
         Wards: [
           { Id: '22303', Name: 'Xã Hòa Quang Bắc', Level: 'Xã' },
           { Id: '22306', Name: 'Xã Hòa Quang Nam', Level: 'Xã' },
@@ -9766,11 +9766,11 @@ const dataProvince = [
   },
   {
     Id: '56',
-    Name: 'Tỉnh Khánh Hòa',
+    Name: 'Khánh Hòa',
     Districts: [
       {
         Id: '568',
-        Name: 'Thành phố Nha Trang',
+        Name: 'Nha Trang',
         Wards: [
           { Id: '22327', Name: 'Phường Vĩnh Hòa', Level: 'Phường' },
           { Id: '22330', Name: 'Phường Vĩnh Hải', Level: 'Phường' },
@@ -9803,7 +9803,7 @@ const dataProvince = [
       },
       {
         Id: '569',
-        Name: 'Thành phố Cam Ranh',
+        Name: 'Cam Ranh',
         Wards: [
           { Id: '22408', Name: 'Phường Cam Nghĩa', Level: 'Phường' },
           { Id: '22411', Name: 'Phường Cam Phúc Bắc', Level: 'Phường' },
@@ -9824,7 +9824,7 @@ const dataProvince = [
       },
       {
         Id: '570',
-        Name: 'Huyện Cam Lâm',
+        Name: 'Cam Lâm',
         Wards: [
           { Id: '22435', Name: 'Xã Cam Tân', Level: 'Xã' },
           { Id: '22438', Name: 'Xã Cam Hòa', Level: 'Xã' },
@@ -9844,7 +9844,7 @@ const dataProvince = [
       },
       {
         Id: '571',
-        Name: 'Huyện Vạn Ninh',
+        Name: 'Vạn Ninh',
         Wards: [
           { Id: '22489', Name: 'Thị trấn Vạn Giã', Level: 'Thị trấn' },
           { Id: '22492', Name: 'Xã Đại Lãnh', Level: 'Xã' },
@@ -9896,7 +9896,7 @@ const dataProvince = [
       },
       {
         Id: '573',
-        Name: 'Huyện Khánh Vĩnh',
+        Name: 'Khánh Vĩnh',
         Wards: [
           { Id: '22609', Name: 'Thị trấn Khánh Vĩnh', Level: 'Thị trấn' },
           { Id: '22612', Name: 'Xã Khánh Hiệp', Level: 'Xã' },
@@ -9916,7 +9916,7 @@ const dataProvince = [
       },
       {
         Id: '574',
-        Name: 'Huyện Diên Khánh',
+        Name: 'Diên Khánh',
         Wards: [
           { Id: '22651', Name: 'Thị trấn Diên Khánh', Level: 'Thị trấn' },
           { Id: '22654', Name: 'Xã Diên Lâm', Level: 'Xã' },
@@ -9940,7 +9940,7 @@ const dataProvince = [
       },
       {
         Id: '575',
-        Name: 'Huyện Khánh Sơn',
+        Name: 'Khánh Sơn',
         Wards: [
           { Id: '22714', Name: 'Thị trấn Tô Hạp', Level: 'Thị trấn' },
           { Id: '22717', Name: 'Xã Thành Sơn', Level: 'Xã' },
@@ -9954,7 +9954,7 @@ const dataProvince = [
       },
       {
         Id: '576',
-        Name: 'Huyện Trường Sa',
+        Name: 'Trường Sa',
         Wards: [
           { Id: '22736', Name: 'Thị trấn Trường Sa', Level: 'Thị trấn' },
           { Id: '22737', Name: 'Xã Song Tử Tây', Level: 'Xã' },
@@ -9965,11 +9965,11 @@ const dataProvince = [
   },
   {
     Id: '58',
-    Name: 'Tỉnh Ninh Thuận',
+    Name: 'Ninh Thuận',
     Districts: [
       {
         Id: '582',
-        Name: 'Thành phố Phan Rang-Tháp Chàm',
+        Name: 'Phan Rang-Tháp Chàm',
         Wards: [
           { Id: '22738', Name: 'Phường Đô Vinh', Level: 'Phường' },
           { Id: '22741', Name: 'Phường Phước Mỹ', Level: 'Phường' },
@@ -9991,7 +9991,7 @@ const dataProvince = [
       },
       {
         Id: '584',
-        Name: 'Huyện Bác Ái',
+        Name: 'Bác Ái',
         Wards: [
           { Id: '22783', Name: 'Xã Phước Bình', Level: 'Xã' },
           { Id: '22786', Name: 'Xã Phước Hòa', Level: 'Xã' },
@@ -10006,7 +10006,7 @@ const dataProvince = [
       },
       {
         Id: '585',
-        Name: 'Huyện Ninh Sơn',
+        Name: 'Ninh Sơn',
         Wards: [
           { Id: '22810', Name: 'Thị trấn Tân Sơn', Level: 'Thị trấn' },
           { Id: '22813', Name: 'Xã Lâm Sơn', Level: 'Xã' },
@@ -10020,7 +10020,7 @@ const dataProvince = [
       },
       {
         Id: '586',
-        Name: 'Huyện Ninh Hải',
+        Name: 'Ninh Hải',
         Wards: [
           { Id: '22834', Name: 'Thị trấn Khánh Hải', Level: 'Thị trấn' },
           { Id: '22846', Name: 'Xã Vĩnh Hải', Level: 'Xã' },
@@ -10035,7 +10035,7 @@ const dataProvince = [
       },
       {
         Id: '587',
-        Name: 'Huyện Ninh Phước',
+        Name: 'Ninh Phước',
         Wards: [
           { Id: '22870', Name: 'Thị trấn Phước Dân', Level: 'Thị trấn' },
           { Id: '22873', Name: 'Xã Phước Sơn', Level: 'Xã' },
@@ -10050,7 +10050,7 @@ const dataProvince = [
       },
       {
         Id: '588',
-        Name: 'Huyện Thuận Bắc',
+        Name: 'Thuận Bắc',
         Wards: [
           { Id: '22837', Name: 'Xã Phước Chiến', Level: 'Xã' },
           { Id: '22840', Name: 'Xã Công Hải', Level: 'Xã' },
@@ -10062,7 +10062,7 @@ const dataProvince = [
       },
       {
         Id: '589',
-        Name: 'Huyện Thuận Nam',
+        Name: 'Thuận Nam',
         Wards: [
           { Id: '22885', Name: 'Xã Phước Hà', Level: 'Xã' },
           { Id: '22897', Name: 'Xã Phước Nam', Level: 'Xã' },
@@ -10078,11 +10078,11 @@ const dataProvince = [
   },
   {
     Id: '60',
-    Name: 'Tỉnh Bình Thuận',
+    Name: 'Bình Thuận',
     Districts: [
       {
         Id: '593',
-        Name: 'Thành phố Phan Thiết',
+        Name: 'Phan Thiết',
         Wards: [
           { Id: '22915', Name: 'Phường Mũi Né', Level: 'Phường' },
           { Id: '22918', Name: 'Phường Hàm Tiến', Level: 'Phường' },
@@ -10121,7 +10121,7 @@ const dataProvince = [
       },
       {
         Id: '595',
-        Name: 'Huyện Tuy Phong',
+        Name: 'Tuy Phong',
         Wards: [
           { Id: '22969', Name: 'Thị trấn Liên Hương', Level: 'Thị trấn' },
           { Id: '22972', Name: 'Thị trấn Phan Rí Cửa', Level: 'Thị trấn' },
@@ -10138,7 +10138,7 @@ const dataProvince = [
       },
       {
         Id: '596',
-        Name: 'Huyện Bắc Bình',
+        Name: 'Bắc Bình',
         Wards: [
           { Id: '23005', Name: 'Thị trấn Chợ Lầu', Level: 'Thị trấn' },
           { Id: '23008', Name: 'Xã Phan Sơn', Level: 'Xã' },
@@ -10162,7 +10162,7 @@ const dataProvince = [
       },
       {
         Id: '597',
-        Name: 'Huyện Hàm Thuận Bắc',
+        Name: 'Hàm Thuận Bắc',
         Wards: [
           { Id: '23059', Name: 'Thị trấn Ma Lâm', Level: 'Thị trấn' },
           { Id: '23062', Name: 'Thị trấn Phú Long', Level: 'Thị trấn' },
@@ -10185,7 +10185,7 @@ const dataProvince = [
       },
       {
         Id: '598',
-        Name: 'Huyện Hàm Thuận Nam',
+        Name: 'Hàm Thuận Nam',
         Wards: [
           { Id: '23110', Name: 'Thị trấn Thuận Nam', Level: 'Thị trấn' },
           { Id: '23113', Name: 'Xã Mỹ Thạnh', Level: 'Xã' },
@@ -10204,7 +10204,7 @@ const dataProvince = [
       },
       {
         Id: '599',
-        Name: 'Huyện Tánh Linh',
+        Name: 'Tánh Linh',
         Wards: [
           { Id: '23149', Name: 'Thị trấn Lạc Tánh', Level: 'Thị trấn' },
           { Id: '23152', Name: 'Xã Bắc Ruộng', Level: 'Xã' },
@@ -10223,7 +10223,7 @@ const dataProvince = [
       },
       {
         Id: '600',
-        Name: 'Huyện Đức Linh',
+        Name: 'Đức Linh',
         Wards: [
           { Id: '23191', Name: 'Thị trấn Võ Xu', Level: 'Thị trấn' },
           { Id: '23194', Name: 'Thị trấn Đức Tài', Level: 'Thị trấn' },
@@ -10241,7 +10241,7 @@ const dataProvince = [
       },
       {
         Id: '601',
-        Name: 'Huyện Hàm Tân',
+        Name: 'Hàm Tân',
         Wards: [
           { Id: '23230', Name: 'Thị trấn Tân Minh', Level: 'Thị trấn' },
           { Id: '23236', Name: 'Thị trấn Tân Nghĩa', Level: 'Thị trấn' },
@@ -10257,7 +10257,7 @@ const dataProvince = [
       },
       {
         Id: '602',
-        Name: 'Huyện Phú Quí',
+        Name: 'Phú Quí',
         Wards: [
           { Id: '23272', Name: 'Xã Ngũ Phụng', Level: 'Xã' },
           { Id: '23275', Name: 'Xã Long Hải', Level: 'Xã' },
@@ -10268,11 +10268,11 @@ const dataProvince = [
   },
   {
     Id: '62',
-    Name: 'Tỉnh Kon Tum',
+    Name: 'Kon Tum',
     Districts: [
       {
         Id: '608',
-        Name: 'Thành phố Kon Tum',
+        Name: 'Kon Tum',
         Wards: [
           { Id: '23281', Name: 'Phường Quang Trung', Level: 'Phường' },
           { Id: '23284', Name: 'Phường Duy Tân', Level: 'Phường' },
@@ -10299,7 +10299,7 @@ const dataProvince = [
       },
       {
         Id: '610',
-        Name: 'Huyện Đắk Glei',
+        Name: 'Đắk Glei',
         Wards: [
           { Id: '23341', Name: 'Thị trấn Đắk Glei', Level: 'Thị trấn' },
           { Id: '23344', Name: 'Xã Đắk Blô', Level: 'Xã' },
@@ -10317,7 +10317,7 @@ const dataProvince = [
       },
       {
         Id: '611',
-        Name: 'Huyện Ngọc Hồi',
+        Name: 'Ngọc Hồi',
         Wards: [
           { Id: '23377', Name: 'Thị trấn Plei Kần', Level: 'Thị trấn' },
           { Id: '23380', Name: 'Xã Đắk Ang', Level: 'Xã' },
@@ -10331,7 +10331,7 @@ const dataProvince = [
       },
       {
         Id: '612',
-        Name: 'Huyện Đắk Tô',
+        Name: 'Đắk Tô',
         Wards: [
           { Id: '23401', Name: 'Thị trấn Đắk Tô', Level: 'Thị trấn' },
           { Id: '23427', Name: 'Xã Đắk Rơ Nga', Level: 'Xã' },
@@ -10346,7 +10346,7 @@ const dataProvince = [
       },
       {
         Id: '613',
-        Name: 'Huyện Kon Plông',
+        Name: 'Kon Plông',
         Wards: [
           { Id: '23452', Name: 'Xã Đắk Nên', Level: 'Xã' },
           { Id: '23455', Name: 'Xã Đắk Ring', Level: 'Xã' },
@@ -10361,7 +10361,7 @@ const dataProvince = [
       },
       {
         Id: '614',
-        Name: 'Huyện Kon Rẫy',
+        Name: 'Kon Rẫy',
         Wards: [
           { Id: '23479', Name: 'Thị trấn Đắk Rve', Level: 'Thị trấn' },
           { Id: '23482', Name: 'Xã Đắk Kôi', Level: 'Xã' },
@@ -10374,7 +10374,7 @@ const dataProvince = [
       },
       {
         Id: '615',
-        Name: 'Huyện Đắk Hà',
+        Name: 'Đắk Hà',
         Wards: [
           { Id: '23500', Name: 'Thị trấn Đắk Hà', Level: 'Thị trấn' },
           { Id: '23503', Name: 'Xã Đắk PXi', Level: 'Xã' },
@@ -10391,7 +10391,7 @@ const dataProvince = [
       },
       {
         Id: '616',
-        Name: 'Huyện Sa Thầy',
+        Name: 'Sa Thầy',
         Wards: [
           { Id: '23527', Name: 'Thị trấn Sa Thầy', Level: 'Thị trấn' },
           { Id: '23530', Name: 'Xã Rơ Kơi', Level: 'Xã' },
@@ -10408,7 +10408,7 @@ const dataProvince = [
       },
       {
         Id: '617',
-        Name: 'Huyện Tu Mơ Rông',
+        Name: 'Tu Mơ Rông',
         Wards: [
           { Id: '23404', Name: 'Xã Ngọc Lây', Level: 'Xã' },
           { Id: '23407', Name: 'Xã Đắk Na', Level: 'Xã' },
@@ -10425,7 +10425,7 @@ const dataProvince = [
       },
       {
         Id: '618',
-        Name: "Huyện Ia H' Drai",
+        Name: "Ia H' Drai",
         Wards: [
           { Id: '23535', Name: 'Xã Ia Đal', Level: 'Xã' },
           { Id: '23537', Name: 'Xã Ia Dom', Level: 'Xã' },
@@ -10436,11 +10436,11 @@ const dataProvince = [
   },
   {
     Id: '64',
-    Name: 'Tỉnh Gia Lai',
+    Name: 'Gia Lai',
     Districts: [
       {
         Id: '622',
-        Name: 'Thành phố Pleiku',
+        Name: 'Pleiku',
         Wards: [
           { Id: '23557', Name: 'Phường Yên Đỗ', Level: 'Phường' },
           { Id: '23560', Name: 'Phường Diên Hồng', Level: 'Phường' },
@@ -10499,7 +10499,7 @@ const dataProvince = [
       },
       {
         Id: '625',
-        Name: 'Huyện KBang',
+        Name: 'KBang',
         Wards: [
           { Id: '23638', Name: 'Thị trấn KBang', Level: 'Thị trấn' },
           { Id: '23641', Name: 'Xã Kon Pne', Level: 'Xã' },
@@ -10519,7 +10519,7 @@ const dataProvince = [
       },
       {
         Id: '626',
-        Name: 'Huyện Đăk Đoa',
+        Name: 'Đăk Đoa',
         Wards: [
           { Id: '23677', Name: 'Thị trấn Đăk Đoa', Level: 'Thị trấn' },
           { Id: '23680', Name: 'Xã Hà Đông', Level: 'Xã' },
@@ -10542,7 +10542,7 @@ const dataProvince = [
       },
       {
         Id: '627',
-        Name: 'Huyện Chư Păh',
+        Name: 'Chư Păh',
         Wards: [
           { Id: '23722', Name: 'Thị trấn Phú Hòa', Level: 'Thị trấn' },
           { Id: '23725', Name: 'Xã Hà Tây', Level: 'Xã' },
@@ -10562,7 +10562,7 @@ const dataProvince = [
       },
       {
         Id: '628',
-        Name: 'Huyện Ia Grai',
+        Name: 'Ia Grai',
         Wards: [
           { Id: '23764', Name: 'Thị trấn Ia Kha', Level: 'Thị trấn' },
           { Id: '23767', Name: 'Xã Ia Sao', Level: 'Xã' },
@@ -10581,7 +10581,7 @@ const dataProvince = [
       },
       {
         Id: '629',
-        Name: 'Huyện Mang Yang',
+        Name: 'Mang Yang',
         Wards: [
           { Id: '23794', Name: 'Thị trấn Kon Dơng', Level: 'Thị trấn' },
           { Id: '23797', Name: 'Xã Ayun', Level: 'Xã' },
@@ -10599,7 +10599,7 @@ const dataProvince = [
       },
       {
         Id: '630',
-        Name: 'Huyện Kông Chro',
+        Name: 'Kông Chro',
         Wards: [
           { Id: '23824', Name: 'Thị trấn Kông Chro', Level: 'Thị trấn' },
           { Id: '23827', Name: 'Xã Chư Krêy', Level: 'Xã' },
@@ -10619,7 +10619,7 @@ const dataProvince = [
       },
       {
         Id: '631',
-        Name: 'Huyện Đức Cơ',
+        Name: 'Đức Cơ',
         Wards: [
           { Id: '23857', Name: 'Thị trấn Chư Ty', Level: 'Thị trấn' },
           { Id: '23860', Name: 'Xã Ia Dơk', Level: 'Xã' },
@@ -10635,7 +10635,7 @@ const dataProvince = [
       },
       {
         Id: '632',
-        Name: 'Huyện Chư Prông',
+        Name: 'Chư Prông',
         Wards: [
           { Id: '23887', Name: 'Thị trấn Chư Prông', Level: 'Thị trấn' },
           { Id: '23888', Name: 'Xã Ia Kly', Level: 'Xã' },
@@ -10661,7 +10661,7 @@ const dataProvince = [
       },
       {
         Id: '633',
-        Name: 'Huyện Chư Sê',
+        Name: 'Chư Sê',
         Wards: [
           { Id: '23941', Name: 'Thị trấn Chư Sê', Level: 'Thị trấn' },
           { Id: '23944', Name: 'Xã Ia Tiêm', Level: 'Xã' },
@@ -10682,7 +10682,7 @@ const dataProvince = [
       },
       {
         Id: '634',
-        Name: 'Huyện Đăk Pơ',
+        Name: 'Đăk Pơ',
         Wards: [
           { Id: '23989', Name: 'Xã Hà Tam', Level: 'Xã' },
           { Id: '23992', Name: 'Xã An Thành', Level: 'Xã' },
@@ -10696,7 +10696,7 @@ const dataProvince = [
       },
       {
         Id: '635',
-        Name: 'Huyện Ia Pa',
+        Name: 'Ia Pa',
         Wards: [
           { Id: '24013', Name: 'Xã Pờ Tó', Level: 'Xã' },
           { Id: '24016', Name: 'Xã Chư Răng', Level: 'Xã' },
@@ -10711,7 +10711,7 @@ const dataProvince = [
       },
       {
         Id: '637',
-        Name: 'Huyện Krông Pa',
+        Name: 'Krông Pa',
         Wards: [
           { Id: '24076', Name: 'Thị trấn Phú Túc', Level: 'Thị trấn' },
           { Id: '24079', Name: 'Xã Ia RSai', Level: 'Xã' },
@@ -10731,7 +10731,7 @@ const dataProvince = [
       },
       {
         Id: '638',
-        Name: 'Huyện Phú Thiện',
+        Name: 'Phú Thiện',
         Wards: [
           { Id: '24043', Name: 'Thị trấn Phú Thiện', Level: 'Thị trấn' },
           { Id: '24046', Name: 'Xã Chư A Thai', Level: 'Xã' },
@@ -10747,7 +10747,7 @@ const dataProvince = [
       },
       {
         Id: '639',
-        Name: 'Huyện Chư Pưh',
+        Name: 'Chư Pưh',
         Wards: [
           { Id: '23942', Name: 'Thị trấn Nhơn Hoà', Level: 'Thị trấn' },
           { Id: '23971', Name: 'Xã Ia Hrú', Level: 'Xã' },
@@ -10764,11 +10764,11 @@ const dataProvince = [
   },
   {
     Id: '66',
-    Name: 'Tỉnh Đắk Lắk',
+    Name: 'Đắk Lắk',
     Districts: [
       {
         Id: '643',
-        Name: 'Thành phố Buôn Ma Thuột',
+        Name: 'Buôn Ma Thuột',
         Wards: [
           { Id: '24118', Name: 'Phường Tân Lập', Level: 'Phường' },
           { Id: '24121', Name: 'Phường Tân Hòa', Level: 'Phường' },
@@ -10813,7 +10813,7 @@ const dataProvince = [
       },
       {
         Id: '645',
-        Name: "Huyện Ea H'leo",
+        Name: "Ea H'leo",
         Wards: [
           { Id: '24181', Name: 'Thị trấn Ea Drăng', Level: 'Thị trấn' },
           { Id: '24184', Name: "Xã Ea H'leo", Level: 'Xã' },
@@ -10831,7 +10831,7 @@ const dataProvince = [
       },
       {
         Id: '646',
-        Name: 'Huyện Ea Súp',
+        Name: 'Ea Súp',
         Wards: [
           { Id: '24211', Name: 'Thị trấn Ea Súp', Level: 'Thị trấn' },
           { Id: '24214', Name: 'Xã Ia Lốp', Level: 'Xã' },
@@ -10847,7 +10847,7 @@ const dataProvince = [
       },
       {
         Id: '647',
-        Name: 'Huyện Buôn Đôn',
+        Name: 'Buôn Đôn',
         Wards: [
           { Id: '24235', Name: 'Xã Krông Na', Level: 'Xã' },
           { Id: '24238', Name: 'Xã Ea Huar', Level: 'Xã' },
@@ -10860,7 +10860,7 @@ const dataProvince = [
       },
       {
         Id: '648',
-        Name: "Huyện Cư M'gar",
+        Name: "Cư M'gar",
         Wards: [
           { Id: '24256', Name: 'Thị trấn Ea Pốk', Level: 'Thị trấn' },
           { Id: '24259', Name: 'Thị trấn Quảng Phú', Level: 'Thị trấn' },
@@ -10883,7 +10883,7 @@ const dataProvince = [
       },
       {
         Id: '649',
-        Name: 'Huyện Krông Búk',
+        Name: 'Krông Búk',
         Wards: [
           { Id: '24307', Name: 'Xã Cư Né', Level: 'Xã' },
           { Id: '24310', Name: 'Xã Chư KBô', Level: 'Xã' },
@@ -10896,7 +10896,7 @@ const dataProvince = [
       },
       {
         Id: '650',
-        Name: 'Huyện Krông Năng',
+        Name: 'Krông Năng',
         Wards: [
           { Id: '24343', Name: 'Thị trấn Krông Năng', Level: 'Thị trấn' },
           { Id: '24346', Name: 'Xã ĐLiê Ya', Level: 'Xã' },
@@ -10914,7 +10914,7 @@ const dataProvince = [
       },
       {
         Id: '651',
-        Name: 'Huyện Ea Kar',
+        Name: 'Ea Kar',
         Wards: [
           { Id: '24373', Name: 'Thị trấn Ea Kar', Level: 'Thị trấn' },
           { Id: '24376', Name: 'Thị trấn Ea Knốp', Level: 'Thị trấn' },
@@ -10936,7 +10936,7 @@ const dataProvince = [
       },
       {
         Id: '652',
-        Name: "Huyện M'Đrắk",
+        Name: "M'Đrắk",
         Wards: [
           { Id: '24412', Name: "Thị trấn M'Đrắk", Level: 'Thị trấn' },
           { Id: '24415', Name: 'Xã Cư Prao', Level: 'Xã' },
@@ -10955,7 +10955,7 @@ const dataProvince = [
       },
       {
         Id: '653',
-        Name: 'Huyện Krông Bông',
+        Name: 'Krông Bông',
         Wards: [
           { Id: '24448', Name: 'Thị trấn Krông Kmar', Level: 'Thị trấn' },
           { Id: '24451', Name: 'Xã Dang Kang', Level: 'Xã' },
@@ -10975,7 +10975,7 @@ const dataProvince = [
       },
       {
         Id: '654',
-        Name: 'Huyện Krông Pắc',
+        Name: 'Krông Pắc',
         Wards: [
           { Id: '24490', Name: 'Thị trấn Phước An', Level: 'Thị trấn' },
           { Id: '24493', Name: 'Xã KRông Búk', Level: 'Xã' },
@@ -10997,7 +10997,7 @@ const dataProvince = [
       },
       {
         Id: '655',
-        Name: 'Huyện Krông A Na',
+        Name: 'Krông A Na',
         Wards: [
           { Id: '24538', Name: 'Thị trấn Buôn Trấp', Level: 'Thị trấn' },
           { Id: '24556', Name: 'Xã Dray Sáp', Level: 'Xã' },
@@ -11011,7 +11011,7 @@ const dataProvince = [
       },
       {
         Id: '656',
-        Name: 'Huyện Lắk',
+        Name: 'Lắk',
         Wards: [
           { Id: '24580', Name: 'Thị trấn Liên Sơn', Level: 'Thị trấn' },
           { Id: '24583', Name: 'Xã Yang Tao', Level: 'Xã' },
@@ -11028,7 +11028,7 @@ const dataProvince = [
       },
       {
         Id: '657',
-        Name: 'Huyện Cư Kuin',
+        Name: 'Cư Kuin',
         Wards: [
           { Id: '24540', Name: 'Xã Ea Ning', Level: 'Xã' },
           { Id: '24541', Name: 'Xã Cư Ê Wi', Level: 'Xã' },
@@ -11044,11 +11044,11 @@ const dataProvince = [
   },
   {
     Id: '67',
-    Name: 'Tỉnh Đắk Nông',
+    Name: 'Đắk Nông',
     Districts: [
       {
         Id: '660',
-        Name: 'Thành phố Gia Nghĩa',
+        Name: 'Gia Nghĩa',
         Wards: [
           { Id: '24611', Name: 'Phường Nghĩa Đức', Level: 'Phường' },
           { Id: '24612', Name: 'Phường Nghĩa Thành', Level: 'Phường' },
@@ -11062,7 +11062,7 @@ const dataProvince = [
       },
       {
         Id: '661',
-        Name: 'Huyện Đăk Glong',
+        Name: 'Đăk Glong',
         Wards: [
           { Id: '24616', Name: 'Xã Quảng Sơn', Level: 'Xã' },
           { Id: '24620', Name: 'Xã Quảng Hoà', Level: 'Xã' },
@@ -11075,7 +11075,7 @@ const dataProvince = [
       },
       {
         Id: '662',
-        Name: 'Huyện Cư Jút',
+        Name: 'Cư Jút',
         Wards: [
           { Id: '24640', Name: "Thị trấn Ea T'Ling", Level: 'Thị trấn' },
           { Id: '24643', Name: 'Xã Đắk Wil', Level: 'Xã' },
@@ -11089,7 +11089,7 @@ const dataProvince = [
       },
       {
         Id: '663',
-        Name: 'Huyện Đắk Mil',
+        Name: 'Đắk Mil',
         Wards: [
           { Id: '24664', Name: 'Thị trấn Đắk Mil', Level: 'Thị trấn' },
           { Id: '24667', Name: 'Xã  Đắk Lao', Level: 'Xã' },
@@ -11105,7 +11105,7 @@ const dataProvince = [
       },
       {
         Id: '664',
-        Name: 'Huyện Krông Nô',
+        Name: 'Krông Nô',
         Wards: [
           { Id: '24688', Name: 'Thị trấn Đắk Mâm', Level: 'Thị trấn' },
           { Id: '24691', Name: 'Xã Đắk Sôr', Level: 'Xã' },
@@ -11123,7 +11123,7 @@ const dataProvince = [
       },
       {
         Id: '665',
-        Name: 'Huyện Đắk Song',
+        Name: 'Đắk Song',
         Wards: [
           { Id: '24717', Name: 'Thị trấn Đức An', Level: 'Thị trấn' },
           { Id: '24718', Name: 'Xã Đắk Môl', Level: 'Xã' },
@@ -11138,7 +11138,7 @@ const dataProvince = [
       },
       {
         Id: '666',
-        Name: "Huyện Đắk R'Lấp",
+        Name: "Đắk R'Lấp",
         Wards: [
           { Id: '24733', Name: 'Thị trấn Kiến Đức', Level: 'Thị trấn' },
           { Id: '24745', Name: 'Xã Quảng Tín', Level: 'Xã' },
@@ -11155,7 +11155,7 @@ const dataProvince = [
       },
       {
         Id: '667',
-        Name: 'Huyện Tuy Đức',
+        Name: 'Tuy Đức',
         Wards: [
           { Id: '24736', Name: 'Xã Quảng Trực', Level: 'Xã' },
           { Id: '24739', Name: 'Xã Đắk Búk So', Level: 'Xã' },
@@ -11169,11 +11169,11 @@ const dataProvince = [
   },
   {
     Id: '68',
-    Name: 'Tỉnh Lâm Đồng',
+    Name: 'Lâm Đồng',
     Districts: [
       {
         Id: '672',
-        Name: 'Thành phố Đà Lạt',
+        Name: 'Đà Lạt',
         Wards: [
           { Id: '24769', Name: 'Phường 7', Level: 'Phường' },
           { Id: '24772', Name: 'Phường 8', Level: 'Phường' },
@@ -11195,7 +11195,7 @@ const dataProvince = [
       },
       {
         Id: '673',
-        Name: 'Thành phố Bảo Lộc',
+        Name: 'Bảo Lộc',
         Wards: [
           { Id: '24814', Name: 'Phường Lộc Phát', Level: 'Phường' },
           { Id: '24817', Name: 'Phường Lộc Tiến', Level: 'Phường' },
@@ -11212,7 +11212,7 @@ const dataProvince = [
       },
       {
         Id: '674',
-        Name: 'Huyện Đam Rông',
+        Name: 'Đam Rông',
         Wards: [
           { Id: '24853', Name: 'Xã Đạ Tông', Level: 'Xã' },
           { Id: '24856', Name: 'Xã Đạ Long', Level: 'Xã' },
@@ -11226,7 +11226,7 @@ const dataProvince = [
       },
       {
         Id: '675',
-        Name: 'Huyện Lạc Dương',
+        Name: 'Lạc Dương',
         Wards: [
           { Id: '24846', Name: 'Thị trấn Lạc Dương', Level: 'Thị trấn' },
           { Id: '24847', Name: 'Xã Đạ Chais', Level: 'Xã' },
@@ -11238,7 +11238,7 @@ const dataProvince = [
       },
       {
         Id: '676',
-        Name: 'Huyện Lâm Hà',
+        Name: 'Lâm Hà',
         Wards: [
           { Id: '24868', Name: 'Thị trấn Nam Ban', Level: 'Thị trấn' },
           { Id: '24871', Name: 'Thị trấn Đinh Văn', Level: 'Thị trấn' },
@@ -11260,7 +11260,7 @@ const dataProvince = [
       },
       {
         Id: '677',
-        Name: 'Huyện Đơn Dương',
+        Name: 'Đơn Dương',
         Wards: [
           { Id: '24928', Name: "Thị trấn D'Ran", Level: 'Thị trấn' },
           { Id: '24931', Name: 'Thị trấn Thạnh Mỹ', Level: 'Thị trấn' },
@@ -11276,7 +11276,7 @@ const dataProvince = [
       },
       {
         Id: '678',
-        Name: 'Huyện Đức Trọng',
+        Name: 'Đức Trọng',
         Wards: [
           { Id: '24958', Name: 'Thị trấn Liên Nghĩa', Level: 'Thị trấn' },
           { Id: '24961', Name: 'Xã Hiệp An', Level: 'Xã' },
@@ -11297,7 +11297,7 @@ const dataProvince = [
       },
       {
         Id: '679',
-        Name: 'Huyện Di Linh',
+        Name: 'Di Linh',
         Wards: [
           { Id: '25000', Name: 'Thị trấn Di Linh', Level: 'Thị trấn' },
           { Id: '25003', Name: 'Xã Đinh Trang Thượng', Level: 'Xã' },
@@ -11322,7 +11322,7 @@ const dataProvince = [
       },
       {
         Id: '680',
-        Name: 'Huyện Bảo Lâm',
+        Name: 'Bảo Lâm',
         Wards: [
           { Id: '25054', Name: 'Thị trấn Lộc Thắng', Level: 'Thị trấn' },
           { Id: '25057', Name: 'Xã Lộc Bảo', Level: 'Xã' },
@@ -11342,7 +11342,7 @@ const dataProvince = [
       },
       {
         Id: '681',
-        Name: 'Huyện Đạ Huoai',
+        Name: 'Đạ Huoai',
         Wards: [
           { Id: '25096', Name: "Thị trấn Đạ M'ri", Level: 'Thị trấn' },
           { Id: '25099', Name: 'Thị trấn Ma Đa Guôi', Level: 'Thị trấn' },
@@ -11357,7 +11357,7 @@ const dataProvince = [
       },
       {
         Id: '682',
-        Name: 'Huyện Đạ Tẻh',
+        Name: 'Đạ Tẻh',
         Wards: [
           { Id: '25126', Name: 'Thị trấn Đạ Tẻh', Level: 'Thị trấn' },
           { Id: '25129', Name: 'Xã An Nhơn', Level: 'Xã' },
@@ -11372,7 +11372,7 @@ const dataProvince = [
       },
       {
         Id: '683',
-        Name: 'Huyện Cát Tiên',
+        Name: 'Cát Tiên',
         Wards: [
           { Id: '25159', Name: 'Thị trấn Cát Tiên', Level: 'Thị trấn' },
           { Id: '25162', Name: 'Xã Tiên Hoàng', Level: 'Xã' },
@@ -11389,7 +11389,7 @@ const dataProvince = [
   },
   {
     Id: '70',
-    Name: 'Tỉnh Bình Phước',
+    Name: 'Bình Phước',
     Districts: [
       {
         Id: '688',
@@ -11406,7 +11406,7 @@ const dataProvince = [
       },
       {
         Id: '689',
-        Name: 'Thành phố Đồng Xoài',
+        Name: 'Đồng Xoài',
         Wards: [
           { Id: '25195', Name: 'Phường Tân Phú', Level: 'Phường' },
           { Id: '25198', Name: 'Phường Tân Đồng', Level: 'Phường' },
@@ -11432,7 +11432,7 @@ const dataProvince = [
       },
       {
         Id: '691',
-        Name: 'Huyện Bù Gia Mập',
+        Name: 'Bù Gia Mập',
         Wards: [
           { Id: '25222', Name: 'Xã Bù Gia Mập', Level: 'Xã' },
           { Id: '25225', Name: 'Xã Đak Ơ', Level: 'Xã' },
@@ -11446,7 +11446,7 @@ const dataProvince = [
       },
       {
         Id: '692',
-        Name: 'Huyện Lộc Ninh',
+        Name: 'Lộc Ninh',
         Wards: [
           { Id: '25270', Name: 'Thị trấn Lộc Ninh', Level: 'Thị trấn' },
           { Id: '25273', Name: 'Xã Lộc Hòa', Level: 'Xã' },
@@ -11468,7 +11468,7 @@ const dataProvince = [
       },
       {
         Id: '693',
-        Name: 'Huyện Bù Đốp',
+        Name: 'Bù Đốp',
         Wards: [
           { Id: '25308', Name: 'Thị trấn Thanh Bình', Level: 'Thị trấn' },
           { Id: '25309', Name: 'Xã Hưng Phước', Level: 'Xã' },
@@ -11481,7 +11481,7 @@ const dataProvince = [
       },
       {
         Id: '694',
-        Name: 'Huyện Hớn Quản',
+        Name: 'Hớn Quản',
         Wards: [
           { Id: '25327', Name: 'Xã Thanh An', Level: 'Xã' },
           { Id: '25330', Name: 'Xã An Khương', Level: 'Xã' },
@@ -11500,7 +11500,7 @@ const dataProvince = [
       },
       {
         Id: '695',
-        Name: 'Huyện Đồng Phú',
+        Name: 'Đồng Phú',
         Wards: [
           { Id: '25363', Name: 'Thị trấn Tân Phú', Level: 'Thị trấn' },
           { Id: '25366', Name: 'Xã Thuận Lợi', Level: 'Xã' },
@@ -11517,7 +11517,7 @@ const dataProvince = [
       },
       {
         Id: '696',
-        Name: 'Huyện Bù Đăng',
+        Name: 'Bù Đăng',
         Wards: [
           { Id: '25396', Name: 'Thị trấn Đức Phong', Level: 'Thị trấn' },
           { Id: '25398', Name: 'Xã Đường 10', Level: 'Xã' },
@@ -11539,7 +11539,7 @@ const dataProvince = [
       },
       {
         Id: '697',
-        Name: 'Huyện Chơn Thành',
+        Name: 'Chơn Thành',
         Wards: [
           { Id: '25432', Name: 'Thị trấn Chơn Thành', Level: 'Thị trấn' },
           { Id: '25433', Name: 'Xã Thành Tâm', Level: 'Xã' },
@@ -11554,7 +11554,7 @@ const dataProvince = [
       },
       {
         Id: '698',
-        Name: 'Huyện Phú Riềng',
+        Name: 'Phú Riềng',
         Wards: [
           { Id: '25240', Name: 'Xã Long Bình', Level: 'Xã' },
           { Id: '25243', Name: 'Xã Bình Tân', Level: 'Xã' },
@@ -11572,11 +11572,11 @@ const dataProvince = [
   },
   {
     Id: '72',
-    Name: 'Tỉnh Tây Ninh',
+    Name: 'Tây Ninh',
     Districts: [
       {
         Id: '703',
-        Name: 'Thành phố Tây Ninh',
+        Name: 'Tây Ninh',
         Wards: [
           { Id: '25456', Name: 'Phường 1', Level: 'Phường' },
           { Id: '25459', Name: 'Phường 3', Level: 'Phường' },
@@ -11592,7 +11592,7 @@ const dataProvince = [
       },
       {
         Id: '705',
-        Name: 'Huyện Tân Biên',
+        Name: 'Tân Biên',
         Wards: [
           { Id: '25486', Name: 'Thị trấn Tân Biên', Level: 'Thị trấn' },
           { Id: '25489', Name: 'Xã Tân Lập', Level: 'Xã' },
@@ -11608,7 +11608,7 @@ const dataProvince = [
       },
       {
         Id: '706',
-        Name: 'Huyện Tân Châu',
+        Name: 'Tân Châu',
         Wards: [
           { Id: '25516', Name: 'Thị trấn Tân Châu', Level: 'Thị trấn' },
           { Id: '25519', Name: 'Xã Tân Hà', Level: 'Xã' },
@@ -11626,7 +11626,7 @@ const dataProvince = [
       },
       {
         Id: '707',
-        Name: 'Huyện Dương Minh Châu',
+        Name: 'Dương Minh Châu',
         Wards: [
           { Id: '25552', Name: 'Thị trấn Dương Minh Châu', Level: 'Thị trấn' },
           { Id: '25555', Name: 'Xã Suối Đá', Level: 'Xã' },
@@ -11643,7 +11643,7 @@ const dataProvince = [
       },
       {
         Id: '708',
-        Name: 'Huyện Châu Thành',
+        Name: 'Châu Thành',
         Wards: [
           { Id: '25585', Name: 'Thị trấn Châu Thành', Level: 'Thị trấn' },
           { Id: '25588', Name: 'Xã Hảo Đước', Level: 'Xã' },
@@ -11678,7 +11678,7 @@ const dataProvince = [
       },
       {
         Id: '710',
-        Name: 'Huyện Gò Dầu',
+        Name: 'Gò Dầu',
         Wards: [
           { Id: '25654', Name: 'Thị trấn Gò Dầu', Level: 'Thị trấn' },
           { Id: '25657', Name: 'Xã Thạnh Đức', Level: 'Xã' },
@@ -11693,7 +11693,7 @@ const dataProvince = [
       },
       {
         Id: '711',
-        Name: 'Huyện Bến Cầu',
+        Name: 'Bến Cầu',
         Wards: [
           { Id: '25681', Name: 'Thị trấn Bến Cầu', Level: 'Thị trấn' },
           { Id: '25684', Name: 'Xã Long Chữ', Level: 'Xã' },
@@ -11726,11 +11726,11 @@ const dataProvince = [
   },
   {
     Id: '74',
-    Name: 'Tỉnh Bình Dương',
+    Name: 'Bình Dương',
     Districts: [
       {
         Id: '718',
-        Name: 'Thành phố Thủ Dầu Một',
+        Name: 'Thủ Dầu Một',
         Wards: [
           { Id: '25741', Name: 'Phường Hiệp Thành', Level: 'Phường' },
           { Id: '25744', Name: 'Phường Phú Lợi', Level: 'Phường' },
@@ -11750,7 +11750,7 @@ const dataProvince = [
       },
       {
         Id: '719',
-        Name: 'Huyện Bàu Bàng',
+        Name: 'Bàu Bàng',
         Wards: [
           { Id: '25816', Name: 'Xã Trừ Văn Thố', Level: 'Xã' },
           { Id: '25819', Name: 'Xã Cây Trường II', Level: 'Xã' },
@@ -11763,7 +11763,7 @@ const dataProvince = [
       },
       {
         Id: '720',
-        Name: 'Huyện Dầu Tiếng',
+        Name: 'Dầu Tiếng',
         Wards: [
           { Id: '25777', Name: 'Thị trấn Dầu Tiếng', Level: 'Thị trấn' },
           { Id: '25780', Name: 'Xã Minh Hoà', Level: 'Xã' },
@@ -11795,7 +11795,7 @@ const dataProvince = [
       },
       {
         Id: '722',
-        Name: 'Huyện Phú Giáo',
+        Name: 'Phú Giáo',
         Wards: [
           { Id: '25858', Name: 'Thị trấn Phước Vĩnh', Level: 'Thị trấn' },
           { Id: '25861', Name: 'Xã An Linh', Level: 'Xã' },
@@ -11830,7 +11830,7 @@ const dataProvince = [
       },
       {
         Id: '724',
-        Name: 'Thành phố Dĩ An',
+        Name: 'Dĩ An',
         Wards: [
           { Id: '25942', Name: 'Phường Dĩ An', Level: 'Phường' },
           { Id: '25945', Name: 'Phường Tân Bình', Level: 'Phường' },
@@ -11843,7 +11843,7 @@ const dataProvince = [
       },
       {
         Id: '725',
-        Name: 'Thành phố Thuận An',
+        Name: 'Thuận An',
         Wards: [
           { Id: '25963', Name: 'Phường An Thạnh', Level: 'Phường' },
           { Id: '25966', Name: 'Phường Lái Thiêu', Level: 'Phường' },
@@ -11859,7 +11859,7 @@ const dataProvince = [
       },
       {
         Id: '726',
-        Name: 'Huyện Bắc Tân Uyên',
+        Name: 'Bắc Tân Uyên',
         Wards: [
           { Id: '25894', Name: 'Xã Tân Định', Level: 'Xã' },
           { Id: '25897', Name: 'Xã Bình Mỹ', Level: 'Xã' },
@@ -11877,11 +11877,11 @@ const dataProvince = [
   },
   {
     Id: '75',
-    Name: 'Tỉnh Đồng Nai',
+    Name: 'Đồng Nai',
     Districts: [
       {
         Id: '731',
-        Name: 'Thành phố Biên Hòa',
+        Name: 'Biên Hòa',
         Wards: [
           { Id: '25993', Name: 'Phường Trảng Dài', Level: 'Phường' },
           { Id: '25996', Name: 'Phường Tân Phong', Level: 'Phường' },
@@ -11917,7 +11917,7 @@ const dataProvince = [
       },
       {
         Id: '732',
-        Name: 'Thành phố Long Khánh',
+        Name: 'Long Khánh',
         Wards: [
           { Id: '26071', Name: 'Phường Xuân Trung', Level: 'Phường' },
           { Id: '26074', Name: 'Phường Xuân Thanh', Level: 'Phường' },
@@ -11938,7 +11938,7 @@ const dataProvince = [
       },
       {
         Id: '734',
-        Name: 'Huyện Tân Phú',
+        Name: 'Tân Phú',
         Wards: [
           { Id: '26116', Name: 'Thị trấn Tân Phú', Level: 'Thị trấn' },
           { Id: '26119', Name: 'Xã Dak Lua', Level: 'Xã' },
@@ -11962,7 +11962,7 @@ const dataProvince = [
       },
       {
         Id: '735',
-        Name: 'Huyện Vĩnh Cửu',
+        Name: 'Vĩnh Cửu',
         Wards: [
           { Id: '26170', Name: 'Thị trấn Vĩnh An', Level: 'Thị trấn' },
           { Id: '26173', Name: 'Xã Phú Lý', Level: 'Xã' },
@@ -11980,7 +11980,7 @@ const dataProvince = [
       },
       {
         Id: '736',
-        Name: 'Huyện Định Quán',
+        Name: 'Định Quán',
         Wards: [
           { Id: '26206', Name: 'Thị trấn Định Quán', Level: 'Thị trấn' },
           { Id: '26209', Name: 'Xã Thanh Sơn', Level: 'Xã' },
@@ -12000,7 +12000,7 @@ const dataProvince = [
       },
       {
         Id: '737',
-        Name: 'Huyện Trảng Bom',
+        Name: 'Trảng Bom',
         Wards: [
           { Id: '26248', Name: 'Thị trấn Trảng Bom', Level: 'Thị trấn' },
           { Id: '26251', Name: 'Xã Thanh Bình', Level: 'Xã' },
@@ -12023,7 +12023,7 @@ const dataProvince = [
       },
       {
         Id: '738',
-        Name: 'Huyện Thống Nhất',
+        Name: 'Thống Nhất',
         Wards: [
           { Id: '26299', Name: 'Xã Gia Tân 1', Level: 'Xã' },
           { Id: '26302', Name: 'Xã Gia Tân 2', Level: 'Xã' },
@@ -12039,7 +12039,7 @@ const dataProvince = [
       },
       {
         Id: '739',
-        Name: 'Huyện Cẩm Mỹ',
+        Name: 'Cẩm Mỹ',
         Wards: [
           { Id: '26329', Name: 'Xã Sông Nhạn', Level: 'Xã' },
           { Id: '26332', Name: 'Xã Xuân Quế', Level: 'Xã' },
@@ -12058,7 +12058,7 @@ const dataProvince = [
       },
       {
         Id: '740',
-        Name: 'Huyện Long Thành',
+        Name: 'Long Thành',
         Wards: [
           { Id: '26368', Name: 'Thị trấn Long Thành', Level: 'Thị trấn' },
           { Id: '26383', Name: 'Xã An Phước', Level: 'Xã' },
@@ -12078,7 +12078,7 @@ const dataProvince = [
       },
       {
         Id: '741',
-        Name: 'Huyện Xuân Lộc',
+        Name: 'Xuân Lộc',
         Wards: [
           { Id: '26425', Name: 'Thị trấn Gia Ray', Level: 'Thị trấn' },
           { Id: '26428', Name: 'Xã Xuân Bắc', Level: 'Xã' },
@@ -12099,7 +12099,7 @@ const dataProvince = [
       },
       {
         Id: '742',
-        Name: 'Huyện Nhơn Trạch',
+        Name: 'Nhơn Trạch',
         Wards: [
           { Id: '26470', Name: 'Xã Phước Thiền', Level: 'Xã' },
           { Id: '26473', Name: 'Xã Long Tân', Level: 'Xã' },
@@ -12119,11 +12119,11 @@ const dataProvince = [
   },
   {
     Id: '77',
-    Name: 'Tỉnh Bà Rịa - Vũng Tàu',
+    Name: 'Bà Rịa - Vũng Tàu',
     Districts: [
       {
         Id: '747',
-        Name: 'Thành phố Vũng Tàu',
+        Name: 'Vũng Tàu',
         Wards: [
           { Id: '26506', Name: 'Phường 1', Level: 'Phường' },
           { Id: '26508', Name: 'Phường Thắng Tam', Level: 'Phường' },
@@ -12146,7 +12146,7 @@ const dataProvince = [
       },
       {
         Id: '748',
-        Name: 'Thành phố Bà Rịa',
+        Name: 'Bà Rịa',
         Wards: [
           { Id: '26548', Name: 'Phường Phước Hưng', Level: 'Phường' },
           { Id: '26551', Name: 'Phường Phước Hiệp', Level: 'Phường' },
@@ -12163,7 +12163,7 @@ const dataProvince = [
       },
       {
         Id: '750',
-        Name: 'Huyện Châu Đức',
+        Name: 'Châu Đức',
         Wards: [
           { Id: '26574', Name: 'Xã Bàu Chinh', Level: 'Xã' },
           { Id: '26575', Name: 'Thị trấn Ngãi Giao', Level: 'Thị trấn' },
@@ -12185,7 +12185,7 @@ const dataProvince = [
       },
       {
         Id: '751',
-        Name: 'Huyện Xuyên Mộc',
+        Name: 'Xuyên Mộc',
         Wards: [
           { Id: '26620', Name: 'Thị trấn Phước Bửu', Level: 'Thị trấn' },
           { Id: '26623', Name: 'Xã Phước Thuận', Level: 'Xã' },
@@ -12204,7 +12204,7 @@ const dataProvince = [
       },
       {
         Id: '752',
-        Name: 'Huyện Long Điền',
+        Name: 'Long Điền',
         Wards: [
           { Id: '26659', Name: 'Thị trấn Long Điền', Level: 'Thị trấn' },
           { Id: '26662', Name: 'Thị trấn Long Hải', Level: 'Thị trấn' },
@@ -12217,7 +12217,7 @@ const dataProvince = [
       },
       {
         Id: '753',
-        Name: 'Huyện Đất Đỏ',
+        Name: 'Đất Đỏ',
         Wards: [
           { Id: '26680', Name: 'Thị trấn Đất Đỏ', Level: 'Thị trấn' },
           { Id: '26683', Name: 'Xã Phước Long Thọ', Level: 'Xã' },
@@ -12245,16 +12245,16 @@ const dataProvince = [
           { Id: '26731', Name: 'Xã Tóc Tiên', Level: 'Xã' }
         ]
       },
-      { Id: '755', Name: 'Huyện Côn Đảo', Wards: [{ Level: 'Huyện' }] }
+      { Id: '755', Name: 'Côn Đảo', Wards: [{ Level: 'Huyện' }] }
     ]
   },
   {
     Id: '79',
-    Name: 'Thành phố Hồ Chí Minh',
+    Name: 'Hồ Chí Minh',
     Districts: [
       {
         Id: '760',
-        Name: 'Quận 1',
+        Name: '1',
         Wards: [
           { Id: '26734', Name: 'Phường Tân Định', Level: 'Phường' },
           { Id: '26737', Name: 'Phường Đa Kao', Level: 'Phường' },
@@ -12270,7 +12270,7 @@ const dataProvince = [
       },
       {
         Id: '761',
-        Name: 'Quận 12',
+        Name: '12',
         Wards: [
           { Id: '26764', Name: 'Phường Thạnh Xuân', Level: 'Phường' },
           { Id: '26767', Name: 'Phường Thạnh Lộc', Level: 'Phường' },
@@ -12287,7 +12287,7 @@ const dataProvince = [
       },
       {
         Id: '762',
-        Name: 'Quận Thủ Đức',
+        Name: 'Thủ Đức',
         Wards: [
           { Id: '26794', Name: 'Phường Linh Xuân', Level: 'Phường' },
           { Id: '26797', Name: 'Phường Bình Chiểu', Level: 'Phường' },
@@ -12305,7 +12305,7 @@ const dataProvince = [
       },
       {
         Id: '763',
-        Name: 'Quận 9',
+        Name: '9',
         Wards: [
           { Id: '26830', Name: 'Phường Long Bình', Level: 'Phường' },
           { Id: '26833', Name: 'Phường Long Thạnh Mỹ', Level: 'Phường' },
@@ -12324,7 +12324,7 @@ const dataProvince = [
       },
       {
         Id: '764',
-        Name: 'Quận Gò Vấp',
+        Name: 'Gò Vấp',
         Wards: [
           { Id: '26869', Name: 'Phường 15', Level: 'Phường' },
           { Id: '26872', Name: 'Phường 13', Level: 'Phường' },
@@ -12346,7 +12346,7 @@ const dataProvince = [
       },
       {
         Id: '765',
-        Name: 'Quận Bình Thạnh',
+        Name: 'Bình Thạnh',
         Wards: [
           { Id: '26905', Name: 'Phường 13', Level: 'Phường' },
           { Id: '26908', Name: 'Phường 11', Level: 'Phường' },
@@ -12372,7 +12372,7 @@ const dataProvince = [
       },
       {
         Id: '766',
-        Name: 'Quận Tân Bình',
+        Name: 'Tân Bình',
         Wards: [
           { Id: '26965', Name: 'Phường 02', Level: 'Phường' },
           { Id: '26968', Name: 'Phường 04', Level: 'Phường' },
@@ -12393,7 +12393,7 @@ const dataProvince = [
       },
       {
         Id: '767',
-        Name: 'Quận Tân Phú',
+        Name: 'Tân Phú',
         Wards: [
           { Id: '27010', Name: 'Phường Tân Sơn Nhì', Level: 'Phường' },
           { Id: '27013', Name: 'Phường Tây Thạnh', Level: 'Phường' },
@@ -12410,7 +12410,7 @@ const dataProvince = [
       },
       {
         Id: '768',
-        Name: 'Quận Phú Nhuận',
+        Name: 'Phú Nhuận',
         Wards: [
           { Id: '27043', Name: 'Phường 04', Level: 'Phường' },
           { Id: '27046', Name: 'Phường 05', Level: 'Phường' },
@@ -12431,7 +12431,7 @@ const dataProvince = [
       },
       {
         Id: '769',
-        Name: 'Quận 2',
+        Name: '2',
         Wards: [
           { Id: '27088', Name: 'Phường Thảo Điền', Level: 'Phường' },
           { Id: '27091', Name: 'Phường An Phú', Level: 'Phường' },
@@ -12448,7 +12448,7 @@ const dataProvince = [
       },
       {
         Id: '770',
-        Name: 'Quận 3',
+        Name: '3',
         Wards: [
           { Id: '27121', Name: 'Phường 08', Level: 'Phường' },
           { Id: '27124', Name: 'Phường 07', Level: 'Phường' },
@@ -12468,7 +12468,7 @@ const dataProvince = [
       },
       {
         Id: '771',
-        Name: 'Quận 10',
+        Name: '10',
         Wards: [
           { Id: '27163', Name: 'Phường 15', Level: 'Phường' },
           { Id: '27166', Name: 'Phường 13', Level: 'Phường' },
@@ -12489,7 +12489,7 @@ const dataProvince = [
       },
       {
         Id: '772',
-        Name: 'Quận 11',
+        Name: '11',
         Wards: [
           { Id: '27208', Name: 'Phường 15', Level: 'Phường' },
           { Id: '27211', Name: 'Phường 05', Level: 'Phường' },
@@ -12511,7 +12511,7 @@ const dataProvince = [
       },
       {
         Id: '773',
-        Name: 'Quận 4',
+        Name: '4',
         Wards: [
           { Id: '27256', Name: 'Phường 12', Level: 'Phường' },
           { Id: '27259', Name: 'Phường 13', Level: 'Phường' },
@@ -12532,7 +12532,7 @@ const dataProvince = [
       },
       {
         Id: '774',
-        Name: 'Quận 5',
+        Name: '5',
         Wards: [
           { Id: '27301', Name: 'Phường 04', Level: 'Phường' },
           { Id: '27304', Name: 'Phường 09', Level: 'Phường' },
@@ -12553,7 +12553,7 @@ const dataProvince = [
       },
       {
         Id: '775',
-        Name: 'Quận 6',
+        Name: '6',
         Wards: [
           { Id: '27346', Name: 'Phường 14', Level: 'Phường' },
           { Id: '27349', Name: 'Phường 13', Level: 'Phường' },
@@ -12573,7 +12573,7 @@ const dataProvince = [
       },
       {
         Id: '776',
-        Name: 'Quận 8',
+        Name: '8',
         Wards: [
           { Id: '27388', Name: 'Phường 08', Level: 'Phường' },
           { Id: '27391', Name: 'Phường 02', Level: 'Phường' },
@@ -12595,7 +12595,7 @@ const dataProvince = [
       },
       {
         Id: '777',
-        Name: 'Quận Bình Tân',
+        Name: 'Bình Tân',
         Wards: [
           { Id: '27436', Name: 'Phường Bình Hưng Hòa', Level: 'Phường' },
           { Id: '27439', Name: 'Phường Bình Hưng Hoà A', Level: 'Phường' },
@@ -12611,7 +12611,7 @@ const dataProvince = [
       },
       {
         Id: '778',
-        Name: 'Quận 7',
+        Name: '7',
         Wards: [
           { Id: '27466', Name: 'Phường Tân Thuận Đông', Level: 'Phường' },
           { Id: '27469', Name: 'Phường Tân Thuận Tây', Level: 'Phường' },
@@ -12627,7 +12627,7 @@ const dataProvince = [
       },
       {
         Id: '783',
-        Name: 'Huyện Củ Chi',
+        Name: 'Củ Chi',
         Wards: [
           { Id: '27496', Name: 'Thị trấn Củ Chi', Level: 'Thị trấn' },
           { Id: '27499', Name: 'Xã Phú Mỹ Hưng', Level: 'Xã' },
@@ -12654,7 +12654,7 @@ const dataProvince = [
       },
       {
         Id: '784',
-        Name: 'Huyện Hóc Môn',
+        Name: 'Hóc Môn',
         Wards: [
           { Id: '27559', Name: 'Thị trấn Hóc Môn', Level: 'Thị trấn' },
           { Id: '27562', Name: 'Xã Tân Hiệp', Level: 'Xã' },
@@ -12672,7 +12672,7 @@ const dataProvince = [
       },
       {
         Id: '785',
-        Name: 'Huyện Bình Chánh',
+        Name: 'Bình Chánh',
         Wards: [
           { Id: '27595', Name: 'Thị trấn Tân Túc', Level: 'Thị trấn' },
           { Id: '27598', Name: 'Xã Phạm Văn Hai', Level: 'Xã' },
@@ -12694,7 +12694,7 @@ const dataProvince = [
       },
       {
         Id: '786',
-        Name: 'Huyện Nhà Bè',
+        Name: 'Nhà Bè',
         Wards: [
           { Id: '27643', Name: 'Thị trấn Nhà Bè', Level: 'Thị trấn' },
           { Id: '27646', Name: 'Xã Phước Kiển', Level: 'Xã' },
@@ -12707,7 +12707,7 @@ const dataProvince = [
       },
       {
         Id: '787',
-        Name: 'Huyện Cần Giờ',
+        Name: 'Cần Giờ',
         Wards: [
           { Id: '27664', Name: 'Thị trấn Cần Thạnh', Level: 'Thị trấn' },
           { Id: '27667', Name: 'Xã Bình Khánh', Level: 'Xã' },
@@ -12722,11 +12722,11 @@ const dataProvince = [
   },
   {
     Id: '80',
-    Name: 'Tỉnh Long An',
+    Name: 'Long An',
     Districts: [
       {
         Id: '794',
-        Name: 'Thành phố Tân An',
+        Name: 'Tân An',
         Wards: [
           { Id: '27685', Name: 'Phường 5', Level: 'Phường' },
           { Id: '27688', Name: 'Phường 2', Level: 'Phường' },
@@ -12760,7 +12760,7 @@ const dataProvince = [
       },
       {
         Id: '796',
-        Name: 'Huyện Tân Hưng',
+        Name: 'Tân Hưng',
         Wards: [
           { Id: '27721', Name: 'Thị trấn Tân Hưng', Level: 'Thị trấn' },
           { Id: '27724', Name: 'Xã Hưng Hà', Level: 'Xã' },
@@ -12778,7 +12778,7 @@ const dataProvince = [
       },
       {
         Id: '797',
-        Name: 'Huyện Vĩnh Hưng',
+        Name: 'Vĩnh Hưng',
         Wards: [
           { Id: '27757', Name: 'Thị trấn Vĩnh Hưng', Level: 'Thị trấn' },
           { Id: '27760', Name: 'Xã Hưng Điền A', Level: 'Xã' },
@@ -12794,7 +12794,7 @@ const dataProvince = [
       },
       {
         Id: '798',
-        Name: 'Huyện Mộc Hóa',
+        Name: 'Mộc Hóa',
         Wards: [
           { Id: '27796', Name: 'Xã Bình Hòa Tây', Level: 'Xã' },
           { Id: '27802', Name: 'Xã Bình Thạnh', Level: 'Xã' },
@@ -12807,7 +12807,7 @@ const dataProvince = [
       },
       {
         Id: '799',
-        Name: 'Huyện Tân Thạnh',
+        Name: 'Tân Thạnh',
         Wards: [
           { Id: '27826', Name: 'Thị trấn Tân Thạnh', Level: 'Thị trấn' },
           { Id: '27829', Name: 'Xã Bắc Hòa', Level: 'Xã' },
@@ -12826,7 +12826,7 @@ const dataProvince = [
       },
       {
         Id: '800',
-        Name: 'Huyện Thạnh Hóa',
+        Name: 'Thạnh Hóa',
         Wards: [
           { Id: '27865', Name: 'Thị trấn Thạnh Hóa', Level: 'Thị trấn' },
           { Id: '27868', Name: 'Xã Tân Hiệp', Level: 'Xã' },
@@ -12843,7 +12843,7 @@ const dataProvince = [
       },
       {
         Id: '801',
-        Name: 'Huyện Đức Huệ',
+        Name: 'Đức Huệ',
         Wards: [
           { Id: '27898', Name: 'Thị trấn Đông Thành', Level: 'Thị trấn' },
           { Id: '27901', Name: 'Xã Mỹ Quý Đông', Level: 'Xã' },
@@ -12860,7 +12860,7 @@ const dataProvince = [
       },
       {
         Id: '802',
-        Name: 'Huyện Đức Hòa',
+        Name: 'Đức Hòa',
         Wards: [
           { Id: '27931', Name: 'Thị trấn Hậu Nghĩa', Level: 'Thị trấn' },
           { Id: '27934', Name: 'Thị trấn Hiệp Hòa', Level: 'Thị trấn' },
@@ -12886,7 +12886,7 @@ const dataProvince = [
       },
       {
         Id: '803',
-        Name: 'Huyện Bến Lức',
+        Name: 'Bến Lức',
         Wards: [
           { Id: '27991', Name: 'Thị trấn Bến Lức', Level: 'Thị trấn' },
           { Id: '27994', Name: 'Xã Thạnh Lợi', Level: 'Xã' },
@@ -12907,7 +12907,7 @@ const dataProvince = [
       },
       {
         Id: '804',
-        Name: 'Huyện Thủ Thừa',
+        Name: 'Thủ Thừa',
         Wards: [
           { Id: '28036', Name: 'Thị trấn Thủ Thừa', Level: 'Thị trấn' },
           { Id: '28039', Name: 'Xã Long Thạnh', Level: 'Xã' },
@@ -12925,7 +12925,7 @@ const dataProvince = [
       },
       {
         Id: '805',
-        Name: 'Huyện Tân Trụ',
+        Name: 'Tân Trụ',
         Wards: [
           { Id: '28075', Name: 'Thị trấn Tân Trụ', Level: 'Thị trấn' },
           { Id: '28078', Name: 'Xã Tân Bình', Level: 'Xã' },
@@ -12941,7 +12941,7 @@ const dataProvince = [
       },
       {
         Id: '806',
-        Name: 'Huyện Cần Đước',
+        Name: 'Cần Đước',
         Wards: [
           { Id: '28108', Name: 'Thị trấn Cần Đước', Level: 'Thị trấn' },
           { Id: '28111', Name: 'Xã Long Trạch', Level: 'Xã' },
@@ -12964,7 +12964,7 @@ const dataProvince = [
       },
       {
         Id: '807',
-        Name: 'Huyện Cần Giuộc',
+        Name: 'Cần Giuộc',
         Wards: [
           { Id: '28159', Name: 'Thị trấn Cần Giuộc', Level: 'Thị trấn' },
           { Id: '28162', Name: 'Xã Phước Lý', Level: 'Xã' },
@@ -12985,7 +12985,7 @@ const dataProvince = [
       },
       {
         Id: '808',
-        Name: 'Huyện Châu Thành',
+        Name: 'Châu Thành',
         Wards: [
           { Id: '28210', Name: 'Thị trấn Tầm Vu', Level: 'Thị trấn' },
           { Id: '28213', Name: 'Xã Bình Quới', Level: 'Xã' },
@@ -13006,11 +13006,11 @@ const dataProvince = [
   },
   {
     Id: '82',
-    Name: 'Tỉnh Tiền Giang',
+    Name: 'Tiền Giang',
     Districts: [
       {
         Id: '815',
-        Name: 'Thành phố Mỹ Tho',
+        Name: 'Mỹ Tho',
         Wards: [
           { Id: '28249', Name: 'Phường 5', Level: 'Phường' },
           { Id: '28252', Name: 'Phường 4', Level: 'Phường' },
@@ -13073,7 +13073,7 @@ const dataProvince = [
       },
       {
         Id: '818',
-        Name: 'Huyện Tân Phước',
+        Name: 'Tân Phước',
         Wards: [
           { Id: '28321', Name: 'Thị trấn Mỹ Phước', Level: 'Thị trấn' },
           { Id: '28324', Name: 'Xã Tân Hòa Đông', Level: 'Xã' },
@@ -13091,7 +13091,7 @@ const dataProvince = [
       },
       {
         Id: '819',
-        Name: 'Huyện Cái Bè',
+        Name: 'Cái Bè',
         Wards: [
           { Id: '28360', Name: 'Thị trấn Cái Bè', Level: 'Thị trấn' },
           { Id: '28363', Name: 'Xã Hậu Mỹ Bắc B', Level: 'Xã' },
@@ -13122,7 +13122,7 @@ const dataProvince = [
       },
       {
         Id: '820',
-        Name: 'Huyện Cai Lậy',
+        Name: 'Cai Lậy',
         Wards: [
           { Id: '28438', Name: 'Xã Thạnh Lộc', Level: 'Xã' },
           { Id: '28441', Name: 'Xã Mỹ Thành Bắc', Level: 'Xã' },
@@ -13144,7 +13144,7 @@ const dataProvince = [
       },
       {
         Id: '821',
-        Name: 'Huyện Châu Thành',
+        Name: 'Châu Thành',
         Wards: [
           { Id: '28519', Name: 'Thị trấn Tân Hiệp', Level: 'Thị trấn' },
           { Id: '28522', Name: 'Xã Tân Hội Đông', Level: 'Xã' },
@@ -13173,7 +13173,7 @@ const dataProvince = [
       },
       {
         Id: '822',
-        Name: 'Huyện Chợ Gạo',
+        Name: 'Chợ Gạo',
         Wards: [
           { Id: '28594', Name: 'Thị trấn Chợ Gạo', Level: 'Thị trấn' },
           { Id: '28597', Name: 'Xã Trung Hòa', Level: 'Xã' },
@@ -13198,7 +13198,7 @@ const dataProvince = [
       },
       {
         Id: '823',
-        Name: 'Huyện Gò Công Tây',
+        Name: 'Gò Công Tây',
         Wards: [
           { Id: '28651', Name: 'Thị trấn Vĩnh Bình', Level: 'Thị trấn' },
           { Id: '28654', Name: 'Xã Đồng Sơn', Level: 'Xã' },
@@ -13217,7 +13217,7 @@ const dataProvince = [
       },
       {
         Id: '824',
-        Name: 'Huyện Gò Công Đông',
+        Name: 'Gò Công Đông',
         Wards: [
           { Id: '28702', Name: 'Thị trấn Tân Hòa', Level: 'Thị trấn' },
           { Id: '28705', Name: 'Xã Tăng Hoà', Level: 'Xã' },
@@ -13236,7 +13236,7 @@ const dataProvince = [
       },
       {
         Id: '825',
-        Name: 'Huyện Tân Phú Đông',
+        Name: 'Tân Phú Đông',
         Wards: [
           { Id: '28690', Name: 'Xã Tân Thới', Level: 'Xã' },
           { Id: '28693', Name: 'Xã Tân Phú', Level: 'Xã' },
@@ -13250,11 +13250,11 @@ const dataProvince = [
   },
   {
     Id: '83',
-    Name: 'Tỉnh Bến Tre',
+    Name: 'Bến Tre',
     Districts: [
       {
         Id: '829',
-        Name: 'Thành phố Bến Tre',
+        Name: 'Bến Tre',
         Wards: [
           { Id: '28756', Name: 'Phường Phú Khương', Level: 'Phường' },
           { Id: '28757', Name: 'Phường Phú Tân', Level: 'Phường' },
@@ -13274,7 +13274,7 @@ const dataProvince = [
       },
       {
         Id: '831',
-        Name: 'Huyện Châu Thành',
+        Name: 'Châu Thành',
         Wards: [
           { Id: '28801', Name: 'Thị trấn Châu Thành', Level: 'Thị trấn' },
           { Id: '28804', Name: 'Xã Tân Thạch', Level: 'Xã' },
@@ -13301,7 +13301,7 @@ const dataProvince = [
       },
       {
         Id: '832',
-        Name: 'Huyện Chợ Lách',
+        Name: 'Chợ Lách',
         Wards: [
           { Id: '28870', Name: 'Thị trấn Chợ Lách', Level: 'Thị trấn' },
           { Id: '28873', Name: 'Xã Phú Phụng', Level: 'Xã' },
@@ -13318,7 +13318,7 @@ const dataProvince = [
       },
       {
         Id: '833',
-        Name: 'Huyện Mỏ Cày Nam',
+        Name: 'Mỏ Cày Nam',
         Wards: [
           { Id: '28903', Name: 'Thị trấn Mỏ Cày', Level: 'Thị trấn' },
           { Id: '28930', Name: 'Xã Định Thủy', Level: 'Xã' },
@@ -13340,7 +13340,7 @@ const dataProvince = [
       },
       {
         Id: '834',
-        Name: 'Huyện Giồng Trôm',
+        Name: 'Giồng Trôm',
         Wards: [
           { Id: '28984', Name: 'Thị trấn Giồng Trôm', Level: 'Thị trấn' },
           { Id: '28987', Name: 'Xã Phong Nẫm', Level: 'Xã' },
@@ -13367,7 +13367,7 @@ const dataProvince = [
       },
       {
         Id: '835',
-        Name: 'Huyện Bình Đại',
+        Name: 'Bình Đại',
         Wards: [
           { Id: '29050', Name: 'Thị trấn Bình Đại', Level: 'Thị trấn' },
           { Id: '29053', Name: 'Xã Tam Hiệp', Level: 'Xã' },
@@ -13393,7 +13393,7 @@ const dataProvince = [
       },
       {
         Id: '836',
-        Name: 'Huyện Ba Tri',
+        Name: 'Ba Tri',
         Wards: [
           { Id: '29110', Name: 'Thị trấn Ba Tri', Level: 'Thị trấn' },
           { Id: '29113', Name: 'Xã Tân Mỹ', Level: 'Xã' },
@@ -13422,7 +13422,7 @@ const dataProvince = [
       },
       {
         Id: '837',
-        Name: 'Huyện Thạnh Phú',
+        Name: 'Thạnh Phú',
         Wards: [
           { Id: '29182', Name: 'Thị trấn Thạnh Phú', Level: 'Thị trấn' },
           { Id: '29185', Name: 'Xã Phú Khánh', Level: 'Xã' },
@@ -13446,7 +13446,7 @@ const dataProvince = [
       },
       {
         Id: '838',
-        Name: 'Huyện Mỏ Cày Bắc',
+        Name: 'Mỏ Cày Bắc',
         Wards: [
           { Id: '28889', Name: 'Xã Phú Mỹ', Level: 'Xã' },
           { Id: '28901', Name: 'Xã Hưng Khánh Trung A', Level: 'Xã' },
@@ -13467,11 +13467,11 @@ const dataProvince = [
   },
   {
     Id: '84',
-    Name: 'Tỉnh Trà Vinh',
+    Name: 'Trà Vinh',
     Districts: [
       {
         Id: '842',
-        Name: 'Thành phố Trà Vinh',
+        Name: 'Trà Vinh',
         Wards: [
           { Id: '29236', Name: 'Phường 4', Level: 'Phường' },
           { Id: '29239', Name: 'Phường 1', Level: 'Phường' },
@@ -13487,7 +13487,7 @@ const dataProvince = [
       },
       {
         Id: '844',
-        Name: 'Huyện Càng Long',
+        Name: 'Càng Long',
         Wards: [
           { Id: '29266', Name: 'Thị trấn Càng Long', Level: 'Thị trấn' },
           { Id: '29269', Name: 'Xã Mỹ Cẩm', Level: 'Xã' },
@@ -13507,7 +13507,7 @@ const dataProvince = [
       },
       {
         Id: '845',
-        Name: 'Huyện Cầu Kè',
+        Name: 'Cầu Kè',
         Wards: [
           { Id: '29308', Name: 'Thị trấn Cầu Kè', Level: 'Thị trấn' },
           { Id: '29311', Name: 'Xã Hòa Ân', Level: 'Xã' },
@@ -13524,7 +13524,7 @@ const dataProvince = [
       },
       {
         Id: '846',
-        Name: 'Huyện Tiểu Cần',
+        Name: 'Tiểu Cần',
         Wards: [
           { Id: '29341', Name: 'Thị trấn Tiểu Cần', Level: 'Thị trấn' },
           { Id: '29344', Name: 'Thị trấn Cầu Quan', Level: 'Thị trấn' },
@@ -13541,7 +13541,7 @@ const dataProvince = [
       },
       {
         Id: '847',
-        Name: 'Huyện Châu Thành',
+        Name: 'Châu Thành',
         Wards: [
           { Id: '29374', Name: 'Thị trấn Châu Thành', Level: 'Thị trấn' },
           { Id: '29377', Name: 'Xã Đa Lộc', Level: 'Xã' },
@@ -13561,7 +13561,7 @@ const dataProvince = [
       },
       {
         Id: '848',
-        Name: 'Huyện Cầu Ngang',
+        Name: 'Cầu Ngang',
         Wards: [
           { Id: '29416', Name: 'Thị trấn Cầu Ngang', Level: 'Thị trấn' },
           { Id: '29419', Name: 'Thị trấn Mỹ Long', Level: 'Thị trấn' },
@@ -13582,7 +13582,7 @@ const dataProvince = [
       },
       {
         Id: '849',
-        Name: 'Huyện Trà Cú',
+        Name: 'Trà Cú',
         Wards: [
           { Id: '29461', Name: 'Thị trấn Trà Cú', Level: 'Thị trấn' },
           { Id: '29462', Name: 'Thị trấn Định An', Level: 'Thị trấn' },
@@ -13605,7 +13605,7 @@ const dataProvince = [
       },
       {
         Id: '850',
-        Name: 'Huyện Duyên Hải',
+        Name: 'Duyên Hải',
         Wards: [
           { Id: '29497', Name: 'Xã Đôn Xuân', Level: 'Xã' },
           { Id: '29500', Name: 'Xã Đôn Châu', Level: 'Xã' },
@@ -13633,11 +13633,11 @@ const dataProvince = [
   },
   {
     Id: '86',
-    Name: 'Tỉnh Vĩnh Long',
+    Name: 'Vĩnh Long',
     Districts: [
       {
         Id: '855',
-        Name: 'Thành phố Vĩnh Long',
+        Name: 'Vĩnh Long',
         Wards: [
           { Id: '29542', Name: 'Phường 9', Level: 'Phường' },
           { Id: '29545', Name: 'Phường 5', Level: 'Phường' },
@@ -13654,7 +13654,7 @@ const dataProvince = [
       },
       {
         Id: '857',
-        Name: 'Huyện Long Hồ',
+        Name: 'Long Hồ',
         Wards: [
           { Id: '29575', Name: 'Thị trấn Long Hồ', Level: 'Thị trấn' },
           { Id: '29578', Name: 'Xã Đồng Phú', Level: 'Xã' },
@@ -13675,7 +13675,7 @@ const dataProvince = [
       },
       {
         Id: '858',
-        Name: 'Huyện Mang Thít',
+        Name: 'Mang Thít',
         Wards: [
           { Id: '29623', Name: 'Xã Mỹ An', Level: 'Xã' },
           { Id: '29626', Name: 'Xã Mỹ Phước', Level: 'Xã' },
@@ -13693,7 +13693,7 @@ const dataProvince = [
       },
       {
         Id: '859',
-        Name: 'Huyện  Vũng Liêm',
+        Name: ' Vũng Liêm',
         Wards: [
           { Id: '29659', Name: 'Thị trấn Vũng Liêm', Level: 'Thị trấn' },
           { Id: '29662', Name: 'Xã Tân Quới Trung', Level: 'Xã' },
@@ -13719,7 +13719,7 @@ const dataProvince = [
       },
       {
         Id: '860',
-        Name: 'Huyện Tam Bình',
+        Name: 'Tam Bình',
         Wards: [
           { Id: '29719', Name: 'Thị trấn Tam Bình', Level: 'Thị trấn' },
           { Id: '29722', Name: 'Xã Tân Lộc', Level: 'Xã' },
@@ -13756,7 +13756,7 @@ const dataProvince = [
       },
       {
         Id: '862',
-        Name: 'Huyện Trà Ôn',
+        Name: 'Trà Ôn',
         Wards: [
           { Id: '29821', Name: 'Thị trấn Trà Ôn', Level: 'Thị trấn' },
           { Id: '29824', Name: 'Xã Xuân Hiệp', Level: 'Xã' },
@@ -13776,7 +13776,7 @@ const dataProvince = [
       },
       {
         Id: '863',
-        Name: 'Huyện Bình Tân',
+        Name: 'Bình Tân',
         Wards: [
           { Id: '29773', Name: 'Xã Tân Hưng', Level: 'Xã' },
           { Id: '29776', Name: 'Xã Tân Thành', Level: 'Xã' },
@@ -13794,11 +13794,11 @@ const dataProvince = [
   },
   {
     Id: '87',
-    Name: 'Tỉnh Đồng Tháp',
+    Name: 'Đồng Tháp',
     Districts: [
       {
         Id: '866',
-        Name: 'Thành phố Cao Lãnh',
+        Name: 'Cao Lãnh',
         Wards: [
           { Id: '29863', Name: 'Phường 11', Level: 'Phường' },
           { Id: '29866', Name: 'Phường 1', Level: 'Phường' },
@@ -13819,7 +13819,7 @@ const dataProvince = [
       },
       {
         Id: '867',
-        Name: 'Thành phố Sa Đéc',
+        Name: 'Sa Đéc',
         Wards: [
           { Id: '29902', Name: 'Phường 3', Level: 'Phường' },
           { Id: '29905', Name: 'Phường 1', Level: 'Phường' },
@@ -13834,7 +13834,7 @@ const dataProvince = [
       },
       {
         Id: '868',
-        Name: 'Thành phố Hồng Ngự',
+        Name: 'Hồng Ngự',
         Wards: [
           { Id: '29954', Name: 'Phường An Lộc', Level: 'Phường' },
           { Id: '29955', Name: 'Phường An Thạnh', Level: 'Phường' },
@@ -13847,7 +13847,7 @@ const dataProvince = [
       },
       {
         Id: '869',
-        Name: 'Huyện Tân Hồng',
+        Name: 'Tân Hồng',
         Wards: [
           { Id: '29926', Name: 'Thị trấn Sa Rài', Level: 'Thị trấn' },
           { Id: '29929', Name: 'Xã Tân Hộ Cơ', Level: 'Xã' },
@@ -13862,7 +13862,7 @@ const dataProvince = [
       },
       {
         Id: '870',
-        Name: 'Huyện Hồng Ngự',
+        Name: 'Hồng Ngự',
         Wards: [
           { Id: '29956', Name: 'Xã Thường Phước 1', Level: 'Xã' },
           { Id: '29962', Name: 'Xã Thường Thới Hậu A', Level: 'Xã' },
@@ -13878,7 +13878,7 @@ const dataProvince = [
       },
       {
         Id: '871',
-        Name: 'Huyện Tam Nông',
+        Name: 'Tam Nông',
         Wards: [
           { Id: '30001', Name: 'Thị trấn Tràm Chim', Level: 'Thị trấn' },
           { Id: '30004', Name: 'Xã Hoà Bình', Level: 'Xã' },
@@ -13896,7 +13896,7 @@ const dataProvince = [
       },
       {
         Id: '872',
-        Name: 'Huyện Tháp Mười',
+        Name: 'Tháp Mười',
         Wards: [
           { Id: '30037', Name: 'Thị trấn Mỹ An', Level: 'Thị trấn' },
           { Id: '30040', Name: 'Xã Thạnh Lợi', Level: 'Xã' },
@@ -13915,7 +13915,7 @@ const dataProvince = [
       },
       {
         Id: '873',
-        Name: 'Huyện Cao Lãnh',
+        Name: 'Cao Lãnh',
         Wards: [
           { Id: '30076', Name: 'Thị trấn Mỹ Thọ', Level: 'Thị trấn' },
           { Id: '30079', Name: 'Xã Gáo Giồng', Level: 'Xã' },
@@ -13939,7 +13939,7 @@ const dataProvince = [
       },
       {
         Id: '874',
-        Name: 'Huyện Thanh Bình',
+        Name: 'Thanh Bình',
         Wards: [
           { Id: '30130', Name: 'Thị trấn Thanh Bình', Level: 'Thị trấn' },
           { Id: '30133', Name: 'Xã Tân Quới', Level: 'Xã' },
@@ -13958,7 +13958,7 @@ const dataProvince = [
       },
       {
         Id: '875',
-        Name: 'Huyện Lấp Vò',
+        Name: 'Lấp Vò',
         Wards: [
           { Id: '30169', Name: 'Thị trấn Lấp Vò', Level: 'Thị trấn' },
           { Id: '30172', Name: 'Xã Mỹ An Hưng A', Level: 'Xã' },
@@ -13977,7 +13977,7 @@ const dataProvince = [
       },
       {
         Id: '876',
-        Name: 'Huyện Lai Vung',
+        Name: 'Lai Vung',
         Wards: [
           { Id: '30208', Name: 'Thị trấn Lai Vung', Level: 'Thị trấn' },
           { Id: '30211', Name: 'Xã Tân Dương', Level: 'Xã' },
@@ -13995,7 +13995,7 @@ const dataProvince = [
       },
       {
         Id: '877',
-        Name: 'Huyện Châu Thành',
+        Name: 'Châu Thành',
         Wards: [
           { Id: '30244', Name: 'Thị trấn Cái Tàu Hạ', Level: 'Thị trấn' },
           { Id: '30247', Name: 'Xã An Hiệp', Level: 'Xã' },
@@ -14015,11 +14015,11 @@ const dataProvince = [
   },
   {
     Id: '89',
-    Name: 'Tỉnh An Giang',
+    Name: 'An Giang',
     Districts: [
       {
         Id: '883',
-        Name: 'Thành phố Long Xuyên',
+        Name: 'Long Xuyên',
         Wards: [
           { Id: '30280', Name: 'Phường Mỹ Bình', Level: 'Phường' },
           { Id: '30283', Name: 'Phường Mỹ Long', Level: 'Phường' },
@@ -14038,7 +14038,7 @@ const dataProvince = [
       },
       {
         Id: '884',
-        Name: 'Thành phố Châu Đốc',
+        Name: 'Châu Đốc',
         Wards: [
           { Id: '30316', Name: 'Phường Châu Phú B', Level: 'Phường' },
           { Id: '30319', Name: 'Phường Châu Phú A', Level: 'Phường' },
@@ -14051,7 +14051,7 @@ const dataProvince = [
       },
       {
         Id: '886',
-        Name: 'Huyện An Phú',
+        Name: 'An Phú',
         Wards: [
           { Id: '30337', Name: 'Thị trấn An Phú', Level: 'Thị trấn' },
           { Id: '30340', Name: 'Xã Khánh An', Level: 'Xã' },
@@ -14091,7 +14091,7 @@ const dataProvince = [
       },
       {
         Id: '888',
-        Name: 'Huyện Phú Tân',
+        Name: 'Phú Tân',
         Wards: [
           { Id: '30406', Name: 'Thị trấn Phú Mỹ', Level: 'Thị trấn' },
           { Id: '30409', Name: 'Thị trấn Chợ Vàm', Level: 'Thị trấn' },
@@ -14115,7 +14115,7 @@ const dataProvince = [
       },
       {
         Id: '889',
-        Name: 'Huyện Châu Phú',
+        Name: 'Châu Phú',
         Wards: [
           { Id: '30463', Name: 'Thị trấn Cái Dầu', Level: 'Thị trấn' },
           { Id: '30466', Name: 'Xã Khánh Hòa', Level: 'Xã' },
@@ -14134,7 +14134,7 @@ const dataProvince = [
       },
       {
         Id: '890',
-        Name: 'Huyện Tịnh Biên',
+        Name: 'Tịnh Biên',
         Wards: [
           { Id: '30502', Name: 'Thị trấn Nhà Bàng', Level: 'Thị trấn' },
           { Id: '30505', Name: 'Thị trấn Chi Lăng', Level: 'Thị trấn' },
@@ -14154,7 +14154,7 @@ const dataProvince = [
       },
       {
         Id: '891',
-        Name: 'Huyện Tri Tôn',
+        Name: 'Tri Tôn',
         Wards: [
           { Id: '30544', Name: 'Thị trấn Tri Tôn', Level: 'Thị trấn' },
           { Id: '30547', Name: 'Thị trấn Ba Chúc', Level: 'Thị trấn' },
@@ -14175,7 +14175,7 @@ const dataProvince = [
       },
       {
         Id: '892',
-        Name: 'Huyện Châu Thành',
+        Name: 'Châu Thành',
         Wards: [
           { Id: '30589', Name: 'Thị trấn An Châu', Level: 'Thị trấn' },
           { Id: '30592', Name: 'Xã An Hòa', Level: 'Xã' },
@@ -14194,7 +14194,7 @@ const dataProvince = [
       },
       {
         Id: '893',
-        Name: 'Huyện Chợ Mới',
+        Name: 'Chợ Mới',
         Wards: [
           { Id: '30628', Name: 'Thị trấn Chợ Mới', Level: 'Thị trấn' },
           { Id: '30631', Name: 'Thị trấn Mỹ Luông', Level: 'Thị trấn' },
@@ -14218,7 +14218,7 @@ const dataProvince = [
       },
       {
         Id: '894',
-        Name: 'Huyện Thoại Sơn',
+        Name: 'Thoại Sơn',
         Wards: [
           { Id: '30682', Name: 'Thị trấn Núi Sập', Level: 'Thị trấn' },
           { Id: '30685', Name: 'Thị trấn Phú Hoà', Level: 'Thị trấn' },
@@ -14243,11 +14243,11 @@ const dataProvince = [
   },
   {
     Id: '91',
-    Name: 'Tỉnh Kiên Giang',
+    Name: 'Kiên Giang',
     Districts: [
       {
         Id: '899',
-        Name: 'Thành phố Rạch Giá',
+        Name: 'Rạch Giá',
         Wards: [
           { Id: '30730', Name: 'Phường Vĩnh Thanh Vân', Level: 'Phường' },
           { Id: '30733', Name: 'Phường Vĩnh Thanh', Level: 'Phường' },
@@ -14265,7 +14265,7 @@ const dataProvince = [
       },
       {
         Id: '900',
-        Name: 'Thành phố Hà Tiên',
+        Name: 'Hà Tiên',
         Wards: [
           { Id: '30766', Name: 'Phường Tô Châu', Level: 'Phường' },
           { Id: '30769', Name: 'Phường Đông Hồ', Level: 'Phường' },
@@ -14278,7 +14278,7 @@ const dataProvince = [
       },
       {
         Id: '902',
-        Name: 'Huyện Kiên Lương',
+        Name: 'Kiên Lương',
         Wards: [
           { Id: '30787', Name: 'Thị trấn Kiên Lương', Level: 'Thị trấn' },
           { Id: '30790', Name: 'Xã Kiên Bình', Level: 'Xã' },
@@ -14292,7 +14292,7 @@ const dataProvince = [
       },
       {
         Id: '903',
-        Name: 'Huyện Hòn Đất',
+        Name: 'Hòn Đất',
         Wards: [
           { Id: '30817', Name: 'Thị trấn Hòn Đất', Level: 'Thị trấn' },
           { Id: '30820', Name: 'Thị trấn Sóc Sơn', Level: 'Thị trấn' },
@@ -14312,7 +14312,7 @@ const dataProvince = [
       },
       {
         Id: '904',
-        Name: 'Huyện Tân Hiệp',
+        Name: 'Tân Hiệp',
         Wards: [
           { Id: '30850', Name: 'Thị trấn Tân Hiệp', Level: 'Thị trấn' },
           { Id: '30853', Name: 'Xã Tân Hội', Level: 'Xã' },
@@ -14329,7 +14329,7 @@ const dataProvince = [
       },
       {
         Id: '905',
-        Name: 'Huyện Châu Thành',
+        Name: 'Châu Thành',
         Wards: [
           { Id: '30880', Name: 'Thị trấn Minh Lương', Level: 'Thị trấn' },
           { Id: '30883', Name: 'Xã Mong Thọ A', Level: 'Xã' },
@@ -14345,7 +14345,7 @@ const dataProvince = [
       },
       {
         Id: '906',
-        Name: 'Huyện Giồng Riềng',
+        Name: 'Giồng Riềng',
         Wards: [
           { Id: '30904', Name: 'Thị Trấn Giồng Riềng', Level: 'Thị trấn' },
           { Id: '30907', Name: 'Xã Thạnh Hưng', Level: 'Xã' },
@@ -14370,7 +14370,7 @@ const dataProvince = [
       },
       {
         Id: '907',
-        Name: 'Huyện Gò Quao',
+        Name: 'Gò Quao',
         Wards: [
           { Id: '30952', Name: 'Thị trấn Gò Quao', Level: 'Thị trấn' },
           { Id: '30955', Name: 'Xã Vĩnh Hòa Hưng Bắc', Level: 'Xã' },
@@ -14387,7 +14387,7 @@ const dataProvince = [
       },
       {
         Id: '908',
-        Name: 'Huyện An Biên',
+        Name: 'An Biên',
         Wards: [
           { Id: '30985', Name: 'Thị trấn Thứ Ba', Level: 'Thị trấn' },
           { Id: '30988', Name: 'Xã Tây Yên', Level: 'Xã' },
@@ -14402,7 +14402,7 @@ const dataProvince = [
       },
       {
         Id: '909',
-        Name: 'Huyện An Minh',
+        Name: 'An Minh',
         Wards: [
           { Id: '31018', Name: 'Thị trấn Thứ Mười Một', Level: 'Thị trấn' },
           { Id: '31021', Name: 'Xã Thuận Hoà', Level: 'Xã' },
@@ -14419,7 +14419,7 @@ const dataProvince = [
       },
       {
         Id: '910',
-        Name: 'Huyện Vĩnh Thuận',
+        Name: 'Vĩnh Thuận',
         Wards: [
           { Id: '31051', Name: 'Thị trấn Vĩnh Thuận', Level: 'Thị trấn' },
           { Id: '31060', Name: 'Xã Vĩnh Bình Bắc', Level: 'Xã' },
@@ -14433,7 +14433,7 @@ const dataProvince = [
       },
       {
         Id: '911',
-        Name: 'Thành phố Phú Quốc',
+        Name: 'Phú Quốc',
         Wards: [
           { Id: '31078', Name: 'Phường Dương Đông', Level: 'Phường' },
           { Id: '31081', Name: 'Phường An Thới', Level: 'Phường' },
@@ -14448,7 +14448,7 @@ const dataProvince = [
       },
       {
         Id: '912',
-        Name: 'Huyện Kiên Hải',
+        Name: 'Kiên Hải',
         Wards: [
           { Id: '31108', Name: 'Xã Hòn Tre', Level: 'Xã' },
           { Id: '31111', Name: 'Xã Lại Sơn', Level: 'Xã' },
@@ -14458,7 +14458,7 @@ const dataProvince = [
       },
       {
         Id: '913',
-        Name: 'Huyện U Minh Thượng',
+        Name: 'U Minh Thượng',
         Wards: [
           { Id: '31012', Name: 'Xã Thạnh Yên', Level: 'Xã' },
           { Id: '31015', Name: 'Xã Thạnh Yên A', Level: 'Xã' },
@@ -14470,7 +14470,7 @@ const dataProvince = [
       },
       {
         Id: '914',
-        Name: 'Huyện Giang Thành',
+        Name: 'Giang Thành',
         Wards: [
           { Id: '30791', Name: 'Xã Vĩnh Phú', Level: 'Xã' },
           { Id: '30793', Name: 'Xã Vĩnh Điều', Level: 'Xã' },
@@ -14483,11 +14483,11 @@ const dataProvince = [
   },
   {
     Id: '92',
-    Name: 'Thành phố Cần Thơ',
+    Name: 'Cần Thơ',
     Districts: [
       {
         Id: '916',
-        Name: 'Quận Ninh Kiều',
+        Name: 'Ninh Kiều',
         Wards: [
           { Id: '31117', Name: 'Phường Cái Khế', Level: 'Phường' },
           { Id: '31120', Name: 'Phường An Hòa', Level: 'Phường' },
@@ -14504,7 +14504,7 @@ const dataProvince = [
       },
       {
         Id: '917',
-        Name: 'Quận Ô Môn',
+        Name: 'Ô Môn',
         Wards: [
           { Id: '31153', Name: 'Phường Châu Văn Liêm', Level: 'Phường' },
           { Id: '31154', Name: 'Phường Thới Hòa', Level: 'Phường' },
@@ -14517,7 +14517,7 @@ const dataProvince = [
       },
       {
         Id: '918',
-        Name: 'Quận Bình Thuỷ',
+        Name: 'Bình Thuỷ',
         Wards: [
           { Id: '31168', Name: 'Phường Bình Thủy', Level: 'Phường' },
           { Id: '31169', Name: 'Phường Trà An', Level: 'Phường' },
@@ -14531,7 +14531,7 @@ const dataProvince = [
       },
       {
         Id: '919',
-        Name: 'Quận Cái Răng',
+        Name: 'Cái Răng',
         Wards: [
           { Id: '31186', Name: 'Phường Lê Bình', Level: 'Phường' },
           { Id: '31189', Name: 'Phường Hưng Phú', Level: 'Phường' },
@@ -14544,7 +14544,7 @@ const dataProvince = [
       },
       {
         Id: '923',
-        Name: 'Quận Thốt Nốt',
+        Name: 'Thốt Nốt',
         Wards: [
           { Id: '31207', Name: 'Phường Thốt Nốt', Level: 'Phường' },
           { Id: '31210', Name: 'Phường Thới Thuận', Level: 'Phường' },
@@ -14559,7 +14559,7 @@ const dataProvince = [
       },
       {
         Id: '924',
-        Name: 'Huyện Vĩnh Thạnh',
+        Name: 'Vĩnh Thạnh',
         Wards: [
           { Id: '31211', Name: 'Xã Vĩnh Bình', Level: 'Xã' },
           { Id: '31231', Name: 'Thị trấn Thanh An', Level: 'Thị trấn' },
@@ -14576,7 +14576,7 @@ const dataProvince = [
       },
       {
         Id: '925',
-        Name: 'Huyện Cờ Đỏ',
+        Name: 'Cờ Đỏ',
         Wards: [
           { Id: '31222', Name: 'Xã Trung An', Level: 'Xã' },
           { Id: '31225', Name: 'Xã Trung Thạnh', Level: 'Xã' },
@@ -14592,7 +14592,7 @@ const dataProvince = [
       },
       {
         Id: '926',
-        Name: 'Huyện Phong Điền',
+        Name: 'Phong Điền',
         Wards: [
           { Id: '31299', Name: 'Thị trấn Phong Điền', Level: 'Thị trấn' },
           { Id: '31300', Name: 'Xã Nhơn Ái', Level: 'Xã' },
@@ -14605,7 +14605,7 @@ const dataProvince = [
       },
       {
         Id: '927',
-        Name: 'Huyện Thới Lai',
+        Name: 'Thới Lai',
         Wards: [
           { Id: '31258', Name: 'Thị trấn Thới Lai', Level: 'Thị trấn' },
           { Id: '31267', Name: 'Xã Thới Thạnh', Level: 'Xã' },
@@ -14626,11 +14626,11 @@ const dataProvince = [
   },
   {
     Id: '93',
-    Name: 'Tỉnh Hậu Giang',
+    Name: 'Hậu Giang',
     Districts: [
       {
         Id: '930',
-        Name: 'Thành phố Vị Thanh',
+        Name: 'Vị Thanh',
         Wards: [
           { Id: '31318', Name: 'Phường I', Level: 'Phường' },
           { Id: '31321', Name: 'Phường III', Level: 'Phường' },
@@ -14645,7 +14645,7 @@ const dataProvince = [
       },
       {
         Id: '931',
-        Name: 'Thành phố Ngã Bảy',
+        Name: 'Ngã Bảy',
         Wards: [
           { Id: '31340', Name: 'Phường Ngã Bảy', Level: 'Phường' },
           { Id: '31341', Name: 'Phường Lái Hiếu', Level: 'Phường' },
@@ -14657,7 +14657,7 @@ const dataProvince = [
       },
       {
         Id: '932',
-        Name: 'Huyện Châu Thành A',
+        Name: 'Châu Thành A',
         Wards: [
           { Id: '31342', Name: 'Thị trấn Một Ngàn', Level: 'Thị trấn' },
           { Id: '31345', Name: 'Xã Tân Hoà', Level: 'Xã' },
@@ -14673,7 +14673,7 @@ const dataProvince = [
       },
       {
         Id: '933',
-        Name: 'Huyện Châu Thành',
+        Name: 'Châu Thành',
         Wards: [
           { Id: '31366', Name: 'Thị Trấn Ngã Sáu', Level: 'Thị trấn' },
           { Id: '31369', Name: 'Xã Đông Thạnh', Level: 'Xã' },
@@ -14687,7 +14687,7 @@ const dataProvince = [
       },
       {
         Id: '934',
-        Name: 'Huyện Phụng Hiệp',
+        Name: 'Phụng Hiệp',
         Wards: [
           { Id: '31393', Name: 'Thị trấn Kinh Cùng', Level: 'Thị trấn' },
           { Id: '31396', Name: 'Thị trấn Cây Dương', Level: 'Thị trấn' },
@@ -14708,7 +14708,7 @@ const dataProvince = [
       },
       {
         Id: '935',
-        Name: 'Huyện Vị Thuỷ',
+        Name: 'Vị Thuỷ',
         Wards: [
           { Id: '31441', Name: 'Thị trấn Nàng Mau', Level: 'Thị trấn' },
           { Id: '31444', Name: 'Xã Vị Trung', Level: 'Xã' },
@@ -14724,7 +14724,7 @@ const dataProvince = [
       },
       {
         Id: '936',
-        Name: 'Huyện Long Mỹ',
+        Name: 'Long Mỹ',
         Wards: [
           { Id: '31483', Name: 'Xã Thuận Hưng', Level: 'Xã' },
           { Id: '31484', Name: 'Xã Thuận Hòa', Level: 'Xã' },
@@ -14755,11 +14755,11 @@ const dataProvince = [
   },
   {
     Id: '94',
-    Name: 'Tỉnh Sóc Trăng',
+    Name: 'Sóc Trăng',
     Districts: [
       {
         Id: '941',
-        Name: 'Thành phố Sóc Trăng',
+        Name: 'Sóc Trăng',
         Wards: [
           { Id: '31498', Name: 'Phường 5', Level: 'Phường' },
           { Id: '31501', Name: 'Phường 7', Level: 'Phường' },
@@ -14775,7 +14775,7 @@ const dataProvince = [
       },
       {
         Id: '942',
-        Name: 'Huyện Châu Thành',
+        Name: 'Châu Thành',
         Wards: [
           { Id: '31569', Name: 'Thị trấn Châu Thành', Level: 'Thị trấn' },
           { Id: '31570', Name: 'Xã Hồ Đắc Kiện', Level: 'Xã' },
@@ -14789,7 +14789,7 @@ const dataProvince = [
       },
       {
         Id: '943',
-        Name: 'Huyện Kế Sách',
+        Name: 'Kế Sách',
         Wards: [
           { Id: '31528', Name: 'Thị trấn Kế Sách', Level: 'Thị trấn' },
           { Id: '31531', Name: 'Thị trấn An Lạc Thôn', Level: 'Thị trấn' },
@@ -14808,7 +14808,7 @@ const dataProvince = [
       },
       {
         Id: '944',
-        Name: 'Huyện Mỹ Tú',
+        Name: 'Mỹ Tú',
         Wards: [
           { Id: '31567', Name: 'Thị trấn Huỳnh Hữu Nghĩa', Level: 'Thị trấn' },
           { Id: '31579', Name: 'Xã Long Hưng', Level: 'Xã' },
@@ -14823,7 +14823,7 @@ const dataProvince = [
       },
       {
         Id: '945',
-        Name: 'Huyện Cù Lao Dung',
+        Name: 'Cù Lao Dung',
         Wards: [
           { Id: '31615', Name: 'Thị trấn Cù Lao Dung', Level: 'Thị trấn' },
           { Id: '31618', Name: 'Xã An Thạnh 1', Level: 'Xã' },
@@ -14837,7 +14837,7 @@ const dataProvince = [
       },
       {
         Id: '946',
-        Name: 'Huyện Long Phú',
+        Name: 'Long Phú',
         Wards: [
           { Id: '31639', Name: 'Thị trấn Long Phú', Level: 'Thị trấn' },
           { Id: '31642', Name: 'Xã Song Phụng', Level: 'Xã' },
@@ -14854,7 +14854,7 @@ const dataProvince = [
       },
       {
         Id: '947',
-        Name: 'Huyện Mỹ Xuyên',
+        Name: 'Mỹ Xuyên',
         Wards: [
           { Id: '31684', Name: 'Thị trấn Mỹ Xuyên', Level: 'Thị trấn' },
           { Id: '31690', Name: 'Xã Đại Tâm', Level: 'Xã' },
@@ -14885,7 +14885,7 @@ const dataProvince = [
       },
       {
         Id: '949',
-        Name: 'Huyện Thạnh Trị',
+        Name: 'Thạnh Trị',
         Wards: [
           { Id: '31756', Name: 'Thị trấn Phú Lộc', Level: 'Thị trấn' },
           { Id: '31757', Name: 'Thị trấn Hưng Lợi', Level: 'Thị trấn' },
@@ -14917,7 +14917,7 @@ const dataProvince = [
       },
       {
         Id: '951',
-        Name: 'Huyện Trần Đề',
+        Name: 'Trần Đề',
         Wards: [
           { Id: '31672', Name: 'Xã Đại Ân  2', Level: 'Xã' },
           { Id: '31673', Name: 'Thị trấn Trần Đề', Level: 'Thị trấn' },
@@ -14936,11 +14936,11 @@ const dataProvince = [
   },
   {
     Id: '95',
-    Name: 'Tỉnh Bạc Liêu',
+    Name: 'Bạc Liêu',
     Districts: [
       {
         Id: '954',
-        Name: 'Thành phố Bạc Liêu',
+        Name: 'Bạc Liêu',
         Wards: [
           { Id: '31813', Name: 'Phường 2', Level: 'Phường' },
           { Id: '31816', Name: 'Phường 3', Level: 'Phường' },
@@ -14956,7 +14956,7 @@ const dataProvince = [
       },
       {
         Id: '956',
-        Name: 'Huyện Hồng Dân',
+        Name: 'Hồng Dân',
         Wards: [
           { Id: '31843', Name: 'Thị trấn Ngan Dừa', Level: 'Thị trấn' },
           { Id: '31846', Name: 'Xã Ninh Quới', Level: 'Xã' },
@@ -14971,7 +14971,7 @@ const dataProvince = [
       },
       {
         Id: '957',
-        Name: 'Huyện Phước Long',
+        Name: 'Phước Long',
         Wards: [
           { Id: '31867', Name: 'Thị trấn Phước Long', Level: 'Thị trấn' },
           { Id: '31870', Name: 'Xã Vĩnh Phú Đông', Level: 'Xã' },
@@ -14985,7 +14985,7 @@ const dataProvince = [
       },
       {
         Id: '958',
-        Name: 'Huyện Vĩnh Lợi',
+        Name: 'Vĩnh Lợi',
         Wards: [
           { Id: '31894', Name: 'Xã Vĩnh Hưng', Level: 'Xã' },
           { Id: '31897', Name: 'Xã Vĩnh Hưng A', Level: 'Xã' },
@@ -15015,7 +15015,7 @@ const dataProvince = [
       },
       {
         Id: '960',
-        Name: 'Huyện Đông Hải',
+        Name: 'Đông Hải',
         Wards: [
           { Id: '31972', Name: 'Thị trấn Gành Hào', Level: 'Thị trấn' },
           { Id: '31975', Name: 'Xã Long Điền Đông', Level: 'Xã' },
@@ -15032,7 +15032,7 @@ const dataProvince = [
       },
       {
         Id: '961',
-        Name: 'Huyện Hoà Bình',
+        Name: 'Hoà Bình',
         Wards: [
           { Id: '31891', Name: 'Thị trấn Hòa Bình', Level: 'Thị trấn' },
           { Id: '31915', Name: 'Xã Minh Diệu', Level: 'Xã' },
@@ -15048,11 +15048,11 @@ const dataProvince = [
   },
   {
     Id: '96',
-    Name: 'Tỉnh Cà Mau',
+    Name: 'Cà Mau',
     Districts: [
       {
         Id: '964',
-        Name: 'Thành phố Cà Mau',
+        Name: 'Cà Mau',
         Wards: [
           { Id: '31999', Name: 'Phường 9', Level: 'Phường' },
           { Id: '32002', Name: 'Phường 4', Level: 'Phường' },
@@ -15075,7 +15075,7 @@ const dataProvince = [
       },
       {
         Id: '966',
-        Name: 'Huyện U Minh',
+        Name: 'U Minh',
         Wards: [
           { Id: '32044', Name: 'Thị trấn U Minh', Level: 'Thị trấn' },
           { Id: '32047', Name: 'Xã Khánh Hòa', Level: 'Xã' },
@@ -15089,7 +15089,7 @@ const dataProvince = [
       },
       {
         Id: '967',
-        Name: 'Huyện Thới Bình',
+        Name: 'Thới Bình',
         Wards: [
           { Id: '32065', Name: 'Thị trấn Thới Bình', Level: 'Thị trấn' },
           { Id: '32068', Name: 'Xã Biển Bạch', Level: 'Xã' },
@@ -15107,7 +15107,7 @@ const dataProvince = [
       },
       {
         Id: '968',
-        Name: 'Huyện Trần Văn Thời',
+        Name: 'Trần Văn Thời',
         Wards: [
           { Id: '32095', Name: 'Thị trấn Trần Văn Thời', Level: 'Thị trấn' },
           { Id: '32098', Name: 'Thị trấn Sông Đốc', Level: 'Thị trấn' },
@@ -15126,7 +15126,7 @@ const dataProvince = [
       },
       {
         Id: '969',
-        Name: 'Huyện Cái Nước',
+        Name: 'Cái Nước',
         Wards: [
           { Id: '32128', Name: 'Thị trấn Cái Nước', Level: 'Thị trấn' },
           { Id: '32130', Name: 'Xã Thạnh Phú', Level: 'Xã' },
@@ -15143,7 +15143,7 @@ const dataProvince = [
       },
       {
         Id: '970',
-        Name: 'Huyện Đầm Dơi',
+        Name: 'Đầm Dơi',
         Wards: [
           { Id: '32152', Name: 'Thị trấn Đầm Dơi', Level: 'Thị trấn' },
           { Id: '32155', Name: 'Xã Tạ An Khương', Level: 'Xã' },
@@ -15165,7 +15165,7 @@ const dataProvince = [
       },
       {
         Id: '971',
-        Name: 'Huyện Năm Căn',
+        Name: 'Năm Căn',
         Wards: [
           { Id: '32191', Name: 'Thị Trấn Năm Căn', Level: 'Thị trấn' },
           { Id: '32194', Name: 'Xã Hàm Rồng', Level: 'Xã' },
@@ -15179,7 +15179,7 @@ const dataProvince = [
       },
       {
         Id: '972',
-        Name: 'Huyện Phú Tân',
+        Name: 'Phú Tân',
         Wards: [
           { Id: '32212', Name: 'Thị trấn Cái Đôi Vàm', Level: 'Thị trấn' },
           { Id: '32214', Name: 'Xã Phú Thuận', Level: 'Xã' },
@@ -15194,7 +15194,7 @@ const dataProvince = [
       },
       {
         Id: '973',
-        Name: 'Huyện Ngọc Hiển',
+        Name: 'Ngọc Hiển',
         Wards: [
           { Id: '32233', Name: 'Xã Tam Giang Tây', Level: 'Xã' },
           { Id: '32236', Name: 'Xã Tân Ân Tây', Level: 'Xã' },
