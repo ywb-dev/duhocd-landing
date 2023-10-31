@@ -3,7 +3,7 @@
         <div 
         class="relative py-24 md:py-48 bg-[#BCBCBC] overflow-hidden">
             <div class="container max-w-960 mx-auto px-5 ">
-                <img  v-motion-slide-visible-once-bottom class="mx-auto mb-4 hidden md:block w-[148px] object-contain" src="/images/flows/takenote.png" loading="lazy" alt="icon take note">
+                <TakeNoteIcon v-motion-slide-visible-once-bottom class="mx-auto mb-4 hidden md:block w-[148px]"/>
                 <h2  v-motion-slide-visible-once-bottom class="w-full text-32 md:text-68 text-center mb-11 font-bold md:mb-20">Quy trình du học</h2>
                 <div v-motion-slide-visible-right  class="w-full border-[10px] border-primaryText bg-[#EFE9DB] rounded-[45px] overflow-hidden">
                     <div class="flex flex-col md:flex-row border-primaryText">
@@ -138,6 +138,7 @@
     </section>
 </template>
 <script setup>
+    import TakeNoteIcon from '../icons/TakeNoteIcon.vue';
 </script>
 <style scoped>
  .step:first-child .step-text,
