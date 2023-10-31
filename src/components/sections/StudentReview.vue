@@ -2,7 +2,8 @@
     <section id="review">
         <div class="relative px-10 py-20 md:py-36 bg-white review overflow-hidden">
             <div class="container max-w-960 mx-auto">
-                <div class="max-w-[900px] mb-12 md:mb-20">
+                <div  v-motion-slide-visible-once-bottom
+                     class="max-w-[900px] mb-12 md:mb-20">
                     <img class="w-14 mx-auto md:w-20 object-contain mb-5 md:mb-0" src="/images/university/illustration_Achie_ement.png" loading="lazy" alt="chứng nhận">
                     <h2 class="text-dark text-center font-bold text-3xl -tracking-[0.4px] md:text-68 md:leading-[78px]">Các học viên đánh giá như nào về DUHOCD.com</h2>
                 </div>
@@ -26,7 +27,8 @@
                     :modules="modules"
                     class="mySwiper"
                 >
-                    <swiper-slide v-for="review in reviews" :key="review">
+                    <swiper-slide
+                         v-for="review in reviews" :key="review">
                         <div class="flex flex-col md:flex-row justìy-center items-center sm:mb-12">
                             <div class="p-8 bg-beebright shadow-sm rounded-[39px] review-shadow">
                                 <p>{{ review?.comment }}</p>
@@ -38,12 +40,14 @@
                         </div>
                     </swiper-slide>
                 </swiper>
-                <div v-else v-for="(review, index) in reviews" :key="review" :class="index%2===0 ? 'md:flex-row' : 'md:flex-row-reverse'" class="flex flex-col md:flex-row sm:mb-12">
-                    <div :class="index%2===0 ? 'mr-5' : 'ml-5'" class="p-8 bg-beebright shadow-sm rounded-[39px] review-shadow">
+                <div v-else v-for="(review, index) in reviews"  :key="review" :class="index%2===0 ? 'md:flex-row' : 'md:flex-row-reverse'" class="flex flex-col md:flex-row sm:mb-12">
+                    <div 
+                    v-motion-slide-visible-once-left
+                    :class="index%2===0 ? 'mr-5' : 'ml-5'" v-motion-slide-right class="p-8 bg-beebright shadow-sm rounded-[39px] review-shadow">
                         <p>{{ review?.comment }}</p>
                         <p class="text-right font-bold text-base text-black tracking-tight mt-2.5">- {{  review?.author }}</p>
                     </div>
-                    <div class="w-40 h-40 min-w-[10rem] rounded-[172px] overflow-hidden">
+                    <div v-motion-slide-right class="w-40 h-40 min-w-[10rem] rounded-[172px] overflow-hidden">
                         <img class="w-full h-full block object-cover hover:scale-110 transition-transform" :src="review?.image" loading="lazy" alt="du học sinh">
                     </div> 
                 </div>

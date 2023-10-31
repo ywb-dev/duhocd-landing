@@ -34,9 +34,24 @@
                     class="mySwiper"
                 >
                     <swiper-slide v-for="project in projects" :key="project" class="swiper-item">
-                        <div class="relative">
+                        <div  
+                            v-motion-slide-visible-right 
+                            :initial="{
+                                opacity: 0,
+                            }"
+                            :enter="{
+                                y: 0,
+                                opacity: 1,
+                                transition: {
+                                    duration: 800,
+                                    opacity: {
+                                        duration: 1000,
+                                    },
+                                },
+                            }" 
+                            class="relative">
                             <div class="absolute top-0 w-full">
-                                <img class="object-contain" :src="project.image" :alt="project.alt" />
+                                <img class="object-contain" :src="project.image" loading="lazy" :alt="project.alt" />
                             </div>
                             <div class="pt-24">
                                 <h2 class="heading text-dark text-xl font-bold leading-6 tracking-tight mb-2">

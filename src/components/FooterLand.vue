@@ -4,15 +4,15 @@
             <h2 class="text-[26px] text-white leading-normal text-center -tracking-[0.4px] md:text-[40px] font-bold">DUHOCD<span class="text-15 font-normal md:text-2xl">.com</span></h2>
             <p class="text-white text-xs leading-normal traccking-tight text-center md:text-sm">YeoWuBie Interactions Co. Ltd</p>
         </div>
-        <p class="text-center text-white text-xs leading-normal tracking-tight w-60 md:w-[400px] mt-20 md:mt-24 md:text-sm leading-5">
-            <a target="_blank" class="leading-5 block mb-2.5 hover:text-hoverLink hover:underline" href="mailto:info@yeowubie.com">email: info@yeowubie.com</a>
+        <p class="text-center text-white text-xs leading-normal tracking-tight w-60 md:w-[420px] mt-20 md:mt-24 md:text-sm leading-5">
+            <a target="_blank" class="leading-5 block mb-2.5 hover:text-hoverLink hover:underline" href="mailto:duhocd@yeowubie.com">email: duhocd@yeowubie.com</a>
             <a target="_blank" href="https://maps.app.goo.gl/Ux2VgkC4Qp5QV2Sf8">office: 6F, 15 Ngõ 4 Đồng Me, Mễ Trì, Từ Liêm, Hà Nội, Viet Nam</a>
         </p>
     </div>
     <div>
     <Transition name="fade">
-        <div id="pagetop" class="fixed right-20 bottom-20 z-50" v-show="scY > 300" @click="toTop">
-          <svg class="w-16" xmlns="http://www.w3.org/2000/svg" width="83" height="83" viewBox="0 0 83 83" fill="none">
+        <div id="pagetop" class="fixed right-20 bottom-20 z-50 cursor-pointer hover:opacity-80" v-show="scY > 300" @click="toTop">
+          <svg class="w-12" xmlns="http://www.w3.org/2000/svg" width="83" height="83" viewBox="0 0 83 83" fill="none">
                 <g filter="url(#filter0_d_241_4)">
                     <circle cx="39" cy="39" r="37" fill="#318ACB"/>
                     <circle cx="39" cy="39" r="38" stroke="#093F68" stroke-width="2"/>

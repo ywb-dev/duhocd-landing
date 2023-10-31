@@ -82,9 +82,10 @@
 </script>
 <template>
     <section id="university">
-        <div class="relative w-full bg-fixed bg-[url('/images/university/bg-university.jpg')] bg-no-repeat bg-cover bg-center">
+        <div 
+          class="relative w-full bg-[url('/images/university/bg-university.jpg')] bg-no-repeat bg-cover bg-center bg-fixed">
             <div class="container max-w-960 px-9 pt-20 pb-24">
-                <div class="flex flex-col justify-center items-center text-center">
+                <div  v-motion-slide-visible-once-bottom class="flex flex-col justify-center items-center text-center">
                     <img class="w-16 object-contain" src="/images/university/illustration_Achie_ement.png" loading="lazy" alt="thành tích">
                     <h2 class="text-shadow-white text-32 text-dark text-center font-bold -tracking-[0.48px] leading-normal md:text-68 md:leading-[78px]">Các trường đại học</h2>
                     <p class="text-shadow-white text-base max-w-2xl text-dark font-normal leading-6 mt-3 mb-9">Hãy tham khảo danh sách các trường đại học do DUHOCD.com giới thiệu để bạn có thể tìm hiểu về ưu nhược điểm của mỗi trường. Từ đó xây dựng cho mình một kế hoạch du học phù hợp và hiệu quả nhất.</p>
@@ -94,7 +95,7 @@
                         <div v-for="(inv, index) in unvs" :key="inv" :class="index===0 ? '!border-[3px] active-first' : ''" 
                             :title="inv?.subtitle"
                             class="items p-5 mb-2.5 md:mb-6 bg-white rounded-[25px] border overflow-hidden hover:border-[3px] border-black ">
-                            <div  v-on:mouseover="mouseover(inv)"
+                            <div v-motion-slide-visible-right  v-on:mouseover="mouseover(inv)"
                                     v-on:mouseleave="mouseleave(inv)" :class="index===0 ? '!max-h-full' : ''" 
                                     v-bind:class="inv.open ? 'onmousover' : ''"
                                     class="box-wrap-content relative flex box-item max-h-[160px] transition-all duration-700 delay-150 transition-all h-full flex-col md:flex-row overflow-hidden">

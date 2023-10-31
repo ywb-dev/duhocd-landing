@@ -2,23 +2,46 @@
     import BaseLayout from './layout/BaseLayout.vue';
     import Header from './components/HeaderLand.vue';
     import Footer from './components/FooterLand.vue';
+    import SkeletonLoad from './components/SkeletonLoad.vue';
 
-    import HeroBanner from './components/sections/HeroBanner.vue';
-    import Advise from './components/sections/AdviseStudy.vue';
-    import University from './components/sections/UniversityShow.vue';
-    import FlowAbroad from './components/sections/FlowAbroad.vue';
-    import StudentReview from './components/sections/StudentReview.vue';
-    import Register from './components/sections/RegisterStudy.vue';
+    import HeroBanner from './components/sections/HeroBanner.vue'
 
     import { defineAsyncComponent } from 'vue'
 
     const AsyncProjectCarousel = defineAsyncComponent({
         loader: () => import('./components/sections/ProjectCarousel.vue'),
+        loadingComponent: SkeletonLoad,
+        delay: 500,
+    })
 
-        // loadingComponent: LoadingComponent,
-        delay: 200,
-        // errorComponent: ErrorComponent,
-        timeout: 3000
+    const AsyncAdviseStudy = defineAsyncComponent({
+        loader: () => import('./components/sections/AdviseStudy.vue'),
+        loadingComponent: SkeletonLoad,
+        delay: 500,
+    })
+
+    const AsyncUniversity = defineAsyncComponent({
+        loader: () => import('./components/sections/UniversityShow.vue'),
+        loadingComponent: SkeletonLoad,
+        delay: 500,
+    })
+
+    const AsyncFlowAbroad = defineAsyncComponent({
+        loader: () => import('./components/sections/FlowAbroad.vue'),
+        loadingComponent: SkeletonLoad,
+        delay: 500,
+    })
+
+    const AsyncStudentReview = defineAsyncComponent({
+        loader: () => import('./components/sections/StudentReview.vue'),
+        loadingComponent: SkeletonLoad,
+        delay: 500,
+    })
+
+    const AsyncRegister = defineAsyncComponent({
+        loader: () => import('./components/sections/RegisterStudy.vue'),
+        loadingComponent: SkeletonLoad,
+        delay: 500,
     })
 
 </script>
@@ -27,14 +50,13 @@
         <template v-slot:header>
             <Header/>
         </template>
-
         <HeroBanner/>
         <AsyncProjectCarousel/>
-        <Advise/>
-        <University/>
-        <FlowAbroad/>
-        <StudentReview/>
-        <Register/>
+        <AsyncAdviseStudy/>
+        <AsyncUniversity/>
+        <AsyncFlowAbroad/>
+        <AsyncStudentReview/>
+        <AsyncRegister/>
 
         <template v-slot:footer>
             <Footer/>
