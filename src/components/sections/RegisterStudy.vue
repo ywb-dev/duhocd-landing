@@ -10,7 +10,7 @@
                     chưa biết phải chuẩn bị như thế nào? Bạn cần tư vấn 1:1 từ chọn trường cho đến khi quá trình du học kết
                     thúc? Vậy, hãy liên lạc ngay với chúng tôi!</p>
             </div>
-            <div class="px-8 xs:px-16 max-w-[600px] mx-auto">
+            <div class="px-10 xs:px-16 max-w-[600px] mx-auto">
                 <form @submit="handleSubmit">
                     <div class="group-field">
                         <label class="flex" for="#name">
@@ -22,7 +22,7 @@
                         <label class="flex" for="#dob">
                             <StarIcon class="mr-1" /> Ngày sinh
                         </label>
-                        <input v-model="formData.dob" id="dob" name="dob" type="date" required placeholder="00/00/0000" />
+                        <input class="w-full" v-model="formData.dob" id="dob" name="dob" type="date" required placeholder="00/00/0000" />
                     </div>
                     <div class="flex justify-between">
                         <div class="group-field w-28">
@@ -148,7 +148,7 @@
                     </div>
                     <div class="group-field">
                         <label class="flex" for="#thoigianduhoc">Thời gian dự định đi du học</label>
-                        <input v-model="formData.timeStudyAbort" id="thoigianduhoc" name="thoigianduhoc" type="date" />
+                        <input v-model="formData.timeStudyAbort" class="w-full" id="thoigianduhoc" name="thoigianduhoc" type="date" />
                     </div>
                     <div class="group-field">
                         <label class="flex" for="#thoigianduhoc">Câu hỏi về du học</label>
