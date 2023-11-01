@@ -71,27 +71,27 @@
                      class="relative pt-24 max-w-sm md:max-w-960 mx-auto">
                     <div class="step relative flex flex-col md:flex-row md:items-end">
                         <img v-motion-slide-visible-left class="object-contain max-w-[250px] md:max-w-full" src="/images/flows/person1.png" loading="lazy" alt="đăng ký bước 1">
-                        <div v-motion-roll-visible-bottom class="flex">
+                        <div class="flex">
                             <img class="mx-w-[150px] max-w-full object-contain -mt-6 absolute md:static md:-ml-8" src="/images/flows/number1.png" loading="lazy" alt="đăng ký bước 1">
                             <h3 class="step-text ml-auto mt-6 w-64 md:w-96 z-10 text-2xl xs:text-32 text-back font-semibold tracking-wide md:-ml-4">Đăng ký tư vấn từ trung tâm</h3>
                         </div>
                         <img v-motion-slide-visible-right class=" arrow ml-auto mt-4 md:mr-auto md:mt-0" src="/images/flows/arrow1.png" loading="lazy" alt="đăng ký bước 1">
                     </div>
-                    <div class="-mt-20 step relative md:mt-0  md:flex md:items-end md:flex-row-reverse">
-                        <img v-motion-slide-visible-left class="max-w-[250px] md:max-w-full" src="/images/flows/person2.png" loading="lazy" alt="đăng ký bước 1">
+                    <div v-motion-slide-visible-left class="-mt-20 step relative md:mt-0  md:flex md:items-end md:flex-row-reverse">
+                        <img class="max-w-[250px] md:max-w-full" src="/images/flows/person2.png" loading="lazy" alt="đăng ký bước 1">
                         <div class="flex">
                             <h3 class="step-text mt-6 w-64 md:w-96 z-10 text-2xl xs:text-32 text-back font-semibold tracking-wide text-right">Chọn ngành và trường du học</h3>
                             <img class="absolute -mt-6 -right-8 md:static md:-mr-10" src="/images/flows/number2.png" loading="lazy" alt="đăng ký bước 1">
                         </div>
-                        <img v-motion-slide-visible-right class="arrow mr-auto" src="/images/flows/arrow2.png" loading="lazy" alt="đăng ký bước 1">
+                        <img class="arrow mr-auto" src="/images/flows/arrow2.png" loading="lazy" alt="đăng ký bước 1">
                     </div>
-                    <div class="-mt-20 step relative md:mt-0 md:flex md:items-end">
-                        <img v-motion-slide-visible-left class="relative max-w-[250px] md:max-w-full z-10" src="/images/flows/person3.png" loading="lazy" alt="đăng ký bước 1">
-                        <div v-motion-roll-visible-bottom class="flex md:items-center">
+                    <div v-motion-slide-visible-right class="-mt-20 step relative md:mt-0 md:flex md:items-end">
+                        <img  class="relative max-w-[250px] md:max-w-full z-10" src="/images/flows/person3.png" loading="lazy" alt="đăng ký bước 1">
+                        <div class="flex md:items-center">
                             <img class="absolute -mt-6 -left-8 md:static md:-ml-8" src="/images/flows/number3.png" loading="lazy" alt="đăng ký bước 1">
                             <h3 class="step-text mt-8 ml-auto w-64 md:w-96 z-10 text-2xl xs:text-32 text-back font-semibold tracking-wide text-left">Học tiếng Hàn</h3>
                         </div>
-                        <img v-motion-slide-visible-right class="arrow -mt-28 ml-auto md:-mb-44" src="/images/flows/arrow3.png" loading="lazy" alt="đăng ký bước 1">
+                        <img  class="arrow -mt-28 ml-auto md:-mb-44" src="/images/flows/arrow3.png" loading="lazy" alt="đăng ký bước 1">
                     </div>
                     <div v-motion-slide-visible-right class="-mt-20 step relative md:mt-0  md:flex md:items-end md:justify-end md:flex-row-reverse">
                         <img class="max-w-[250px] md:max-w-full" src="/images/flows/person4.png" loading="lazy" alt="đăng ký bước 1">

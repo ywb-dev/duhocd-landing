@@ -1,6 +1,6 @@
 <template>
     <section id="#">
-        <div class="relative bg-beebright px-14 md:px-0 py-16 flex flex-col md:flex-row  md:items-center md:justify-center">
+        <div class="relative bg-beebright px-14 md:px-0 py-16 flex flex-col md:flex-row  md:items-center md:justify-center overflow-hidden">
             <div   
                 v-motion-slide-visible-left
                      class="w-full md:w-1/2 text-right">

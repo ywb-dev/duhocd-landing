@@ -11,7 +11,7 @@
                     thúc? Vậy, hãy liên lạc ngay với chúng tôi!</p>
             </div>
             <div class="px-10 xs:px-16 max-w-[600px] mx-auto">
-                <form @submit="handleSubmit">
+                <form action="#" @submit.prevent="">
                     <div class="group-field">
                         <label class="flex" for="#name">
                             <StarIcon class="mr-1" /> Họ & tên
@@ -117,21 +117,21 @@
                     <div class="group-field">
                         <label for="dropdown">Bằng cấp hiện tại</label>
                         <div class="flex items-center relative">
-                            <select v-model="selectedDegree" id="dropdown">
+                            <select v-model="formData.selectedDegree" id="dropdown">
                                 <option v-for="degree in degreeOptions" :key="degree" :value="degree">{{ degree }}</option>>
                             </select>
                             <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             <InfoPopup heading="Thông tin" content="- Hãy lựa chọn chương trình học bạn đã tốt nghiệp" />
                         </div>
                     </div>
-                    <div v-if="selectedDegree === 'Tốt nghiệp THPT'" class="group-field">
+                    <div v-if="formData.selectedDegree === 'Tốt nghiệp THPT'" class="group-field">
                         <label class="flex" for="#">Điểm TB 3 năm</label>
                         <div class="flex items-center relative">
                             <input v-model="formData.averageScoreC3" id="degree" type="text" name="averageScore"
                                 placeholder="Nhập điểm trung bình" class="w-full" />
                         </div>
                     </div>
-                    <div v-if="selectedDegree === 'Tốt nghiệp Đại học' || selectedDegree === 'Tốt nghiệp Trung cấp/ Cao đẳng'"
+                    <div v-if="formData.selectedDegree === 'Tốt nghiệp Đại học' || formData.selectedDegree === 'Tốt nghiệp Trung cấp/ Cao đẳng'"
                         class="group-field">
                         <label class="flex" for="#GPA">GPA</label>
                         <div class="flex items-center relative">
@@ -157,7 +157,7 @@
                             placeholder="Bạn hãy thoải mái đặt câu hỏi ở đây nhé!" />
                     </div>
                     <div class="group-field">
-                        <button type="submit" class="!bg-[#909090]">
+                        <button @click="handleSubmit" type="submit" class="!bg-[#909090]">
                             Lưu tạm thời
                         </button>
                         <button type="submit" class="mt-4">
@@ -190,11 +190,12 @@ textarea::-webkit-resizer {
 }
 </style>
 <script setup>
-import dataProvince from '@/data/data.js'
-import StarIcon from '@/components/icons/StarIcon.vue';
-import DropdownIcon from '@/components/icons/DropdownIcon.vue';
-import InfoPopup from '@/components/InfoPopup.vue';
-
+    import dataProvince from '@/data/data.js'
+    import StarIcon from '@/components/icons/StarIcon.vue';
+    import DropdownIcon from '@/components/icons/DropdownIcon.vue';
+    import InfoPopup from '@/components/InfoPopup.vue';
+    import {useToast} from 'vue-toast-notification';
+    import 'vue-toast-notification/dist/theme-sugar.css';
 </script>
 <script>
 import Cookies from 'universal-cookie';
@@ -202,6 +203,7 @@ const cookies = new Cookies();
 
 export default {
     data() {
+        const $toast = useToast();
         return {
             cities: dataProvince,
             selectedResidenceCity: '', // Thành phố/tỉnh nơi thường trú
@@ -212,7 +214,6 @@ export default {
             selectedHometownWard: '', // Phường/Xã quê quán
             customFieldValue1: '',
             customFieldValue2: '',
-            selectedDegree: 'Tốt nghiệp Đại học',
             degreeOptions: ['Tốt nghiệp THPT', 'Tốt nghiệp Trung cấp/ Cao đẳng', 'Tốt nghiệp Đại học'],
             formData: {
                 name: "",
@@ -222,31 +223,22 @@ export default {
                 email: "",
                 Residence: "",
                 Hometown: "",
-                degree: "",
+                selectedDegree: 'Tốt nghiệp Đại học',
                 averageScoreC3: "",
                 scoreGPA: "",
                 universityWant: "",
                 timeStudyAbort: "",
                 question: "",
             },
+            $toast
         }
     },
     created() {
         const temporaryFormData = cookies.get('temporaryFormData');
-        // const ResidenceCookies = temporaryFormData.Residence.split("/")
-        // const HometownCookies = temporaryFormData.Hometown.split("/")
-
-        // console.log(ResidenceCookies);
+        console.log('temporaryFormData:', temporaryFormData);
 
         if (temporaryFormData) {
             this.formData = temporaryFormData
-            // this.selectedResidenceWard = ResidenceCookies[0]
-            // this.selectedResidenceDistrict = ResidenceCookies[1]
-            // this.selectedResidenceCity = ResidenceCookies[2]
-
-            // this.selectedHometownCity = HometownCookies[0]
-            // this.selectedHometownDistrict = HometownCookies[1]
-            // this.selectedHometownWard = HometownCookies[2]
         }
     },
     computed: {
@@ -322,12 +314,18 @@ export default {
             //     Ids: [this.selectedHometownWard.Id, this.selectedHometownDistrict.Id, this.selectedHometownCity.Id ], 
             //     Names: [this.selectedHometownWard.Name, this.selectedHometownDistrict.Name, this.selectedHometownCity.Name] 
             // }
-            
             if (this.formData) {
                 cookies.set('temporaryFormData', this.formData);
+
+                this.$toast.open({
+                    message: 'Lưu trữ tạm thời thàng công!',
+                    type: 'success',
+                    position: 'bottom-right'
+                });
+            } else {
+                
             }
         },
-
     }
 }
 </script>

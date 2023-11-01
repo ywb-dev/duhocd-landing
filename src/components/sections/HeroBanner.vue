@@ -18,7 +18,7 @@
                                     delay: 100,
                                 },
                                 opacity: {
-                                    duration: 1600,
+                                    duration: 800,
                                 },
                             },
                         }"                      v-motion-slide-left 
@@ -96,32 +96,4 @@
     </section>
 </template>
 <script setup>
-    import { ref } from 'vue';
-    import { useMotion } from '@vueuse/motion'
-    const target = ref<HTMLElement>(null)
-    // Get the variant from target motion instance.
-        const { apply } = useMotion(target, {
-        initial: {
-            scale: 0.3,
-            opacity: 0,
-        },
-        enter: {
-            opacity: 1,
-            scale: 1,
-        },
-        })
-
-        const customEvent = async () => {
-        // Animate to a temporary variant.
-        await apply({
-            scale: 2,
-            transition: {
-            type: spring,
-            damping: 100,
-            },
-        })
-
-        // Revert back to enter state
-        await apply('enter')
-        }
 </script>

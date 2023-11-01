@@ -13,7 +13,7 @@
     },
     methods: {
         handleScroll() {
-            if (window.scrollY > 40) {
+            if (window.scrollY > 200) {
                 this.isSticky = true
             } else {
                 this.isSticky = false

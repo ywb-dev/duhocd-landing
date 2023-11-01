@@ -81,10 +81,10 @@
   }
 </script>
 <template>
-    <section id="university">
+    <!-- <section id="university">
         <div 
           class="relative w-full bg-[url('/images/university/bg-university.jpg')] bg-no-repeat bg-cover bg-center bg-fixed">
-            <div class="container max-w-960 px-9 pt-20 pb-24">
+            <div class="container max-w-960 px-9 pt-20 pb-24 overflow-hidden">
                 <div  v-motion-slide-visible-once-bottom class="flex flex-col justify-center items-center text-center">
                     <img class="w-16 object-contain" src="/images/university/illustration_Achie_ement.png" loading="lazy" alt="thành tích">
                     <h2 class="text-shadow-white text-32 text-dark text-center font-bold -tracking-[0.48px] leading-normal md:text-68 md:leading-[78px]">Các trường đại học</h2>
@@ -102,7 +102,6 @@
                                    
                                 <div class="flex w-full md:w-1/2 rounded-[25px] overflow-hidden">
                                     <img :class="inv.open ? 'block' : 'block'" class="base-image max-h-[376px] md:max-h-full w-full object-cover" :src="inv?.img" loading="lazy" alt="Đại học Hàn Quốc"/>
-                                    <!-- <img :class="inv.open ? 'hidden  min-h-[400px]' : 'block'" class="block thumb-image object-cover" :src="inv?.thumb" loading="lazy" alt="Đại học hàn quốc"> -->
                                 </div>
                                 <div class="unv-content mt-9 md:mt-0 flex flex-col w-full md:pl-8 md:w-1/2  overflow-y-auto no-scrollbar">
                                     <h2 :class="{ active: index === 0}" class="heading content-white transition-all text-dark text-[27px] font-bold leading-normal mb-2 md:mt-12">{{ inv?.title  }}</h2>
@@ -115,7 +114,7 @@
                 </Transition>
             </div>
         </div>
-    </section>
+    </section> -->
 </template>
 <style scoped>
     .no-scrollbar::-webkit-scrollbar {
