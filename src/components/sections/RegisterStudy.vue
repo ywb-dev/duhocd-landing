@@ -59,7 +59,7 @@
                         </label>
                         <div class="flex gap-2">
                             <div class="relative w-1/3">
-                                <select id="residence-city" required v-model="selectedResidenceCity"
+                                <select id="residence-city" required v-model="formData.selectedResidenceCity"
                                     @change="updateResidenceDistricts">
                                     <option value="" class="text-grey">Tỉnh/Thành phố</option>
                                     <option v-for="city in sortedResidenceCities" :value="city">{{ city.Name }}</option>
@@ -67,7 +67,7 @@
                                 <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             </div>
                             <div class="relative w-1/3">
-                                <select id="residence-district" required v-model="selectedResidenceDistrict"
+                                <select id="residence-district" required v-model="formData.selectedResidenceDistrict"
                                     @change="updateResidenceWards">
                                     <option value="" class="text-grey">Quận/Huyện</option>
                                     <option v-for="district in sortedResidenceDistricts" :value="district">{{ district.Name
@@ -76,7 +76,7 @@
                                 <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             </div>
                             <div class="relative w-1/3">
-                                <select id="residence-ward" required v-model="selectedResidenceWard">
+                                <select id="residence-ward" required v-model="formData.selectedResidenceWard">
                                     <option value="" class="text-grey">Xã/Phường</option>
                                     <option v-for="ward in sortedResidenceWards" :value="ward">{{ ward.Name }}</option>
                                 </select>
@@ -90,14 +90,14 @@
                         </label>
                         <div class="flex gap-2">
                             <div class="relative w-1/3">
-                                <select id="hometown-city" required v-model="selectedHometownCity" @change="updateHometownDistricts">
+                                <select id="hometown-city" required v-model="formData.selectedHometownCity" @change="updateHometownDistricts">
                                     <option value="" class="text-grey">Tỉnh/Thành phố</option>
                                     <option v-for="city in sortedHometownCities" :value="city">{{ city.Name }}</option>
                                 </select>
                                 <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             </div>
                             <div class="relative w-1/3">
-                                <select id="hometown-district" required v-model="selectedHometownDistrict"
+                                <select id="hometown-district" required v-model="formData.selectedHometownDistrict"
                                     @change="updateHometownWards">
                                     <option value="" class="text-grey">Quận/Huyện</option>
                                     <option v-for="district in sortedHometownDistricts" :value="district">{{ district.Name
@@ -106,7 +106,7 @@
                                 <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             </div>
                             <div class="relative w-1/3">
-                                <select id="hometown-ward" required v-model="selectedHometownWard">
+                                <select id="hometown-ward" required v-model="formData.selectedHometownWard">
                                     <option value="" class="text-grey">Xã/Phường</option>
                                     <option v-for="ward in sortedHometownWards" :value="ward">{{ ward.Name }}</option>
                                 </select>
@@ -206,12 +206,6 @@ export default {
         const $toast = useToast();
         return {
             cities: dataProvince,
-            selectedResidenceCity: '', // Thành phố/tỉnh nơi thường trú
-            selectedResidenceDistrict: '', // Quận/Huyện nơi thường trú
-            selectedResidenceWard: '', // Phường/Xã nơi thường trú
-            selectedHometownCity: '', // Thành phố/tỉnh quê quán
-            selectedHometownDistrict: '', // Quận/Huyện quê quán
-            selectedHometownWard: '', // Phường/Xã quê quán
             customFieldValue1: '',
             customFieldValue2: '',
             degreeOptions: ['Tốt nghiệp THPT', 'Tốt nghiệp Trung cấp/ Cao đẳng', 'Tốt nghiệp Đại học'],
@@ -221,8 +215,12 @@ export default {
                 sex: "1",
                 phone: "",
                 email: "",
-                Residence: "",
-                Hometown: "",
+                selectedResidenceCity: '', // Thành phố/tỉnh nơi thường trú
+                selectedResidenceDistrict: '', // Quận/Huyện nơi thường trú
+                selectedResidenceWard: '', // Phường/Xã nơi thường trú
+                selectedHometownCity: '', // Thành phố/tỉnh quê quán
+                selectedHometownDistrict: '', // Quận/Huyện quê quán
+                selectedHometownWard: '', // Phường/Xã quê quán
                 selectedDegree: 'Tốt nghiệp Đại học',
                 averageScoreC3: "",
                 scoreGPA: "",
@@ -246,8 +244,8 @@ export default {
             return this.cities.slice().sort((a, b) => a.Name.localeCompare(b.Name));
         },
         sortedResidenceDistricts: function () {
-            if (this.selectedResidenceCity) {
-                const selectedCity = this.cities.find(city => city.Id === this.selectedResidenceCity.Id);
+            if (this.formData.selectedResidenceCity) {
+                const selectedCity = this.cities.find(city => city.Id === this.formData.selectedResidenceCity.Id);
                 if (selectedCity) {
                     return selectedCity.Districts.slice().sort((a, b) => a.Name.localeCompare(b.Name));
                 }
@@ -255,10 +253,10 @@ export default {
             }
         },
         sortedResidenceWards: function () {
-            if (this.selectedResidenceDistrict) {
-                const selectedCity = this.cities.find(city => city.Id === this.selectedResidenceCity.Id);
+            if (this.formData.selectedResidenceDistrict) {
+                const selectedCity = this.cities.find(city => city.Id === this.formData.selectedResidenceCity.Id);
                 if (selectedCity) {
-                    const selectedDistrict = selectedCity.Districts.find(district => district.Id === this.selectedResidenceDistrict.Id);
+                    const selectedDistrict = selectedCity.Districts.find(district => district.Id === this.formData.selectedResidenceDistrict.Id);
                     if (selectedDistrict) {
                         return selectedDistrict.Wards.slice().sort((a, b) => a.Name.localeCompare(b.Name));
                     }
@@ -270,8 +268,8 @@ export default {
             return this.cities.slice().sort((a, b) => a.Name.localeCompare(b.Name));
         },
         sortedHometownDistricts: function () {
-            if (this.selectedHometownCity) {
-                const selectedCity = this.cities.find(city => city.Id === this.selectedHometownCity.Id);
+            if (this.formData.selectedHometownCity) {
+                const selectedCity = this.cities.find(city => city.Id === this.formData.selectedHometownCity.Id);
                 if (selectedCity) {
                     return selectedCity.Districts.slice().sort((a, b) => a.Name.localeCompare(b.Name));
                 }
@@ -279,10 +277,10 @@ export default {
             }
         },
         sortedHometownWards: function () {
-            if (this.selectedHometownDistrict) {
-                const selectedCity = this.cities.find(city => city.Id === this.selectedHometownCity.Id);
+            if (this.formData.selectedHometownDistrict) {
+                const selectedCity = this.cities.find(city => city.Id === this.formData.selectedHometownCity.Id);
                 if (selectedCity) {
-                    const selectedDistrict = selectedCity.Districts.find(district => district.Id === this.selectedHometownDistrict.Id);
+                    const selectedDistrict = selectedCity.Districts.find(district => district.Id === this.formData.selectedHometownDistrict.Id);
                     if (selectedDistrict) {
                         return selectedDistrict.Wards.slice().sort((a, b) => a.Name.localeCompare(b.Name));
                     }
@@ -293,27 +291,19 @@ export default {
     },
     methods: {
         updateResidenceDistricts: function () {
-            this.selectedResidenceDistrict = '';
+            this.formData.selectedResidenceDistrict = '';
         },
         updateResidenceWards: function () {
-            this.selectedResidenceWard = '';
+            this.formData.selectedResidenceWard = '';
         },
         updateHometownDistricts: function () {
-            this.selectedHometownDistrict = '';
+            this.formData.selectedHometownDistrict = '';
         },
         updateHometownWards: function () {
-            this.selectedHometownWard = '';
+            this.formData.selectedHometownWard = '';
         },
 
        async handleSubmit() {
-            // this.formData.Residence = { 
-            //     Ids: [this.selectedResidenceWard.Id, this.selectedResidenceDistrict.Id, this.selectedResidenceCity.Id ], 
-            //     Names: [this.selectedResidenceWard.Name, this.selectedResidenceDistrict.Name, this.selectedResidenceCity.Name] 
-            // }
-            // this.formData.Residence = { 
-            //     Ids: [this.selectedHometownWard.Id, this.selectedHometownDistrict.Id, this.selectedHometownCity.Id ], 
-            //     Names: [this.selectedHometownWard.Name, this.selectedHometownDistrict.Name, this.selectedHometownCity.Name] 
-            // }
             if (this.formData) {
                 cookies.set('temporaryFormData', this.formData);
 

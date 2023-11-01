@@ -81,7 +81,7 @@
   }
 </script>
 <template>
-    <!-- <section id="university">
+    <section id="university">
         <div 
           class="relative w-full bg-[url('/images/university/bg-university.jpg')] bg-no-repeat bg-cover bg-center bg-fixed">
             <div class="container max-w-960 px-9 pt-20 pb-24 overflow-hidden">
@@ -114,7 +114,7 @@
                 </Transition>
             </div>
         </div>
-    </section> -->
+    </section>
 </template>
 <style scoped>
     .no-scrollbar::-webkit-scrollbar {
