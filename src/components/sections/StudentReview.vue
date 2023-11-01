@@ -35,7 +35,7 @@
                                 <p class="text-right font-bold text-base text-black tracking-tight mt-2.5">- {{  review?.author }}</p>
                             </div>
                             <div class="w-40 h-40 min-w-[10rem] rounded-[172px] overflow-hidden mt-6">
-                                <img class="w-full h-full block object-cover" :src="review?.image" loading="lazy" alt="du học sinh">
+                                <img width="172" height="172" class="w-full h-full block object-cover" :src="review?.image" loading="lazy" alt="du học sinh">
                             </div> 
                         </div>
                     </swiper-slide>
@@ -48,7 +48,7 @@
                         <p class="text-right font-bold text-base text-black tracking-tight mt-2.5">- {{  review?.author }}</p>
                     </div>
                     <div v-motion-slide-right class="w-40 h-40 min-w-[10rem] rounded-[172px] overflow-hidden">
-                        <img class="w-full h-full block object-cover hover:scale-110 transition-transform" :src="review?.image" loading="lazy" alt="du học sinh">
+                        <img width="172" height="172" class="w-full h-full block object-cover hover:scale-110 transition-transform" :src="review?.image" loading="lazy" alt="du học sinh">
                     </div> 
                 </div>
                 </div>

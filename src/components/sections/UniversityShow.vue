@@ -4,8 +4,7 @@
         return {
             unvs: [
                 {
-                  img: '/images/university/unv1.png',
-                  thumb: '/images/university/unv1.png',
+                  img: '/images/university/unv1.webp',
                   title: '성균관 대학교',
                   subtitle: 'Đại học Sungkyunkwan',
                   content: `-Địa chỉ: 
@@ -18,8 +17,7 @@
                   open: true
                 },
                 {
-                  img: '/images/university/unv2.png',
-                  thumb: '/images/university/unvthumb2.png',
+                  img: '/images/university/unv2.webp',
                   title: '서강 대학교',
                   subtitle: 'Đại học Korea',
                   content: `-Đại học Quốc gia Hàn Quốc là một trong những trường đại học lớn và cổ nhất tại Hàn
@@ -31,8 +29,7 @@
                   open: false
                 } ,
                 {
-                  img: '/images/university/unv3.png',
-                  thumb: '/images/university/unvthumb3.png',
+                  img: '/images/university/unv3.webp',
                   title: '한국 외국어 대학교',
                   subtitle: 'Đại học Ngoại ngữ Hàn Quốc – Hankuk',
                   content: `-Đại học Ngoại ngữ Hàn Quốc (Korea University of Foreign Studies), thường được gọi là
@@ -44,8 +41,7 @@
                   open: false
                 } ,
                 {
-                  img: '/images/university/unv4.png',
-                  thumb: '/images/university/unvthumb4.png',
+                  img: '/images/university/unv4.webp',
                   title: '안동 과학 대학교',
                   subtitle: 'Cao đẳng khoa học Andong',
                   content: `-Cao đẳng khoa học Andong là một trong những trường đào tạo nghề tốt nhất Hàn Quốc
@@ -55,8 +51,7 @@
                   open: false
                 } ,
                 {
-                  img: '/images/university/unv5.png',
-                  thumb: '/images/university/unvthumb5.png',
+                  img: '/images/university/unv5.webp',
                   title: '청운 대학교',
                   subtitle: 'Đại học Chungwoon',
                   content: `-Trường có thế mạnh về lĩnh vực đào tạo truyền thông, nghệ thuật truyền hình 
@@ -83,10 +78,10 @@
 <template>
     <section id="university">
         <div 
-          class="relative w-full bg-[url('/images/university/bg-university.jpg')] bg-no-repeat bg-cover bg-center bg-fixed">
+          class="relative w-full bg-[url('/images/university/bg-university.webp')] bg-no-repeat bg-cover bg-center bg-fixed">
             <div class="container max-w-960 px-9 pt-20 pb-24 overflow-hidden">
                 <div  v-motion-slide-visible-once-bottom class="flex flex-col justify-center items-center text-center">
-                    <img class="w-16 object-contain" src="/images/university/illustration_Achie_ement.png" loading="lazy" alt="thành tích">
+                    <img width="64" height="90" class="w-16 object-contain" src="/images/university/illustration_Achie_ement.png" loading="lazy" alt="thành tích">
                     <h2 class="text-shadow-white text-32 text-dark text-center font-bold -tracking-[0.48px] leading-normal md:text-68 md:leading-[78px]">Các trường đại học</h2>
                     <p class="text-shadow-white text-base max-w-2xl text-dark font-normal leading-6 mt-3 mb-9">Hãy tham khảo danh sách các trường đại học do DUHOCD.com giới thiệu để bạn có thể tìm hiểu về ưu nhược điểm của mỗi trường. Từ đó xây dựng cho mình một kế hoạch du học phù hợp và hiệu quả nhất.</p>
                 </div>
@@ -102,7 +97,7 @@
                                     class="box-wrap-content relative flex box-item max-h-[160px] transition-all duration-700 delay-150 transition-all h-full flex-col md:flex-row overflow-hidden">
                                    
                                 <div class="flex w-full md:w-1/2 rounded-[25px] overflow-hidden">
-                                    <img :class="inv.open ? 'block' : 'block'" class="base-image max-h-[376px] md:max-h-full w-full object-cover" :src="inv?.img" loading="lazy" alt="Đại học Hàn Quốc"/>
+                                    <img width="420" height="445" :class="inv.open ? 'block' : 'block'" class="base-image max-h-[376px] md:max-h-full w-full object-cover" :src="inv?.img" loading="lazy" alt="Đại học Hàn Quốc"/>
                                 </div>
                                 <div class="unv-content mt-9 md:mt-0 flex flex-col w-full md:pl-8 md:w-1/2  overflow-y-auto no-scrollbar">
                                     <h2 :class="{ active: index === 0}" class="heading content-white transition-all text-dark text-[27px] font-bold leading-normal mb-2 md:mt-12">{{ inv?.title  }}</h2>
