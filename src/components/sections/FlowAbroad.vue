@@ -123,7 +123,7 @@
                             <img width="208" height="199" class="absolute -mt-6 -left-8 md:static" src="/images/flows/number7.png" loading="lazy" alt="đăng ký bước 1">
                             <h3 class="step-text mt-12 ml-auto w-64 md:w-fit z-10 text-2xl xs:text-32 text-back font-semibold tracking-wide text-left md:ml-0">Xuất cảnh</h3>
                         </div>
-                        <img width="78" height="177" class="arrow ml-auto md:mr-auto md:-ml-52" src="/images/flows/arrow7.png" loading="lazy" alt="đăng ký bước 1">
+                        <img width="177" height="177" class="arrow ml-auto md:mr-auto md:-ml-52" src="/images/flows/arrow7.png" loading="lazy" alt="đăng ký bước 1">
                     </div>
                     <div v-motion-slide-visible-right class="-mt-20 step relative md:mttt-0 md:flex md:items-end md:justify-end md:flex-col-reverse">
                         <img width="536" height="360" class="md:-mt-12 max-w-[250px] md:max-w-full" src="/images/flows/person7.png" loading="lazy" alt="đăng ký bước 1">
