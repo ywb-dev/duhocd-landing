@@ -6,7 +6,7 @@
                      class="w-full md:w-1/2 text-right">
                 <h4 class="text-dark text-2xl leading-7">Để được tư vấn cụ thể, <br> xin vui lòng liên hệ</h4>
                 <h2 class="text-dark font-bold text-5xl -tracking-[0.96px]">DUHOCD <span class="font-normal text-[40px]">.com</span></h2>
-                <a href="#" class="block w-48 text-center text-[27px] px-10 py-2 leading-normal font-extrabold bg-primary text-white rounded-tl-[20px] 
+                <a href="#signup" class="block w-48 text-center text-[27px] px-10 py-2 leading-normal font-extrabold bg-primary text-white rounded-tl-[20px] 
                     rounded-br-[20px] btn-shadow-grey mt-9 md:mt-11 ml-auto hover:-translate-x-2 
                     hover:-translate-y-2 transition-all">Tư vấn</a>
             </div>

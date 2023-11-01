@@ -94,8 +94,9 @@
                     <div class="flex flex-col w-full">
                         <div v-for="(inv, index) in unvs" :key="inv" :class="index===0 ? '!border-[3px] active-first' : ''" 
                             :title="inv?.subtitle"
+                            v-motion-slide-visible-right
                             class="items p-5 mb-2.5 md:mb-6 bg-white rounded-[25px] border overflow-hidden hover:border-[3px] border-black ">
-                            <div v-motion-slide-visible-right  v-on:mouseover="mouseover(inv)"
+                            <div v-on:mouseover="mouseover(inv)"
                                     v-on:mouseleave="mouseleave(inv)" :class="index===0 ? '!max-h-full' : ''" 
                                     v-bind:class="inv.open ? 'onmousover' : ''"
                                     class="box-wrap-content relative flex box-item max-h-[160px] transition-all duration-700 delay-150 transition-all h-full flex-col md:flex-row overflow-hidden">

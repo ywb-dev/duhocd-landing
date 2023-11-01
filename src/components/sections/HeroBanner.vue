@@ -40,7 +40,7 @@
                             nhất.</p>
 
                         <a
-                            href="#"
+                            href="#signup"
                             class="block w-48 h-[58px] text-center text-[27px] px-10 py-2 
                             leading-normal font-extrabold bg-primary text-white 
                          hover:-translate-y-2 transition-all rounded-tl-[20px] rounded-br-[20px] btn-shadow mt-4 lg:mt-12 ml-auto">Tư

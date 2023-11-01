@@ -12,9 +12,6 @@
             </div>
             <div class="px-10 xs:px-16 max-w-[600px] mx-auto">
                 <form action="#" @submit.prevent="">
-                    <p>
-                        {{  v$?.name.$error }}
-                    </p>
                     <div class="group-field">
                         <label class="flex" for="name">
                             <StarIcon class="mr-1" /> Họ & tên
