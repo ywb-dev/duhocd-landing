@@ -324,7 +324,7 @@ export default {
             this.selectedHometownWard = '';
         },
 
-       async handleSubmit($event) {
+       async handleSubmit() {
             // this.formData.selectedResidenceCity = this.selectedResidenceCity
             // this.formData.selectedResidenceDistrict = this.selectedResidenceDistrict
             // this.formData.selectedResidenceWard = this.selectedResidenceWard
@@ -332,7 +332,6 @@ export default {
             // this.formData.selectedHometownCity = this.selectedHometownCity
             // this.formData.selectedHometownDistrict = this.selectedHometownDistrict
             // this.formData.selectedHometownceWard = this.selectedHometownceWard
-            // const result = await this.v$.$validate()
       
             if (this.formData) {
                 cookies.set('temporaryFormData', this.formData);
