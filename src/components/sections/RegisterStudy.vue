@@ -11,12 +11,12 @@
                     thúc? Vậy, hãy liên lạc ngay với chúng tôi!</p>
             </div>
             <div class="px-10 xs:px-16 max-w-[600px] mx-auto">
-                <Form  @submit.prevent="handleSubmit" :validation-schema="schema">
+                <Form action="/"  @submit="handleSubmit" :validation-schema="schema" novalidate="novalidate">
                     <div class="group-field">
                         <label class="flex" for="name">
                             <StarIcon class="mr-1" /> Họ & tên
                         </label>
-                        <Field v-model="formData.name" id="name" name="name" placeholder="Nhập Họ & Tên" type="text" />
+                        <Field v-model="formData.name" id="name" name="name" placeholder="Nhập Họ & Tên" type="text" required/>
                         <ErrorMessage class="mt-4 text-sm text-[#ff0000]" name="name" />
                     </div>
                     <div class="group-field">
@@ -313,6 +313,7 @@ export default {
         },
 
        async handleSubmit() {
+        // reset the form and the field values to their initial values
       
             // if (this.formData) {
             //     this.$toast.success('Lưu tạm thời thành công!', {
