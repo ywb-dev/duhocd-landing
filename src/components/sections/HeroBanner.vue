@@ -68,7 +68,7 @@
                         <div class="relative ml-12">
                             <img class="h-72 ml-auto  mr-32 md:ml-0 lg:mr-0 md:h-auto object-contain"
                                 src="../../assets/images/bgcityborder.png" alt="hàn quốc city" loading="eager">
-                            <img class="absolute h-72 object-contain md:h-auto top-9 right-20 md:left-16"
+                            <img width="262" height="395" class="absolute h-72 object-contain md:h-auto top-9 right-20 md:left-16"
                                 src="../../assets/images/bgcity.png" alt="hàn quốc city" loading="eager">
                         </div>
                         <img ref="target" v-motion-slide-right 
@@ -85,7 +85,9 @@
                                     duration: 1000,
                                 },
                             },
-                        }"                      
+                        }"  
+                        width="536"
+                        height="320"                    
                         class="relative h-72 object-contain md:h-auto 
                         -mr-24 md:mr-0 ml-auto md:ml-0 -mt-24 md:-mt-32 z-10" src="../../assets/images/bgstudent.png"
                             alt="du học sinh" loading="eager">

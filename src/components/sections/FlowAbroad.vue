@@ -141,8 +141,7 @@
     import TakeNoteIcon from '../icons/TakeNoteIcon.vue';
 </script>
 <style scoped>
- .step:first-child .step-text,
- .step-text:hover {
+ .step-text {
     color: #FFD25D;
     text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
                1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;

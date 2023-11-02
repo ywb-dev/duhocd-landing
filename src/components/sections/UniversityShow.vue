@@ -4,7 +4,7 @@
         return {
             unvs: [
                 {
-                  img: '/images/university/unv1.webp',
+                  img: '/images/university/unv1.png',
                   title: '성균관 대학교',
                   subtitle: 'Đại học Sungkyunkwan',
                   content: `-Địa chỉ: 
@@ -17,7 +17,7 @@
                   open: true
                 },
                 {
-                  img: '/images/university/unv2.webp',
+                  img: '/images/university/unv2.png',
                   title: '서강 대학교',
                   subtitle: 'Đại học Korea',
                   content: `-Đại học Quốc gia Hàn Quốc là một trong những trường đại học lớn và cổ nhất tại Hàn
@@ -29,7 +29,7 @@
                   open: false
                 } ,
                 {
-                  img: '/images/university/unv3.webp',
+                  img: '/images/university/unv3.png',
                   title: '한국 외국어 대학교',
                   subtitle: 'Đại học Ngoại ngữ Hàn Quốc – Hankuk',
                   content: `-Đại học Ngoại ngữ Hàn Quốc (Korea University of Foreign Studies), thường được gọi là
@@ -41,7 +41,7 @@
                   open: false
                 } ,
                 {
-                  img: '/images/university/unv4.webp',
+                  img: '/images/university/unv4.png',
                   title: '안동 과학 대학교',
                   subtitle: 'Cao đẳng khoa học Andong',
                   content: `-Cao đẳng khoa học Andong là một trong những trường đào tạo nghề tốt nhất Hàn Quốc
@@ -51,7 +51,7 @@
                   open: false
                 } ,
                 {
-                  img: '/images/university/unv5.webp',
+                  img: '/images/university/unv5.png',
                   title: '청운 대학교',
                   subtitle: 'Đại học Chungwoon',
                   content: `-Trường có thế mạnh về lĩnh vực đào tạo truyền thông, nghệ thuật truyền hình 
@@ -78,7 +78,7 @@
 <template>
     <section id="university">
         <div 
-          class="relative w-full bg-[url('/images/university/bg-university.webp')] bg-no-repeat bg-cover bg-center bg-fixed">
+          class="relative w-full bg-[url('/images/university/bg-university.jpg')] bg-no-repeat bg-cover bg-center bg-fixed">
             <div class="container max-w-960 px-9 pt-20 pb-24 overflow-hidden">
                 <div  v-motion-slide-visible-once-bottom class="flex flex-col justify-center items-center text-center">
                     <img width="64" height="90" class="w-16 object-contain" src="/images/university/illustration_Achie_ement.png" loading="lazy" alt="thành tích">

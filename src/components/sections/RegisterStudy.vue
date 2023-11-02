@@ -11,47 +11,53 @@
                     thúc? Vậy, hãy liên lạc ngay với chúng tôi!</p>
             </div>
             <div class="px-10 xs:px-16 max-w-[600px] mx-auto">
-                <form action="#" @submit.prevent="">
+                <Form  @submit.prevent="handleSubmit" :validation-schema="schema">
                     <div class="group-field">
                         <label class="flex" for="name">
                             <StarIcon class="mr-1" /> Họ & tên
                         </label>
-                        <input v-model="formData.name" id="name" name="name" required placeholder="Nhập Họ & Tên" type="text" />
+                        <Field v-model="formData.name" id="name" name="name" placeholder="Nhập Họ & Tên" type="text" />
+                        <ErrorMessage class="mt-4 text-sm text-[#ff0000]" name="name" />
                     </div>
                     <div class="group-field">
                         <label class="flex" for="dob">
                             <StarIcon class="mr-1" /> Ngày sinh
                         </label>
-                        <input class="w-full" v-model="formData.dob" id="dob" name="dob" type="date" required placeholder="00/00/0000" />
+                        <Field class="w-full" v-model="formData.dob" id="dob" name="dob" type="date" required placeholder="00/00/0000" />
+                        <ErrorMessage class="mt-4 text-sm text-[#ff0000]" name="dob" />
                     </div>
-                    <div class="flex justify-between">
-                        <div class="group-field w-28">
-                            <label class="flex" for="sex">
-                                <StarIcon class="mr-1" />Giới tính
-                            </label>
+                    <div class="relative mb-6">
+                        <div class="flex justify-between">
+                            <div class=" w-28">
+                                <label class="flex" for="sex">
+                                    <StarIcon class="mr-1" />Giới tính
+                                </label>
 
-                            <div class="relative">
-                                <select v-model="formData.sex" title="click để chọn giới tính" required name="sex" id="sex">
-                                    <option selected value="1">Nam</option>
-                                    <option value="0">Nữ</option>
-                                </select>
-                                <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
+                                <div class="relative">
+                                    <select v-model="formData.sex" title="click để chọn giới tính" required name="sex" id="sex">
+                                        <option selected value="1">Nam</option>
+                                        <option value="0">Nữ</option>
+                                    </select>
+                                    <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
+                                </div>
+                            </div>
+                            <div class="group-field flex-1 ml-4 w-7/12 !mb-0">
+                                <label class="flex" for="phone">
+                                    <StarIcon class="mr-1" />Số điện thoại
+                                </label>
+                                <Field v-model="formData.phone" id="phone" name="phone" required placeholder="Nhập số điện thoại"
+                                    type="text" />
                             </div>
                         </div>
-                        <div class="group-field flex-1 ml-4 w-7/12">
-                            <label class="flex" for="phone">
-                                <StarIcon class="mr-1" />Số điện thoại
-                            </label>
-                            <input v-model="formData.phone" id="phone" name="phone" required placeholder="Nhập số điện thoại"
-                                type="text" />
-                        </div>
+                        <ErrorMessage class="mt-4 block text-sm text-[#ff0000]" name="phone" />
                     </div>
                     <div class="group-field">
                         <label class="flex" for="email">
                             <StarIcon class="mr-1" />Email
                         </label>
-                        <input v-model="formData.email" id="email" name="email" required type="email"
+                        <Field v-model="formData.email" id="email" name="email" required type="email"
                             placeholder="youremail@domain.com" />
+                        <ErrorMessage name="email" class="mt-4 block text-sm text-[#ff0000]" />
                     </div>
                     <div class="group-field">
                         <label class="flex" for="dropdown">
@@ -59,30 +65,31 @@
                         </label>
                         <div class="flex gap-2">
                             <div class="relative w-1/3">
-                                <select id="residence-city" required v-model="selectedResidenceCity"
+                                <Field as="select" id="residence-city" required name="selectedResidenceCity" v-model="selectedResidenceCity"
                                     @change="updateResidenceDistricts">
                                     <option value="" disabled class="text-grey">Tỉnh/Thành phố</option>
                                     <option v-for="city in sortedResidenceCities" :value="{Id: city.Id, Name: city.Name }">{{ city.Name }}</option>
-                                </select>
+                                </Field>
                                 <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             </div>
                             <div class="relative w-1/3">
-                                <select id="residence-district" required v-model="selectedResidenceDistrict"
+                                <Field as="select" id="residence-district" required name="selectedResidenceDistrict" v-model="selectedResidenceDistrict"
                                     @change="updateResidenceWards">
                                     <option value="" disabled  class="text-grey">Quận/Huyện</option>
                                     <option v-for="district in sortedResidenceDistricts" :value="{Id: district.Id, Name: district.Name }">{{ district.Name
                                     }}</option>
-                                </select>
+                                </Field>
                                 <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             </div>
                             <div class="relative w-1/3">
-                                <select id="residence-ward" required v-model="selectedResidenceWard">
+                                <Field as="select" id="residence-ward" name="selectedResidenceWard" v-model="selectedResidenceWard">
                                     <option value="" disabled  class="text-grey">Xã/Phường</option>
                                     <option v-for="ward in sortedResidenceWards" :value="{Id: ward.Id, Name: ward.Name }">{{ ward.Name }}</option>
-                                </select>
+                                </Field>
                                 <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             </div>
                         </div>
+                        <ErrorMessage class="mt-4 text-sm text-[#ff0000]" name="selectedResidenceWard" />
                     </div>
                     <div class="group-field">
                         <label class="flex" for="dropdown">
@@ -90,44 +97,45 @@
                         </label>
                         <div class="flex gap-2">
                             <div class="relative w-1/3">
-                                <select id="hometown-city" required v-model="selectedHometownCity" @change="updateHometownDistricts">
+                                <Field as="select" id="hometown-city" required name="selectedHometownCity" v-model="selectedHometownCity" @change="updateHometownDistricts">
                                     <option value="" disabled  class="text-grey">Tỉnh/Thành phố</option>
                                     <option v-for="city in sortedHometownCities" :value="city">{{ city.Name }}</option>
-                                </select>
+                                </Field>
                                 <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             </div>
                             <div class="relative w-1/3">
-                                <select id="hometown-district" required v-model="selectedHometownDistrict"
+                                <Field as="select" id="hometown-district" required name="selectedHometownDistrict" v-model="selectedHometownDistrict"
                                     @change="updateHometownWards">
                                     <option value="" disabled  class="text-grey">Quận/Huyện</option>
                                     <option v-for="district in sortedHometownDistricts" :value="district">{{ district.Name
                                     }}</option>
-                                </select>
+                                </Field>
                                 <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             </div>
                             <div class="relative w-1/3">
-                                <select id="hometown-ward" required v-model="selectedHometownWard">
+                                <Field as="select" id="hometown-ward" required name="selectedHometownWard" v-model="selectedHometownWard">
                                     <option value="" disabled  class="text-grey">Xã/Phường</option>
                                     <option v-for="ward in sortedHometownWards" :value="ward">{{ ward.Name }}</option>
-                                </select>
+                                </Field>
                                 <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             </div>
                         </div>
+                        <ErrorMessage class="mt-4 text-sm text-[#ff0000]" name="selectedHometownWard" />
                     </div>
                     <div class="group-field">
                         <label for="dropdown">Bằng cấp hiện tại</label>
                         <div class="flex items-center relative">
-                            <select v-model="selectedDegree" id="dropdown">
+                            <Field as="select" v-model="selectedDegree" name="selectedDegree" id="dropdown">
                                 <option v-for="degree in degreeOptions" :key="degree" :value="degree">{{ degree }}</option>>
-                            </select>
+                            </Field>
                             <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
-                            <InfoPopup heading="Thông tin" content="- Hãy lựa chọn chương trình học bạn đã tốt nghiệp" />
+                            <InfoPopup heading="Thông tin" content="Hãy lựa chọn chương trình học bạn đã tốt nghiệp" />
                         </div>
                     </div>
                     <div v-if="selectedDegree === 'Tốt nghiệp THPT'" class="group-field">
                         <label class="flex" for="">Điểm TB 3 năm</label>
                         <div class="flex items-center relative">
-                            <input v-model="formData.averageScoreC3" id="degree" type="text" name="averageScore"
+                            <Field v-model="formData.averageScoreC3" id="degree" type="text" name="averageScore"
                                 placeholder="Nhập điểm trung bình" class="w-full" />
                         </div>
                     </div>
@@ -135,20 +143,20 @@
                         class="group-field">
                         <label class="flex" for="GPA">GPA</label>
                         <div class="flex items-center relative">
-                            <input v-model="formData.scoreGPA" id="GPA" type="text" name="GPA" placeholder="Nhập điểm GPA"
+                            <Field v-model="formData.scoreGPA" id="GPA" type="text" name="GPA" placeholder="Nhập điểm GPA"
                                 class="w-full" />
                         </div>
                     </div>
                     <div class="group-field">
                         <label class="flex" for="">Trường du học mong muốn</label>
                         <div class="flex items-center relative">
-                            <input v-model="formData.universityWant" id="degree" type="text" name="averageScore"
+                            <Field v-model="formData.universityWant" id="degree" type="text" name="averageScore"
                                 class="w-full" />
                         </div>
                     </div>
                     <div class="group-field">
                         <label class="flex" for="thoigianduhoc">Thời gian dự định đi du học</label>
-                        <input v-model="formData.timeStudyAbort" class="w-full" id="thoigianduhoc" name="thoigianduhoc" type="date" />
+                        <Field v-model="formData.timeStudyAbort" class="w-full" id="thoigianduhoc" name="thoigianduhoc" type="date" />
                     </div>
                     <div class="group-field">
                         <label class="flex" for="thoigianduhoc">Câu hỏi về du học</label>
@@ -157,7 +165,7 @@
                             placeholder="Bạn hãy thoải mái đặt câu hỏi ở đây nhé!" />
                     </div>
                     <div class="group-field">
-                        <button @click="handleSubmit" type="submit" class="!bg-[#909090]">
+                        <button type="submit" class="!bg-[#909090]">
                             Lưu tạm thời
                         </button>
                         <button type="submit" class="mt-4">
@@ -176,7 +184,6 @@
 
 textarea {
     overflow: auto;
-    /* Cho phép thanh cuộn khi cần thiết */
 }
 
 textarea::placeholder {
@@ -196,28 +203,21 @@ textarea::-webkit-resizer {
     import InfoPopup from '@/components/InfoPopup.vue';
     import {useToast} from 'vue-toast-notification';
     import 'vue-toast-notification/dist/theme-sugar.css';
+    import { Form, Field, ErrorMessage } from 'vee-validate';
+    import * as yup from 'yup';
+    
+    const schema = yup.object({
+        name: yup.string().required('Hãy nhập Họ & Tên của bạn'),
+        dob: yup.string().required('Hãy nhập Ngày sinh của bạn'),
+        phone: yup.string().required('Hãy nhập Số điện thoại của bạn'),
+        email: yup.string().email('Email chưa đúng định dạng').required('Hãy nhập Email'),
+        // selectedResidenceWard: yup.string().required('Hãy nhập đầy đủ nơi thường trú'),
+        // selectedHometownWard: yup.string().required('Hãy nhập đầy đủ quê quán'),
+    });
 
 </script>
 <script>
-import { email, required } from '@vuelidate/validators'
-import { useVuelidate } from '@vuelidate/core'
-import Cookies from 'universal-cookie';
-const cookies = new Cookies();
-
 export default {
-        setup() {
-            return {
-                v$: useVuelidate()
-            }
-        },
-        validations () {
-        return {
-            formData: {
-                name: { required },
-                email: { required, email }
-            }
-        }
-    },
     data() {
         const $toast = useToast();
         return {
@@ -246,15 +246,6 @@ export default {
                 question: "",
             },
             $toast
-        }
-    },
-    created() {
-        const temporaryFormData = cookies.get('temporaryFormData');
-
-        if (temporaryFormData) {
-            this.formData = temporaryFormData
-            // this.selectedResidenceCity = temporaryFormData.selectedResidenceCity
-            // this.selectedResidenceDistrict = temporaryFormData.selectedResidenceDistrict
         }
     },
     computed: {
@@ -322,20 +313,12 @@ export default {
         },
 
        async handleSubmit() {
-            // this.formData.selectedResidenceCity = this.selectedResidenceCity
-            // this.formData.selectedResidenceDistrict = this.selectedResidenceDistrict
-            // this.formData.selectedResidenceWard = this.selectedResidenceWard
-            
-            // this.formData.selectedHometownCity = this.selectedHometownCity
-            // this.formData.selectedHometownDistrict = this.selectedHometownDistrict
-            // this.formData.selectedHometownceWard = this.selectedHometownceWard
       
-            if (this.formData) {
-                cookies.set('temporaryFormData', this.formData);
-                this.$toast.success('Lưu tạm thời thành công!', {
-                position: 'bottom-right'
-            })
-            }
+            // if (this.formData) {
+            //     this.$toast.success('Lưu tạm thời thành công!', {
+            //     position: 'bottom-right'
+            // })
+            // }
         },
 
     }
