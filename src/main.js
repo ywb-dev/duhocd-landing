@@ -5,6 +5,9 @@ import App from './App.vue'
 import router from './router'
 import { MotionPlugin } from '@vueuse/motion'
 import ToastPlugin from 'vue-toast-notification';
+import { Amplify } from 'aws-amplify';
+import awsconfig from './aws-exports';
+Amplify.configure(awsconfig);
 
 const app = createApp(App)
 

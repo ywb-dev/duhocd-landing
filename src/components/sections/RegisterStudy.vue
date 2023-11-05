@@ -205,6 +205,7 @@ textarea::-webkit-resizer {
     import 'vue-toast-notification/dist/theme-sugar.css';
     import { Form, Field, ErrorMessage } from 'vee-validate';
     import * as yup from 'yup';
+    import { API } from "aws-amplify";
     
     const schema = yup.object({
         name: yup.string().required('Hãy nhập Họ & Tên của bạn'),
@@ -214,9 +215,9 @@ textarea::-webkit-resizer {
         // selectedResidenceWard: yup.string().required('Hãy nhập đầy đủ nơi thường trú'),
         // selectedHometownWard: yup.string().required('Hãy nhập đầy đủ quê quán'),
     });
-
 </script>
 <script>
+
 export default {
     data() {
         const $toast = useToast();
@@ -313,13 +314,9 @@ export default {
         },
 
        async handleSubmit() {
-        // reset the form and the field values to their initial values
-      
-            // if (this.formData) {
-            //     this.$toast.success('Lưu tạm thời thành công!', {
-            //     position: 'bottom-right'
-            // })
-            // }
+             this.$toast.success('Lưu tạm thời thành công!', {
+                 position: 'bottom-right'
+             })
         },
 
     }

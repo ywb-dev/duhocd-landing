@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-duhocd-dev-72105-authRole",
+      "UnauthRoleArn": "arn:aws:iam::315845188531:role/amplify-duhocd-dev-72105-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::315845188531:role/amplify-duhocd-dev-72105-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-duhocd-dev-72105-deployment",
+      "UnauthRoleName": "amplify-duhocd-dev-72105-unauthRole",
+      "StackName": "amplify-duhocd-dev-72105",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:315845188531:stack/amplify-duhocd-dev-72105/8d8db6f0-7a19-11ee-aaad-06f40b68871a",
+      "AmplifyAppId": "d9s1vfxrb59z4"
+    },
+    "categories": {
+      "auth": {
+        "duhocdf4efc8a5": {}
+      }
+    }
+  }
+}
