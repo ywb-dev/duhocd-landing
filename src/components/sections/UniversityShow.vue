@@ -1,4 +1,6 @@
 <script>
+import { ref } from 'vue'
+
   export default {
     data() {
         return {
@@ -62,6 +64,8 @@
                   open: false,
                 } 
             ],
+            activeMob: false,
+            activeIndex: 0
         }
     },
     methods: {
@@ -71,6 +75,18 @@
         },    
         mouseleave: function(inv) {
             inv.open = false
+        },
+        toggleClick: function(index) {
+          const itemRefs = this.$refs.itemRefs;
+          if (itemRefs.length) {
+            itemRefs.forEach(element => {
+              element.classList.remove('clicked')
+            });
+          }
+          
+          console.log(itemRefs);
+          this.activeIndex = index
+          this.activeMob = !this.activeMob
         }
     }
   }
@@ -91,9 +107,12 @@
                             :title="inv?.subtitle"
                             v-motion-slide-visible-right
                             class="items p-5 mb-2.5 md:mb-6 bg-white rounded-[25px] border overflow-hidden hover:border-[3px] border-black ">
-                            <div v-on:mouseover="mouseover(inv)"
+                            <div 
+                                    ref="itemRefs"
+                                    v-on:mouseover="mouseover(inv)"
                                     v-on:mouseleave="mouseleave(inv)" :class="index===0 ? '!max-h-full' : ''" 
-                                    v-bind:class="inv.open ? 'onmousover' : ''"
+                                    @click="toggleClick(index)"
+                                    v-bind:class="[inv.open ? 'onmousover' : '', activeIndex === index && activeMob ? 'clicked' : '']"
                                     class="box-wrap-content relative flex box-item max-h-[160px] transition-all duration-700 delay-150 transition-all h-full flex-col md:flex-row overflow-hidden">
                                    
                                 <div class="flex w-full md:w-1/2 rounded-[25px] overflow-hidden">
@@ -121,12 +140,19 @@
           scrollbar-width: none; 
     }
     .onmousover {
-      @apply hover:max-h-[800px] md:hover:max-h-[500px];
+      @apply md:hover:max-h-[500px];
+    }
+
+    .clicked {
+      @apply max-h-[800px] md:max-h-full;
     }
     .onmousover .box-text-content  {
+      @apply md:visible md:opacity-100;
+    }
+    .clicked .box-text-content  {
       @apply visible opacity-100;
     }
-    .items:not(.active-first) .box-wrap-content:not(.onmousover) .unv-content {
+    .items:not(.active-first) .box-wrap-content:not(.clicked) .unv-content {
       @apply absolute h-full overflow-hidden bg-[#00000080] rounded-[16px] md:bg-white 
       px-8 py-6 mt-0 md:py-0 md:static top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 md:translate-x-0 md:translate-y-0;
       .content-white {
