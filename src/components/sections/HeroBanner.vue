@@ -35,7 +35,7 @@
                             Hàn Quốc</h1>
 
                         <p class="text-right max-w-[360px] text-base font-normal 
-                        leading-6 text-grey mt-3 lg:mt-6 max-w-sm ml-auto">DuHocDi.com là trang web dành cho những
+                        leading-6 text-grey mt-3 lg:mt-6 max-w-sm ml-auto">DUHOCD.com là trang web dành cho những
                             người muốn tìm hiểu tất cả các thông tin về du học Hàn Quốc một cách nhanh chóng và chính xác
                             nhất.</p>
 
