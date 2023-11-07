@@ -51,7 +51,6 @@ const getOneDuhocsinh = async(email) => {
         query: getDuhocsinh,
         variables: { email: email }
       })
-      
       return response.data
     } catch (error) {
       throw error

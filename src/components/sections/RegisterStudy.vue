@@ -246,7 +246,7 @@ export default {
                 timeStudyAbort: "",
                 question: "",
             },
-            emailExists: '',
+            emailExists: false,
             $toast,
         }
     },
@@ -315,30 +315,30 @@ export default {
         },
 
        async handleSubmit() {
-                  getOneDuhocsinh('abcd12@gmail.com')
-                .then((response) => {
-                    this.emailExist = response?.data
-                }).catch((error) => {
-                    console.log(error)
-                })
-            // newDuhocsinh({
-            //     "name": "hoangngoc",
-            //     "dob": "1970-01-01Z",
-            //     "sex": "Lorem ipsum dolor sit amet",
-            //     "phone": "Lorem ipsum dolor sit amet",
-            //     "email": "abcd12@gmail.com",
-            //     "residence": "Lorem ipsum dolor sit amet",
-            //     "hometown": "Lorem ipsum dolor sit amet",
-            //     "degree": "Lorem ipsum dolor sit amet",
-            //     "averageScoreC3": "Lorem ipsum dolor sit amet",
-            //     "scoreGPA": "Lorem ipsum dolor sit amet",
-            //     "universityWant": "Lorem ipsum dolor sit amet",
-            //     "timeStudyAbort": "1970-01-01Z",
-            //     "question": "Lorem ipsum dolor sit amet"
-            // })
-             this.$toast.success('Lưu tạm thời thành công!', {
-                 position: 'bottom-right'
-             })
+            await getOneDuhocsinh(this.formData.email)
+            .then((response) => {
+                if (response?.getDuhocsinh?.email) {
+                    this.emailExists = true
+                } else {
+                    this.emailExists = false
+                }
+                 
+            }).catch((error) => {
+                console.log(error)
+            })
+
+            if (this.emailExists) {
+                const text = `Bạn đã từng lưu thông tin trước, Bạn có muốn cật nhật thông tin?`
+                    if (window.confirm(text)) {
+                        this.$toast.success('Lưu thành công!', {
+                        position: 'bottom-right'
+                    })
+                }
+            } 
+            // save form infomation
+            // eslint-disable-next-line no-useless-catch
+        
+            // newDuhocsinh(this.formData)
         },
 
     }
