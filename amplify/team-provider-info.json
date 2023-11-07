@@ -13,7 +13,12 @@
     },
     "categories": {
       "auth": {
-        "duhocdf4efc8a5": {}
+        "duhocdf4efc8a5": {},
+        "duhocd5429f608": {},
+        "duhocd66960adc": {}
+      },
+      "api": {
+        "duhocd": {}
       }
     }
   }

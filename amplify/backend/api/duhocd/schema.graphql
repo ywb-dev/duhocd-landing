@@ -4,7 +4,7 @@ type Duhocsinh @model @auth(rules: [{allow: public}]) {
   dob: AWSDate
   sex: String
   phone: String
-  email: String
+  email: String! @primaryKey
   residence: String
   hometown: String
   degree: String
@@ -13,5 +13,4 @@ type Duhocsinh @model @auth(rules: [{allow: public}]) {
   universityWant: String
   timeStudyAbort: AWSDate
   question: String
-}
- 
+} 

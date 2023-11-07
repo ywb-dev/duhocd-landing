@@ -159,9 +159,9 @@
                         <Field v-model="formData.timeStudyAbort" class="w-full" id="thoigianduhoc" name="thoigianduhoc" type="date" />
                     </div>
                     <div class="group-field">
-                        <label class="flex" for="thoigianduhoc">Câu hỏi về du học</label>
+                        <label class="flex" for="question">Câu hỏi về du học</label>
                         <textarea v-model="formData.question" title="để mở rộng bạn có thể kéo góc dưới bên phải của trường"
-                            class="relative h-72 py-8" id="thoigianduhoc" name="thoigianduhoc"
+                            class="relative h-72 py-8" id="question" name="question"
                             placeholder="Bạn hãy thoải mái đặt câu hỏi ở đây nhé!" />
                     </div>
                     <div class="group-field">
@@ -205,7 +205,6 @@ textarea::-webkit-resizer {
     import 'vue-toast-notification/dist/theme-sugar.css';
     import { Form, Field, ErrorMessage } from 'vee-validate';
     import * as yup from 'yup';
-    import { API } from "aws-amplify";
     
     const schema = yup.object({
         name: yup.string().required('Hãy nhập Họ & Tên của bạn'),
@@ -217,6 +216,7 @@ textarea::-webkit-resizer {
     });
 </script>
 <script>
+    import { newDuhocsinh, getOneDuhocsinh } from '@/api/useApi.js'
 
 export default {
     data() {
@@ -246,7 +246,8 @@ export default {
                 timeStudyAbort: "",
                 question: "",
             },
-            $toast
+            emailExists: '',
+            $toast,
         }
     },
     computed: {
@@ -314,6 +315,27 @@ export default {
         },
 
        async handleSubmit() {
+                  getOneDuhocsinh('abcd12@gmail.com')
+                .then((response) => {
+                    this.emailExist = response?.data
+                }).catch((error) => {
+                    console.log(error)
+                })
+            // newDuhocsinh({
+            //     "name": "hoangngoc",
+            //     "dob": "1970-01-01Z",
+            //     "sex": "Lorem ipsum dolor sit amet",
+            //     "phone": "Lorem ipsum dolor sit amet",
+            //     "email": "abcd12@gmail.com",
+            //     "residence": "Lorem ipsum dolor sit amet",
+            //     "hometown": "Lorem ipsum dolor sit amet",
+            //     "degree": "Lorem ipsum dolor sit amet",
+            //     "averageScoreC3": "Lorem ipsum dolor sit amet",
+            //     "scoreGPA": "Lorem ipsum dolor sit amet",
+            //     "universityWant": "Lorem ipsum dolor sit amet",
+            //     "timeStudyAbort": "1970-01-01Z",
+            //     "question": "Lorem ipsum dolor sit amet"
+            // })
              this.$toast.success('Lưu tạm thời thành công!', {
                  position: 'bottom-right'
              })

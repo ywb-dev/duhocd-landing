@@ -1,6 +1,6 @@
 <template>
    <div class="flex justify-center items-center relative">
-        <div @click="menuActive = !menuActive" title="Danh sách quan tâm" class="xl:hidden ml-auto">
+        <div @click="menuActive = !menuActive" title="Danh sách quan tâm" class="xl:hidden ml-auto cursor-pointer">
             <MenuIcon/>
         </div>
         <nav 
