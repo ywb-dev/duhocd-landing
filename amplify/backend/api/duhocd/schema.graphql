@@ -1,7 +1,7 @@
 type Duhocsinh @model @auth(rules: [{allow: public}]) {
   id: ID!
   name: String
-  dob: AWSDate
+  dob: String
   sex: String
   phone: String
   email: String! @primaryKey
@@ -11,6 +11,6 @@ type Duhocsinh @model @auth(rules: [{allow: public}]) {
   averageScoreC3: String
   scoreGPA: String
   universityWant: String
-  timeStudyAbort: AWSDate
+  timeStudyAbort: String
   question: String
 } 
