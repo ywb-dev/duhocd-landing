@@ -10,8 +10,8 @@ export const getDuhocsinh = /* GraphQL */ `
       sex
       phone
       email
-      residence
-      hometown
+      residenceAddress
+      hometownAddress
       degree
       averageScoreC3
       scoreGPA
@@ -46,8 +46,8 @@ export const listDuhocsinhs = /* GraphQL */ `
         sex
         phone
         email
-        residence
-        hometown
+        residenceAddress
+        hometownAddress
         degree
         averageScoreC3
         scoreGPA

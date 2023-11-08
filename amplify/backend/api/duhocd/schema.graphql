@@ -5,8 +5,8 @@ type Duhocsinh @model @auth(rules: [{allow: public}]) {
   sex: String
   phone: String
   email: String! @primaryKey
-  residence: String
-  hometown: String
+  residenceAddress: String
+  hometownAddress: String
   degree: String
   averageScoreC3: String
   scoreGPA: String

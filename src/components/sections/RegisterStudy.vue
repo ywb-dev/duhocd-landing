@@ -35,8 +35,8 @@
 
                                 <div class="relative">
                                     <select v-model="formData.sex" title="click để chọn giới tính" required name="sex" id="sex">
-                                        <option selected value="1">Nam</option>
-                                        <option value="0">Nữ</option>
+                                        <option selected value="Nam">Nam</option>
+                                        <option value="Nữ">Nữ</option>
                                     </select>
                                     <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                                 </div>
@@ -65,27 +65,27 @@
                         </label>
                         <div class="flex gap-2">
                             <div class="relative w-1/3">
-                                <Field as="select" id="residence-city" required name="selectedResidenceCity" v-model="selectedResidenceCity"
+                                <select as="select" id="residence-city" required name="selectedResidenceCity" v-model="selectedResidenceCity"
                                     @change="updateResidenceDistricts">
                                     <option value="" disabled class="text-grey">Tỉnh/Thành phố</option>
-                                    <option v-for="city in sortedResidenceCities" :value="{Id: city.Id, Name: city.Name }">{{ city.Name }}</option>
-                                </Field>
+                                    <option v-for="city in sortedResidenceCities" :key="city" :value="{Id: city.Id, Name: city.Name }">{{ city.Name }}</option>
+                                </select>
                                 <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             </div>
                             <div class="relative w-1/3">
-                                <Field as="select" id="residence-district" required name="selectedResidenceDistrict" v-model="selectedResidenceDistrict"
+                                <select as="select" id="residence-district" required name="selectedResidenceDistrict" v-model="selectedResidenceDistrict"
                                     @change="updateResidenceWards">
                                     <option value="" disabled  class="text-grey">Quận/Huyện</option>
-                                    <option v-for="district in sortedResidenceDistricts" :value="{Id: district.Id, Name: district.Name }">{{ district.Name
+                                    <option v-for="district in sortedResidenceDistricts" :key="district" :value="{Id: district.Id, Name: district.Name }">{{ district.Name
                                     }}</option>
-                                </Field>
+                                </select>
                                 <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             </div>
                             <div class="relative w-1/3">
-                                <Field as="select" id="residence-ward" name="selectedResidenceWard" v-model="selectedResidenceWard">
+                                <select @change="updateResidenceWard" id="residence-ward" name="selectedResidenceWard" v-model="selectedResidenceWard">
                                     <option value="" disabled  class="text-grey">Xã/Phường</option>
-                                    <option v-for="ward in sortedResidenceWards" :value="{Id: ward.Id, Name: ward.Name }">{{ ward.Name }}</option>
-                                </Field>
+                                    <option v-for="ward in sortedResidenceWards" :key="ward" :value="{Id: ward.Id, Name: ward.Name }">{{ ward.Name }}</option>
+                                </select>
                                 <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             </div>
                         </div>
@@ -97,26 +97,26 @@
                         </label>
                         <div class="flex gap-2">
                             <div class="relative w-1/3">
-                                <Field as="select" id="hometown-city" required name="selectedHometownCity" v-model="selectedHometownCity" @change="updateHometownDistricts">
+                                <select id="hometown-city" required name="selectedHometownCity" v-model="selectedHometownCity" @change="updateHometownDistricts">
                                     <option value="" disabled  class="text-grey">Tỉnh/Thành phố</option>
-                                    <option v-for="city in sortedHometownCities" :value="city">{{ city.Name }}</option>
-                                </Field>
+                                    <option v-for="city in sortedHometownCities" :key="city" :value="city">{{ city.Name }}</option>
+                                </select>
                                 <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             </div>
                             <div class="relative w-1/3">
-                                <Field as="select" id="hometown-district" required name="selectedHometownDistrict" v-model="selectedHometownDistrict"
+                                <select id="hometown-district" required name="selectedHometownDistrict" v-model="selectedHometownDistrict"
                                     @change="updateHometownWards">
                                     <option value="" disabled  class="text-grey">Quận/Huyện</option>
-                                    <option v-for="district in sortedHometownDistricts" :value="district">{{ district.Name
+                                    <option v-for="district in sortedHometownDistricts" :key="district" :value="district">{{ district.Name
                                     }}</option>
-                                </Field>
+                                </select>
                                 <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             </div>
                             <div class="relative w-1/3">
-                                <Field as="select" id="hometown-ward" required name="selectedHometownWard" v-model="selectedHometownWard">
+                                <select @change="updateHometownWard" id="hometown-ward" required name="selectedHometownWard" v-model="selectedHometownWard">
                                     <option value="" disabled  class="text-grey">Xã/Phường</option>
-                                    <option v-for="ward in sortedHometownWards" :value="ward">{{ ward.Name }}</option>
-                                </Field>
+                                    <option v-for="ward in sortedHometownWards" :key="ward" :value="ward">{{ ward.Name }}</option>
+                                </select>
                                 <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             </div>
                         </div>
@@ -125,21 +125,21 @@
                     <div class="group-field">
                         <label for="dropdown">Bằng cấp hiện tại</label>
                         <div class="flex items-center relative">
-                            <Field as="select" v-model="selectedDegree" name="selectedDegree" id="dropdown">
+                            <select as="select" v-model="formData.degree" name="selectedDegree" id="dropdown">
                                 <option v-for="degree in degreeOptions" :key="degree" :value="degree">{{ degree }}</option>>
-                            </Field>
+                            </select>
                             <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             <InfoPopup heading="Thông tin" content="Hãy lựa chọn chương trình học bạn đã tốt nghiệp" />
                         </div>
                     </div>
-                    <div v-if="selectedDegree === 'Tốt nghiệp THPT'" class="group-field">
-                        <label class="flex" for="">Điểm TB 3 năm</label>
+                    <div v-if="formData.degree === 'Tốt nghiệp THPT'" class="group-field">
+                        <label class="flex" for="averageScore">Điểm TB 3 năm</label>
                         <div class="flex items-center relative">
-                            <Field v-model="formData.averageScoreC3" id="degree" type="text" name="averageScore"
+                            <Field v-model="formData.averageScoreC3" id="averageScore" type="text" name="averageScore"
                                 placeholder="Nhập điểm trung bình" class="w-full" />
                         </div>
                     </div>
-                    <div v-if="selectedDegree === 'Tốt nghiệp Đại học' || selectedDegree === 'Tốt nghiệp Trung cấp/ Cao đẳng'"
+                    <div v-if="formData.degree === 'Tốt nghiệp Đại học' || formData.degree === 'Tốt nghiệp Trung cấp/ Cao đẳng'"
                         class="group-field">
                         <label class="flex" for="GPA">GPA</label>
                         <div class="flex items-center relative">
@@ -148,9 +148,9 @@
                         </div>
                     </div>
                     <div class="group-field">
-                        <label class="flex" for="">Trường du học mong muốn</label>
+                        <label class="flex" for="universityWant">Trường du học mong muốn</label>
                         <div class="flex items-center relative">
-                            <Field v-model="formData.universityWant" id="degree" type="text" name="averageScore"
+                            <Field v-model="formData.universityWant" id="universityWant" type="text" name="universityWant"
                                 class="w-full" />
                         </div>
                     </div>
@@ -211,12 +211,10 @@ textarea::-webkit-resizer {
         dob: yup.string().required('Hãy nhập Ngày sinh của bạn'),
         phone: yup.string().required('Hãy nhập Số điện thoại của bạn'),
         email: yup.string().email('Email chưa đúng định dạng').required('Hãy nhập Email'),
-        // selectedResidenceWard: yup.string().required('Hãy nhập đầy đủ nơi thường trú'),
-        // selectedHometownWard: yup.string().required('Hãy nhập đầy đủ quê quán'),
     });
 </script>
 <script>
-    import { newDuhocsinh, getOneDuhocsinh } from '@/api/useApi.js'
+    import { newDuhocsinh, updatesDuhocsinh , getOneDuhocsinh } from '@/api/useApi.js'
 
 export default {
     data() {
@@ -229,22 +227,21 @@ export default {
             selectedHometownCity: '', // Thành phố/tỉnh quê quán
             selectedHometownDistrict: '', // Quận/Huyện quê quán
             selectedHometownWard: '', // Phường/Xã quê quán
-            customFieldValue1: '',
-            customFieldValue2: '',
-            selectedDegree: 'Tốt nghiệp Đại học',
             degreeOptions: ['Tốt nghiệp THPT', 'Tốt nghiệp Trung cấp/ Cao đẳng', 'Tốt nghiệp Đại học'],
             formData: {
-                name: "",
-                dob: "",
-                sex: "1",
-                phone: "",
-                email: "",
-                degree: "",
-                averageScoreC3: "",
-                scoreGPA: "",
-                universityWant: "",
-                timeStudyAbort: "",
-                question: "",
+                'name': "",
+                'dob': "",
+                'sex': "1",
+                'phone': "",  
+                'email': "",
+                'hometownAddress': "",
+                'residenceAddress': "",
+                'degree': "Tốt nghiệp Đại học",
+                'averageScoreC3': "",
+                'scoreGPA': "",
+                'universityWant': "",
+                'timeStudyAbort': "",
+                'question': "",
             },
             emailExists: false,
             $toast,
@@ -307,14 +304,25 @@ export default {
         updateResidenceWards: function () {
             this.selectedResidenceWard = '';
         },
+        updateResidenceWard: function() {
+            this.formData.residenceAddress = [this.selectedResidenceWard.Name, this.selectedResidenceDistrict.Name, this.selectedResidenceCity.Name].join(' / ');
+        },
         updateHometownDistricts: function () {
             this.selectedHometownDistrict = '';
         },
         updateHometownWards: function () {
             this.selectedHometownWard = '';
         },
+         updateHometownWard: function () {
+            this.formData.hometownAddress = [this.selectedHometownWard.Name, this.selectedHometownDistrict.Name, this.selectedHometownCity.Name].join(' / ');
+        },
 
        async handleSubmit() {
+            /*
+            * check if email already exists
+            * {argument} type String
+            * 
+            */ 
             await getOneDuhocsinh(this.formData.email)
             .then((response) => {
                 if (response?.getDuhocsinh?.email) {
@@ -328,17 +336,38 @@ export default {
             })
 
             if (this.emailExists) {
-                const text = `Bạn đã từng lưu thông tin trước, Bạn có muốn cật nhật thông tin?`
-                    if (window.confirm(text)) {
-                        this.$toast.success('Lưu thành công!', {
-                        position: 'bottom-right'
+                const text = `Bạn đã từng đăng ký thông tin từ trước, Bạn có muốn cật nhật thông tin?`
+                if (window.confirm(text)) {
+                    /*
+                    * Update registered information
+                    * {argument} type Object
+                    * 
+                    */
+                    await updatesDuhocsinh(this.formData)
+                    .then(() => {
+                        this.$toast.success('Cập nhật thành công!', { position: 'bottom-right' })
+                    })
+                    .catch((error) => {
+                        console.error(error)
+                        this.$toast.error("Có lỗi xảy ra!", { position: 'bottom-right' })
                     })
                 }
-            } 
-            // save form infomation
-            // eslint-disable-next-line no-useless-catch
-        
-            // newDuhocsinh(this.formData)
+            }  else {
+                /*
+                * registered new information
+                * {argument} type Object
+                * 
+                */
+               await newDuhocsinh(this.formData)
+               .then(() => {
+                    this.$toast.success('Đăng ký thành công!', {
+                        position: 'bottom-right'
+                    })             
+               }).catch((error) => {
+                 console.error(error)
+                 this.$toast.error("Có lỗi xảy ra!", { position: 'bottom-right' })
+               })
+            }
         },
 
     }

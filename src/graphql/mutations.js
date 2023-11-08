@@ -13,8 +13,8 @@ export const createDuhocsinh = /* GraphQL */ `
       sex
       phone
       email
-      residence
-      hometown
+      residenceAddress
+      hometownAddress
       degree
       averageScoreC3
       scoreGPA
@@ -39,8 +39,8 @@ export const updateDuhocsinh = /* GraphQL */ `
       sex
       phone
       email
-      residence
-      hometown
+      residenceAddress
+      hometownAddress
       degree
       averageScoreC3
       scoreGPA
@@ -65,8 +65,8 @@ export const deleteDuhocsinh = /* GraphQL */ `
       sex
       phone
       email
-      residence
-      hometown
+      residenceAddress
+      hometownAddress
       degree
       averageScoreC3
       scoreGPA

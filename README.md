@@ -33,3 +33,9 @@ npm run build
 ```sh
 npm run lint
 ```
+
+## Amplify auto generate graphql folder run
+
+```sh
+amplify codegen
+```
