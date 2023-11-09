@@ -94,12 +94,14 @@ import { ref } from 'vue'
 <template>
     <section id="university">
         <div 
-          class="relative w-full bg-[url('/images/university/bg-university.jpg')] bg-no-repeat bg-cover bg-center bg-fixed">
+          class="relative w-full before:content-[''] before:absolute before:left-0 
+          before:top-0 before:w-full before:h-full before:bg-[url('/images/university/bg-university.jpg')] 
+          before:bg-no-repeat before:bg-cover before:bg-center before:bg-fixed before:opacity-60">
             <div class="container max-w-960 px-9 pt-20 pb-24 overflow-hidden">
                 <div  v-motion-slide-visible-once-bottom class="flex flex-col justify-center items-center text-center">
                     <img width="64" height="90" class="w-16 object-contain" src="/images/university/illustration_Achie_ement.png" loading="lazy" alt="thành tích">
-                    <h2 class="text-shadow-white text-32 text-dark text-center font-bold -tracking-[0.48px] leading-normal md:text-68 md:leading-[78px]">Các trường đại học</h2>
-                    <p class="text-shadow-white text-base max-w-2xl text-dark font-normal leading-6 mt-3 mb-9">Hãy tham khảo danh sách các trường đại học do DUHOCD.com giới thiệu để bạn có thể tìm hiểu về ưu nhược điểm của mỗi trường. Từ đó xây dựng cho mình một kế hoạch du học phù hợp và hiệu quả nhất.</p>
+                    <h2 class="text-shadow-white text-32 text-black text-center font-bold -tracking-[0.48px] leading-normal md:text-68 md:leading-[78px]">Các trường đại học</h2>
+                    <p class="text-shadow-white text-base max-w-2xl text-black font-normal leading-6 mt-3 mb-9">Hãy tham khảo danh sách các trường đại học do DUHOCD.com giới thiệu để bạn có thể tìm hiểu về ưu nhược điểm của mỗi trường. Từ đó xây dựng cho mình một kế hoạch du học phù hợp và hiệu quả nhất.</p>
                 </div>
                 <Transition>
                     <div class="flex flex-col w-full">
