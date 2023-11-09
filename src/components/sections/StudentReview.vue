@@ -4,7 +4,7 @@
             <div class="container max-w-960 mx-auto">
                 <div  v-motion-slide-visible-once-bottom
                      class="max-w-[900px] mb-12 md:mb-20">
-                    <img class="w-14 mx-auto md:w-20 object-contain mb-5 md:mb-0" src="/images/university/illustration_Achie_ement.png" loading="lazy" alt="chứng nhận">
+                    <img width="80" height="112" class="w-14 mx-auto md:w-20 object-contain mb-5 md:mb-0" src="/images/university/illustration_Achie_ement.png" loading="lazy" alt="chứng nhận">
                     <h2 class="text-dark text-center font-bold text-3xl -tracking-[0.4px] md:text-68 md:leading-[78px]">Các học viên đánh giá như nào về DUHOCD.com</h2>
                 </div>
                  <div class="flex flex-col">

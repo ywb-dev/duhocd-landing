@@ -123,9 +123,9 @@
                         <ErrorMessage class="mt-4 text-sm text-[#ff0000]" name="selectedHometownWard" />
                     </div>
                     <div class="group-field">
-                        <label for="dropdown">Bằng cấp hiện tại</label>
+                        <label for="degree">Bằng cấp hiện tại</label>
                         <div class="flex items-center relative">
-                            <select as="select" v-model="formData.degree" name="selectedDegree" id="dropdown">
+                            <select v-model="formData.degree" name="selectedDegree" id="degree">
                                 <option v-for="degree in degreeOptions" :key="degree" :value="degree">{{ degree }}</option>>
                             </select>
                             <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
