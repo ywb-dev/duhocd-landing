@@ -11,7 +11,7 @@
     </div>
     <div>
     <Transition name="fade">
-        <div id="pagetop" class="hidden md:fixed right-20 bottom-20 z-50 cursor-pointer hover:opacity-80" v-show="scY > 300" @click="toTop">
+        <div id="pagetop" class="hidden md:block md:fixed right-20 bottom-20 z-50 cursor-pointer hover:opacity-80" v-show="scY > 300" @click="toTop">
           <svg class="w-12" xmlns="http://www.w3.org/2000/svg" width="83" height="83" viewBox="0 0 83 83" fill="none">
                 <g filter="url(#filter0_d_241_4)">
                     <circle cx="39" cy="39" r="37" fill="#318ACB"/>
