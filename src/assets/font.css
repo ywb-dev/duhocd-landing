@@ -23,7 +23,7 @@
    url(./fonts/BeVietnamPro-ExtraLight.ttf) format("truetype");
   font-weight: 200;
   font-style: normal;
-  font-display: wrap;
+  font-display: swap;
 }
 
 @font-face {
@@ -32,7 +32,7 @@
    url(./fonts/BeVietnamPro-Light.ttf) format("truetype");
   font-weight: 300;
   font-style: normal;
-  font-display: wrap;
+  font-display: swap;
 }
 
 @font-face {
@@ -41,7 +41,7 @@
    url(./fonts/BeVietnamPro-Regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
-  font-display: wrap;
+  font-display: swap;
 }
 
 @font-face {
@@ -50,7 +50,7 @@
    url(./fonts/BeVietnamPro-Medium.ttf) format("truetype");
   font-weight: 500;
   font-style: normal;
-  font-display: wrap;
+  font-display: swap;
 }
 
 @font-face {
@@ -59,7 +59,7 @@
    url(./fonts/BeVietnamPro-SemiBold.ttf) format("truetype");
   font-weight: 600;
   font-style: normal;
-  font-display: wrap;
+  font-display: swap;
 }
 
 @font-face {
@@ -68,7 +68,7 @@
    url(./fonts/BeVietnamPro-Bold.ttf) format("truetype");
   font-weight: 700;
   font-style: normal;
-  font-display: wrap;
+  font-display: swap;
 }
 
 @font-face {
@@ -77,7 +77,7 @@
    url(./fonts/BeVietnamPro-ExtraBold.ttf) format("truetype");
   font-weight: 800;
   font-style: normal;
-  font-display: wrap;
+  font-display: swap;
 }
 
 @font-face {
@@ -86,7 +86,7 @@
    url(./fonts/BeVietnamPro-Black.ttf) format("truetype");
   font-weight: 900;
   font-style: normal;
-  font-display: wrap;
+  font-display: swap;
 }
 
 
@@ -97,7 +97,7 @@
    url(./fonts/BeVietnamPro-Bold.ttf) format("truetype");
   font-weight: 600;
   font-style: normal;
-  font-display: wrap;
+  font-display: swap;
 }
 
 /* Font Poppins */
@@ -107,7 +107,7 @@
    url(./fonts/Poppins-Regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
-  font-display: wrap;
+  font-display: swap;
 }
 
 @font-face {
@@ -116,7 +116,7 @@
    url(./fonts/Poppins-SemiBold.ttf) format("truetype");
   font-weight: 600;
   font-style: normal;
-  font-display: wrap;
+  font-display: swap;
 }
 
 @font-face {
@@ -125,7 +125,7 @@
    url(./fonts/Poppins-Bold.ttf) format("truetype");
   font-weight: 700;
   font-style: normal;
-  font-display: wrap;
+  font-display: swap;
 }
 
 body {
