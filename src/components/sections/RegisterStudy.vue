@@ -65,7 +65,7 @@
                         </label>
                         <div class="flex gap-2">
                             <div class="relative w-1/3">
-                                <select as="select" id="residence-city" required name="selectedResidenceCity" v-model="selectedResidenceCity"
+                                <select as="select" aria-labelledby="dropdown" required name="selectedResidenceCity" v-model="selectedResidenceCity"
                                     @change="updateResidenceDistricts">
                                     <option value="" disabled class="text-grey">Tỉnh/Thành phố</option>
                                     <option v-for="city in sortedResidenceCities" :key="city" :value="{Id: city.Id, Name: city.Name }">{{ city.Name }}</option>
@@ -73,7 +73,7 @@
                                 <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             </div>
                             <div class="relative w-1/3">
-                                <select as="select" id="residence-district" required name="selectedResidenceDistrict" v-model="selectedResidenceDistrict"
+                                <select as="select" aria-labelledby="dropdown" required name="selectedResidenceDistrict" v-model="selectedResidenceDistrict"
                                     @change="updateResidenceWards">
                                     <option value="" disabled  class="text-grey">Quận/Huyện</option>
                                     <option v-for="district in sortedResidenceDistricts" :key="district" :value="{Id: district.Id, Name: district.Name }">{{ district.Name
@@ -82,7 +82,7 @@
                                 <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             </div>
                             <div class="relative w-1/3">
-                                <select @change="updateResidenceWard" id="residence-ward" name="selectedResidenceWard" v-model="selectedResidenceWard">
+                                <select @change="updateResidenceWard" aria-labelledby="dropdown" name="selectedResidenceWard" v-model="selectedResidenceWard">
                                     <option value="" disabled  class="text-grey">Xã/Phường</option>
                                     <option v-for="ward in sortedResidenceWards" :key="ward" :value="{Id: ward.Id, Name: ward.Name }">{{ ward.Name }}</option>
                                 </select>
@@ -92,19 +92,19 @@
                         <ErrorMessage class="mt-4 text-sm text-[#ff0000]" name="selectedResidenceWard" />
                     </div>
                     <div class="group-field">
-                        <label class="flex" for="dropdown">
+                        <label class="flex" for="dropdown2">
                             <StarIcon class="mr-1" />Quê quán
                         </label>
                         <div class="flex gap-2">
                             <div class="relative w-1/3">
-                                <select id="hometown-city" required name="selectedHometownCity" v-model="selectedHometownCity" @change="updateHometownDistricts">
+                                <select aria-labelledby="dropdown2" required name="selectedHometownCity" v-model="selectedHometownCity" @change="updateHometownDistricts">
                                     <option value="" disabled  class="text-grey">Tỉnh/Thành phố</option>
                                     <option v-for="city in sortedHometownCities" :key="city" :value="city">{{ city.Name }}</option>
                                 </select>
                                 <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             </div>
                             <div class="relative w-1/3">
-                                <select id="hometown-district" required name="selectedHometownDistrict" v-model="selectedHometownDistrict"
+                                <select aria-labelledby="dropdown2" required name="selectedHometownDistrict" v-model="selectedHometownDistrict"
                                     @change="updateHometownWards">
                                     <option value="" disabled  class="text-grey">Quận/Huyện</option>
                                     <option v-for="district in sortedHometownDistricts" :key="district" :value="district">{{ district.Name
@@ -113,7 +113,7 @@
                                 <DropdownIcon class="absolute w-4 text-base right-4 top-1/2 -translate-y-1/2" />
                             </div>
                             <div class="relative w-1/3">
-                                <select @change="updateHometownWard" id="hometown-ward" required name="selectedHometownWard" v-model="selectedHometownWard">
+                                <select @change="updateHometownWard" aria-labelledby="dropdown2" required name="selectedHometownWard" v-model="selectedHometownWard">
                                     <option value="" disabled  class="text-grey">Xã/Phường</option>
                                     <option v-for="ward in sortedHometownWards" :key="ward" :value="ward">{{ ward.Name }}</option>
                                 </select>

@@ -66,7 +66,7 @@
                         }"                      
                         class="image w-full md:w-1/2 relative md:mt-[86px] pl-8">
                         <div class="relative ml-12">
-                            <img class="h-72 ml-auto  mr-32 md:ml-0 lg:mr-0 md:h-auto object-contain"
+                            <img  width="262" height="395" class="h-72 ml-auto  mr-32 md:ml-0 lg:mr-0 md:h-auto object-contain"
                                 src="../../assets/images/bgcityborder.png" alt="hàn quốc city" loading="eager">
                             <img width="262" height="395" class="absolute h-72 object-contain md:h-auto top-9 right-20 md:left-16"
                                 src="../../assets/images/bgcity.png" alt="hàn quốc city" loading="eager">
