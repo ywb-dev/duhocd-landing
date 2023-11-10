@@ -35,20 +35,6 @@
                 >
                     <swiper-slide v-for="project in projects" :key="project" class="swiper-item">
                         <div  
-                            v-motion-slide-visible-right 
-                            :initial="{
-                                opacity: 0,
-                            }"
-                            :enter="{
-                                y: 0,
-                                opacity: 1,
-                                transition: {
-                                    duration: 800,
-                                    opacity: {
-                                        duration: 1000,
-                                    },
-                                },
-                            }" 
                             class="relative">
                             <div class="absolute top-0 w-full">
                                 <img class="object-contain" :src="project.image" loading="lazy" :alt="project.alt" />
@@ -90,11 +76,11 @@
       data() {
         return {
             projects: [
-                { image: 'images/illustration_SearchEngine.png', alt: 'SearchEngine', title: 'Tiếp xúc với nền giáo dục chất lượng', content: 'Hàn Quốc là một trong những quốc gia có nền giáo dục hàng đầu thế giới, đặc biệt về lĩnh vực IT, truyền thông, Quản trị kinh doanh…' },
-                { image: 'images/illustration_Coins.png', alt: 'Coins', title: 'Chi phí du học rẻ hơn so với các nước Châu Âu', content: 'Du học Hàn Quốc đang là sự lựa chọn hàng đầu của nhiều bạn trẻ, vì tổng chi phí du học Hàn Quốc dao động khoảng 180 - 450 triệu/năm' },
-                { image: 'images/illustration_Marketing.png', alt: 'Marketing', title: 'Cơ hội việc làm cao sau khi tốt nghiệp', content: 'Hiện nay Hàn Quốc đang là quốc gia đầu tư mạnh vào Việt Nam, do đó cơ hội việc làm sau khi du học Hàn Quốc là rất cao' },
-                { image: 'images/illustration_Teamsuccess.png', alt: 'Teamsuccess', title: 'Dễ dàng săn học bổng', content: 'Mỗi năm chính phủ Hàn Quốc dành khoảng 100 suất học bổng cho học sinh, sinh viên Việt Nam, chưa kể các trường có chế độ học bổng riêng' },
-                { image: 'images/illustration_Teambuilding.png', alt: 'Teambuilding', title: 'Trải nghiệm văn hóa đa dạng', content: 'Bạn có thể  trải nghiệm nền văn hóa truyền thống lâu đời của xứ sở Kim Chi cũng như làn sóng văn hóa Hàn Quốc (Hallyu)' }
+                { image: 'images/illustration_SearchEngine.svg', alt: 'SearchEngine', title: 'Tiếp xúc với nền giáo dục chất lượng', content: 'Hàn Quốc là một trong những quốc gia có nền giáo dục hàng đầu thế giới, đặc biệt về lĩnh vực IT, truyền thông, Quản trị kinh doanh…' },
+                { image: 'images/illustration_Coins.svg', alt: 'Coins', title: 'Chi phí du học rẻ hơn so với các nước Châu Âu', content: 'Du học Hàn Quốc đang là sự lựa chọn hàng đầu của nhiều bạn trẻ, vì tổng chi phí du học Hàn Quốc dao động khoảng 180 - 450 triệu/năm' },
+                { image: 'images/illustration_Marketing.svg', alt: 'Marketing', title: 'Cơ hội việc làm cao sau khi tốt nghiệp', content: 'Hiện nay Hàn Quốc đang là quốc gia đầu tư mạnh vào Việt Nam, do đó cơ hội việc làm sau khi du học Hàn Quốc là rất cao' },
+                { image: 'images/illustration_Teamsuccess.svg', alt: 'Teamsuccess', title: 'Dễ dàng săn học bổng', content: 'Mỗi năm chính phủ Hàn Quốc dành khoảng 100 suất học bổng cho học sinh, sinh viên Việt Nam, chưa kể các trường có chế độ học bổng riêng' },
+                { image: 'images/illustration_Teambuilding.svg', alt: 'Teambuilding', title: 'Trải nghiệm văn hóa đa dạng', content: 'Bạn có thể  trải nghiệm nền văn hóa truyền thống lâu đời của xứ sở Kim Chi cũng như làn sóng văn hóa Hàn Quốc (Hallyu)' }
             ],
             autoplay: {
                 delay: 4000,
@@ -108,12 +94,21 @@
     };
 </script>
 <style scoped>
-    .swiper-slide-active.swiper-item {
-        @apply bg-primaryText;
-    }
-    .swiper-slide-active.swiper-item .heading,
-    .swiper-slide-active.swiper-item .content {
-        @apply text-white;
+    .swiper-slide-active.swiper-item  {
+        @apply bg-primaryText md:bg-white;
+        .heading {
+            @apply text-white md:text-dark;
+        }
+        .content {
+            @apply text-white md:text-grey;
+        }
+        + .swiper-item {
+            @apply md:bg-primaryText;
+            .content,
+            .heading {
+                @apply md:text-white;
+            }
+        }
     }
     .swiper-item {
         @apply h-full bg-white max-h-[335px] border-[3px] border-beebright rounded-tl-lg rounded-br-lg p-7 2xl:py-12;
