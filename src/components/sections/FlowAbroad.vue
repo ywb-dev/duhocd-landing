@@ -3,8 +3,9 @@
         <div 
         class="relative py-24 md:py-48 bg-[#BCBCBC] overflow-hidden">
             <div class="container max-w-960 mx-auto px-5 ">
-                <h2 class="w-full text-32 md:text-68 text-center mb-11 font-bold md:mb-20">Quy trình du học</h2>
-                <div class="w-full border-[10px] border-primaryText bg-[#EFE9DB] rounded-[45px] overflow-hidden">
+                <h2 v-motion-slide-visible-once-bottom class="w-full text-32 md:text-68 text-center mb-11 font-bold md:mb-20">Quy trình du học</h2>
+                <div 
+                 class="w-full border-[10px] border-primaryText bg-[#EFE9DB] rounded-[45px] overflow-hidden">
                     <div class="flex flex-col md:flex-row border-primaryText">
                         <div class="w-full flex items-center justify-center md:justify-start border-b-2 py-8 border-primaryText md:border-0  md:w-1/2 text-center md:text-left  text-[26px] md:text-25 font-bold  px-8 md:px-14 leading-normal md:border-r-2 border-primaryText">
                             Hỗ trợ tư vấn

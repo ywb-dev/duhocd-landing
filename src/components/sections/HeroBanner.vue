@@ -5,6 +5,23 @@
             <div class="max-w-[1136px] container">
                 <div class="flex flex-col md:flex-row justify-center items-center pt-20 md:-mt-7 min-h-[632px]">
                     <div   
+                        :initial="{
+                            y: 100,
+                            opacity: 0,
+                        }" 
+                        :enter="{
+                            y: 0,
+                            opacity: 1,
+                            transition: {
+                                duration: 600,
+                                y: {
+                                    delay: 100,
+                                },
+                                opacity: {
+                                    duration: 800,
+                                },
+                            },
+                        }"                      v-motion-slide-left 
                         class="content w-full md:w-1/2 text-right pr-10 md:pr-0 pl-8">
                         <a href="https://duhocd.com/" target="_blank"
                             class="decoration-1 underline-offset-4 uppercase text-primaryText 
@@ -29,18 +46,57 @@
                          hover:-translate-y-2 transition-all rounded-tl-[20px] rounded-br-[20px] btn-shadow mt-4 lg:mt-12 ml-auto">Tư
                             vấn</a>
                     </div>
-                    <div                    
+                    <div                         
                         class="image w-full md:w-1/2 relative md:mt-[86px] pl-8">
-                        <div class="relative ml-12">
+                        <div 
+                          v-motion-slide-right 
+                                :initial="{
+                                    x: 300,
+                                    opacity: 0,
+                                }" 
+                                 :enter="{
+                                     x: 0,
+                                     opacity: 1,
+                                     transition: {
+                                         duration: 600,
+                                         opacity: {
+                                             duration: 800,
+                                         },
+                                         type: 'spring',
+                                         stiffness: '70',
+                                         delay: 100,
+                                     },
+                                 }"  
+                        class="relative ml-12">
                             <img  width="262" height="395" class="h-72 ml-auto  mr-32 md:ml-0 lg:mr-0 md:h-auto object-contain"
                                 src="../../assets/images/bgcityborder.png" alt="hàn quốc city" loading="eager">
                             <img width="262" height="395" class="absolute h-72 object-contain md:h-auto top-9 right-20 md:left-16"
                                 src="../../assets/images/bgcity.png" alt="hàn quốc city" loading="eager">
                         </div>
                         <img ref="target" 
+                        :class="{ 'active': isVisible }"  
+                           v-motion-slide-right 
+                                    :initial="{
+                                        x: 400,
+                                        opacity: 0,
+                                    }" 
+                                     :enter="{
+                                         x: 0,
+                                         opacity: 1,
+                                         transition: {
+                                             duration: 800,
+                                             opacity: {
+                                                 duration: 1200,
+                                             },
+                                             type: 'spring',
+                                             stiffness: '70',
+                                             delay: 100,
+                                         },
+                                     }"  
+                        
                         width="536"
                         height="320"                    
-                        class="relative h-72 object-contain md:h-auto 
+                        class="relative slide-in h-72 object-contain md:h-auto 
                         -mr-24 md:mr-0 ml-auto md:ml-0 -mt-24 md:-mt-32 z-10" src="../../assets/images/bgstudent.png"
                             alt="du học sinh" loading="eager">
                     </div>
@@ -49,5 +105,42 @@
         </div>
     </section>
 </template>
-<script setup>
-</script>
+ <script>
+    export default {
+      data() {
+        return {
+          isVisible: false,
+        };
+      },
+      mounted() {
+        // Trigger the animation on initial load
+        this.isVisible = true;
+
+        // Listen for scroll events and update visibility accordingly
+        window.addEventListener("scroll", this.handleScroll);
+      },
+      methods: {
+        handleScroll() {
+          // Calculate the position of the element relative to the viewport
+          const element = this.$el.querySelector(".slide-in");
+          const rect = element.getBoundingClientRect();
+
+          // Check if the element is in the viewport
+          const isVisible = rect.top <= window.innerHeight + 100 && rect.bottom >= 0;
+
+          // Update visibility state
+          this.isVisible = isVisible;
+        },
+      },
+    };
+ </script>
+<style scoped>
+    .slide-in {
+      transform: translateX(100%) !important;
+      transition: transform 1s ease-in-out;
+    }
+
+    .slide-in.active {
+      transform: translateX(0) !important;
+    }
+</style>

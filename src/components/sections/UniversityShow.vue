@@ -96,9 +96,9 @@ import { ref } from 'vue'
         <div 
           class="relative w-full before:content-[''] before:absolute before:left-0 
           before:top-0 before:w-full before:h-full before:bg-[url('/images/university/bg-university.jpg')] 
-          before:bg-no-repeat before:bg-cover before:bg-center before:bg-fixed before:opacity-60">
+          before:bg-no-repeat before:bg-cover before:bg-center before:bg-fixed before:opacity-60 before:-z-10">
             <div class="container max-w-960 px-9 pt-20 pb-24 overflow-hidden">
-                <div class="flex flex-col justify-center items-center text-center">
+                <div v-motion-slide-visible-once-bottom class="flex flex-col justify-center items-center text-center">
                     <img width="64" height="90" class="w-16 object-contain" src="/images/university/illustration_Achie_ement.png" loading="lazy" alt="thành tích">
                     <h2 class="text-shadow-white text-32 text-black text-center font-bold -tracking-[0.48px] leading-normal md:text-68 md:leading-[78px]">Các trường đại học</h2>
                     <p class="text-shadow-white text-base max-w-2xl text-black font-normal leading-6 mt-3 mb-9">Hãy tham khảo danh sách các trường đại học do DUHOCD.com giới thiệu để bạn có thể tìm hiểu về ưu nhược điểm của mỗi trường. Từ đó xây dựng cho mình một kế hoạch du học phù hợp và hiệu quả nhất.</p>
@@ -107,7 +107,6 @@ import { ref } from 'vue'
                     <div class="flex flex-col w-full">
                         <div v-for="(inv, index) in unvs" :key="inv" :class="index===0 ? '!border-[3px] active-first' : ''" 
                             :title="inv?.subtitle"
-                
                             class="items p-5 mb-2.5 md:mb-6 bg-white rounded-[25px] border overflow-hidden hover:border-[3px] border-black ">
                             <div 
                                     ref="itemRefs"
