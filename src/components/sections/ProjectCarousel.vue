@@ -1,18 +1,26 @@
 <template>
     <section id="whychoose">
-       <div class="relative contaner mx-8 lg:ml-24 lg:mr-0 mt-24 overflow-hidden">
-            <div class="w-full flex justify-center text-center mb-12"> 
-                <h2 class="text-dark font-bold text-center text-[32px] leading-10 lg:text-[56px] w-[600px] lg:leading-[62.5px] mx-auto">Tại sao nên <br> du học Hàn Quốc</h2>
+        <div class="relative contaner mx-8 lg:ml-24 lg:mr-0 mt-24 overflow-hidden">
+            <div class="w-full flex justify-center text-center mb-12">
+                <h2 v-motion :initial="{
+                    x: -250,
+                    opacity: 0,
+                }" :visibleOnce="{
+                    x: 0,
+                    opacity: 1,
+                    transition: {
+                        duration: 650,
+                        opacity: {
+                            duration: 800,
+                        }
+                    },
+                }"
+                    class="text-dark font-bold text-center text-[32px] leading-10 lg:text-[56px] w-[600px] lg:leading-[62.5px] mx-auto">
+                    Tại sao nên <br> du học Hàn Quốc</h2>
             </div>
             <div class="flex">
-                <swiper
-                    :spaceBetween="40"
-                    :initialSlide="1"
-                    :navigation="true"
-                    :loop="loop"
-                    :centeredSlides=false
-                    :autoplay="autoplay"
-                    :breakpoints="{
+                <swiper :spaceBetween="40" :initialSlide="1" :navigation="true" :loop="loop" :centeredSlides=false
+                    :autoplay="autoplay" :breakpoints="{
                         '640': {
                             slidesPerView: 1,
                             spaceBetween: 40,
@@ -29,13 +37,9 @@
                             slidesPerView: 3.3,
                             spaceBetween: 40,
                         },
-                    }"
-                    :modules="modules"
-                    class="mySwiper"
-                >
+                    }" :modules="modules" class="mySwiper">
                     <swiper-slide v-for="project in projects" :key="project" class="swiper-item">
-                        <div  
-                            class="relative">
+                        <div class="relative">
                             <div class="absolute top-0 w-full">
                                 <img class="object-contain" :src="project.image" loading="lazy" :alt="project.alt" />
                             </div>
@@ -49,31 +53,31 @@
                     </swiper-slide>
                 </swiper>
             </div>
-       </div>
+        </div>
     </section>
 </template>
 <script>
-    // Import Swiper Vue.js components
-    import { Swiper, SwiperSlide } from 'swiper/vue';
-  
-    // Import Swiper styles
-    import 'swiper/css';
-    import 'swiper/css/navigation';
-  
-    // import required modules
-    import { Navigation, Autoplay } from 'swiper/modules';
-  
-    export default {
-      components: {
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+// import required modules
+import { Navigation, Autoplay } from 'swiper/modules';
+
+export default {
+    components: {
         Swiper,
         SwiperSlide,
-      },
-      setup() {
+    },
+    setup() {
         return {
-          modules: [Navigation, Autoplay ],
+            modules: [Navigation, Autoplay],
         };
-      },
-      data() {
+    },
+    data() {
         return {
             projects: [
                 { image: 'images/illustration_SearchEngine.svg', alt: 'SearchEngine', title: 'Tiếp xúc với nền giáo dục chất lượng', content: 'Hàn Quốc là một trong những quốc gia có nền giáo dục hàng đầu thế giới, đặc biệt về lĩnh vực IT, truyền thông, Quản trị kinh doanh…' },
@@ -90,39 +94,48 @@
             centeredSlides: false,
             slidesPerView: 'auto',
         }
-      }
-    };
+    }
+};
 </script>
 <style scoped>
-    .swiper-slide-active.swiper-item  {
-        @apply bg-primaryText md:bg-white;
+.swiper-slide-active.swiper-item {
+    @apply bg-primaryText md:bg-white;
+
+    .heading {
+        @apply text-white md:text-dark;
+    }
+
+    .content {
+        @apply text-white md:text-grey;
+    }
+
+    +.swiper-item {
+        @apply md:bg-primaryText;
+
+        .content,
         .heading {
-            @apply text-white md:text-dark;
-        }
-        .content {
-            @apply text-white md:text-grey;
-        }
-        + .swiper-item {
-            @apply md:bg-primaryText;
-            .content,
-            .heading {
-                @apply md:text-white;
-            }
+            @apply md:text-white;
         }
     }
-    .swiper-item {
-        @apply h-full bg-white max-h-[335px] border-[3px] border-beebright rounded-tl-lg rounded-br-lg p-7 2xl:py-12;
-    }
-    .swiper-item {
-        box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.14);
-    }
-    .swiper-wrapper {
-        @apply px-10;
-    }
-    .swiper {
-        @apply pb-44 px-5 md:px-0 lg:pb-24;
-    }
-    .swiper .swiper-slide {
-        @apply min-h-[337px] md:min-h-0;
-    }
+}
+
+.swiper-item {
+    @apply h-full bg-white max-h-[335px] border-[3px] border-beebright rounded-tl-lg rounded-br-lg p-7 2xl:py-12;
+}
+
+.swiper-item {
+    box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.14);
+}
+
+.swiper-wrapper {
+    @apply px-10;
+}
+
+.swiper {
+    @apply pb-44 px-5 md:px-0 lg:pb-24;
+}
+
+.swiper .swiper-slide {
+    @apply min-h-[337px] md:min-h-0;
+}
 </style>
