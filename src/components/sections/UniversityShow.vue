@@ -128,7 +128,7 @@ export default {
           <div class="flex flex-col w-full">
             <div v-for="(inv, index) in unvs" :key="inv" :class="index === 0 ? '!border-[3px] active-first' : ''"
               :title="inv?.subtitle" v-motion :initial="{
-                x: -400,
+                x: 250,
                 opacity: 0,
               }" :visibleOnce="{
                 x: 0,

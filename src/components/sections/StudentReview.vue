@@ -3,9 +3,23 @@
         <div class="relative px-10 py-20 md:py-36 bg-white review overflow-hidden">
             <div class="container max-w-960 mx-auto">
                 <div 
+                    v-motion :initial="{
+                    y: 80,
+                    opacity: 0,
+                    }" :visibleOnce="{
+                    y: 0,
+                    opacity: 1,
+                    transition: {
+                        duration: 600,
+                        opacity: {
+                        duration: 600,
+                        },
+                    },
+                    }"
                      class="max-w-[900px] mb-12 md:mb-20">
                     <img width="80" height="112" class="w-14 mx-auto md:w-20 object-contain mb-5 md:mb-0" src="/images/university/illustration_Achie_ement.png" loading="lazy" alt="chứng nhận">
-                    <h2 class="text-dark text-center font-bold text-3xl -tracking-[0.4px] md:text-68 md:leading-[78px]">Các học viên đánh giá như nào về DUHOCD.com</h2>
+                    <h2
+                    class="text-dark text-center font-bold text-3xl -tracking-[0.4px] md:text-68 md:leading-[78px]">Các học viên đánh giá như nào về DUHOCD.com</h2>
                 </div>
                  <div class="flex flex-col">
                     <swiper v-if="mobile"
@@ -42,6 +56,19 @@
                 </swiper>
                 <div v-else v-for="(review, index) in reviews"  :key="review" :class="index%2===0 ? 'md:flex-row' : 'md:flex-row-reverse'" class="flex flex-col md:flex-row sm:mb-12">
                     <div 
+                        v-motion :initial="{
+                        x: 250,
+                        opacity: 0,
+                        }" :visibleOnce="{
+                        x: 0,
+                        opacity: 1,
+                        transition: {
+                            duration: 600,
+                            opacity: {
+                            duration: 600,
+                            },
+                        },
+                        }"
                     :class="index%2===0 ? 'mr-5' : 'ml-5'" class="p-8 bg-beebright shadow-sm rounded-[39px] review-shadow">
                         <p>{{ review?.comment }}</p>
                         <p class="text-right font-bold text-base text-black tracking-tight mt-2.5">- {{  review?.author }}</p>

@@ -2,19 +2,19 @@
     <section id="whychoose">
         <div class="relative contaner mx-8 lg:ml-24 lg:mr-0 mt-24 overflow-hidden">
             <div class="w-full flex justify-center text-center mb-12">
-                <h2 v-motion :initial="{
-                    x: -250,
-                    opacity: 0,
+                <h2  v-motion :initial="{
+                y: 80,
+                opacity: 0,
                 }" :visibleOnce="{
-                    x: 0,
-                    opacity: 1,
-                    transition: {
-                        duration: 650,
-                        opacity: {
-                            duration: 800,
-                        }
+                y: 0,
+                opacity: 1,
+                transition: {
+                    duration: 600,
+                    opacity: {
+                    duration: 600,
                     },
-                }"
+                },
+         }"
                     class="text-dark font-bold text-center text-[32px] leading-10 lg:text-[56px] w-[600px] lg:leading-[62.5px] mx-auto">
                     Tại sao nên <br> du học Hàn Quốc</h2>
             </div>
